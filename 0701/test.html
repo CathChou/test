@@ -37,9 +37,19 @@
 	#infoMenu li a {
 		color: #fff;
 	}
-	.test{
-		height: auto !important;
-	}
+	sub-section{
+  height: 100vh;
+  width: 100%;
+}
+.sub-section{
+  background: red;
+}
+.sub-section:nth-child(1){
+  background: red;
+}
+.sub-section:nth-child(2){
+  background: blue;
+}
 	</style>
 
 	<!--[if IE]>
@@ -125,6 +135,12 @@
 		</div>
 	</div>
 
+	<div class="section">
+       <div class="sub-section">sub content</div>
+       <div class="sub-section">sub content</div>
+       <div class="sub-section">sub content</div>
+    </div>
+
 </div>
 
 <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
@@ -147,7 +163,6 @@
             menu: '#menu',
             scrollOverflow: true,
             scrollingSpeed: 1000,
-            fitToSection: false,
        });
     });
 </script>
