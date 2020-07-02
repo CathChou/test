@@ -125,7 +125,7 @@
 		</div>
 	</div>
 
-	
+
 
 </div>
 
@@ -147,8 +147,23 @@
             sectionsColor: ['#fff', '#fff', '#f4f5f7', '#000'],
             anchors: ['page1', 'page2', 'page3'],
             menu: '#menu',
+            css3: true,
             scrollOverflow: true,
             scrollingSpeed: 1000,
+            fitToSection: false,
+            afterLoad: function(ancorLink, index){
+            	if (index === $('#fullpage .section').length) {
+            		$.fn.fullpage.setAutoScrolling(false);
+            	}
+            	$(document).scroll(function() {
+            		var last_section = $('#fullpage').find(".section").last();
+            		var offset = last_section.offset();
+            		var w = $(window);
+            		if (offset.top - w.scrollTop() > 0) {
+            			$.fn.fullpage.setAutoSCrolling(true);
+            		}
+            	}
+            }
        });
     });
 </script>
