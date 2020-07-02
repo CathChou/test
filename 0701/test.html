@@ -172,11 +172,13 @@
 <script type="text/javascript" src="examples.js"></script>
 <script type="text/javascript" src="dist/iscroll.js"></script>
 
+
 <script type="text/javascript">
-    $(function(){
-        $('#fullpage').fullpage({
-            scrollOverflow: true
-        });
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+        sectionsColor: ['#4A6FB1', '#939FAA', '#323539'],
+        scrollOverflow: true,
+
     });
     
 </script>
