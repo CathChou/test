@@ -23,47 +23,28 @@
 <style>
 	/* Fixed header and footer.
 	* --------------------------------------- */
-	#header, #footer{
-		position:fixed;
-		height: 50px;
-		display:block;
-		width: 100%;
-		background: #333;
-		z-index:9;
-		text-align:center;
-		color: #f2f2f2;
-		padding: 20px 0 0 0;
-	}
-
-	#header{
-		top:0px;
-	}
-	#footer{
-		bottom:0px;
-	}
+	
 	/* Backgrounds will cover all the section
 	* --------------------------------------- */
 	#section0,
 	#section1,
 	#section2,
-	#section3,
-    #slide1,
-    #slide2{
+	#section3{
 		background-size: cover;
 		background-attachment: fixed;
+		background-position: center;
 	}
-
 	/* Defining each sectino background and styles
 	* --------------------------------------- */
 	#section0{
-		background-image: url(images/kv.jpg);
+		background-image: url(images/bg_1.jpg);
 	}
-	#section2{
-		background-image: url(images/bg1.jpg);
+	#section1{
+		background-image: url(images/bg_2.jpg);
 		padding: 6% 0 0 0;
 	}
-	#section3{
-		background-image: url(images/bg2.jpg);
+	#section2{
+		background-image: url(images/bg_3.jpg);
 		padding: 6% 0 0 0;
 	}
 </style>
@@ -72,21 +53,34 @@
 </head>
 
 <body>
-<h1>Sedia集團</h1>
-
 <!-- header -->
-<div id="header">Header</div>
+<div id="header">
+	<h1 class="logo"><a href="#"><img src="images/logo.svg"></a></h1>
+</div>
 <!-- header end -->
 
 <!--footer-->
-<div id="footer">Footer</div>
+<div id="footer">
+	<div class="copyright letter-2">@2020 SED-IA Architecture</div>
+	<li><a href="#" target="_blank">aa</a></li>
+	<li><a href="#" target="_blank">bb</a></li>
+	<li><a href="#" target="_blank">cc</a></li>
+	<li><a href="#" target="_blank">dd</a></li>
+</div>
 <!--footer end-->
 
 
+<ul id="menu" class="letter-2">
+    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">關於形意</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage">集團理念</a></li>
+    <li data-menuanchor="3rdPage"><a href="#3rdPage">聯絡我們</a></li>
+    <li data-menuanchor="4thPage"><a href="#4thPage">形意集團</a></li>
+    <li data-menuanchor="5thPage"><a href="#5thPage">EN</a></li>
+</ul>
 <div id="fullpage">
 
 	<!--kv-->
-	<!--<nav class="menu-m">
+	<nav class="menu-m">
 		<ul>
 			<li class="m1"><a id="bt3-classic" class="button"><p class="mt-2">探索印尼經典</p></a></li>
 			<li class="m2"><a id="bt3-ig" class="button"><p class="mt-2">發現美拍聖地</p></a></li>
@@ -100,69 +94,31 @@
 			<span class="c-hamburger__line"></span>
 			<span class="menu">MENU</span>
 		</div>
-	</nav>-->
+	</nav>
 	<div class="section" id="section0">
 		<div class="kv">
-			<div class="contain">
-				<div class="title">
-					<div class="title-l animated pulse"><img src="images/title.png" alt="印尼冒險王"></div>
-					<div class="title-m animated pulse-2"><img src="images/sub.png" alt="爪哇萬隆 / 峇里島 / 日惹 / 科摩多"></div>
-					<div class="title-s animated flipInX"><img src="images/st.png" alt="挖掘古文明，採集新創意"></div>
-				</div>
-			</div>
-			<nav id="navigation-menu" class="menu animated fadeIn">
-				<h3>探索印尼經典/發現美拍聖地/地道美食指南/遺世海角樂園/歷險即刻啟程</h3>
-				<ul class="active removeTextNodes">
-					<li class="m1 animated fadeInDown-1">
-						<a id="bt-classic" class="button">
-							<span class="UpDown-1"><img src="images/menu_01.png" alt=""></span>
-							<p class="mt-1">探索<br>印尼經典</p>
-						</a>
-						<a id="bt2-classic" class="button"><p class="mt-2">探索印尼經典</p></a>
-					</li>
-
-					<li class="m2 animated fadeInDown-2">
-						<a id="bt-ig" class="button">
-							<span class="UpDown-2"><img src="images/menu_02.png" alt=""></span>
-							<p class="mt-1">發現<br>美拍聖地</p>
-						</a>
-						<a id="bt2-ig" class="button"><p class="mt-2">發現美拍聖地</p></a>
-					</li>
-
-					<li class="m3 animated fadeInDown-3">
-						<a id="bt-food" class="button">
-							<span class="UpDown-3"><img src="images/menu_03.png" alt=""></span>
-							<p class="mt-1">地道<br>美食指南</p>
-						</a>
-						<a id="bt2-food" class="button"><p class="mt-2">地道美食指南</p></a>
-					</li>
-
-					<li class="m4 animated fadeInDown-4">
-						<a id="bt-spot" class="button">
-							<span class="UpDown-4"><img src="images/menu_04.png" alt=""></span>
-							<p class="mt-1">遺世<br>海角樂園</p>
-						</a>
-						<a id="bt2-spot" class="button"><p class="mt-2">遺世海角樂園</p></a>
-					</li>
-
-					<li class="m5 animated fadeInDown-5">
-						<a id="bt-go" class="button">
-							<span class="UpDown-5"><img src="images/menu_05.png" alt=""></span>
-							<p class="mt-1">歷險<br>即刻啟程</p>
-						</a>
-						<p class="mt-2"><a href="#" target="blanc">瀏覽行程</a></p>
-					</li>
-				</ul>
-			</nav>
+			
 		</div>
 	</div>
-	<div class="section " id="section1">
+	<div class="section" id="section1">
 		<div class="intro">
 			<h1>Fixed elements</h1>
 			<p>Create your own headers and footers</p>
 		</div>
 	</div>
 	<div class="section" id="section2">
+		<div class="intro">
+			<h1>Enjoy it</h1>
+		</div>
+	</div>
+	<div class="section" id="section3">
+		<div class="contact">
+			<a class="bt-location" style="position: absolute; top: calc(50% - 38px); right: calc(50% - 361px);" href="#"><img src="images/location.svg"></a>
+			<a class="bt-location" style="position: absolute; top: calc(50% - 8px); right: calc(50% - 320px);" href="#"><img src="images/location.svg"></a>
+			
+		</div>
+	</div>
+	<div class="section" id="section4">
 		<div class="intro">
 			<h1>Enjoy it</h1>
 		</div>
@@ -174,9 +130,11 @@
 <script src="js/action.js"></script>
 <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
-        anchors: ['firstPage', 'secondPage', '3rdPage'],
-        sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
-        css3: true
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage'],
+        sectionsColor: ['#e9e7e5', '#e9e7e5', '#e9e7e5', '#e9e7e5', '#e9e7e5'],
+        verticalCentered: false,
+        css3: false,
+        navigation: true,
     });
 </script>
 
