@@ -7,6 +7,7 @@ ul, li { margin: 0; padding: 0;}
 img, div, iframe{ border: 0;}
 body, html { width: 100%; height: 100%;}
 li li, li p, li span, li p span, p span{ font-size: 1em;}
+ol,ul {list-style: none;margin:0;padding:0;}
 a{ text-decoration:none; transition: all .5s ease;-webkit-transition:all .5s ease;-o-transition:all .5s ease;
 -moz-transition:all .5s ease;}
 a:link, a:visited ,a:hover ,a:active {text-decoration: none;}
@@ -74,12 +75,17 @@ p{ font-size:1.125rem;letter-spacing: 1px; color: #333;}
 
 
 /*----- contact -----*/
-.contact{ width: 1000px; background-image: url(../images/bg_map.jpg);background-size: cover;
-background-position: center; height: 476px; margin: 0 auto; background-size: 100%; background-repeat: no-repeat;
+.contact{ width: 80%; background-image: url(../images/bg_map.jpg);background-size: cover;
+background-position: center; margin: 0 auto; background-size: 100%; background-repeat: no-repeat;
 position: absolute; top: 0; right: 0; left: 0; bottom: 0; margin: auto; }
 .bt-location{ display: block; width: 17px; height: 27px; }
+.lg-2 {left: 0; right: inherit;position: absolute; }
+.lg-2 .lg{ top:0 !important;  position: absolute;}
+.lg-2 .lg .lg-sub-html{ width: 100%; }
+.lg-2 .lg-inner{ width: 100%; }
+.lg-2 .lg-backdrop.in{ width: 100%; height: 100%; position: absolute; }
 
-
+.in-2{ width: 50% !important; }
 
 
 
