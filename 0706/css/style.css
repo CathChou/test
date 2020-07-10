@@ -34,7 +34,7 @@ h1.logo img{ max-width: 100%; height: auto;}
 #menu li a,#menu li.active a{ padding: 9px 18px; display:block;}
 #menu{ position:fixed; top:0; right:0; height: 40px; z-index: 70; width: 33%; padding: 0; margin:0;}
 .letter-2{letter-spacing: 2px;}
-.container{ width: 1200px; margin: 0 auto; }
+.container{ width: 1400px; margin: 0 auto; }
 
 #section0, #section1, #section2, #section3, #section4{ background-size: cover; background-attachment: fixed; background-position: center;}
 #section0{ background-image: url(../images/bg_1.jpg);}
@@ -108,6 +108,7 @@ transition: transform 0.15s ease 0s; -webkit-transform: scale3d(1, 1, 1); transf
 /*----- Responsive -----*/
 @media screen and (max-width: 1280px){
 .kv{ width: 100%;}
+.container{ width: 100%; }
 }
 
 @media screen and (max-width: 1023px){
