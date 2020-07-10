@@ -70,11 +70,10 @@ showHomeSlider();
 
 function initialHomeSlider() {
   $homeSlider.addClass("owl-carousel").owlCarousel({
-    items: 1,
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 2000,
-    smartSpeed: 1000
+    items: 3,
+    nav: true,
+    loop: false,
+    margin: 20
   });
 }
 
