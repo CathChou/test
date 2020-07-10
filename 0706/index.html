@@ -85,17 +85,18 @@
 	<div class="section" id="section3">
 		<section id="demos-02">
 			<div class="row">
-				<div class="contact demo-gallery large-12 columns">
-					<ul id="lightgallery-02" class="list-unstyled row">
-						<li class="col-xs-6 col-sm-4 col-md-3 item" data-src="images/sedia_1_568x568.jpg" data-sub-html="<h4>元宏聯合建築師事務所</h4><p>建築不是單純的藝術或技術的達成，有非常複雜的社會性。放眼全球市場，歐美建築領先於藝術與技術，而亞洲的文化歷史悠久，社會生命力強盛正在邁步興起，所面臨的社會與土地的問題也更複雜。</p>">
-		                    <a class="bt-location" style="position: absolute; top: calc(100% / 2 - 35px); right: calc(100% / 7 - 5px );" href=""><img src="images/location.svg"></a>
-		                </li>
-		                <li class="col-xs-6 col-sm-4 col-md-3 item" data-src="images/sedia_1_568x568.jpg" data-sub-html="<h4>形意生態建築工場</h4><p>建築不是單純的藝術或技術的達成，有非常複雜的社會性。放眼全球市場，歐美建築領先於藝術與技術，而亞洲的文化歷史悠久，社會生命力強盛正在邁步興起，所面臨的社會與土地的問題也更複雜。</p>">
-		                    <a class="bt-location" style="position: absolute; top: calc(100vh / 2 - 1vh); right: calc(100vw / 2 - 35vw );" href="#"><img src="images/location.svg"></a>
-		                </li>
-						
-						
-					</ul>
+				<div style="display: block; position: relative; width: 90%; margin: 0 auto;">
+					<img style="width: 100%; height: auto;" src="images/bg_map.jpg">
+					<div class="demo-gallery large-12 columns">
+						<ul id="lightgallery-02" class="list-unstyled row">
+							<li class="col-xs-6 col-sm-4 col-md-3 item" data-src="images/sedia_1_568x568.jpg" data-sub-html="<h4>元宏聯合建築師事務所</h4><p>建築不是單純的藝術或技術的達成，有非常複雜的社會性。放眼全球市場，歐美建築領先於藝術與技術，而亞洲的文化歷史悠久，社會生命力強盛正在邁步興起，所面臨的社會與土地的問題也更複雜。</p>">
+			                    <a class="bt-location" style="position: absolute; top: 46.5%; right:15.5%; margin-top: -27px;margin-right: -17px;);" href=""><img src="images/location.svg"></a>
+			                </li>
+			                <li class="col-xs-6 col-sm-4 col-md-3 item" data-src="images/sedia_1_568x568.jpg" data-sub-html="<h4>形意生態建築工場</h4><p>建築不是單純的藝術或技術的達成，有非常複雜的社會性。放眼全球市場，歐美建築領先於藝術與技術，而亞洲的文化歷史悠久，社會生命力強盛正在邁步興起，所面臨的社會與土地的問題也更複雜。</p>">
+			                    <a class="bt-location" style="position: absolute; top: 54.5%; right: 19.5%;margin-top: -27px;margin-right: -17px;" href="#"><img src="images/location.svg"></a>
+			                </li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -138,7 +139,7 @@
 <script src="js/jquery.mousewheel.min.js"></script>
 <script src="js/owl.carousel.js"></script>
 <script src="js/fullpage.js"></script>
-<!--<script src="js/scrolloverflow.js"></script>-->
+<script src="js/scrolloverflow.js"></script>
 <script src="js/action.js"></script>
 <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
@@ -147,7 +148,8 @@
         verticalCentered: false,
         css3: false,
         navigation: true,
-        scrollOverflow: true
+        scrollOverflow: true,
+        scrollBar: false
     });
 
 	$(document).ready(function(){
@@ -157,8 +159,8 @@
         	counter:   false,
         	closable: true,
         	mousewheel: false,
-        	width: '80%',
-        	height:'50%'
+        	width: '85%',
+        	height:'60%'
         });
     });
     $(document).ready(function(){

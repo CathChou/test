@@ -67,16 +67,6 @@ function showHomeSlider() {
   }
 }
 showHomeSlider();
-
-function initialHomeSlider() {
-  $homeSlider.addClass("owl-carousel").owlCarousel({
-    items: 3,
-    nav: true,
-    loop: false,
-    margin: 20
-  });
-}
-
 function destroyHomeSlider() {
   $homeSlider.trigger("destroy.owl.carousel").removeClass("owl-carousel");
 }

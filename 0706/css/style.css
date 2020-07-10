@@ -26,7 +26,7 @@ button{ transition: all .5s ease; -webkit-transition: all .5s ease; -o-transitio
 #footer li{ display: inline-block; }
 h1.logo{ max-width: 187px;}
 h1.logo img{ max-width: 100%; height: auto;}
-.section{ text-align:center; padding: 10em 8em;}
+.section{ text-align:center; padding: 6em;}
 #menu li { display:inline-block; font-size: 1.15rem;}
 #menu li.active{ color: #fff;}
 #menu li a{ text-decoration:none; color: #666565; font-weight: 500;}
