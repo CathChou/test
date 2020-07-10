@@ -164,18 +164,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 
 
 @media screen and (max-width: 769px){
-.bg_1, .bg-left, .bg-right, .p6, .p7, .p8, .p9, .p12{ display: none;}
-.kv{ background: none; height: auto;}
-.m-kv{ display: block;}
-.title{ top: 90px; }
-.title-l, .title-m{ width: 50%; }
-.title-s{ width: 30%; top: 30px; right: 100px; }
-.in-pic{ display: none; }
-.in-txt{ width: 100%; }
-.classic-box{ width: 50%;}
-.subtitle{ margin: 0 auto 30px;}
-.p1, .p5{ display: none;}
-.h-title, .highlight{ font-size: 1.5rem; }
+.section{ text-align:center; padding: 2em;}
 }
 
 @media screen and (max-width: 500px){

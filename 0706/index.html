@@ -140,17 +140,15 @@
 <script src="js/fullpage.js"></script>
 <script src="js/scrolloverflow.js"></script>
 <script src="js/action.js"></script>
-<script>
-	var myFullpage = new fullpage('#fullpage', {
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
         anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage'],
         sectionsColor: ['#e9e7e5', '#e9e7e5', '#e9e7e5', '#e9e7e5', '#e9e7e5'],
-        css3: true,
+        verticalCentered: false,
+        css3: false,
         navigation: true,
         scrollOverflow: true
     });
-</script>
-<script type="text/javascript">
-    
 
 	$(document).ready(function(){
         $('#lightgallery').lightGallery({
