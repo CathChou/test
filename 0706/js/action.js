@@ -1,11 +1,11 @@
 //reload
-//var windowWidth = $(window).width();
-    //$(window).resize(function() {
-    //if(windowWidth != $(window).width()){
-    //location.reload();
-    //return;
-    //}
-//});
+var windowWidth = $(window).width();
+    $(window).resize(function() {
+    if(windowWidth != $(window).width()){
+    location.reload();
+    return;
+    }
+});
 
 //手機板選單收合
 var ww = $(window).width();
@@ -59,7 +59,7 @@ $(window).resize(function() {
 
 function showHomeSlider() {
   if ($homeSlider.data("owlCarousel") !== "undefined") {
-    if (window.matchMedia('(min-width: 600px)').matches) {
+    if (window.matchMedia('(min-width: 769px)').matches) {
       initialHomeSlider();
     } else {
       destroyHomeSlider();
