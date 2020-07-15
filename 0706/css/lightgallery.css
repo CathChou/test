@@ -1,13 +1,6 @@
 /*! lightgallery - v1.7.1 - 2020-06-13
 * http://sachinchoolur.github.io/lightGallery/
 * Copyright (c) 2020 Sachin N; Licensed GPLv3 */
-@font-face {
-  font-family: 'lg';
-  src: url("../fonts/lg.eot?n1z373");
-  src: url("../fonts/lg.eot?#iefixn1z373") format("embedded-opentype"), url("../fonts/lg.woff?n1z373") format("woff"), url("../fonts/lg.ttf?n1z373") format("truetype"), url("../fonts/lg.svg?n1z373#lg") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
 .lg-icon {
   font-family: 'lg';
   speak: none;
@@ -22,20 +15,23 @@
 }
 
 .lg-actions .lg-next, .lg-actions .lg-prev {
-  background-color: rgba(0, 0, 0, 0.45);
-  border-radius: 2px;
-  color: #999;
   cursor: pointer;
   display: block;
-  font-size: 22px;
-  margin-top: -10px;
-  padding: 8px 10px 9px;
+  margin-top: -30px;
   position: absolute;
   top: 50%;
   z-index: 1080;
-  border: none;
   outline: none;
+  width: 33px;
+  height: 60px;
+  border: none;
 }
+.lg-actions .lg-next{
+  background: url(../images/next.svg) no-repeat;
+  }
+.lg-actions .lg-prev{ 
+  background: url(../images/prev.svg) no-repeat;
+  }
 .lg-actions .lg-next.disabled, .lg-actions .lg-prev.disabled {
   pointer-events: none;
   opacity: 0.5;
@@ -44,16 +40,10 @@
   color: #FFF;
 }
 .lg-actions .lg-next {
-  right: 20px;
-}
-.lg-actions .lg-next:before {
-  content: "\e095";
+  right: 0;
 }
 .lg-actions .lg-prev {
-  left: 20px;
-}
-.lg-actions .lg-prev:after {
-  content: "\e094";
+  left: 0;
 }
 
 @-webkit-keyframes lg-right-end {
@@ -165,53 +155,38 @@
   width: 100%;
 }
 .lg-toolbar .lg-icon {
-  color: #999;
+  background: url(../images/close.svg) no-repeat;
   cursor: pointer;
   float: right;
-  font-size: 24px;
-  height: 47px;
-  line-height: 27px;
-  padding: 10px 0;
-  text-align: center;
-  width: 50px;
-  text-decoration: none !important;
-  outline: medium none;
-  background: none;
-  border: none;
-  box-shadow: none;
-  -webkit-transition: color 0.2s linear;
-  -o-transition: color 0.2s linear;
-  transition: color 0.2s linear;
+  height: 24px;
+  width: 24px;
+  border:none;
+  margin: 0;
+  outline: none;
 }
 .lg-toolbar .lg-icon:hover {
   color: #FFF;
-}
-.lg-toolbar .lg-close:after {
-  content: "\e070";
 }
 .lg-toolbar .lg-download:after {
   content: "\e0f2";
 }
 
 .lg-sub-html {
-  color: #EEE;
-  font-size: 16px;
   left: 0;
-  padding: 10px 40px;
-  text-align: center;
+  text-align: left;
   z-index: 1080;
   position: absolute;
   width: 50%;
 }
 .lg-sub-html h4 {
   margin: 0;
-  font-size: 13px;
-  font-weight: bold;
-  color: #333;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #009d95;
+  letter-spacing: 4px;
 }
 .lg-sub-html p {
-  font-size: 12px;
-  margin: 5px 0 0;
+  font-size: 0.875rem;
 }
 
 #lg-counter {
@@ -827,15 +802,16 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   margin-right: auto;
   max-width: 100%;
   max-height: 100%;
-  border:40px solid #fff;
-  background: #fff;
+  padding: 40px;
 }
 .lg-outer .lg-inner {
   width: 50%;
-  height: 100%;
+  height: 80%;
   position: absolute;
   right: 0;
   top: 0;
+  bottom: 0;
+  margin: auto;
   white-space: nowrap;
 }
 .lg-outer .lg-item {

@@ -266,20 +266,20 @@
         _this.$el.trigger('onAfterOpen.lg');
 
         // Hide controllers if mouse doesn't move for some period
-        _this.$outer.on('mousemove.lg click.lg touchstart.lg', function() {
+        //_this.$outer.on('mousemove.lg click.lg touchstart.lg', function() {
 
-            _this.$outer.removeClass('lg-hide-items');
+            //_this.$outer.removeClass('lg-hide-items');
 
-            clearTimeout(_this.hideBartimeout);
+            //clearTimeout(_this.hideBartimeout);
 
             // Timeout will be cleared on each slide movement also
-            _this.hideBartimeout = setTimeout(function() {
-                _this.$outer.addClass('lg-hide-items');
-            }, _this.s.hideBarsDelay);
+            //_this.hideBartimeout = setTimeout(function() {
+                //_this.$outer.addClass('lg-hide-items');
+            //}, _this.s.hideBarsDelay);
 
-        });
+        //});
 
-        _this.$outer.trigger('mousemove.lg');
+        //_this.$outer.trigger('mousemove.lg');
 
     };
 
@@ -318,12 +318,15 @@
 
         template = '<div aria-modal="true" ' + ariaLabelledby + ' ' + ariaDescribedby + ' role="dialog" class="lg-outer ' + this.s.addClass + ' ' + this.s.startClass + '">' +
             '<div class="lg" style="width:' + this.s.width + '; height:' + this.s.height + '">' +
-            '<div class="lg-inner">' + list + '</div>' +
+            
             '<div class="lg-toolbar lg-group">' +
             '<button type="button" aria-label="Close gallery" class="lg-close lg-icon"></button>' +
             '</div>' +
             controls +
+            '<div class="box">' +
             subHtmlCont +
+            '<div class="lg-inner">' + list + '</div>' +
+            '</div>' +
             '</div>' +
             '</div>';
 
