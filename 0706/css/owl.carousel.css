@@ -10,6 +10,8 @@
  */
 .owl-carousel {
   display: none;
+  padding: 0 50px;
+  box-sizing: border-box;
   width: 100%;
   -webkit-tap-highlight-color: transparent;
   /* position relative and z-index fix webkit rendering fonts issue */
@@ -205,8 +207,6 @@
     cursor: pointer;
     border-radius: 3px; }
     .owl-theme .owl-nav [class*='owl-']:hover {
-      background: #869791;
-      color: #FFF;
       text-decoration: none; }
   .owl-theme .owl-nav .disabled {
     opacity: 0.5;
@@ -234,3 +234,25 @@
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
       background: #869791; }
 
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next{
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    outline: none;
+    width: 33px;
+    height: 60px;
+    margin-top: -30px;
+}
+
+.owl-carousel .owl-nav button.owl-prev{
+    background: url(../images/prev.svg) no-repeat;
+    left: 0;
+}
+.owl-carousel .owl-nav button.owl-next{
+    background: url(../images/next.svg) no-repeat;
+    right: 0;
+
+}
+.owl-carousel .owl-nav button.owl-prev span, .owl-carousel .owl-nav button.owl-next span{
+  visibility: hidden;
+}

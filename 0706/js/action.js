@@ -4,7 +4,7 @@ var windowWidth = $(window).width();
     if(windowWidth != $(window).width()){
     location.reload();
     return;
-    }
+   }
 });
 
 //手機板選單收合

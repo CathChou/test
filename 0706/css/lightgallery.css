@@ -40,10 +40,10 @@
   color: #FFF;
 }
 .lg-actions .lg-next {
-  right: 0;
+  right: 30px;
 }
 .lg-actions .lg-prev {
-  left: 0;
+  left: 30px;
 }
 
 @-webkit-keyframes lg-right-end {
@@ -161,7 +161,7 @@
   height: 24px;
   width: 24px;
   border:none;
-  margin: 0;
+  margin: 30px 30px 0 0;
   outline: none;
 }
 .lg-toolbar .lg-icon:hover {
@@ -172,14 +172,13 @@
 }
 
 .lg-sub-html {
-  left: 0;
   text-align: left;
-  z-index: 1080;
-  position: absolute;
   width: 50%;
+  padding: 60px;
+  float: left;
 }
 .lg-sub-html h4 {
-  margin: 0;
+  margin: 0 0 40px 0;
   font-size: 2rem;
   font-weight: 500;
   color: #009d95;
@@ -187,7 +186,19 @@
 }
 .lg-sub-html p {
   font-size: 0.875rem;
+  line-height: 1.2rem;
 }
+.lg-sub-html a {
+  font-size: 0.875rem;
+  color: #009d95;
+  display: inline-block;
+  border: 1px #009d95 solid;
+  padding: 7px 0;
+  width: 50%;
+  text-align: center;
+  margin-top: 60px;
+}
+
 
 #lg-counter {
   color: #999;
@@ -802,7 +813,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   margin-right: auto;
   max-width: 100%;
   max-height: 100%;
-  padding: 40px;
 }
 .lg-outer .lg-inner {
   width: 50%;
