@@ -24,10 +24,29 @@
 </head>
 
 <body>
+<!--menu-m-->
+<div id="menu-m">
+	<button class="toggle-overlay">Toggle Me</button>
+</div>
+<div class="m-content">
+	<div class="outer-close toggle-overlay">
+		<a class="close"><span></span></a>
+	</div>
+	<nav>
+		<ul>
+			<li><a class="aaa" href="#about">關於形意</a></li>
+			<li><a class="aaa" href="#concept">集團理念</a></li>
+			<li><a class="aaa" href="#contact">聯絡我們</a></li>
+			<li><a class="aaa" href="#services">形意集團</a></li>
+		</ul>
+	</nav>
+</div>
+<!--menu-m end-->
+
 <!-- header -->
 <div id="header">
 	<h1 class="logo"><a href="#index"><img src="images/logo.svg"></a></h1>
-	<!--menu-->
+	
 	<ul id="menu" class="letter-2">
 		<li class="hide" data-menuanchor="index"><a href="#index">關於形意</a></li>
 	    <li data-menuanchor="about"><a href="#about">關於形意</a></li>
@@ -36,29 +55,9 @@
 	    <li data-menuanchor="services"><a href="#services">形意集團</a></li>
 	    <li><a href="#">EN</a></li>
 	</ul>
-	<!--menu end-->
+	
 </div>
 <!-- header end -->
-
-<!-- menu-m -->
-<nav class="menu-m">
-	<ul>
-		<li class="m1"><a id="bt3-classic" class="button"><p class="mt-2">探索印尼經典</p></a></li>
-		<li class="m2"><a id="bt3-ig" class="button"><p class="mt-2">發現美拍聖地</p></a></li>
-		<li class="m3"><a id="bt3-food" class="button"><p class="mt-2">地道美食指南</p></a></li>
-		<li class="m4"><a id="bt3-spot" class="button"><p class="mt-2">遺世海角樂園</p></a></li>
-		<li class="m5"><a href="https://www.everfuntravel.com/GroupTravel/Promotion/Indonesia" class="button" target="blanc"><p class="mt-2 m-go">瀏覽行程</p></a></li>
-	</ul>
-
-	<div class="c-hamburger toggle-nav">
-		<span class="c-hamburger__line"></span>
-		<span class="c-hamburger__line"></span>
-		<span class="c-hamburger__line"></span>
-		<span class="menu">MENU</span>
-	</div>
-</nav>
-
-<!-- menu-m end -->
 
 <!--footer-->
 <div id="footer">
@@ -260,6 +259,20 @@
 			$(".c-hamburger").removeClass("is-open");
 		});
 	});
+</script>
+<script>
+	(function($) {
+	  $(function() {
+	    $('.toggle-overlay').click(function() {
+	      $('.m-content').toggleClass('open');
+	    });
+	  });
+	  $(function() {
+	    $('.aaa').click(function() {
+	      $('.m-content').removeClass('open');
+	    });
+	  });
+	})(jQuery);
 </script>
 <!--animation-->
 <!--<script>
