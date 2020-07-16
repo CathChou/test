@@ -26,11 +26,21 @@
 <body>
 <!--menu-m-->
 <div id="menu-m">
-	<button class="toggle-overlay">Toggle Me</button>
+	<button class="toggle-overlay c-hamburger">
+		<span class="c-hamburger__line"></span>
+		<span class="c-hamburger__line"></span>
+		<span class="c-hamburger__line"></span>
+	</button>
 </div>
 <div class="m-content">
+	<h1 class="logo logo-menu"><a href="#index"><img src="images/logo.svg"></a></h1>
 	<div class="outer-close toggle-overlay">
-		<a class="close"><span></span></a>
+		<div class="close c-hamburger toggle-nav">
+			<span class="c-hamburger__line"></span>
+			<span class="c-hamburger__line"></span>
+			<span class="c-hamburger__line"></span>
+		</div>
+		
 	</div>
 	<nav>
 		<ul>
@@ -40,6 +50,23 @@
 			<li><a class="aaa" href="#services">形意集團</a></li>
 		</ul>
 	</nav>
+	<div id="menu_svg">
+        <a href="mailto:office@sed-ia.com">
+            <img src="https://sed-ia.com/front/images/email.svg">
+        </a>
+        <a href="https://www.pinterest.com/sediaarchitecture/sed-ia-architecture-projects/" target="_blank">
+            <img src="https://sed-ia.com/front/images/pin.svg">
+        </a>
+        <a href="https://www.facebook.com/SED-IA-ARCHITECTURE-102737484438350/" target="_blank">
+            <img src="https://sed-ia.com/front/images/fb.svg">
+        </a>
+        <a href="https://www.instagram.com/sediaarchitecture/" target="_blank">
+            <img src="https://sed-ia.com/front/images/ig.svg">
+        </a>
+        <a class="en" href="https://www.instagram.com/sediaarchitecture/" target="_blank">
+            EN
+        </a>
+    </div>
 </div>
 <!--menu-m end-->
 
@@ -63,19 +90,19 @@
 <div id="footer">
 	<div class="copyright letter-2">@2020 SED-IA Architecture</div>
 	<div id="footer_svg">
-            <a href="mailto:office@sed-ia.com">
-                <img src="https://sed-ia.com/front/images/email.svg">
-            </a>
-            <a href="https://www.pinterest.com/sediaarchitecture/sed-ia-architecture-projects/" target="_blank">
-                <img src="https://sed-ia.com/front/images/pin.svg">
-            </a>
-            <a href="https://www.facebook.com/SED-IA-ARCHITECTURE-102737484438350/" target="_blank">
-                <img src="https://sed-ia.com/front/images/fb.svg">
-            </a>
-            <a href="https://www.instagram.com/sediaarchitecture/" target="_blank">
-                <img src="https://sed-ia.com/front/images/ig.svg">
-            </a>
-        </div>
+        <a href="mailto:office@sed-ia.com">
+            <img src="https://sed-ia.com/front/images/email.svg">
+        </a>
+        <a href="https://www.pinterest.com/sediaarchitecture/sed-ia-architecture-projects/" target="_blank">
+            <img src="https://sed-ia.com/front/images/pin.svg">
+        </a>
+        <a href="https://www.facebook.com/SED-IA-ARCHITECTURE-102737484438350/" target="_blank">
+            <img src="https://sed-ia.com/front/images/fb.svg">
+        </a>
+        <a href="https://www.instagram.com/sediaarchitecture/" target="_blank">
+            <img src="https://sed-ia.com/front/images/ig.svg">
+        </a>
+    </div>
 </div>
 <!--footer end-->
 
@@ -247,18 +274,6 @@
     })
 
  
-</script>
-<script>
-	$(document).ready(function(){
-		$(".c-hamburger").click(function(){
-			$(this).toggleClass("is-open");
-		});
-	});
-	$(document).ready(function(){
-		$(".menu-m li a").click(function(){
-			$(".c-hamburger").removeClass("is-open");
-		});
-	});
 </script>
 <script>
 	(function($) {
