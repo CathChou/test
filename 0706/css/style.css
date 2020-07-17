@@ -244,6 +244,7 @@ h1.logo a, .logo-menu a{ width: 70%; }
 .section{ padding: 20px; }
 #header{ padding: 20px 20px 0 }
 .c-hamburger{ top: 20px; right: 20px; }
+.demo-gallery ul li a p{  margin-top: -12rem;  }
 }
 
 
