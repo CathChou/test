@@ -245,6 +245,8 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 
 @media screen and (max-width: 650px){
 .demo-gallery ul li a p{  margin-top: -14rem; padding-bottom: 4rem;}
+.lg-sub-html{ width: 90%; }
+.lg-sub-html p{ text-align: left; }
 }
 
 
