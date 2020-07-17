@@ -226,8 +226,9 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 
 }
 
-@media screen and (max-width: 320px){
-
+@media screen and (max-width: 360px){
+h1.logo a, .logo-menu a{ width: 70%; }
+.title{ font-size: 2rem; top: 60px; }
 }
 
 
