@@ -173,13 +173,12 @@ p{ font-size: 0.875rem; }
 .lg-sub-html a{ margin-top: 40px; }
 .lg-outer .lg{ width: 100% !important; height: 100% !important; top: 0; }
 .lg-sub-html{ float: none; width: 50%; position: absolute; top: 60%; left: 0; padding: 20px; right: 0; margin: auto; text-align: center; }
+.lg-sub-html h4{ margin:0 0 20px 0; }
 .lg-outer .lg-inner{ width: 100%; top: 60px; height: 50%; bottom: inherit; }
 .lg .box{ width: 100%; height: 100%; padding: 60px 30px 30px; }
 .lg-2 .lg{ width: 50% !important;}
 .lg-2 .lg-inner{ bottom: 0 !important; top: initial; }
 .lg-2 .lg .lg-sub-html{ text-align: left; }
-.lg-sub-html h4{ margin:0 0 20px 0; }
-.lg-2 .lg .lg-sub-html h4{margin:0 0 40px 0; }
 }
 
 @media screen and (max-width: 1023px){
