@@ -222,6 +222,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .demo-gallery ul li a{ float: none; width: 70%; margin: 10px auto;}
 .demo-gallery ul{ padding: 15% 0; }
 .iScrollIndicator, .demo-gallery  ul li a .mask{ display: none !important; }
+.demo-gallery ul li a p{ position: relative; z-index: 1; margin-top: -11rem; padding-bottom: 5rem; top: inherit; }
 
 }
 
