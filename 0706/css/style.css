@@ -263,8 +263,8 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .contact-m h4{ font-size: 1.5rem; }
 .owl-carousel-m .owl-nav button.owl-prev, .owl-carousel-m .owl-nav button.owl-next{
 width: 20px; height: 36px; top: 40%;}
-.owl-carousel-m .owl-nav button.owl-prev{ left: -10px; }
-.owl-carousel-m .owl-nav button.owl-next{ right: -10px; }
+.owl-carousel-m .owl-nav button.owl-prev{ left: -5px; }
+.owl-carousel-m .owl-nav button.owl-next{ right: -5px; }
 
 }
 
