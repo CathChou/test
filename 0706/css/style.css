@@ -219,9 +219,10 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .contain{ float: none; position: absolute; bottom: 30px; width: 100%; }
 #fp-nav, #footer{ display: none; }
 .demo-gallery ul li{ float: none; margin: 15px 0;}
-.demo-gallery ul li a{ float: none; width: 30%; margin: 10px auto;}
+.demo-gallery ul li a{ float: none; width: 70%; margin: 10px auto;}
 .demo-gallery ul{ padding: 15% 0; }
 .iScrollIndicator{ display: none !important; }
+.demo-gallery  ul li a p { position: initial;}
 
 }
 
@@ -233,12 +234,12 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .sub{ font-size: 1rem; margin-bottom: 20px; }
 .contain p{ line-height: 1.5rem; }
 #menu_svg > a{ margin:0 10px; }
-.demo-gallery ul li a{ width: 30%; }
+.demo-gallery ul li a{ width: 80%; }
 
 }
 
 @media screen and (max-width: 360px){
-h1.logo a, .logo-menu a{ width: 30%; }
+h1.logo a, .logo-menu a{ width: 70%; }
 .title{ font-size: 2rem; top: 60px; }
 .section{ padding: 20px; }
 #header{ padding: 20px 20px 0 }
