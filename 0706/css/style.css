@@ -232,6 +232,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .demo-gallery ul li{ float: none; margin: 15px 0;}
 .demo-gallery ul li a{ float: none; width: 70%; margin: 10px auto;}
 .demo-gallery ul{ padding: 15% 0; }
+.iScrollIndicator{ display: none !important; }
 }
 
 
@@ -242,6 +243,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .sub{ font-size: 1rem; margin-bottom: 20px; }
 .contain p{ line-height: 1.5rem; }
 #menu_svg > a{ margin:0 10px; }
+.demo-gallery ul li a{ width: 80%; }
 
 }
 
