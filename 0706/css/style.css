@@ -178,6 +178,8 @@ p{ font-size: 0.875rem; }
 .lg-2 .lg{ width: 50% !important;}
 .lg-2 .lg-inner{ bottom: 0 !important; top: initial; }
 .lg-2 .lg .lg-sub-html{ text-align: left; }
+.lg-sub-html h4{ margin:0 0 20px 0; }
+.lg-2 .lg .lg-sub-html h4{margin:0 0 40px 0; }
 }
 
 @media screen and (max-width: 1023px){
