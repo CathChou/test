@@ -296,7 +296,7 @@ body.fp-viewing-about .contain1, body.fp-viewing-concept .contain2{
  	animation-delay: 1.2s;
 	-webkit-animation-delay: 1.2s;
 }
-body.fp-viewing-contact .contact, body.fp-viewing-services .services{
+body.fp-viewing-contact .contact, body.fp-viewing-services .services, body.fp-viewing-contact .contact-m{
     visibility: visible;
     animation-name: fadeIn;
  	-webkit-animation-name: fadeIn;
