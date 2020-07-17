@@ -232,6 +232,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .demo-gallery ul li a p{ position: relative; z-index: 1; margin-top: -21rem; padding-bottom: 6rem; top: inherit; }
 .demo-gallery  ul li a:hover img { -webkit-transform: scale3d(1, 1, 1); transform: scale3d(1, 1, 1);}
 .lg-sub-html{ width: 80%; }
+.lg-actions{ display: none; }
 }
 
 
