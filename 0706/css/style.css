@@ -229,6 +229,9 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 @media screen and (max-width: 360px){
 h1.logo a, .logo-menu a{ width: 70%; }
 .title{ font-size: 2rem; top: 60px; }
+.section{ padding: 20px; }
+#header{ padding: 20px 20px 0 }
+.c-hamburger{ top: 20px; right: 20px; }
 }
 
 
