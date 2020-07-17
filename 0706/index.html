@@ -166,7 +166,22 @@
 			            </ul>
 					</div>
 				</div>
-			</div>
+				<div class="large-12 columns contact-m">
+		            <div class="owl-carousel-m owl-theme">
+			            <div class="item" style="height:250px">
+			            	<h4>形意生態建築工場</h4>
+				            <p>Suite 28, Vietcombank Tower, Level 21, No. 5, Me Linh Square, Ben Nghe Ward, Dist. 1, Ho Chi Minh City, Vietnam<br />T +84-28-3827-1903<br />F +84-28-3827-1899
+				            </p>
+				            <div><img src="images/contact_m_1.jpg"></div>
+			            </div>
+			            <div class="item" style="height:400px">
+				            <h4>元宏聯合建築師事務所</h4>
+				            <p>105台北市松山區民生東路三段100號10樓<br />T: 886-2-2717-6699<br />F: 886-2-2717-0158
+				            </p>
+				            <div><img src="images/contact_m_2.jpg"></div>
+			            </div>
+		            </div>
+				</div>
 		</section>
 	</div>
 
@@ -266,6 +281,24 @@
 		            loop: false,
 		            margin: 20
 		        }
+		    }
+	    })
+    })
+    $(document).ready(function() {
+	    $('.owl-carousel-m').owlCarousel({
+		    loop: true,
+		    margin: 10,
+		    dots: false,
+		    responsiveClass: true,
+		        responsive: {
+		          0: {
+		            items: 1,
+		            nav: true
+		          },
+		          1023: {
+		            items: 1,
+		            nav: false
+		          },
 		    }
 	    })
     })

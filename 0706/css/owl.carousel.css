@@ -8,7 +8,7 @@
 
  *  Owl Carousel - Core
  */
-.owl-carousel {
+.owl-carousel, .owl-carousel-m {
   display: none;
   padding: 0 50px;
   box-sizing: border-box;
@@ -17,48 +17,52 @@
   /* position relative and z-index fix webkit rendering fonts issue */
   position: relative;
   z-index: 1; }
-  .owl-carousel .owl-stage {
+  .owl-carousel .owl-stage, .owl-carousel-m .owl-stage {
     position: relative;
     -ms-touch-action: pan-Y;
     touch-action: manipulation;
     -moz-backface-visibility: hidden;
     /* fix firefox animation glitch */ }
-  .owl-carousel .owl-stage:after {
+  .owl-carousel .owl-stage:after ,.owl-carousel-m .owl-stage:after {
     content: ".";
     display: block;
     clear: both;
     visibility: hidden;
     line-height: 0;
     height: 0; }
-  .owl-carousel .owl-stage-outer {
+  .owl-carousel .owl-stage-outer,  .owl-carousel-m .owl-stage-outer {
     position: relative;
     overflow: hidden;
     /* fix for flashing background */
     -webkit-transform: translate3d(0px, 0px, 0px); }
   .owl-carousel .owl-wrapper,
-  .owl-carousel .owl-item {
+  .owl-carousel .owl-item , .owl-carousel .owl-wrapper,
+  .owl-carousel-m .owl-item {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0); }
-  .owl-carousel .owl-item {
+  .owl-carousel .owl-item ,  .owl-carousel-m .owl-item {
     position: relative;
     min-height: 1px;
     float: left;
     -webkit-backface-visibility: hidden;
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none; }
-  .owl-carousel .owl-item img {
+  .owl-carousel .owl-item img,  .owl-carousel-m .owl-item img {
     display: block;
     width: 100%; }
   .owl-carousel .owl-nav.disabled,
-  .owl-carousel .owl-dots.disabled {
+  .owl-carousel .owl-dots.disabled, .owl-carousel-m .owl-nav.disabled,
+  .owl-carousel-m .owl-dots.disabled {
     display: none; }
   .owl-carousel .owl-nav .owl-prev,
   .owl-carousel .owl-nav .owl-next,
-  .owl-carousel .owl-dot {
+  .owl-carousel .owl-dot,  .owl-carousel-m .owl-nav .owl-prev,
+  .owl-carousel-m .owl-nav .owl-next,
+  .owl-carousel-m .owl-dot {
     cursor: pointer;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -67,7 +71,9 @@
     user-select: none; }
   .owl-carousel .owl-nav button.owl-prev,
   .owl-carousel .owl-nav button.owl-next,
-  .owl-carousel button.owl-dot {
+  .owl-carousel button.owl-dot ,   .owl-carousel-m .owl-nav button.owl-prev,
+  .owl-carousel-m .owl-nav button.owl-next,
+  .owl-carousel-m button.owl-dot {
     background: none;
     color: inherit;
     border: none;
@@ -82,14 +88,14 @@
     opacity: 0; }
   .owl-carousel.owl-refresh .owl-item {
     visibility: hidden; }
-  .owl-carousel.owl-drag .owl-item {
+  .owl-carousel.owl-drag .owl-item,   .owl-carousel-m.owl-drag .owl-item {
     -ms-touch-action: pan-y;
         touch-action: pan-y;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none; }
-  .owl-carousel.owl-grab {
+  .owl-carousel.owl-grab,   .owl-carousel-m.owl-grab {
     cursor: move;
     cursor: grab; }
   .owl-carousel.owl-rtl {
@@ -98,23 +104,23 @@
     float: right; }
 
 /* No Js */
-.no-js .owl-carousel {
+.no-js .owl-carousel, .no-js .owl-carousel-m {
   display: block; }
 
 /*
  *  Owl Carousel - Animate Plugin
  */
-.owl-carousel .animated {
+.owl-carousel .animated, .owl-carousel-m .animated {
   animation-duration: 1000ms;
   animation-fill-mode: both; }
 
-.owl-carousel .owl-animated-in {
+.owl-carousel .owl-animated-in ,.owl-carousel-m .owl-animated-in {
   z-index: 0; }
 
-.owl-carousel .owl-animated-out {
+.owl-carousel .owl-animated-out, .owl-carousel-m .owl-animated-out {
   z-index: 1; }
 
-.owl-carousel .fadeOut {
+.owl-carousel .fadeOut, .owl-carousel-m .fadeOut {
   animation-name: fadeOut; }
 
 @keyframes fadeOut {
@@ -132,17 +138,19 @@
 /*
  * 	Owl Carousel - Lazy Load Plugin
  */
-.owl-carousel .owl-item {
+.owl-carousel .owl-item, .owl-carousel-m .owl-item {
   /**
 			This is introduced due to a bug in IE11 where lazy loading combined with autoheight plugin causes a wrong
 			calculation of the height of the owl-item that breaks page layouts
 		 */ }
-  .owl-carousel .owl-item .owl-lazy {
+  .owl-carousel .owl-item .owl-lazy,   .owl-carousel-m .owl-item .owl-lazy {
     opacity: 0;
     transition: opacity 400ms ease; }
   .owl-carousel .owl-item .owl-lazy[src^=""], .owl-carousel .owl-item .owl-lazy:not([src]) {
     max-height: 0; }
-  .owl-carousel .owl-item img.owl-lazy {
+  .owl-carousel-m .owl-item .owl-lazy[src^=""], .owl-carousel-m .owl-item .owl-lazy:not([src]) {
+    max-height: 0; }
+  .owl-carousel .owl-item img.owl-lazy,   .owl-carousel-m .owl-item img.owl-lazy {
     transform-style: preserve-3d; }
 
 /*
@@ -234,7 +242,8 @@
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
       background: #869791; }
 
-.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next{
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next,
+.owl-carousel-m .owl-nav button.owl-prev, .owl-carousel-m .owl-nav button.owl-next{
     position: absolute;
     top: 50%;
     cursor: pointer;
@@ -244,15 +253,18 @@
     margin-top: -30px;
 }
 
-.owl-carousel .owl-nav button.owl-prev{
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel-m .owl-nav button.owl-prev{
     background: url(../images/prev.svg) no-repeat;
     left: 0;
 }
-.owl-carousel .owl-nav button.owl-next{
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel-m .owl-nav button.owl-next{
     background: url(../images/next.svg) no-repeat;
     right: 0;
 
 }
-.owl-carousel .owl-nav button.owl-prev span, .owl-carousel .owl-nav button.owl-next span{
+.owl-carousel .owl-nav button.owl-prev span, .owl-carousel .owl-nav button.owl-next span,
+.owl-carousel-m .owl-nav button.owl-prev span, .owl-carousel-m .owl-nav button.owl-next span{
   visibility: hidden;
 }
