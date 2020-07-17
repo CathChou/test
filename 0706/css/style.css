@@ -244,9 +244,9 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .contain p{ line-height: 1.5rem; }
 #menu_svg > a{ margin:0 10px; }
 .demo-gallery ul li a{ width: 80%; }
-.demo-gallery ul li a p{  margin-top: -14rem; padding-bottom: 4rem;  }
-
-
+.demo-gallery ul li a p{  margin-top: -14rem; padding-bottom: 4rem;}
+.lg-sub-html h4{ font-size: 1.25rem; margin: 0 0 20px; }
+.lg-sub-html a{ margin-top: 20px; }
 }
 
 @media screen and (max-width: 375px){
