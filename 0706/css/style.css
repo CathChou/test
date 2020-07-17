@@ -219,7 +219,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .contain{ float: none; position: absolute; bottom: 30px; width: 100%; }
 #fp-nav, #footer{ display: none; }
 .demo-gallery ul li{ float: none; margin: 15px 0;}
-.demo-gallery ul li a{ float: none; width: 70%; margin: 10px auto;}
+.demo-gallery ul li a{ float: none; width: 30%; margin: 10px auto;}
 .demo-gallery ul{ padding: 15% 0; }
 .iScrollIndicator{ display: none !important; }
 
