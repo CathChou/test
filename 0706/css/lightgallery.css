@@ -762,7 +762,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   right: 0;
   bottom: 0;
   margin: auto;
-  z-index: 1050;
+  z-index: 10000;
   text-align: left;
   opacity: 0;
   -webkit-transition: opacity 0.15s ease 0s;
