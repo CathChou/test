@@ -177,6 +177,7 @@ p{ font-size: 0.875rem; }
 .lg .box{ width: 100%; height: 100%; padding: 60px 30px 30px; }
 .lg-2 .lg{ width: 50% !important;}
 .lg-2 .lg-inner{ bottom: 0 !important; top: initial; }
+.lg-2 .lg .lg-sub-html{ text-align: left; }
 }
 
 @media screen and (max-width: 1023px){
