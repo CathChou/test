@@ -211,8 +211,8 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .fp-scroller{ height: 100%; }
 .section{ padding: 60px; }
 .container{ height: 100%; position: relative; }
-.title{ float: none; position: absolute; top: 100px; width: 100%; }
-.contain{ float: none; position: absolute; bottom: 100px; width: 100%; }
+.title{ float: none; position: absolute; top: 80px; width: 100%; }
+.contain{ float: none; position: absolute; bottom: 30px; width: 100%; }
 #fp-nav, #footer{ display: none; }
 }
 
