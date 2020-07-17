@@ -231,7 +231,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 #fp-nav, #footer{ display: none; }
 .demo-gallery ul li{ float: none;}
 .demo-gallery ul li a{ float: none; width: 70%; margin: 10px auto;}
-.demo-gallery ul{ padding: 30px 0; }
+.demo-gallery ul{ padding: 15% 0; }
 }
 
 
