@@ -233,12 +233,12 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .sub{ font-size: 1rem; margin-bottom: 20px; }
 .contain p{ line-height: 1.5rem; }
 #menu_svg > a{ margin:0 10px; }
-.demo-gallery ul li a{ width: 80%; }
+.demo-gallery ul li a{ width: 30%; }
 
 }
 
 @media screen and (max-width: 360px){
-h1.logo a, .logo-menu a{ width: 70%; }
+h1.logo a, .logo-menu a{ width: 30%; }
 .title{ font-size: 2rem; top: 60px; }
 .section{ padding: 20px; }
 #header{ padding: 20px 20px 0 }
