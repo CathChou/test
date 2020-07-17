@@ -224,6 +224,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .iScrollIndicator{ display: none !important; }
 .demo-gallery  ul li a img, .demo-gallery  ul li a:hover img  {-webkit-transform: scale3d(1, 1, 1); transform: scale3d(1, 1, 1); height: 100%; width: 100%;}
 .demo-gallery  ul li a .mask{ display: none; }
+.demo-gallery ul li a p{ width: initial;height: initial;margin: 0 auto; left: 0;right: 0; }
 }
 
 
