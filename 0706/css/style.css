@@ -216,27 +216,16 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 #fp-nav, #footer{ display: none; }
 }
 
-@media screen and (max-width: 769px){
-.section{ text-align:center;}
-}
 
+@media screen and (max-width: 480px){
+.section{ padding: 30px; }
+.title{ font-size: 2.5rem; letter-spacing: 5px; }
+.contain{ margin: 0; bottom: 10px; }
 
-@media screen and (max-width: 767px){
-
-}
-
-@media screen and (max-width: 500px){
-.intro-content{ padding: 0 30px; }
-.title-l, .title-m{ width: 35%; }
-.title-s{ width: 20%; top: 25px; right: 170px; }
-.subtitle{ width: 80%; margin: 0 auto 30px; }
-.highlight, .h-title{ font-size: 1.125rem; }
 }
 
 @media screen and (max-width: 320px){
-.title{ top: 70px; }
-.title-l, .title-m{ width: 30%; }
-.title-s{ width: 18%; top: 15px; right: 180px; }
+
 }
 
 
