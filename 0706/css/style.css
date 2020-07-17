@@ -220,7 +220,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .contact-m h4{ color: #009d95; font-size:2rem; font-weight: 500; }
 #section3{ background-image: url(../images/bg_contact_m.jpg);}
 .iScrollIndicator{display: none !important;}
-.owl-carousel-m .mm{ width: 60%; margin: 0 auto; }
+.owl-carousel-m .mm{ width: 65%; margin: 0 auto; }
 .owl-carousel-m .mm p{ text-align: left; margin: 40px 0; }
 }
 
@@ -240,6 +240,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .demo-gallery ul li a p{ position: relative; z-index: 1; margin-top: -21rem; padding-bottom: 6rem; top: inherit; }
 .demo-gallery  ul li a:hover img { -webkit-transform: scale3d(1, 1, 1); transform: scale3d(1, 1, 1);}
 .lg-sub-html{ width: 80%; }
+.owl-carousel-m .mm{ width: 70%;}
 }
 
 @media screen and (max-width: 650px){
