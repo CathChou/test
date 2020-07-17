@@ -221,7 +221,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 #section3{ background-image: url(../images/bg_contact_m.jpg);}
 .iScrollIndicator{display: none !important;}
 .owl-carousel-m .mm{ width: 65%; margin: 0 auto; }
-.owl-carousel-m .mm p{ text-align: left; margin: 40px 0; }
+.owl-carousel-m .mm p{ text-align: left; margin: 20px 0 50px; }
 }
 
 @media screen and (max-width: 801px){
