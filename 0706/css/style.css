@@ -288,6 +288,10 @@ h1.logo a, .logo-menu a{ width: 50%; }
 .c-hamburger{ top: 20px; right: 20px; }
 }
 
+@media screen and (max-width: 320px){
+.title{ top: 40px; }
+}
+
 /*----- animation -----*/
 body.fp-viewing-about .title1, body.fp-viewing-concept .title2{
     visibility: visible;
