@@ -42,9 +42,12 @@ button{ transition: all .5s ease; -webkit-transition: all .5s ease; -o-transitio
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-location .path:before { content: "\e901";}
+.icon-location .path1:before { content: "\e900";color: rgb(233, 231, 229);}
+.icon-location .path2:before { content: "\e901";margin-left: -0.6298828125em;}
 .myicon{ font-size: 1.7rem; color: #00a5a2; overflow: initial !important;transform: translateY(0px);}
 .myicon:hover{ color: #056b63;transform: translateY(-5px); }
+
+
 
 
 /*----- custom -----*/
@@ -169,12 +172,11 @@ p{ font-size: 0.875rem; }
 .owl-carousel, .demo-gallery ul li{ padding: 0; }
 .demo-gallery ul li a p span{ letter-spacing: 2px; font-size: 1.25rem; }
 .lg-outer .lg-inner{ width: 60%; }
-.lg-sub-html{ padding: 10px; width: 45%;}
 .lg-sub-html a{ margin-top: 40px; }
 .lg-outer .lg{ width: 100% !important; height: 100% !important; top: 0; }
-.lg-sub-html{ float: none; width: 50%; position: absolute; top: 60%; left: 0; padding: 20px; right: 0; margin: auto; text-align: center; }
+.lg-sub-html{ float: none; width: 50%; position: absolute; top: 60%; left: 0; padding: 20px; right: 0; margin: auto;}
 .lg-sub-html h4{ margin:0 0 20px 0; }
-.lg-outer .lg-inner{ width: 100%; top: 60px; height: 50%; bottom: inherit; }
+.lg-outer .lg-inner{ width: 80%; top: 60px; height: 50%; bottom: inherit; left: 0;right: 0;margin: auto; }
 .lg .box{ width: 100%; height: 100%; padding: 60px 30px 30px; }
 .lg-2 .lg{ width: 50% !important;}
 .lg-2 .lg-inner{ bottom: 0 !important; top: initial; }
@@ -239,7 +241,8 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .demo-gallery  ul li a .mask, .lg-actions{ display: none !important; }
 .demo-gallery ul li a p{ position: relative; z-index: 1; margin-top: -21rem; padding-bottom: 6rem; top: inherit; }
 .demo-gallery  ul li a:hover img { -webkit-transform: scale3d(1, 1, 1); transform: scale3d(1, 1, 1);}
-.lg-sub-html{ width: 80%; }
+.lg-sub-html{ width: 70%; }
+.lg-outer .lg-inner{ width: 65%; }
 .owl-carousel-m .mm{ width: 75%;}
 }
 
@@ -259,8 +262,9 @@ h1.logo a, .logo-menu a{ width: 65%; }
 .contain p{ line-height: 1.5rem; }
 #menu_svg > a{ margin:0 10px; }
 .demo-gallery ul li a{ width: 80%; }
-.lg-sub-html h4{ font-size: 1.25rem; margin: 0 0 20px; }
-.lg-sub-html a{ margin-top: 20px; }
+.lg-sub-html{ top: 55%; width: 75%; }
+.lg-sub-html h4{ font-size: 1.25rem; margin: 0 0 30px; }
+.lg-sub-html a{ margin-top: 30px; }
 .owl-carousel-m{ padding: 0 30px; }
 .owl-carousel-m .mm{ width: 95%; padding: 30px 0;}
 .contact-m h4{ font-size: 1.5rem; }
@@ -279,7 +283,7 @@ width: 20px; height: 36px; top: 40%;}
 @media screen and (max-width: 375px){
 h1.logo a, .logo-menu a{ width: 50%; }
 .demo-gallery ul li a p{  margin-top: -12rem;  }	
-.lg-sub-html{ width: 100%; }
+.lg-sub-html{ width: 75%; }
 }
 
 @media screen and (max-width: 360px){
