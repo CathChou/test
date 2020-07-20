@@ -192,8 +192,8 @@ h1.logo a, .logo-menu a{ display: block; width: 80%; }
 #menu_svg .en{ position: absolute; font-weight: bold; font-size: 1.25rem; color: #00a4a1; right: 30px; top: 0; margin: 0; }
 #menu_svg > a{ margin: 0 15px; }
 #menu-m { text-align: center; max-width: 100%; position: fixed; z-index: 9999; right: 0;}
-.m-content { background:#fff; position: fixed; width: 100%; height: 100%; top: 0; left: 0; opacity: 0; visibility: hidden;
-transition: all .5s ease; z-index: 10000;}
+.m-content { background:url(../images/bg_menu_m.jpg) center no-repeat; position: fixed; width: 100%; height: 100%; top: 0; left: 0; opacity: 0; visibility: hidden;
+transition: all .5s ease; z-index: 10000; background-size: 100%;}
 .open { opacity: 1; visibility: visible;}
 nav { text-align: center; height: 90vh; display: flex; flex-direction: column; justify-content: center;}
 nav	ul { margin: 0; padding: 0; list-style: none;}
