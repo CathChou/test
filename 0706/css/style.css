@@ -291,6 +291,7 @@ h1.logo a, .logo-menu a{ width: 50%; }
 
 @media screen and (max-width: 320px){
 .title{ top: 40px; }
+.demo-gallery ul li a p{  margin-top: -11rem; padding-bottom: 3rem;  }  
 }
 
 /*----- animation -----*/
