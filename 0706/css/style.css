@@ -103,7 +103,7 @@ p{ font-size:1rem;letter-spacing: 1px;}
 /*----- about & concept -----*/
 .contain{ float: right; width: 40%;text-align: left; margin-top: 130px;}
 .contain p{ line-height: 1.7rem; }
-.title{float: left; width: 50%;text-align: left; font-weight: 300; font-size: 5.5rem; color: #00a4a2;}
+.title{float: left; width: 50%;text-align: left; font-weight: 600; font-size: 5.5rem; color: #00a4a2;}
 .sub{ font-size: 1.25rem; margin-bottom: 50px; font-weight: 500;}
 
 /*----- contact -----*/
