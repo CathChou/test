@@ -272,7 +272,6 @@ width: 20px; height: 36px; top: 40%;}
 .c-hamburger__line{ width: 30px; height: 2px; }
 .c-hamburger__line:nth-child(2){ top: 7px; }
 .c-hamburger__line:nth-child(3){ top: 14px; }
-#section4{ display: flex;align-items: center;  }
 
 }
 
