@@ -11,6 +11,7 @@
 <meta property="og:description" content=""/>
 <meta property="og:image" content="">
 <link rel="image_src" href="">
+<link rel="Shortcut Icon" type="image/x-icon" href="images/favicon.ico" />
 
 <!--[if lte IE 9]>
 <script src="/promo/js/html5shiv.js"></script> 
@@ -312,6 +313,7 @@
 	   }
 	});
 
+	//拿掉手機版輪播
 	var $homeSlider = $(".home-slider");
 
 	$(window).resize(function() {
@@ -328,10 +330,15 @@
 	  }
 	}
 	showHomeSlider();
+	function initialHomeSlider() {
+	  $homeSlider.addClass("owl-carousel").owlCarousel({
+	  });
+	}
 	function destroyHomeSlider() {
 	  $homeSlider.trigger("destroy.owl.carousel").removeClass("owl-carousel");
 	}
 </script>
+
 <script>
 	(function($) {
 	  $(function() {
