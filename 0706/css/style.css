@@ -243,7 +243,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .demo-gallery ul li a p{ position: relative; z-index: 1; margin-top: -21rem; padding-bottom: 6rem; top: inherit; }
 .demo-gallery  ul li a:hover img { -webkit-transform: scale3d(1, 1, 1); transform: scale3d(1, 1, 1);}
 .lg-sub-html{ width: 70%; }
-.lg-outer .lg-inner{ width: 65%; }
+.lg-outer .lg-inner{ width: 65%;  margin-bottom: 35px;}
 .owl-carousel-m .mm{ width: 75%;}
 }
 
@@ -263,7 +263,7 @@ h1.logo a, .logo-menu a{ width: 65%; }
 .contain p{ line-height: 1.5rem; }
 #menu_svg > a{ margin:0 10px; }
 .demo-gallery ul li a{ width: 80%; }
-.lg-sub-html{ top: 55%; width: 75%; }
+.lg-sub-html{ width: 75%; }
 .lg-sub-html h4{ font-size: 1.25rem; margin: 0 0 30px; }
 .lg-sub-html a{ margin-top: 30px; }
 .owl-carousel-m{ padding: 0 30px; }
@@ -278,6 +278,7 @@ width: 20px; height: 36px; top: 40%;}
 .c-hamburger__line:nth-child(2){ top: 7px; }
 .c-hamburger__line:nth-child(3){ top: 14px; }
 #section4{ display: flex;align-items: center;  }
+.lg-outer .lg-inner{ width: 75%; }
 
 }
 
@@ -292,11 +293,16 @@ h1.logo a, .logo-menu a{ width: 50%; }
 .section{ padding: 20px; }
 #header{ padding: 20px 20px 0 }
 .c-hamburger{ top: 20px; right: 20px; }
+.lg-sub-html h4{ margin: 0 0 20px; }
+.lg-sub-html a{ margin-top: 20px; }
 }
 
 @media screen and (max-width: 320px){
 .title{ top: 40px; }
-.demo-gallery ul li a p{  margin-top: -11rem; padding-bottom: 3rem;  }  
+.demo-gallery ul li a p{  margin-top: -11rem; padding-bottom: 3rem;  } 
+.lg-toolbar .lg-icon{ margin: 20px 20px 0 0; } 
+.lg-outer .lg-inner{ width: 80%; margin-bottom: 10px; }
+.lg-sub-html{ width: 95%; }
 }
 
 /*----- animation -----*/
