@@ -219,14 +219,18 @@ transition: all 0.3s ease-in-out 0s;}
 transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .open .c-hamburger__line:nth-child(3){top: 10px;transform: rotate(225deg);}
 .contact-m, .owl-carousel-m{ display: block; }
-.contact-m h4{ color: #009d95; font-size:2rem; font-weight: 500; }
-#section3{ background-image: url(../images/bg_contact_m.jpg);}
+.contact-m h4{ color: #009d95; font-size:2rem; font-weight: 500; text-align: left; }
+#section3{ background-image: url(../images/bg_contact_m.jpg); display: flex;align-items: center;}
+#demos-02{ overflow: hidden; }
+#section3 .fp-scroller{ display: flex;align-items: center;}
 .iScrollIndicator{display: none !important;}
 .owl-carousel-m .mm{ width: 65%; margin: 0 auto; }
 .owl-carousel-m .mm p{ text-align: left; margin: 20px 0 50px; }
 .lg-outer .lg-img-wrap, .lg-outer .lg-item, .lg-outer .lg-img-wrap, .lg-outer .lg-inner{ position: relative; }
 .lg-outer .lg-inner{ width: 80%;height: 50%; bottom: inherit; left: 0;right: 0;margin: auto; }
 .lg-sub-html{ float: none; }
+.owl-carousel-m .owl-stage{ display: flex;align-items: center; }
+
 }
 
 @media screen and (max-width: 801px){
