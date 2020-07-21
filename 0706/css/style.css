@@ -294,7 +294,7 @@ h1.logo a, .logo-menu a{ width: 50%; }
 .demo-gallery ul li a p{  margin-top: -12rem;  }	
 .lg-sub-html{ width: 85%; }
 .lg-sub-html h4{ margin: 0 0 20px; }
-.owl-carousel-m .mm p{ margin: 10px 0 20px; }
+.owl-carousel-m .mm p{ margin: 20px 0 25px; }
 }
 
 @media screen and (max-width: 360px){
@@ -306,6 +306,7 @@ h1.logo a, .logo-menu a{ width: 50%; }
 .lg-sub-html a{ margin-top: 20px; }
 .owl-carousel-m .mm p{ font-size: 0.75rem; }
 .owl-carousel-m{ padding: 0 30px; }
+.owl-carousel-m .mm p{ margin: 10px 0 20px; }
 }
 
 @media screen and (max-width: 320px){
