@@ -118,7 +118,7 @@ p{ font-size:1rem;letter-spacing: 1px;}
 .lg-2 .lg .box{ height: 85%; width: 45%; position: relative; margin: 0 auto; padding: 0 !important;}
 .lg-2 .lg .lg-sub-html, .lg-2 .lg-inner{ width: 100%; }
 .lg-2 .lg .lg-sub-html{ top: 10%; width: 100%;  padding: 0 ;}
-.lg-2 .lg .lg-sub-html h4, .contact-m{ padding:  60px 0 40px; margin: 0; }
+.lg-2 .lg .lg-sub-html h4, .contact-m{ padding:  20px 0 40px; margin: 0; }
 .lg-2 .lg-inner{ height: 50%; top: 40%;}
 .lg-2 .lg .lg-toolbar .lg-icon{  margin: 30px 30px 0 0;}
 .lg-2 .lg .lg-actions .lg-next { right: 30px;}
