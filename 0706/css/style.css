@@ -117,9 +117,9 @@ p{ font-size:1rem;letter-spacing: 1px;}
 .lg .box{ width: 100%;  padding: 40px 100px;}
 .lg-2 .lg .box{ height: 85%; width: 50%; position: relative; margin: 0 auto; padding: 0 !important;}
 .lg-2 .lg .lg-sub-html, .lg-2 .lg-inner{ width: 100%; }
-.lg-2 .lg .lg-sub-html{ top: 8%; width: 95%; margin: auto; left: 0; right: 0; padding: 0;}
+.lg-2 .lg .lg-sub-html{ top: 8%; width: 95%; margin: auto; left: 0; right: 0; padding: 0 25px;}
 .lg-2 .lg .lg-sub-html h4, .contact-m{ padding:  60px 0 40px; margin: 0; }
-.lg-2 .lg-inner{ height: 50%; bottom: 0; top: initial;}
+.lg-2 .lg-inner{ height: 50%; top: 40%;}
 .lg-2 .lg .lg-toolbar .lg-icon{  margin: 30px 30px 0 0;}
 .lg-2 .lg .lg-actions .lg-next { right: 30px;}
 .lg-2 .lg .lg-actions .lg-prev { left: 30px;}
