@@ -302,7 +302,6 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .demo-gallery ul li a p{  margin-top: -14rem; padding-bottom: 4rem;}
 .lg-sub-html{ width: 90%; padding: 0; }
 .lg-sub-html p{ text-align: left; }
-.fp-scrollable{ display: flex; }
 #section1 .fp-scrollable, #section2 .fp-scrollable{display: block;}
 .carousel-inner .item .item_txt {font-size: 2em;width: 65vw;padding-top: 30vh;}
 .carousel-inner .item.item02 .item_img {width: 50vw;margin: auto;padding-top: 25vh;}
@@ -348,6 +347,7 @@ h1.logo a, .logo-menu a{ width: 50%; }
 .lg-sub-html{ width: 85%; }
 .lg-sub-html h4{ margin: 0 0 20px; }
 .owl-carousel-m .mm p{ margin: 20px 0 25px; }
+#section4 .fp-scrollable{ display: flex; }
 }
 
 @media screen and (max-width: 360px){
