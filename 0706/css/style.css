@@ -181,6 +181,8 @@ transition: transform 0.5s ease 0s; -webkit-transform: scale3d(1, 1, 1); transfo
 .lg-2 .lg-inner{ top: 50%; }
 .demo-gallery ul li a p span{ font-size: 1.5rem; }
 .lg-outer .lg-img-wrap{ text-align: left; }
+.carousel-inner .item .item_txt{ font-size: 4.5rem; }
+.carousel-inner .item.item01 .item_img{ width: 200px; }
 }
 
 @media screen and (max-width: 1279px){
