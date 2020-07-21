@@ -21,7 +21,9 @@
 <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
 <link rel="stylesheet" type="text/css" href="css/lightgallery.css" />
 <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap-touch-slider.css" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+
 </head>
 
 <body>
@@ -108,6 +110,20 @@
 
 	<!--index-->
 	<div class="section" id="section0">
+		<div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="active" data-interval="4000" > 
+  
+		  <!-- Slides -->
+		  <div class="carousel-inner" role="listbox">
+		    <div class="item item01 active">
+		      <div class="item_txt"><span class="item_txt01">IMAGERY ARCHITECTURE</span> <span class="item_txt02">SYMBIOSIS WITH ECOLOGY</span>
+		        <div class="item_img"><img src="images/slider_signature.png"   class="slide-image"/></div>
+		      </div>
+		    </div>
+		    <div class="item item02">
+		      <div class="item_img"><img src="images/slider_logo.png"  class="slide-image slider_logo"/> </div>
+		    </div>
+		  </div>
+		</div>
 	</div>
 
 	<!--about-->
@@ -225,6 +241,7 @@
 <script src="js/jquery.mousewheel.min.js"></script>
 <script src="js/owl.carousel.js"></script>
 <script src="js/fullpage.js"></script>
+<script src="js/bootstrap-3.3.7.js"></script>
 <script src="js/scrolloverflow.js"></script>
 <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
@@ -263,9 +280,16 @@
         });
     });
 
-	    $('#lightgallery, #lightgallery-02').bind('scroll', function () {
-	     $this.destroy();
-	}); 
+    $(document).ready(function(){
+        var el = document.getElementById('lightgallery');
+ 
+		lightGallery(el);
+ 
+		window.one("scroll").destroy(true);
+    });
+    
+
+    
         
     $(document).ready(function() {
 	    $('.owl-carousel').owlCarousel({
@@ -357,6 +381,7 @@
 	  });
 	})(jQuery);
 </script>
+
 
 </body>
 </html>
