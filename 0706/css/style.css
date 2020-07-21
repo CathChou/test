@@ -224,8 +224,8 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 #demos-02{ overflow: hidden; }
 #section3 .fp-scroller{ display: flex;align-items: center;}
 .iScrollIndicator{display: none !important;}
-.owl-carousel-m .mm{ width: 65%; margin: 0 auto; }
-.owl-carousel-m .mm p{ text-align: left; margin: 20px 0 50px; }
+.owl-carousel-m .mm{ width: 65%; margin: 0 auto;  padding-bottom: 20px;}
+.owl-carousel-m .mm p{ text-align: left; margin: 40px 0 50px;}
 .lg-outer .lg-img-wrap, .lg-outer .lg-item, .lg-outer .lg-img-wrap, .lg-outer .lg-inner{ position: relative; }
 .lg-outer .lg-inner{ width: 80%;height: 50%; bottom: inherit; left: 0;right: 0;margin: auto; }
 .lg-sub-html{ float: none; }
