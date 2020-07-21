@@ -351,7 +351,8 @@ width: 20px; height: 36px; top: 40%;}
 
 @media screen and (max-width: 375px){
 h1.logo a, .logo-menu a{ width: 50%; }
-.demo-gallery ul li a p{  margin-top: -12rem;  }	
+.demo-gallery ul li a p{  margin-top: -13rem; padding-bottom: 3rem;  }	
+#section4 .fp-scrollable{ display: flex; }
 .lg-sub-html{ width: 85%; }
 .lg-sub-html h4{ margin: 0 0 20px; }
 .owl-carousel-m .mm p{ margin: 20px 0 25px; }
