@@ -244,7 +244,6 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 }
 
 @media screen and (max-width: 801px){
-/*.fp-scrollable{ display:block; }*/
 .fp-scroller{ height: 100%; }
 #section4 .fp-scrollable .fp-scroller{ height: initial; }
 .section{ padding: 60px; }
@@ -272,6 +271,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .lg-sub-html{ width: 90%; padding: 0; }
 .lg-sub-html p{ text-align: left; }
 .fp-scrollable{ display: flex; }
+#section2 .fp-scrollable, #section3 .fp-scrollable{display: block;}
 }
 
 
