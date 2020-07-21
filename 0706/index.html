@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Sedia集團</title>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta content="telephone=no" name="format-detection">
 <meta name="description" content="" />
 <meta property="og:title" content="Sedia集團">
@@ -262,6 +262,10 @@
         	height:'100%'
         });
     });
+
+	    $('#lightgallery, #lightgallery-02').bind('scroll', function () {
+	     $this.destroy();
+	}); 
         
     $(document).ready(function() {
 	    $('.owl-carousel').owlCarousel({
