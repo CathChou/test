@@ -314,6 +314,7 @@ h1.logo a, .logo-menu a{ width: 50%; }
 .owl-carousel-m .mm{ padding: 0; }
 .owl-carousel-m .mm p{ margin: 10px 0 20px; }
 .owl-carousel-m .owl-nav button.owl-prev, .owl-carousel-m .owl-nav button.owl-next{ width: 10px; height: 19px; }
+.owl-carousel-m .mm p{ font-size: 0.75rem; }
 }
 
 /*----- animation -----*/
