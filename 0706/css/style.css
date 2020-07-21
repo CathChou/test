@@ -239,6 +239,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .lg-outer .lg-inner{ width: 80%;height: 50%; bottom: inherit; left: 0;right: 0;margin: auto; }
 .lg-sub-html{ float: none; }
 .owl-carousel-m .owl-stage{ display: flex;align-items: center; }
+.lg-outer .lg{ width: 100% !important; height: 100% !important; top: 0; }
 
 }
 
