@@ -324,8 +324,8 @@
             '</div>' +
             controls +
             '<div class="box">' +
-            subHtmlCont +
             '<div class="lg-inner">' + list + '</div>' +
+            subHtmlCont +
             '</div>' +
             '</div>' +
             '</div>';
