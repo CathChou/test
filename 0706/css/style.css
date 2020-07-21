@@ -115,15 +115,16 @@ p{ font-size:1rem;letter-spacing: 1px;}
 .lg-2 .lg:after{ content: ""; background: #fff; display: block; width: 100%; opacity: 0.9; height: 100%; position: absolute; top: 0; z-index: -1; }
 .lg-2 .lg{ top:0 !important;  position: absolute; border: none; background: none;}
 .lg .box{ width: 100%;  padding: 40px 100px;}
-.lg-2 .lg .box{ height: 85%; width: 50%; position: relative; margin: 0 auto; padding: 0 !important;}
+.lg-2 .lg .box{ height: 85%; width: 45%; position: relative; margin: 0 auto; padding: 0 !important;}
 .lg-2 .lg .lg-sub-html, .lg-2 .lg-inner{ width: 100%; }
-.lg-2 .lg .lg-sub-html{ top: 10%; width: 100%; margin: auto; left: 0; right: 0; padding: 0 ;}
+.lg-2 .lg .lg-sub-html{ top: 10%; width: 100%;  padding: 0 ;}
 .lg-2 .lg .lg-sub-html h4, .contact-m{ padding:  60px 0 40px; margin: 0; }
 .lg-2 .lg-inner{ height: 50%; top: 40%;}
 .lg-2 .lg .lg-toolbar .lg-icon{  margin: 30px 30px 0 0;}
 .lg-2 .lg .lg-actions .lg-next { right: 30px;}
 .lg-2 .lg .lg-actions .lg-prev { left: 30px;}
 .lg-2 .lg-backdrop.in{ width: 100%; height: 100%; position: absolute; }
+.lg-2 .lg .box .lg-img-wrap{ text-align: left; }
 .in-2{ width: 50% !important; }
 .demo-gallery  ul { margin-bottom: 0;}
 .demo-gallery  ul li { float: left; margin-bottom: 15px; padding: 0 20px;}
@@ -142,7 +143,7 @@ transition: transform 0.5s ease 0s; -webkit-transform: scale3d(1, 1, 1); transfo
  
 /*----- Responsive -----*/
 @media screen and (max-width: 1920px){
-.lg-2 .lg .lg-sub-html { position: absolute; top: 10%; width: 100%; margin: auto; left: 0;right: 0; padding: 0 40px;}
+.lg-2 .lg .lg-sub-html { position: absolute; top: 10%; width: 100%; left: 0; }
 }
 
 @media screen and (max-width: 1680px){
@@ -156,7 +157,7 @@ transition: transform 0.5s ease 0s; -webkit-transform: scale3d(1, 1, 1); transfo
 @media screen and (max-width: 1366px){
 .title{ font-size: 4.5rem; }
 .contain{ width: 45%; margin-top: 70px;}
-.lg-2 .lg .lg-sub-html h4, .contact-m{ font-size: 1.5rem; padding: 80px 0 40px; }
+.lg-2 .lg-inner{ top: 50%; }
 .demo-gallery ul li a p span{ font-size: 1.5rem; }
 }
 
@@ -172,18 +173,18 @@ p{ font-size: 0.875rem; }
 .lg-2 .lg .lg-actions .lg-prev{ left: 20px; }
 .lg-2 .lg .lg-actions .lg-next{ right: 20px; }	
 .lg-2 .lg .box{ width: 60%; }
-.lg-2 .lg .lg-sub-html h4, .contact-m{ padding: 50px 0 30px; }
 .owl-carousel, .demo-gallery ul li{ padding: 0; }
 .demo-gallery ul li a p span{ letter-spacing: 2px; font-size: 1.25rem; }
 .lg-outer .lg-inner{ width: 40%; height: 50%; }
+.lg-2 .lg-inner{ width: 100%; }
+.lg-2 .lg .lg-sub-html{ top: 0; }
 .lg-sub-html a{ margin-top: 40px; }
 .lg-outer .lg{ width: 100% !important; height: 100% !important; top: 0; display: flex; align-items: center; }
 .lg-sub-html{ width: 50%;  top: 60%; left: 0; padding: 20px; right: 0; margin: auto;}
 .lg-sub-html h4{ margin:0 0 20px 0; }
-
 .lg .box{ width: 100%; padding: 60px 30px 30px; }
 .lg-2 .lg{ width: 50% !important;}
-.lg-2 .lg-inner{ bottom: 0 !important; top: initial; }
+.lg-2 .lg-inner{ top: 30%; }
 .lg-2 .lg .lg-sub-html{ text-align: left; }
 }
 
