@@ -70,7 +70,7 @@ p{ font-size:1rem;letter-spacing: 1px;}
 #menu li.active{ color: #fff;}
 #menu li a{ text-decoration:none; color: #666565; font-weight: 500;}
 #menu li.active a ,#menu li a:hover{ color: #00a5a2;}
-#menu li a,#menu li.active a{ padding: 9px 18px; display:block; font-weight: 500;}
+#menu li a,#menu li.active a{ padding: 9px 22px; display:block; font-weight: 500;}
 #menu{ float: right;}
 
 .section{ text-align:center; padding: 6em;}
@@ -107,7 +107,7 @@ p{ font-size:1rem;letter-spacing: 1px;}
 .contain{ float: right; width: 40%;text-align: left; margin-top: 130px;}
 .contain p{ line-height: 1.7rem; }
 .title{float: left; width: 50%;text-align: left; font-weight: 500; font-size: 5.5rem; color: #00a4a2;}
-.sub{ font-size: 1.25rem; margin-bottom: 50px; font-weight: 500;}
+.sub{ font-size: 1.25rem; margin-bottom: 50px; font-weight: 600;}
 
 /*----- contact -----*/
 .contact{ display: block; position: relative; margin: 0 30px 0 0; }
