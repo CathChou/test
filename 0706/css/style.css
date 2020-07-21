@@ -293,7 +293,7 @@ h1.logo a, .logo-menu a{ width: 50%; }
 .section{ padding: 20px; }
 #header{ padding: 20px 20px 0 }
 .c-hamburger{ top: 20px; right: 20px; }
-.lg-sub-html h4{ margin: 0 0 10px; }
+.lg-sub-html h4{ margin: 0 0 10px; font-size: 1rem; }
 .lg-sub-html a{ margin-top: 20px; }
 }
 
