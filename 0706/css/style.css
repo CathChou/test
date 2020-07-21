@@ -219,7 +219,7 @@ transition: all 0.3s ease-in-out 0s;}
 transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .open .c-hamburger__line:nth-child(3){top: 10px;transform: rotate(225deg);}
 .contact-m, .owl-carousel-m{ display: block; }
-.contact-m h4{ color: #009d95; font-size:2rem; font-weight: 500; text-align: left; }
+.contact-m h4{ color: #009d95; font-size:2rem; font-weight: 500; text-align: left;  }
 #section3{ background-image: url(../images/bg_contact_m.jpg); display: flex;align-items: center;}
 #demos-02{ overflow: hidden; }
 #section3 .fp-scroller{ display: flex;align-items: center;}
@@ -310,6 +310,9 @@ h1.logo a, .logo-menu a{ width: 50%; }
 .lg-toolbar .lg-icon{ margin: 20px 20px 0 0; } 
 .lg-outer .lg-inner{ width: 80%; margin-bottom: 10px;  }
 .lg-sub-html{ width: 95%; }
+.contact-m h4{ font-size: 1rem; }
+.owl-carousel-m .mm{ padding: 0; }
+.owl-carousel-m .mm p{ margin: 10px 0 20px; }
 }
 
 /*----- animation -----*/
