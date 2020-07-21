@@ -264,8 +264,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-#bootstrap-touch-slider {
-  margin-top: 100px;
+#bootstrap-touch-slider {margin-top: 100px;}
 }
 
 @media (max-width: 991px) {
