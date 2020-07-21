@@ -346,7 +346,7 @@ width: 20px; height: 36px; top: 40%;}
 .owl-theme .owl-dots .owl-dot span{ width: 7px; height: 7px; }
 .owl-carousel-m .mm p{ margin: 20px 0 30px; }
 .carousel-inner .item .item_txt{ padding-top: 20vh; }
-.fade .item02{ top: 50%; margin-top: -180px; }
+.fade .item02{ top: 50%; margin-top: -200px; }
 }
 
 @media screen and (max-width: 375px){
@@ -368,6 +368,9 @@ h1.logo a, .logo-menu a{ width: 50%; }
 .owl-carousel-m .mm p{ font-size: 0.75rem; }
 .owl-carousel-m{ padding: 0 30px; }
 .owl-carousel-m .mm p{ margin: 10px 0 20px; }
+.carousel-inner .item .item_txt{ font-size: 1.5rem; width: 75vw; }
+.carousel-inner .item.item01 .item_img{ width: 150px; }
+.fade .item02{ margin-top: -180px; }
 }
 
 @media screen and (max-width: 320px){
