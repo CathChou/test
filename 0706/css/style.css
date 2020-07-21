@@ -147,11 +147,13 @@ transition: transform 0.5s ease 0s; -webkit-transform: scale3d(1, 1, 1); transfo
 }
 
 @media screen and (max-width: 1601px){
-.lg-sub-html{ width: 40%; }
+.lg-sub-html{ width: 43%; }
+.lg-sub-html a{ margin-top: 120px; }
 }
 
 @media screen and (max-width: 1500px){
 .container{ width: 100%; }
+.lg-sub-html{ width: 50%; }
 }
 
 @media screen and (max-width: 1366px){
@@ -159,6 +161,7 @@ transition: transform 0.5s ease 0s; -webkit-transform: scale3d(1, 1, 1); transfo
 .contain{ width: 45%; margin-top: 70px;}
 .lg-2 .lg-inner{ top: 50%; }
 .demo-gallery ul li a p span{ font-size: 1.5rem; }
+.lg-outer .lg-img-wrap{ text-align: left; }
 }
 
 @media screen and (max-width: 1279px){
@@ -175,14 +178,14 @@ p{ font-size: 0.875rem; }
 .lg-2 .lg .box{ width: 60%; }
 .owl-carousel, .demo-gallery ul li{ padding: 0; }
 .demo-gallery ul li a p span{ letter-spacing: 2px; font-size: 1.25rem; }
-.lg-outer .lg-inner{ width: 40%; height: 50%; }
+.lg-outer .lg-inner{ width: 45%; height: 55%; }
 .lg-2 .lg-inner{ width: 100%; }
 .lg-2 .lg .lg-sub-html{ top: 0; }
-.lg-sub-html a{ margin-top: 40px; }
-.lg-outer .lg{ width: 100% !important; height: 100% !important; top: 0; display: flex; align-items: center; }
-.lg-sub-html{ width: 50%;  top: 60%; left: 0; padding: 20px; right: 0; margin: auto;}
-.lg-sub-html h4{ margin:0 0 20px 0; }
-.lg .box{ width: 100%; padding: 60px 30px 30px; }
+.lg-sub-html a{ margin-top: 70px; }
+.lg-outer .lg{ display: flex; align-items: center; }
+.lg-sub-html{ width: 50%;  top: 60%; left: 0; padding: 60px; right: 0; margin: auto;}
+.lg-sub-html h4{ margin:0 0 20px 0; font-size: 1.5rem;}
+.lg .box{ width: 100%; padding: 0 50px 0; }
 .lg-2 .lg{ width: 50% !important;}
 .lg-2 .lg-inner{ top: 30%; }
 .lg-2 .lg .lg-sub-html{ text-align: left; }
@@ -261,7 +264,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 
 @media screen and (max-width: 650px){
 .demo-gallery ul li a p{  margin-top: -14rem; padding-bottom: 4rem;}
-.lg-sub-html{ width: 90%; }
+.lg-sub-html{ width: 90%; padding: 0; }
 .lg-sub-html p{ text-align: left; }
 }
 
