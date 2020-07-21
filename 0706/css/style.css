@@ -345,6 +345,8 @@ width: 20px; height: 36px; top: 40%;}
 .owl-carousel-m .owl-nav button.owl-prev, .owl-carousel-m .owl-nav button.owl-next{ width: 12px; height: 22px; }
 .owl-theme .owl-dots .owl-dot span{ width: 7px; height: 7px; }
 .owl-carousel-m .mm p{ margin: 20px 0 30px; }
+.carousel-inner .item .item_txt{ padding-top: 20vh; }
+.fade .item02{ top: 10vh; }
 }
 
 @media screen and (max-width: 375px){
