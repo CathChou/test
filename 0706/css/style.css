@@ -313,6 +313,7 @@ h1.logo a, .logo-menu a{ width: 50%; }
 .contact-m h4{ font-size: 1rem; }
 .owl-carousel-m .mm{ padding: 0; }
 .owl-carousel-m .mm p{ margin: 10px 0 20px; }
+.owl-carousel-m .owl-nav button.owl-prev, .owl-carousel-m .owl-nav button.owl-next{ width: 10px; height: 19px; }
 }
 
 /*----- animation -----*/
