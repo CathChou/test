@@ -286,7 +286,7 @@ width: 20px; height: 36px; top: 40%;}
 #section4{ display: flex;align-items: center;  }
 .lg-outer .lg-inner{ width: 75%; }
 .owl-carousel-m .owl-nav button.owl-prev, .owl-carousel-m .owl-nav button.owl-next{ width: 12px; height: 22px; }
-
+.owl-theme .owl-dots .owl-dot span{ width: 7px; height: 7px; }
 }
 
 @media screen and (max-width: 375px){
@@ -294,7 +294,7 @@ h1.logo a, .logo-menu a{ width: 50%; }
 .demo-gallery ul li a p{  margin-top: -12rem;  }	
 .lg-sub-html{ width: 85%; }
 .lg-sub-html h4{ margin: 0 0 20px; }
-.owl-carousel-m .mm p{ margin: 20px 0 30px; }
+.owl-carousel-m .mm p{ margin: 10px 0 20px; }
 }
 
 @media screen and (max-width: 360px){
