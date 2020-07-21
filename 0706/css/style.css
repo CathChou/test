@@ -277,8 +277,8 @@ h1.logo a, .logo-menu a{ width: 65%; }
 .contact-m h4{ font-size: 1.5rem; }
 .owl-carousel-m .owl-nav button.owl-prev, .owl-carousel-m .owl-nav button.owl-next{
 width: 20px; height: 36px; top: 40%;}
-.owl-carousel-m .owl-nav button.owl-prev{ left: -5px; }
-.owl-carousel-m .owl-nav button.owl-next{ right: -5px; }
+.owl-carousel-m .owl-nav button.owl-prev{ left: 0; }
+.owl-carousel-m .owl-nav button.owl-next{ right: 0; }
 .c-hamburger{ width: 30px; }
 .c-hamburger__line{ width: 30px; height: 2px; }
 .c-hamburger__line:nth-child(2){ top: 7px; }
