@@ -285,6 +285,7 @@ width: 20px; height: 36px; top: 40%;}
 .c-hamburger__line:nth-child(3){ top: 14px; }
 #section4{ display: flex;align-items: center;  }
 .lg-outer .lg-inner{ width: 75%; }
+.owl-carousel-m .owl-nav button.owl-prev, .owl-carousel-m .owl-nav button.owl-next{ width: 10px; height: 19px; }
 
 }
 
@@ -313,7 +314,6 @@ h1.logo a, .logo-menu a{ width: 50%; }
 .contact-m h4{ font-size: 1rem; }
 .owl-carousel-m .mm{ padding: 0; }
 .owl-carousel-m .mm p{ margin: 10px 0 20px; }
-.owl-carousel-m .owl-nav button.owl-prev, .owl-carousel-m .owl-nav button.owl-next{ width: 10px; height: 19px; }
 .owl-carousel-m .mm p{ font-size: 0.75rem; }
 }
 
