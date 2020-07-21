@@ -146,8 +146,8 @@ transition: transform 0.5s ease 0s; -webkit-transform: scale3d(1, 1, 1); transfo
 .lg-2 .lg .lg-sub-html { position: absolute; top: 10%; width: 100%; left: 0; }
 }
 
-@media screen and (max-width: 1680px){
-
+@media screen and (max-width: 1601px){
+.lg-sub-html{ width: 40%; }
 }
 
 @media screen and (max-width: 1500px){
