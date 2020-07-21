@@ -141,12 +141,12 @@ transition: transform 0.5s ease 0s; -webkit-transform: scale3d(1, 1, 1); transfo
 .lg:after{ content: ""; background: #fff; display: block; width: 100%; opacity: 1; height: 100%; position: absolute; top: 0; z-index: -1; }
  
 /*----- Responsive -----*/
-@media screen and (min-width: 1920px){
+@media screen and (max-width: 1920px){
 .lg-2 .lg .lg-sub-html { position: absolute; top: 10%; width: 100%; margin: auto; left: 0;right: 0; padding: 0 40px;}
 }
 
-@media screen and (min-width: 1680px){
-.lg-2 .lg .lg-sub-html h4, .contact-m{}
+@media screen and (max-width: 1680px){
+
 }
 
 @media screen and (max-width: 1500px){
