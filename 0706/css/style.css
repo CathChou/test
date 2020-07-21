@@ -273,7 +273,7 @@ h1.logo a, .logo-menu a{ width: 65%; }
 .lg-sub-html h4{ font-size: 1.25rem; margin: 0 0 20px; }
 .lg-sub-html a{ margin-top: 30px; }
 .owl-carousel-m{ padding: 0 40px; }
-.owl-carousel-m .mm{ width: 95%; padding: 30px 0;}
+.owl-carousel-m .mm{ width: 95%; padding: 10px 0;}
 .contact-m h4{ font-size: 1.5rem; }
 .owl-carousel-m .owl-nav button.owl-prev, .owl-carousel-m .owl-nav button.owl-next{
 width: 20px; height: 36px; top: 40%;}
@@ -294,6 +294,7 @@ h1.logo a, .logo-menu a{ width: 50%; }
 .demo-gallery ul li a p{  margin-top: -12rem;  }	
 .lg-sub-html{ width: 85%; }
 .lg-sub-html h4{ margin: 0 0 20px; }
+.owl-carousel-m .mm p{ margin: 10px 0 20px; }
 }
 
 @media screen and (max-width: 360px){
@@ -313,7 +314,6 @@ h1.logo a, .logo-menu a{ width: 50%; }
 .lg-sub-html{ width: 95%; }
 .contact-m h4{ font-size: 1rem; }
 .owl-carousel-m .mm{ padding: 0; }
-.owl-carousel-m .mm p{ margin: 10px 0 20px; }
 .owl-carousel-m .mm p{ font-size: 0.75rem; }
 .owl-carousel-m{ padding: 0 30px; }
 }
