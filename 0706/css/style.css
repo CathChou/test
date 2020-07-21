@@ -293,7 +293,7 @@ h1.logo a, .logo-menu a{ width: 50%; }
 .section{ padding: 20px; }
 #header{ padding: 20px 20px 0 }
 .c-hamburger{ top: 20px; right: 20px; }
-.lg-sub-html h4{ margin: 0 0 20px; }
+.lg-sub-html h4{ margin: 0 0 10px; }
 .lg-sub-html a{ margin-top: 20px; }
 }
 
@@ -301,7 +301,7 @@ h1.logo a, .logo-menu a{ width: 50%; }
 .title{ top: 40px; }
 .demo-gallery ul li a p{  margin-top: -11rem; padding-bottom: 3rem;  } 
 .lg-toolbar .lg-icon{ margin: 20px 20px 0 0; } 
-.lg-outer .lg-inner{ width: 80%; margin-bottom: 10px; }
+.lg-outer .lg-inner{ width: 80%; margin-bottom: 10px;  }
 .lg-sub-html{ width: 95%; }
 }
 
