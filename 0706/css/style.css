@@ -371,6 +371,7 @@ h1.logo a, .logo-menu a{ width: 50%; }
 .carousel-inner .item .item_txt{ font-size: 1.5rem; width: 75vw; }
 .carousel-inner .item.item01 .item_img{ width: 150px; }
 .fade .item02{ margin-top: -180px; }
+#section4 .fp-scrollable{ display: block; }
 }
 
 @media screen and (max-width: 320px){
