@@ -29,6 +29,14 @@ button{ transition: all .5s ease; -webkit-transition: all .5s ease; -o-transitio
   font-style: normal;
   font-display: block;
 }
+@font-face {
+  font-family: Helvetica-Bold;
+  src: url(../fonts/Helvetica-Bold.ttf);
+}
+@font-face {
+  font-family: Helvetica-Neue-Condensed-Black;
+  src: url(../fonts/Helvetica-Neue-Condensed-Black_22499.ttf);
+}
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -80,16 +88,18 @@ p{ font-size:1rem;letter-spacing: 1px;}
 /*home slider show*/
 #bootstrap-touch-slider {
   max-height: 860px;
+  padding-right: 60px;
 }
 .carousel-inner .item .item_txt {
   font-size: 82px;
   text-align: center;
   color: #383535;
-  font-family: Helvetica-Neue-Condensed-Black, Arial, 'Noto Sans TC', sans-serif;
+  font-family: Helvetica-Neue-Condensed-Black, Arial, sans-serif !important;
   line-height: 90px;
   max-width: 980px;
   margin: auto;
   position: relative;
+  font-weight: bold;
 }
 .carousel-inner .item .item_txt > span {
   position: relative;
@@ -181,7 +191,7 @@ transition: transform 0.5s ease 0s; -webkit-transform: scale3d(1, 1, 1); transfo
 .lg-2 .lg-inner{ top: 50%; }
 .demo-gallery ul li a p span{ font-size: 1.5rem; }
 .lg-outer .lg-img-wrap{ text-align: left; }
-.carousel-inner .item .item_txt{ font-size: 4.5rem; }
+.carousel-inner .item .item_txt{ font-size: 4.5rem; line-height: 80px; }
 .carousel-inner .item.item01 .item_img{ width: 200px; }
 }
 
