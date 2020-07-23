@@ -285,7 +285,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 #fp-nav, #footer{ display: none; }
 .demo-gallery ul li{ float: none; margin: 15px 0;}
 .demo-gallery ul li a{ float: none; width: 70%; margin: 10px auto;}
-.demo-gallery ul{ padding: 10vh 0; }
+.demo-gallery ul{ padding: 5vh 0; }
 .demo-gallery  ul li a .mask, .lg-actions{ display: none !important; }
 .demo-gallery ul li a p{ position: relative; z-index: 1; margin-top: -21rem; padding-bottom: 6rem; top: inherit; }
 .demo-gallery  ul li a:hover img { -webkit-transform: scale3d(1, 1, 1); transform: scale3d(1, 1, 1);}
@@ -347,6 +347,7 @@ width: 20px; height: 36px; top: 40%;}
 .owl-carousel-m .mm p{ margin: 20px 0 30px; }
 .carousel-inner .item .item_txt{ padding-top: 20vh; }
 .fade .item02{ top: 50%; margin-top: -200px; }
+.demo-gallery ul{ padding: 10vh 0; }
 }
 
 @media screen and (max-width: 375px){
