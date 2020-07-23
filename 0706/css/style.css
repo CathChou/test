@@ -67,7 +67,7 @@ p{ font-size:1rem;letter-spacing: 1px;}
 #menu li.active{ color: #fff;}
 #menu li a{ text-decoration:none; color: #666565; font-weight: 500;}
 #menu li.active a ,#menu li a:hover{ color: #00a5a2;}
-#menu li a,#menu li.active a{ padding: 9px 22px; display:block; font-weight: 500;}
+#menu li a,#menu li.active a{ padding: 9px 35px; display:block; font-weight: 500;}
 #menu{ float: right;}
 
 .section{ text-align:center; padding: 6em;}
@@ -285,7 +285,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 #fp-nav, #footer{ display: none; }
 .demo-gallery ul li{ float: none; margin: 15px 0;}
 .demo-gallery ul li a{ float: none; width: 70%; margin: 10px auto;}
-.demo-gallery ul{ padding: 15% 0; }
+.demo-gallery ul{ padding: 30% 0; }
 .demo-gallery  ul li a .mask, .lg-actions{ display: none !important; }
 .demo-gallery ul li a p{ position: relative; z-index: 1; margin-top: -21rem; padding-bottom: 6rem; top: inherit; }
 .demo-gallery  ul li a:hover img { -webkit-transform: scale3d(1, 1, 1); transform: scale3d(1, 1, 1);}
