@@ -374,6 +374,7 @@ h1.logo a, .logo-menu a{ width: 50%; }
 .carousel-inner .item.item01 .item_img{ width: 150px; }
 .fade .item02{ margin-top: -180px; }
 #section4 .fp-scrollable{ display: block; }
+.demo-gallery ul{ padding: 15% 0; }
 }
 
 @media screen and (max-width: 320px){
