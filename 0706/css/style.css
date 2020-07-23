@@ -324,7 +324,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .carousel-inner .item.item02 .item_img {width: 50vw;margin: auto;padding-top: 20vh;}
 .carousel-inner .item .item_txt > span {letter-spacing: 2px !important;}
 .carousel-inner .item.item02 .item_img >img {max-width: 100%;padding: 7vw;}
-#bootstrap-touch-slider{ margin-top: 0; }
+#bootstrap-touch-slider{ margin-top: 0; padding-right: 0; }
 }
 
 
@@ -357,9 +357,10 @@ width: 20px; height: 36px; top: 40%;}
 .owl-carousel-m .owl-nav button.owl-prev, .owl-carousel-m .owl-nav button.owl-next{ width: 12px; height: 22px; }
 .owl-theme .owl-dots .owl-dot span{ width: 7px; height: 7px; }
 .owl-carousel-m .mm p{ margin: 20px 0 30px; }
-.carousel-inner .item .item_txt{ padding-top: 20vh; }
+.carousel-inner .item .item_txt{ padding-top: 20vh; width: 70vw; }
 .fade .item02{ top: 50%; margin-top: -200px; }
 .demo-gallery ul{ padding: 10vh 0; }
+.carousel-inner .item.item01 .item_img{ width: 60vw; }
 }
 
 @media screen and (max-width: 375px){
