@@ -309,7 +309,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .btn .btn-quests, .btn .btn-prize{ width: 300px; height: 114px; }
 .record .record-c .record-content li span.info{ width: 75%; }
 .record .record-c .record-content{ padding: 40px 70px 0; }
-.record .record-c .record-content li span{ margin:5px 20px 0 !important; }
+.record .record-c .record-content li span{ margin:10px 20px 0 !important; }
 .prize ul li{ width: 60%; float: none; margin: 40px auto; }
 .prize ul li:nth-child(2){margin-top: inherit;}
 .rules .rules-content ul li{ padding: 40px 60px; }
@@ -335,10 +335,9 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .record{ margin: 50px auto; }
 .record .t-bg{ padding: 10px 0; }
 .record .t-bg .title{ width: 25%; height: auto; }
-.record .record-c .record-content{ padding: 25px 40px 0; }
+.record .record-c .record-content{ padding: 20px 40px 0; }
 .record .record-c a{ padding: 10px 0 30px; }
 .btn a{ margin: 10px; }
-.btn .btn-quests, .btn .btn-prize{ width: 250px; height: 95px; }
 .record .record-c .record-content li{ text-align: center; }
 .kv-index{ padding-bottom: 0; }
 .rules{ padding: 60px 40px; }
