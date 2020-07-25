@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<style>
+::-webkit-scrollbar { width: 12px; }
+::-webkit-scrollbar-track { background: #000; }
+::-webkit-scrollbar-track-piece{ background: #000; }
+::-webkit-scrollbar-thumb { background: #634e22; }
+</style>
+<html>
+<head>
+	<title>signup</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+<body>
+	<div class="iframe">
+		<p class="i-title">帐号注册</p>
+		<div class="form-item">
+            <label class="form-item-label">
+                <div class="label-t">帐号</div>
+                <input type="text" class="form-control" placeholder="请输入您的E-mail">
+            </label>
+            <label class="form-item-label">
+                <div class="label-t">密码</div>
+                <input type="text" class="form-control">
+            </label>
+            <label class="form-item-label">
+                <div class="label-t">确认密码</div>
+                <input type="text" class="form-control">
+            </label>
+            <label class="form-item-label">
+                <div class="label-t">姓名</div>
+                <input type="text" class="form-control">
+            </label>
+            <label class="form-item-label">
+                <div class="label-t">手机</div>
+                    <div class="select">
+                        
+                        <select name="format" id="format">
+                              <option selected disabled>+886</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                        </select>
+                    </div>
+                    <input type="text" class="form-control pnumber" placeholder="9xxxxxxxx">
+                    <div class="clear"></div>
+                    
+            </label>
+            <label class="form-item-label">
+                <div class="label-t">代理帐号</div>
+                <input type="text" class="form-control">
+            </label>
+            <label class="form-label">
+                <input type="checkbox" name="" data-parsley-multiple="">
+                <span class="check">我已详细阅读并同意<a href="#" target="blanc">会员隐私权条款</a></span>
+                <div class="show-box"></div>
+            </label>
+            <p class="notice">*送出后请至您的Email收取验证信完成注冊</p>
+        </div>
+        <button class="form-btn iframe-btn" href="index.html">注册</button>
+	</div>
+
+</body>
+</html>
