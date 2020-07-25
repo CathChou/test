@@ -133,7 +133,7 @@ color: #634e22;}
 .btn .btn-quests:hover{ background-image: url(../images/btn_quests_hover.jpg);}
 
 /*----- prize -----*/
-.prize{ background: url(../images/prize_bg.png) center bottom no-repeat; }
+.prize{ background: url(../images/prize_bg.png) center bottom no-repeat; padding-bottom: 10px; }
 .prize-t{width: 208px; height: 99px; margin: 0 auto;}
 .prize ul.p-enter{}
 .prize ul li{ width: 30%; margin: 1.4%; float: left;}
