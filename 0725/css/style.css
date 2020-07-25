@@ -334,9 +334,9 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .star{ width: 70px; height: 15px; margin: 0 auto; }
 .record{ margin: 50px auto; }
 .record .t-bg{ padding: 10px 0; }
-.record .t-bg .title{ width: 25%; height: auto; }
+.record .t-bg .title{ width: 20%; height: auto; }
 .record .record-c .record-content{ padding: 20px 40px 0; }
-.record .record-c a{ padding: 10px 0 30px; }
+.record .record-c a{ padding: 20px 0 30px; }
 .btn a{ margin: 10px; }
 .record .record-c .record-content li{ text-align: center; }
 .kv-index{ padding-bottom: 0; }
