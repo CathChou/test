@@ -110,20 +110,22 @@
 	<!--prize-->
 	<div class="prize" id="prize">
 		<div class="container">
-			<div class="prize-t"><img src="images/t-prize.png"></div>
-			<ul class="p-enter">
-				<li><a class="p-box" href="prize.html#p1"><img src="images/prize_1.jpg"></a></li>
-				<li><a class="p-box" href="prize.html#p2"><img src="images/prize_2.jpg"></a></li>
-				<li><a class="p-box" href="prize.html#p4"><img src="images/prize_3.jpg"></a></li>
-			</ul>
-			<div class="clear"></div>
+			<div class="ani animated">
+				<div class="prize-t"><img src="images/t-prize.png"></div>
+				<ul class="p-enter">
+					<li><a class="p-box" href="prize.html#p1"><img src="images/prize_1.jpg"></a></li>
+					<li><a class="p-box" href="prize.html#p2"><img src="images/prize_2.jpg"></a></li>
+					<li><a class="p-box" href="prize.html#p4"><img src="images/prize_3.jpg"></a></li>
+					<div class="clear"></div>
+				</ul>
+			</div>
 		</div>
 	</div>
 
 	<!--rules-->
 	<div class="rules">
 		<div class="container">
-			<div class="rules-content">
+			<div class="rules-content animated">
 				<div class="r-title">规则</div>
 				<ul>
 					<li>
@@ -155,7 +157,7 @@
 	<!--disclaimer-->
 	<div class="disclaimer" id="disclaimer">
 		<div class="container">
-			<div class="d-content">
+			<div class="d-content animated">
 				<div class="d-title"><img src="images/t_disclaimer.png"></div>
 				<p>网站或促销均不是由USGFX进行的。促销和所有营销均来自列出的商业伙伴。外汇和衍生产品属于风险交易，无法保证获胜，所有风险必须由帐户所有者评估。</p>
 			</div>
@@ -175,18 +177,22 @@
 	    $("ul.record-content").slideToggle(250);
 	  });
 	});
-
-
-	//$(window).scroll(function() {
-		//$('.lottery-t').each(function(){
-			//var imagePos = $(this).offset().top;
-
-			//var topOfWindow = $(window).scrollTop();
-			//if (imagePos < topOfWindow+700) {
-			//$(this).addClass("fadeIndown");
-			//}
-		//});
-	//});
+	$(window).scroll(function() {
+		$('.ani ,.rules-content').each(function(){
+			var imagePos = $(this).offset().top;
+			var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+700) {
+			$(this).addClass("fadeIndown");
+			}
+		});
+		$('.d-content').each(function(){
+			var imagePos = $(this).offset().top;
+			var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+700) {
+			$(this).addClass("fadeIn");
+			}
+		});
+	});
 	$(document).ready(function(){
 		$(".c-hamburger").click(function(){
 			$(this).toggleClass("is-open");
