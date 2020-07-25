@@ -425,6 +425,7 @@ ul.p-table .form-item .show-box:before{ border:1px solid #24201f; border-width: 
 .i-title{ font-size: 1.25rem !important; }
 .select{ width: 100%;margin-bottom: 10px; }
 .form-item .form-item-label .pnumber{ width: 100% !important; }
+.points .number span{ letter-spacing: 4px; font-size: 4.5rem; margin: 0; }
 }
 
 @media screen and (max-width: 375px){
