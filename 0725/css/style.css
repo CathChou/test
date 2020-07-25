@@ -373,7 +373,7 @@ ul.p-table .form-item .show-box:before{ border:1px solid #24201f; border-width: 
 .tbody:hover{color: #fff;}
 .laptop{width: 32%;}
 .phone{ width: 30%; }
-.ipad{ width: 30%; top: 230px; }
+.ipad{ width: 30%;}
 }
 
 @media only screen and (max-width:767px){
@@ -429,6 +429,7 @@ ul.p-table .form-item .show-box:before{ border:1px solid #24201f; border-width: 
 .select{ width: 100%;margin-bottom: 10px; }
 .form-item .form-item-label .pnumber{ width: 100% !important; }
 .points .number span{ letter-spacing: 4px; font-size: 4.5rem; margin: 0; }
+.ipad{ top: 230px; }
 }
 
 @media screen and (max-width: 375px){
