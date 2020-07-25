@@ -252,10 +252,6 @@ ul.p-table{ padding: 40px 50px; }
 .page-menu a.quests-in, .page-menu a.quests:hover, .page-menu a.prize, .page-menu a.prize-in, .page-menu a.prize:hover, .page-menu a{ width: 250px; height: 58px; }
 .page-menu{ margin: 0 20px 15px; }
 .quests-box .collapse .title-box .list, .prize-box .list{ font-size: 1.5rem; }
-
-.fixed-c{ height: auto; margin-top: -50px; }
-.fixed-box{ top: -70px; }
-.fixed-box li{ margin:0 20px; }
 .tr li:first-child{ width: 30%; }
 .tr li:nth-child(2), .tr li:nth-child(3){ width: 12%; }
 }
