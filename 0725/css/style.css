@@ -379,7 +379,7 @@ ul.p-table .form-item .show-box:before{ border:1px solid #24201f; border-width: 
 @media only screen and (max-width:767px){
 .prize ul li{ width: 90%; margin: 20px auto; }
 .rules .rules-content ul li{ padding: 30px; }
-.prize-t{ width: 40%; }
+.prize-t{ width: 30%; }
 .rules{ padding: 40px; }
 .rules .rules-content .r-title{ font-size: 1.5rem; }
 .rules .rules-content .list{ font-size: 2rem; }
