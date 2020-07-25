@@ -330,7 +330,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .title2{ width: 80%;margin: 50px auto 0; }
 .points{ margin: -20px auto 0; }
 .points-bg1, .points-bg2{ width: 40px; height: 94px; }
-.points .number span{ font-size: 5rem; letter-spacing: 10px;}
+.points .number span{ font-size: 6rem; letter-spacing: 10px;}
 .star{ width: 70px; height: 15px; margin: 0 auto; }
 .record{ margin: 50px auto; }
 .record .t-bg{ padding: 10px 0; }
