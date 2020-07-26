@@ -75,7 +75,7 @@ p{ font-size:1rem;}
 #menu li.active{ color: #fff;}
 #menu li a{ text-decoration:none; color: #666565; font-weight: 500;}
 #menu li.active a ,#menu li a:hover{ color: #00a5a2;}
-#menu li a,#menu li.active a{ padding: 9px 35px; display:block; font-weight: 500;}
+#menu li a,#menu li.active a{ padding: 9px 35px; display:block; font-weight: bold;}
 #menu{ float: right;}
 
 .section{ text-align:center; padding: 6em;}
