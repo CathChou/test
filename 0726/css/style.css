@@ -363,6 +363,7 @@ width: 20px; height: 36px; top: 40%;}
 .fade .item02{ top: 50%; margin-top: -200px; }
 .demo-gallery ul{ padding: 10vh 0; }
 .carousel-inner .item.item01 .item_img{ width: 60vw; }
+nav ul li a{ font-size: 1.25rem; }
 }
 
 @media screen and (max-width: 375px){
