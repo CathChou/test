@@ -189,7 +189,7 @@ transition: transform 0.5s ease 0s; -webkit-transform: scale3d(1, 1, 1); transfo
 .title{ font-size: 4.5rem; }
 .contain{ width: 45%; margin-top: 70px;}
 .lg-2 .lg-inner{ top: 50%; }
-.demo-gallery ul li a p span{ font-size: 1.5rem; }
+.demo-gallery ul li a p span{ font-size: 1.25rem; }
 .lg-outer .lg-img-wrap{ text-align: left; }
 .carousel-inner .item .item_txt{ font-size: 4.5rem; line-height: 80px; }
 .carousel-inner .item.item01 .item_img{ width: 200px; }
