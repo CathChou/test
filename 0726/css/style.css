@@ -163,8 +163,8 @@ transition: transform 0.5s ease 0s; -webkit-transform: scale3d(1, 1, 1); transfo
 .demo-gallery  ul li a .mask{ width: 100%; height: 100%; position: absolute; top: 0; left: 0; opacity: 0;background-color: rgba(0,157,149, 0.5);
 -webkit-transition: all 0.5s ease-in-out;-moz-transition: all 0.5s ease-in-out;-o-transition: all 0.5s ease-in-out;-ms-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;}
 .demo-gallery  ul li a:hover .mask{ -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";filter: alpha(opacity=100);opacity: 1;}
-.demo-gallery  ul li a p { position: absolute; top: 45%;z-index: 1; left: 0; right: 0; margin: auto;}
-.demo-gallery  ul li a p span{ letter-spacing: 4px; font-weight: bold; font-size: 1.7rem; color: #fff;}
+.demo-gallery  ul li a p { position: absolute; top: 47%;z-index: 1; left: 0; right: 0; margin: auto;}
+.demo-gallery  ul li a p span{ font-weight: bold; font-size: 1.5rem; color: #fff;}
 
 /*----- services -----*/
 .lg:after{ content: ""; background: #fff; display: block; width: 100%; opacity: 1; height: 100%; position: absolute; top: 0; z-index: -1; }
@@ -204,6 +204,7 @@ p{ font-size: 0.875rem; }
 #footer{ padding: 0 30px 30px; }
 .carousel-inner{ width: 80%; margin:0 auto; }
 .carousel-inner .item .item_txt{ font-size: 3.5rem; line-height: 4.5rem; }
+.demo-gallery ul li a p span{ font-size: 1rem; }
 }
 @media screen and (max-width: 1024px){
 .lg-2 .lg .lg-actions .lg-prev{ left: 20px; }
@@ -316,7 +317,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 
 
 @media screen and (max-width: 650px){
-.demo-gallery ul li a p{  margin-top: -14rem; padding-bottom: 4rem;}
+.demo-gallery ul li a p{  margin-top: -14rem;padding: 0 10px 4rem;}
 .lg-sub-html{ width: 90%; padding: 0; }
 .lg-sub-html p{ text-align: left; }
 #section1 .fp-scrollable, #section2 .fp-scrollable{display: block;}
@@ -325,6 +326,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .carousel-inner .item .item_txt > span {letter-spacing: 2px !important;}
 .carousel-inner .item.item02 .item_img >img {max-width: 100%;padding: 7vw;}
 #bootstrap-touch-slider{ margin-top: 0; padding-right: 0; }
+.demo-gallery ul li a p span{ font-size: 1rem; }
 }
 
 
