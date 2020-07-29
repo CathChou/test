@@ -85,6 +85,7 @@ transform: rotate(45deg);}
 .form-item .link{ float: right; color: #d0bb93; text-decoration: underline; }
 .form-item .link:hover{ color: #988a6e; }
 .form-btn{ background: #d0bb93; padding: 10px 130px; font-size: 1.375rem;text-align:center;display: inline-block;color: #473a28; margin-top: 40px; font-weight: 600;}
+.en .form-btn{ padding: 10px 120px;}
 .form-btn:hover{ background: #65583f; color: #d0bb93;}
 .form-select{ width: 30%; display: inline-block; }
 .form-item .form-item-label .pnumber{ width: 67% !important; display: inline-block; margin-left: 10px; float: right; }
@@ -117,6 +118,7 @@ color: #634e22;}
 .record{ margin: 60px auto; width: 75%; }
 .record .t-bg{ background: url(../images/recordt_bg.png) center no-repeat; padding: 15px 0;}
 .record .t-bg .title{ width: 133px; height: 29px; margin: 0 auto;}
+.en .record .t-bg .title{width: 213px;}
 .record .record-c{ text-align: center; }
 .record .record-c a{ cursor: pointer; color: #d0bb93;text-decoration: underline; font-weight: bold; display: block; padding: 20px 0 60px;}
 .record .record-c a:hover{ color: #988a6e;}
@@ -148,12 +150,15 @@ color: #634e22;}
 .rules .rules-content .r-title{ font-size: 2.25rem; font-weight: bold;}
 .rules .rules-content .list{ display: inline-block; font-size: 3.625rem; margin-right: 55px;vertical-align: top; }
 .rules .rules-content .txt{ display: inline-block; text-align: left; }
+.en .rules .rules-content .list{ width: 9%; margin-right: 20px;}
+.en .rules .rules-content .txt{ width: 86%;}
 .rules .rules-content .txt .q{ font-size: 1.625rem; font-weight: bold; color: #d0bb93; padding: 5px 0; }
 .rules .rules-content ul li{ padding: 50px 100px; text-align: left; border-bottom: 1px #928468 dashed;}
 .rules .rules-content ul li:last-child{ border-bottom: none; }
 
 /*----- disclaimer -----*/
 .disclaimer{ background: url(../images/bg_disclaimer.jpg) center bottom no-repeat; padding: 140px 160px; background-attachment: fixed; }
+.en .disclaimer{padding: 110px 160px;}
 .disclaimer .d-content{ width: 40%; padding-left: 100px;  visibility: hidden; }
 .disclaimer .d-title{ width: 228px; height: 51px; margin-bottom: 60px; }
 
@@ -186,7 +191,7 @@ color: #634e22;}
 .p02{ width: 40px; height: 38px; top: 6px;}
 .p03{ width: 41px; height: 47px; }
 .p04{ width: 46px; height: 48px; top: -15px; }
-.prize-box .title span{ padding-left: 50px; }
+.prize-box .title span{ padding-left: 50px; display: block; }
 .prize-box .title span.p4{padding-left: 60px; }
 .table-o{padding: 50px 80px 0;}
 ul.p-table{ border-collapse: collapse;color: #fff; width: 100%; display: table; } 
@@ -194,12 +199,14 @@ ul.p-table{ border-collapse: collapse;color: #fff; width: 100%; display: table; 
 .thead .tr{ background: none !important;}
 ul.p-table .form-item span{ display: none; }
 ul.p-table .form-item .show-box{ top:4px; left: -7px;border: 1px solid #ffffff; }
+.en ul.p-table .form-item .show-box{ top:-8px;}
 ul.p-table .form-item .show-box:before{ width: 6px; height: 10px; left: 4px; }
 .p-table span.dot{ display: inline-block !important; }
 .tr{display: table-row;}
 .tbody{display: table-row-group;}
 .tbody:hover{color: #f9e9bf;}
 .thead li, .tr li{display: table-cell;padding: 10px 20px;}
+.en .thead li,.en .tr li{ line-height: 1.5rem; vertical-align: middle; }
 .thead li{text-align: center;font-weight: bold;}
 .tr li:first-child{ width: 70%; text-align: left;}
 .tr li:nth-child(2), .tr li:nth-child(3){ width: 15%; text-align: center;}
@@ -240,7 +247,7 @@ ul.p-table{ padding: 40px 50px; }
 .btn .btn-quests, .btn .btn-prize{ width: 400px; height: 152px; }
 .prize ul.p-enter{ padding: 0 60px; }
 .rules{ padding: 60px 70px; }
-.disclaimer{ padding: 100px 60px; }
+.disclaimer, .en .disclaimer{ padding: 100px 60px; }
 .disclaimer .d-content{ width: 80%; }
 .disclaimer .d-title{ margin-bottom: 30px; }
 .title1{ width: 65%; height: auto; }
@@ -248,12 +255,17 @@ ul.p-table{ padding: 40px 50px; }
 .log .log-c{ padding: 50px; }
 .log .log-c .signin{ padding-right: 50px; }
 .log .log-c .signup{ padding-left: 50px; }
-.form-btn{ width: 100%; padding: 10px 0; }
+.form-btn, .en .form-btn{ width: 100%; padding: 10px 0; }
 .page-menu a.quests-in, .page-menu a.quests:hover, .page-menu a.prize, .page-menu a.prize-in, .page-menu a.prize:hover, .page-menu a{ width: 250px; height: 58px; }
 .page-menu{ margin: 0 20px 15px; }
 .quests-box .collapse .title-box .list, .prize-box .list{ font-size: 1.5rem; }
 .tr li:first-child{ width: 30%; }
 .tr li:nth-child(2), .tr li:nth-child(3){ width: 12%; }
+}
+
+@media screen and (max-width: 1024px){
+.en ul.p-table .form-item .show-box{ display: inline-block; position: inherit; top: inherit; }
+
 }
 
 @media screen and (max-width: 1023px){
@@ -310,7 +322,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .prize ul li{ width: 60%; float: none; margin: 40px auto; }
 .prize ul li:nth-child(2){margin-top: inherit;}
 .rules .rules-content ul li{ padding: 40px 60px; }
-.rules .rules-content .list{ width: 100%; }
+.rules .rules-content .list, .en .rules .rules-content .list, .en .rules .rules-content .txt{ width: 100%; }
 .page-menu{ margin: 0 20px 0; }
 .page-menu a.quests-in, .page-menu a.quests:hover, .page-menu a.prize, .page-menu a.prize-in, .page-menu a.prize:hover, .page-menu a{ width: 200px; height: 46px; }
 .page-menu span{ bottom: -26px; }
@@ -363,7 +375,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .tr li:nth-child(2), .tr li:nth-child(3){ width: 100%; text-align: left; }
 .table-o{ padding: 50px 0 0;}
 ul.p-table .form-item span{ display: none !important; }
-ul.p-table .form-item .show-box{ left: 0; top: 0;  background: #24201f;}
+ul.p-table .form-item .show-box, { left: 0; top: 0;  background: #24201f;}
 ul.p-table .form-item .show-box:before{ border:1px solid #24201f; border-width: 0 2px 2px 0; }
 .p-content{ padding: 50px; }
 .prize-box .title{padding: 0 0 40px;}
@@ -440,7 +452,7 @@ ul.p-table .form-item .show-box:before{ border:1px solid #24201f; border-width: 
 .prize ul.p-enter{ padding: 0 40px; }
 .prize ul li{ width: 100%; }
 .rules .rules-content ul li{ padding: 30px 0; }
-.disclaimer{ padding: 70px 40px; }
+.disclaimer, .en .disclaimer{ padding: 70px 40px; }
 .disclaimer .d-title{ width: 45%; margin: 0 auto 10px; }
 .points .number span{ font-size: 4rem; }
 .kv-landing{ padding: 30px 0 50px; }
@@ -480,7 +492,7 @@ ul.p-table .form-item .show-box:before{ border:1px solid #24201f; border-width: 
 .disclaimer .d-title{ width: 55%; height: auto; margin: 0 auto 30px }
 .menu-m li{ padding: 10px 0; }
 .menu-m li a{ font-size: 1rem; }
-.form-btn{ font-size: 1.25rem; padding: 5px 0; margin-top: 20px; }
+.form-btn, .en .form-btn{ font-size: 1.25rem; padding: 5px 0; margin-top: 20px; }
 .log .log-c .signin{ padding: 0 0 30px; }
 .log .log-c .signup{ padding:30px 0 0 0;}
 }
