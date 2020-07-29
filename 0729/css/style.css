@@ -156,6 +156,7 @@ color: #634e22;}
 
 /*----- disclaimer -----*/
 .disclaimer{ background: url(../images/bg_disclaimer.jpg) center bottom no-repeat; padding: 140px 160px; background-attachment: fixed; }
+.en .disclaimer{padding: 110px 160px;}
 .disclaimer .d-content{ width: 40%; padding-left: 100px;  visibility: hidden; }
 .disclaimer .d-title{ width: 228px; height: 51px; margin-bottom: 60px; }
 
@@ -242,7 +243,7 @@ ul.p-table{ padding: 40px 50px; }
 .btn .btn-quests, .btn .btn-prize{ width: 400px; height: 152px; }
 .prize ul.p-enter{ padding: 0 60px; }
 .rules{ padding: 60px 70px; }
-.disclaimer{ padding: 100px 60px; }
+.disclaimer, .en .disclaimer{ padding: 100px 60px; }
 .disclaimer .d-content{ width: 80%; }
 .disclaimer .d-title{ margin-bottom: 30px; }
 .title1{ width: 65%; height: auto; }
@@ -442,7 +443,7 @@ ul.p-table .form-item .show-box:before{ border:1px solid #24201f; border-width: 
 .prize ul.p-enter{ padding: 0 40px; }
 .prize ul li{ width: 100%; }
 .rules .rules-content ul li{ padding: 30px 0; }
-.disclaimer{ padding: 70px 40px; }
+.disclaimer, .en .disclaimer{ padding: 70px 40px; }
 .disclaimer .d-title{ width: 45%; margin: 0 auto 10px; }
 .points .number span{ font-size: 4rem; }
 .kv-landing{ padding: 30px 0 50px; }
