@@ -85,6 +85,7 @@ transform: rotate(45deg);}
 .form-item .link{ float: right; color: #d0bb93; text-decoration: underline; }
 .form-item .link:hover{ color: #988a6e; }
 .form-btn{ background: #d0bb93; padding: 10px 130px; font-size: 1.375rem;text-align:center;display: inline-block;color: #473a28; margin-top: 40px; font-weight: 600;}
+.en .form-btn{ padding: 10px 120px;}
 .form-btn:hover{ background: #65583f; color: #d0bb93;}
 .form-select{ width: 30%; display: inline-block; }
 .form-item .form-item-label .pnumber{ width: 67% !important; display: inline-block; margin-left: 10px; float: right; }
