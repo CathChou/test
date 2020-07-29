@@ -250,7 +250,7 @@ ul.p-table{ padding: 40px 50px; }
 .log .log-c{ padding: 50px; }
 .log .log-c .signin{ padding-right: 50px; }
 .log .log-c .signup{ padding-left: 50px; }
-.form-btn{ width: 100%; padding: 10px 0; }
+.form-btn, .en .form-btn{ width: 100%; padding: 10px 0; }
 .page-menu a.quests-in, .page-menu a.quests:hover, .page-menu a.prize, .page-menu a.prize-in, .page-menu a.prize:hover, .page-menu a{ width: 250px; height: 58px; }
 .page-menu{ margin: 0 20px 15px; }
 .quests-box .collapse .title-box .list, .prize-box .list{ font-size: 1.5rem; }
@@ -482,7 +482,7 @@ ul.p-table .form-item .show-box:before{ border:1px solid #24201f; border-width: 
 .disclaimer .d-title{ width: 55%; height: auto; margin: 0 auto 30px }
 .menu-m li{ padding: 10px 0; }
 .menu-m li a{ font-size: 1rem; }
-.form-btn{ font-size: 1.25rem; padding: 5px 0; margin-top: 20px; }
+.form-btn, .en .form-btn{ font-size: 1.25rem; padding: 5px 0; margin-top: 20px; }
 .log .log-c .signin{ padding: 0 0 30px; }
 .log .log-c .signup{ padding:30px 0 0 0;}
 }
