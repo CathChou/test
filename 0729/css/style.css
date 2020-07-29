@@ -315,7 +315,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .prize ul li{ width: 60%; float: none; margin: 40px auto; }
 .prize ul li:nth-child(2){margin-top: inherit;}
 .rules .rules-content ul li{ padding: 40px 60px; }
-.rules .rules-content .list{ width: 100%; }
+.rules .rules-content .list, .en .rules .rules-content .list, .en .rules .rules-content .txt{ width: 100%; }
 .page-menu{ margin: 0 20px 0; }
 .page-menu a.quests-in, .page-menu a.quests:hover, .page-menu a.prize, .page-menu a.prize-in, .page-menu a.prize:hover, .page-menu a{ width: 200px; height: 46px; }
 .page-menu span{ bottom: -26px; }
