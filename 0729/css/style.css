@@ -205,7 +205,7 @@ ul.p-table .form-item .show-box:before{ width: 6px; height: 10px; left: 4px; }
 .tbody{display: table-row-group;}
 .tbody:hover{color: #f9e9bf;}
 .thead li, .tr li{display: table-cell;padding: 10px 20px;}
-.en .thead li,.en .tr li{ line-height: 1.5rem; }
+.en .thead li,.en .tr li{ line-height: 1.5rem; vertical-align: middle; }
 .thead li{text-align: center;font-weight: bold;}
 .tr li:first-child{ width: 70%; text-align: left;}
 .tr li:nth-child(2), .tr li:nth-child(3){ width: 15%; text-align: center;}
