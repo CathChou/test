@@ -199,6 +199,7 @@ ul.p-table{ border-collapse: collapse;color: #fff; width: 100%; display: table; 
 .thead .tr{ background: none !important;}
 ul.p-table .form-item span{ display: none; }
 ul.p-table .form-item .show-box{ top:4px; left: -7px;border: 1px solid #ffffff; }
+.en ul.p-table .form-item .show-box{ top:-8px;}
 ul.p-table .form-item .show-box:before{ width: 6px; height: 10px; left: 4px; }
 .p-table span.dot{ display: inline-block !important; }
 .tr{display: table-row;}
