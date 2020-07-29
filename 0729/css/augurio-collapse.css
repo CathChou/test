@@ -1,0 +1,71 @@
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+.augurio-collapse .title-box, .augurio-collapse .contents-box {
+  border: 1px solid #634e22; }
+
+.augurio-collapse .title-box, .augurio-collapse .contents {
+  padding: 60px 70px 70px; 
+  border-top: 1px dashed #634e22;}
+  .augurio-collapse .contents .subtitle{ 
+    font-size: 1.25rem; 
+    color: #f9e9bf; }
+    .augurio-collapse .contents .subtitle span{
+      width: 16px;
+      height: 15px;
+      margin: 0 5px;
+      display: inline-block;
+    }
+  .augurio-collapse .contents .tip{ 
+    margin: 20px 0 30px ; 
+    font-size: 1.25rem;}
+  .augurio-collapse .contents .txt{
+    color: #f9e9bf;
+    font-size: 1rem;}
+    .augurio-collapse .contents .tip li{ 
+    background: #23201e;
+    color: #fff;
+    padding: 10px 15px;
+    margin-bottom: 5px; }
+    .augurio-collapse .contents .tip li span, .p-table span.dot{
+      width:5px;height:5px;
+      border-radius:999em;
+      background:#d1a639; 
+      display: inline-block;
+      margin: 3px 10px 3px 0; }
+    .augurio-collapse .contents .tip li a{
+      color: #fff;
+      text-decoration: underline; }
+    .augurio-collapse .contents .tip li a:hover{
+      color: #9a908e;}
+
+
+.augurio-collapse .title-box {
+  position: relative;
+  cursor: pointer;
+  border:1px solid #634e22;
+  padding: 25px 150px;
+  color: #f9e9bf;
+  border-bottom: none; }
+
+.augurio-collapse .icons {
+  position: absolute;
+  right: 70px; 
+  top: 60px;}
+  .augurio-collapse .icons span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../images/arrow_down.svg) center no-repeat;}
+    
+
+.augurio-collapse .contents-box{
+  overflow: hidden;
+  border-top: none;
+  border-bottom: none;
+  -webkit-transition: height .3s ease;
+  transition: height .3s ease; 
+  padding: 0 70px;
+  border-bottom: 1px solid #634e22; }
+
+
