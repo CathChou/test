@@ -443,6 +443,7 @@ ul.p-table .form-item .show-box:before{ border:1px solid #24201f; border-width: 
 .points .number span{ letter-spacing: 4px; font-size: 4.5rem; margin: 0; }
 .ipad{ top: 230px; }
 .phone{top: 290px;}
+.tr li:before{ min-width: 37%; }
 }
 
 @media screen and (max-width: 375px){
