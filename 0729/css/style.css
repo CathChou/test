@@ -150,6 +150,8 @@ color: #634e22;}
 .rules .rules-content .r-title{ font-size: 2.25rem; font-weight: bold;}
 .rules .rules-content .list{ display: inline-block; font-size: 3.625rem; margin-right: 55px;vertical-align: top; }
 .rules .rules-content .txt{ display: inline-block; text-align: left; }
+.en .rules .rules-content .list{ width: 9%;}
+.en .rules .rules-content .txt{ width: 90%;}
 .rules .rules-content .txt .q{ font-size: 1.625rem; font-weight: bold; color: #d0bb93; padding: 5px 0; }
 .rules .rules-content ul li{ padding: 50px 100px; text-align: left; border-bottom: 1px #928468 dashed;}
 .rules .rules-content ul li:last-child{ border-bottom: none; }
