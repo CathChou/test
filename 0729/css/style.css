@@ -199,7 +199,7 @@ ul.p-table{ border-collapse: collapse;color: #fff; width: 100%; display: table; 
 .thead .tr{ background: none !important;}
 ul.p-table .form-item span{ display: none; }
 ul.p-table .form-item .show-box{ top:4px; left: -7px;border: 1px solid #ffffff; }
-
+.en ul.p-table .form-item .show-box{ top:-8px;}
 ul.p-table .form-item .show-box:before{ width: 6px; height: 10px; left: 4px; }
 .p-table span.dot{ display: inline-block !important; }
 .tr{display: table-row;}
@@ -261,6 +261,11 @@ ul.p-table{ padding: 40px 50px; }
 .quests-box .collapse .title-box .list, .prize-box .list{ font-size: 1.5rem; }
 .tr li:first-child{ width: 30%; }
 .tr li:nth-child(2), .tr li:nth-child(3){ width: 12%; }
+}
+
+@media screen and (max-width: 1024px){
+.en ul.p-table .form-item .show-box{ display: inline-block; position: inherit; top: inherit; }
+
 }
 
 @media screen and (max-width: 1023px){
@@ -372,7 +377,6 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 ul.p-table .form-item span{ display: none !important; }
 ul.p-table .form-item .show-box, { left: 0; top: 0;  background: #24201f;}
 ul.p-table .form-item .show-box:before{ border:1px solid #24201f; border-width: 0 2px 2px 0; }
-.en ul.p-table .form-item .show-box{ display: inline-block; position: inherit; }
 .p-content{ padding: 50px; }
 .prize-box .title{padding: 0 0 40px;}
 .fancybox-slide{ padding: 0; }
