@@ -372,7 +372,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 ul.p-table .form-item span{ display: none !important; }
 ul.p-table .form-item .show-box, { left: 0; top: 0;  background: #24201f;}
 ul.p-table .form-item .show-box:before{ border:1px solid #24201f; border-width: 0 2px 2px 0; }
-.en ul.p-table .form-item .show-box{ top: 0; }
+.en ul.p-table .form-item .show-box{ display: inline-block; position: inherit; }
 .p-content{ padding: 50px; }
 .prize-box .title{padding: 0 0 40px;}
 .fancybox-slide{ padding: 0; }
