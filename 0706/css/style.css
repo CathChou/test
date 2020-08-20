@@ -337,7 +337,8 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 
 @media screen and (max-width: 480px){
 h1.logo a, .logo-menu a{ width: 65%; }
-.section{ padding: 30px; }
+.section{ padding: 30px;}
+#section3{ padding: 30px 20px;}
 .title{ font-size: 3.5rem; letter-spacing: 5px; }
 .contain{ margin: 0; bottom: 10px; }
 .sub{ font-size: 1rem; margin-bottom: 20px; }
@@ -351,9 +352,9 @@ h1.logo a, .logo-menu a{ width: 65%; }
 .owl-carousel-m .mm{ width: 95%; padding: 10px 0 0;}
 .contact-m h4{ font-size: 1.25rem; }
 .owl-carousel-m .owl-nav button.owl-prev{
-background-size: 50%; background-position: center; top: 40%; left: -5px;}
+background-size: 50%; background-position: center; top: 40%; left: 0; width: 40px;}
 .owl-carousel-m .owl-nav button.owl-next{
-background-size: 50%; background-position: center; top: 40%; right: -15px; width: 40px;}
+background-size: 50%; background-position: center; top: 40%; right: 0; width: 40px;}
 .c-hamburger{ width: 30px; }
 .c-hamburger__line{ width: 30px; height: 2px; }
 .c-hamburger__line:nth-child(2){ top: 7px; }
