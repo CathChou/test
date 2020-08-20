@@ -353,7 +353,7 @@ h1.logo a, .logo-menu a{ width: 65%; }
 .owl-carousel-m .owl-nav button.owl-prev{
 background-size: 50%; background-position: center; top: 40%; left: -5px;}
 .owl-carousel-m .owl-nav button.owl-next{
-background-size: 40%; background-position: center; top: 40%; right: -15px; width: 40px;}
+background-size: 50%; background-position: center; top: 40%; right: -15px; width: 40px;}
 .c-hamburger{ width: 30px; }
 .c-hamburger__line{ width: 30px; height: 2px; }
 .c-hamburger__line:nth-child(2){ top: 7px; }
