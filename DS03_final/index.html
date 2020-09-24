@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name='viewport' content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;'>
+<title>DS02</title>
+<style>
+/* CSS Document */
+body, p, h1, h2 { padding: 0; margin: 0; font-family: "Arial","微軟正黑體","Microsoft JhengHei"; font-weight: 500;}
+ul, li{padding: 0; margin: 0; list-style: none;}
+h1{font-size: 46px; color: #393939; font-weight: bold; letter-spacing: 3px; margin-bottom: 50px;}
+h1 span{ border-bottom: 2px #393939 solid; }
+h1 span.small{ border-bottom: none; font-size: 30px;}
+
+
+/*fonts*/
+@font-face {
+  font-family: "3MCircularTT-Regular";
+  src: url(fonts/3MCircularTT-Regular.ttf);
+}
+@font-face {
+  font-family: "3MCircularTT-Bold";
+  src: url(fonts/3MCircularTT-Bold.ttf);
+}
+
+.wrap { max-width: 960px; display: block; margin: 0 auto; }
+.pc-show{ display: block; }
+.m-show{ display: none; }
+.font{ font-family: "3MCircularTT-Regular","3MCircularTT-Bold"; }
+
+/*kv*/
+.kv { padding: 0px; }
+.kv img { width:100%; display: block; }
+
+/*concent*/
+.box_01 img, .box_02 img, .box_03 img, .box_04 img, .box_04 .pic img, .box_05 img, .box_06 img, .box_07 img, .box_08 img
+, .box_09 img, .box_10 img{ max-width:100%; display: block; height: auto;
+image-rendering: -moz-crisp-edges; /*Firefox*/
+image-rendering: -o-crisp-edges; /*Opera*/
+image-rendering: -webkit-optimize-contrast; /*Webkit*/
+image-rendering: crisp-edges;
+-ms-interpolation-mode: nearest-neighbor; /*IE*/
+}
+.box_01{ width: 100%; background: #f7f7ea; padding: 80px 70px; text-align: center; box-sizing: border-box;}
+.box_01 p{ font-size: 20px; color: #393939; margin-top: 20px; }
+.box_01 .icon{ width:15%; display: inline-block; margin: 0 15px;}
+
+.box_02{ width: 100%; background-image: url(images/bg_drink.jpg); background-repeat: no-repeat; background-position: left top;
+padding: 80px 50px 70px; box-sizing: border-box; background-color: #fdfcfc;}
+.box_02 h1{ width: 55%; margin-left: 40px; }
+.box_02 li{ float: right; }
+.box_02 .star_1{ width: 22px; position: absolute;left: 0; right: 0; margin: auto;top: 80px; }
+.box_02 .star_2{ width: 49px; position: absolute;left: 0; right: 0; margin: auto;top: 60px; }
+.box_02 .star_3{ width: 49px; position: absolute;left: 0; right: 0; margin: auto;top: 30px; }
+.box_02 .star_4{ width: 76px; position: absolute;left: 0; right: 0; margin: auto;top: -20px; }
+.box_02 .tag_1{ width: 142px; position: absolute;left: 0; right: 0; margin: auto;top: 25px; }
+.box_02 .tag_2{ width: 142px; position: absolute;left: 0; right: 0; margin: auto;top: -75px; }
+.box_02 .drink{ width: 24.5%;text-align: center;}
+.box_02 .drink p{ vertical-align: top; height: 74px; overflow: hidden; color: #393939; line-height: 26px;}
+.box_02 .dp{ height: 230px; position: relative; margin-bottom: 20px; }
+.box_02 img.dp_1{ width: 55%; position: absolute; bottom: 0; left: 0; right: 0; margin: auto;}
+.box_02 img.dp_2{ width: 65%; position: absolute; bottom: 0; left: 0; right: 0; margin: auto;}
+.box_02 img.dp_3{ width: 78%; position: absolute; bottom: 0; left: 0; right: 0; margin: auto;}
+.box_02 img.dp_4{ width: 100%; position: absolute; bottom: 0; left: 0; right: 0; margin: auto;}
+.box_02 .d-title{ color: #009837; font-size: 22px; margin-bottom: 30px; position: relative;}
+.box_02 .crown{ position: absolute; top: 20px; width: 36px; left: -17px;}
+
+.box_03{ width: 100%; background: #fdfdfc; position: relative; text-align: center; padding: 80px 50px; box-sizing: border-box;}
+.box_03 ul{ margin-top: 40px; }
+.box_03 ul li{ width: 22%;border-radius: 15px; border: 1px #a7a7a7 solid; float: left; position: relative; margin: 0 9px; }
+.box_03 .number{ width: 32px; height: 32px; background:#9ac630; border-radius: 99em; text-align: center; color: #fff;
+font-weight: bold; position: absolute; top: -10px; left: -10px; line-height: 32px;}
+.box_03 .pic{ margin-top: -1px; }
+.box_03 .p-content{ padding: 20px 15px; height: 166px; box-sizing: border-box;}
+.p-content .p-title{ font-size: 20px; background:#009837; border-radius: 20px; width: 100%; color: #fff; padding: 5px 0;
+margin-bottom: 10px;}
+.p-content p{ color: #393939; line-height: 26px;}
+
+.box_04{ width: 100%; background: #f7f7ea; position: relative; padding: 50px 80px 80px; box-sizing: border-box; text-align: center;}
+.box_04 h1 { font-size: 150px; font-style: italic;font-weight: normal ; color: #0075c1; margin-bottom: 20px;}
+.box_04 h1 span{ font-size: 66px; color: #393939; font-weight: bold;}
+.box_04 .txt{ float: left; width: 48%; text-align: left; letter-spacing: 1px; }
+.box_04 .pic{ float: right; width: 43%;}
+.box_04 .f-title{ color: #0075c1; font-size: 36px; font-weight: bold; text-align: left; margin-bottom: 30px; letter-spacing: 3px; }
+.box_04 .f-title span{ font-size: 70px;  display: inline-block; margin-right: 15px; letter-spacing: -3px; font-weight: normal;
+background: url(images/line.jpg) center bottom no-repeat;}
+.txt p{ color: #393939; font-size: 18px; line-height: 28px; margin-bottom: 30px; }
+.box_04 .name{ background: #9ac630; border-radius: 30px; padding: 10px 0;color: #fff; font-size: 28px; width: 35%; 
+text-align: center; margin: 50px auto 0; position: relative; }
+.box_04 ul { background: #fff; border:1px #9ac630 solid;border-radius: 30px; padding: 50px 50px 30px; margin-top: -30px; }
+.box_04 ul li{ float: left; width: 10%; margin: 1.2%; }
+.box_04 ul li p{ color: #3B393B; font-weight: normal; margin-top: 20px; }
+
+.box_05{ width: 100%; padding: 80px 160px 50px 50px; box-sizing: border-box;background: -webkit-linear-gradient(left,#e8e7e4,#f9f9f9);
+background: -o-linear-gradient(right,#e8e7e4,#f9f9f9);background: -moz-linear-gradient(right,#e8e7e4,#f9f9f9);
+background: linear-gradient(to right,#e8e7e4,#f9f9f9);}
+.box_05 .f-title{ color: #0075c1; font-size: 36px; font-weight: bold; text-align: left; margin-bottom: 10px; letter-spacing: 3px; }
+.box_05 .f-title span{ font-size: 70px;  display: inline-block; margin-right: 15px; letter-spacing: -3px; font-weight: normal;
+background: url(images/line.jpg) center bottom no-repeat;}
+.box_05 .txt{ text-align: left; letter-spacing: 1px; margin-left: 90px; }
+.box_05 .txt p span{font-size: 14px; color: #7a7a7a; font-weight: normal;}
+.box_05 .family{ float: left; width: 60%; }
+.box_05 .pd{ float: right; width: 37%; }
+
+.box_06{ width: 100%; background: #f7f7ea; position: relative; font-weight: bold; padding: 80px 50px; box-sizing: border-box;}
+.box_06 .f-title{ color: #0075c1; font-size: 36px; font-weight: bold; text-align: left; margin-bottom: 10px; letter-spacing: 3px; }
+.box_06 .f-title span{ font-size: 70px;  display: inline-block; margin-right: 15px; letter-spacing: -3px; font-weight: normal;
+background: url(images/line.jpg) center bottom no-repeat;}
+.box_06 .txt{ text-align: left; letter-spacing: 1px; margin-left: 90px; }
+.box_06 .b-content{ text-align: center; }
+.box_06 .b-content .b{ width:29%; display: inline-block; margin: 25px 1.95%;}
+.box_06 .b-content .b .title{ color: #f6943f; font-size: 20px; font-style: italic; margin: 20px 0 10px; text-align: left;}
+.box_06 .b-content .b p{ color: #393939; line-height: 24px;text-align: left;}
+
+.box_07{ width: 100%; position: relative; padding: 80px 50px; box-sizing: border-box; background: url(images/bg_f4.jpg) right top no-repeat; }
+.box_07 .f-title{ color: #0075c1; font-size: 36px; font-weight: bold; text-align: left; margin-bottom: 10px; letter-spacing: 3px; }
+.box_07 .f-title span{font-size: 70px;  display: inline-block; margin-right: 15px; letter-spacing: -3px; font-weight: normal;
+background: url(images/line.jpg) center bottom no-repeat;}
+.box_07 .txt{ text-align: left; letter-spacing: 1px; margin-left: 90px; }
+.box_07 .txt p span{ color: #f6943f; font-size: 20px; }
+.box_07 ul{ margin: 50px 0 30px; }
+.box_07 ul li{ background: #f3f3f3; border-radius: 20px; width: 22.5%; margin: 0 10px; padding: 30px 15px; float: left; 
+height: 310px;box-sizing: border-box;}
+.box_07 ul li p{ color: #393939;font-weight: normal; margin-top: 20px; line-height: 24px; }
+.box_07 .note{ font-size: 14px; color: #7a7a7a; font-weight: normal; text-align: right; }
+.box_07 .note span{ color: #f6943f; }
+
+.box_08{ width: 100%; background: #f7f7ea; position: relative; padding: 80px 50px; box-sizing: border-box; text-align: center;}
+.box_08 ul li{ display: inline-block; width: 22%; margin: 0 10px;}
+.box_08 ul li p{ color: #393939; font-size: 24px; margin-top: 20px; font-weight: normal; letter-spacing: 3px; }
+
+.box_09{ width: 100%; height: 370px; background: url(images/bg_pro.jpg) no-repeat; padding: 100px 70px 0; box-sizing: border-box;
+position: relative;}
+.box_09 .txt{ font-size: 40px; color: #0075c1; float: right; width: 47%;}
+.box_09 .txt .title{ border-bottom: 1px #0075c1 solid; padding-bottom: 10px; margin-bottom: 30px; }
+.box_09 .txt span{ font-size: 22px; font-weight: normal; display: block; }
+.box_09 .txt p{ font-size: 15px; line-height: 26px; color: #0075c1; font-weight: normal; }
+.box_09 .over{ width: 105px; position: absolute; top: -30px; right: 70px; }
+
+.box_10{ width: 100%; background:#fff; position: relative; text-align: center; padding: 80px 50px; box-sizing: border-box;}
+.box_10 .pd{ float: left; width: 32%; margin-top: 50px;}
+.box_10 .table{ float: right; width: 64%; border: 1px #a7a7a7 solid; background:#fff; }
+.box_10 ul { font-weight: bold; margin: 0px; background: #9AC630;}
+.box_10 ul li { font-weight: bold; font-size: 16px; color: #565656; line-height: 44px; border-bottom: 1px #e3e3e3 solid;}
+.box_10 .table .name{ float: left; width: 18%;color: #fff;}
+.box_10 .table .content{ float: right; width: 77.5%; text-align: left; background: #fff; padding-left: 20px;}
+
+/*小於960的顯示*/
+@media (max-width:959px) {
+.pc-show{ display: none; }
+.m-show{ display: block; }
+.edm960{ width: 100%; overflow: hidden; }
+.kv { padding: 0px; }
+.box_01, .box_06, .box_07, .box_08, .box_10{ padding: 80px 30px; }
+.box_01 .icon{ width: 17%; margin: 0 8px; }
+.box_02{ padding: 80px 30px 30px;}
+.box_02 h1{ width: 100%; text-align: center;margin: 0 0 50px 0; }
+.box_02 .drink{ width: 100%; float: none; margin: 20px 0; }
+.box_02 .dp{ width: 50%; float: left; height: inherit; margin-left: 30px; }
+.box_02 .dt{ width: 40%; float: right; text-align: left; padding-top: 140px; }
+.box_02 .dt-2{ padding-top: 90px; }
+.box_02 .tag_2, .box_02 .tag_1{ position: inherit; top: 0; }
+.box_02 .star_4, .box_02 .star_3, .box_02 .star_2, .box_02 .star_1{ position: inherit; top: 0; margin: 10px auto 20px; }
+.box_02 img.dp_4, .box_02 img.dp_3, .box_02 img.dp_2, .box_02 img.dp_1{ position: inherit; width: 70%; }
+.box_02 .crown{ left: -40px; }
+.box_03{ padding: 40px 50px 80px; }
+.box_04{ padding: 50px 40px 80px; }
+.box_04 ul{ padding: 50px 20px 30px; }
+.box_05{padding: 80px 90px 40px 30px}
+.box_05 .name{ width: 40%; }
+.box_05 .family{ width: 55%; }
+.box_05 .pd{ width: 40%; }
+.box_06 .b-content .b{ width: 100%; margin: 25px 0; }
+.box_06 .b-content .b .m-p{ float: left; width: 45%; margin: 0 2%; }
+.box_06 .b-content .b .title, .box_06 .b-content .b p{ text-align: center; }
+.box_07 ul li{ width: 22%; height: 300px; }
+.box_08 ul li{ width: 21%; }
+.box_09{ padding: 60px 0 0; background: #f0f0f0; height: inherit;}
+.box_09 .txt{ float: none; width: 70%; margin: 0 auto; }
+.box_09 .txt p{ margin-bottom: 10px; }
+.box_09 .pro{ width: 80%; }
+.box_10 .pd{ float: none; width: 40%; margin: 0 auto 40px; padding-top: 20px; }
+.box_10 .table{ float: none;width: 95%;margin: 0 auto; }
+}
+
+@media (max-width:767px) {
+h1{ font-size: 34px; margin-bottom: 30px; }
+.box_01, .box_05, .box_06, .box_07, .box_08, .box_10{ padding: 60px 30px; }
+.box_01 .icon{ width: 35%; margin: 20px; }
+.box_02{ padding: 60px 30px 30px; }
+h1 span.small{ font-size: 22px; }
+.box_02 img.dp_4, .box_02 img.dp_3, .box_02 img.dp_2, .box_02 img.dp_1{ position: inherit; width: 80%; }
+.box_02 .dp{ margin-left: 0; }
+.box_02 .dt{ padding-top: 90px; width: 46%; }
+.box_02 .crown{ left: -20px; top: 0; }
+.box_02 .dt-2{ padding-top: 50px; }
+.box_02 .d-title{ font-size: 20px; }
+.box_02 .drink p{ height: inherit; }
+.box_03{ padding: 40px 30px 40px; }
+.box_03 ul li{ width: 44%; margin: 0 9px 20px; }
+.box_04{ padding: 40px 40px 60px }
+.box_04 h1{ font-size: 90px; }
+.box_04 h1 span{ font-size: 46px; }
+.box_04 .f-title, .box_05 .f-title, .box_06 .f-title, .box_07 .f-title{ font-size: 32px; }
+.box_04 .f-title span, .box_05 .f-title span, .box_06 .f-title span, .box_07 .f-title span{ font-size: 52px; }
+.box_04 .txt{ float: none; width: 100%; }
+.box_04 .pic{ float: none; width: 100%; margin-top: 30px; }
+.box_04 ul li{ width: 27%; margin: 3%; }
+.box_04 ul li:nth-last-child(2), .box_04 ul li:nth-last-child(3){ float: none; display: inline-block; }
+.box_04 .name, .box_05 .name{ width: 60%; font-size: 24px; }
+.box_05{ padding: 60px 30px 30px 30px; }
+.box_05 .pd{ width: 45%; }
+.box_05 .txt, .box_06 .txt, .box_07 .txt{ margin-left: 0; }
+.box_06 .txt p{ margin-bottom: 10px; }
+.box_07 ul li{ width: 80%; height: inherit; float: none; margin: 20px auto; }
+.box_07 .note{ padding: 0 9%; text-align: left; }
+.box_08 ul li{ width: 43%; margin: 10px; }
+.box_08 ul li p{ margin-top: 10px; letter-spacing: 1px; }
+.box_09{padding: 100px 0 0;}
+.box_09 .txt{ width: 80%; }
+.box_09 .txt .title{ font-size: 36px; }
+.box_09 .pro{ width: 90%; }
+.box_10 .pd{ width: 60%; }
+.box_10 .table{ width: 100%; }
+.box_10 ul li{ font-size: 14px; line-height: 40px; }
+.box_10 .table .name{ width: 18%; }
+.box_10 .table .content{ width: 79%; padding-left: 10px; }
+}
+
+@media (max-width:414px) {
+h1{ font-size: 30px; letter-spacing: 1px; }
+.box_01, .box_06, .box_07, .box_08, .box_10{ padding: 40px 20px; }
+.box_05 .f-title,.box_04 .f-title, .box_06 .f-title, .box_07 .f-title{ font-size: 28px; letter-spacing: 0; }
+.box_05 .f-title span,.box_04 .f-title span, .box_06 .f-title span, .box_07 .f-title span{ font-size: 44px; margin-right: 10px; }
+.box_05 .name{ width: 70%; }
+.box_01 .icon{ width: 43%; margin: 10px 5px; }
+.box_02{ padding: 40px 30px 20px; }
+.box_02 .d-title{ margin-bottom: 10px; }
+.box_03{ padding: 40px 20px 40px; }
+.box_04{ padding: 40px 30px;}
+.box_05{ padding: 100px 30px 20px; position: relative; overflow: hidden; }
+.box_05 .f-title{ width: 47%; position: relative;z-index: 1; }
+.box_05 .f-title span{ display: block; width: 32%; margin-bottom: 30px; }
+.box_05 .txt{ margin-top: 40px; }
+.box_05 ul.compare{ width: 90%; box-sizing: border-box; margin: -30px auto 0; padding: 60px 30px 30px; }
+.box_05 .note{ text-align: center; }
+.box_05 .family{ float: none; position: absolute; top: 20px; right: -50px; width: 80%; }
+.box_05 .pd{ width: 65%; float: none; margin: 0 auto; }
+.box_06 .b-content .b{ margin: 15px 0; }
+.box_06 .b-content .b p{ text-align: left; }
+.box_06 .b-content .b .m-p{ width: 46%; }
+.box_09{ padding: 80px 0 0; }
+.box_09 .txt{ width: 85%; }
+.box_09 .over{ right: 30px; width: 95px; }
+.box_09 .pro{ width: 100%; }
+.box_10 .table .name{ width: 19%; }
+.box_10 .table .content{ width: 77%; }
+}
+
+@media (max-width:375px) {
+.box_02 .dp, .box_02 .dt{ width: 100%; float: none; }
+.box_02 .dt{ text-align: center; }
+.box_02 .dt, .box_02 .dt-2{ padding-top: 0; }
+.box_02 .crown{ left: 30px; top: 0; }
+.box_02 .drink{ margin: 50px 0; }
+.box_03{ padding: 20px 20px 40px; }
+}
+
+@media (max-width:360px) {
+.box_03 ul li{ float: none; width: 88%; margin: 0 auto 20px; }
+.box_03 .p-content{ height: inherit; }
+.box_04 .f-title, .box_05 .f-title, .box_06 .f-title, .box_07 .f-title{ font-size: 22px; letter-spacing: 0; }
+.box_04 .f-title span, .box_05 .f-title span, .box_06 .f-title span, .box_07 .f-title span{ font-size: 30px; margin-right: 10px; }
+.box_05 .name{ width: 80%; }
+.box_05 .f-title span{ width: 25%; }
+.box_07 ul{ margin: 30px 0; }
+.box_07 ul li{ width: 90%;}
+.box_07 .note{ padding: 0 5%; }
+.box_08 ul li{ width: 42%; }
+.box_09 .txt .title{ font-size: 32px; }
+.box_10 .table .name{ width: 24%; }
+.box_10 .table .content{ width: 72%; }
+}
+</style>
+</head>
+
+<body>
+	<div class="wrap">
+		<!--KV banner -->
+		<div class="kv"> 
+			<div class="pc-show"><img src="images/kv_960.jpg" alt="3M" /></div>
+			<div class="m-show"><img src="images/kv_m_960.jpg" alt="3M" /></div>
+		</div>
+
+		<!--生飲濾淨-->     
+		<div class="box_01">
+		  	<h1 class="pc-show">生飲濾淨，<span>居家淨水好幫手！</span></h1>
+		  	<h1 class="m-show">生飲濾淨，<br /><span>居家淨水好幫手！</span></h1>
+		    <ul>
+			    <li class="icon">
+			    	<div><img src="images/icon01.png" alt="高效過濾技術" /></div>
+			    	<p>高效過濾技術</p>
+				</li>
+				<li class="icon">
+			    	<div><img src="images/icon02.png" alt="長效即淨型" /></div>
+			    	<p>長效即淨型</p>
+				</li>
+				<li class="icon">
+			    	<div><img src="images/icon03.png" alt="DIY簡易安裝" /></div>
+			    	<p>DIY簡易安裝</p>
+				</li>
+				<li class="icon">
+			    	<div><img src="images/icon04.png" alt="小體積省空間" /></div>
+			    	<p>小體積省空間</p>
+				</li>
+				<li class="icon">
+			    	<div><img src="images/icon05.png" alt="免插電無廢水" /></div>
+			    	<p>免插電無廢水</p>
+				</li>
+			</ul>
+		</div>
+
+		<!--飲水方式-->
+		<div class="box_02">
+			<h1><span class="small">工作繁忙時，為何不選擇</span><br /><span>更簡單的飲水方式？</span></h1>
+			<ul>
+				<li class="drink">
+					<div class="dp">
+						<div class="tag_2"><img src="images/tag02.png" alt="" /></div>
+						<div class="star_4"><img src="images/star04.png" alt="" /></div>
+						<img class="dp_4" src="images/drink04.png" alt="使用DS03淨水器" />
+					</div>
+					<div class="dt">
+						<div class="d-title">
+							<span class="crown"><img class="dp_4" src="images/crown.png" alt="" /></span>
+							使用DS03淨水器
+						</div>
+						<p>高效濾淨、即淨即飲<br />享18個月純淨好水</p>
+					</div>
+					<div style="clear: both;"></div>
+				</li>
+				
+				<li class="drink">
+					<div class="dp">
+						<div class="star_3"><img src="images/star03.png" alt="" /></div>
+						<img class="dp_3" src="images/drink03.png" alt="使用一般濾水壺" />
+					</div>
+					<div class="dt dt-2">
+						<div class="d-title">使用一般濾水壺</div>
+						<p>需至水源處盛裝 <br />過濾時間較長<br />需煮沸後放涼才能飲用</p>
+					</div>
+					<div style="clear: both;"></div>
+				</li>
+				<li class="drink">
+					<div class="dp">
+						<div class="star_2"><img src="images/star02.png" alt="" /></div>
+						<img class="dp_2" src="images/drink02.png" alt="每天購買瓶裝水" />
+					</div>
+					<div class="dt dt-2">
+						<div class="d-title">每天購買瓶裝水</div>
+						<p>需外出購買<br />費時費力、耗源支出</p>
+					</div>
+					<div style="clear: both;"></div>
+				</li>
+				<li class="drink">
+					<div class="dp">
+						<div class="tag_1"><img src="images/tag01.png" alt="" /></div>
+						<div class="star_1"><img src="images/star01.png" alt="" /></div>
+						<img class="dp_1" src="images/drink01.png" alt="購買低單價桶裝水" />
+					</div>
+					<div class="dt">
+						<div class="d-title">購買低單價桶裝水</div>
+						<p>需定期購買<br />回收桶較佔空間<br />長期存放易變質，具安全疑慮</p>
+					</div>
+					<div style="clear: both;"></div>
+				</li>
+				<div style="clear: both;"></div>
+			</ul>
+		</div> 
+
+		<!--居家用水疑慮-->
+		<div class="box_03">
+		    <h1><span>居家用水疑慮</span></h1>
+		    <div><img src="images/img_01.png" alt="污染物質" /></div>
+		    <ul>
+		    	<li>
+		    		<div class="number">1</div>
+		    		<div class="pic"><img src="images/img_02.png" alt="水源污染" /></div>
+		    		<div class="p-content">
+			    		<div class="p-title">水源污染</div>
+			    		<p>養殖排遺物<br />農藥地表滲透<br />工業廢棄物排放</p>
+		    		</div>
+		    	</li>
+		    	<li>
+		    		<div class="number">2</div>
+		    		<div class="pic"><img src="images/img_03.png" alt="自來水廠" /></div>
+		    		<div class="p-content">
+			    		<div class="p-title">自來水廠</div>
+			    		<p>自來水廠<br />餘氯殘留</p>
+		    		</div>
+		    	</li>
+		    	<li>
+		    		<div class="number">3</div>
+		    		<div class="pic"><img src="images/img_04.png" alt="管線汙染" /></div>
+		    		<div class="p-content">
+			    		<div class="p-title">管線汙染</div>
+			    		<p>配水管道老舊<br />或滲裂</p>
+		    		</div>
+		    	</li>
+		    	<li>
+		    		<div class="number">4</div>
+		    		<div class="pic"><img src="images/img_05.png" alt="設備污染" /></div>
+		    		<div class="p-content">
+			    		<div class="p-title">設備污染</div>
+			    		<p>滋菌或污水回滲<br />原有淨水設備老舊</p>
+		    		</div>
+		    	</li>
+		    	<div style="clear: both;"></div>
+		    </ul>
+		    
+		</div>
+
+		<!--產品特點1-->
+		<div class="box_04">
+		    <h1>4<span>大特點</span></h1>
+		    <div class="f-title"><span>01</span>高效過濾技術</div>
+		    <div class="txt">
+		    	<p>採用0.5微米高密度活性碳棒濾心，可大量吸附水中的雜質及汙染物，有效去除水中餘氯、異味、重金屬、孢子囊菌及有害微生物，並保有對人體有益的礦物質。</p>
+		    	<div><img src="images/img_07.jpg" alt="NSF雙重國際認證/SGS濾心過濾效能驗證" /></div>
+		    </div>
+		    <div class="pic"><img src="images/img_06.jpg" alt="高效過濾技術" /></div>
+		    <div style="clear: both;"></div>
+		    <div class="name">可濾除項目</div>
+		    <ul>
+		    	<li>
+		    		<img src="images/icon06.png" alt="泥沙" />
+		    		<p>泥沙</p>
+		    	</li>
+		    	<li>
+		    		<img src="images/icon07.png" alt="鐵鏽" />
+		    		<p>鐵鏽</p>
+		    	</li>
+		    	<li>
+		    		<img src="images/icon10.png" alt="餘氯" />
+		    		<p>餘氯</p>
+		    	</li>
+		    	<li>
+		    		<img src="images/icon12.png" alt="囊胞菌" />
+		    		<p>囊胞菌</p>
+		    	</li>
+		    	<li>
+		    		<img src="images/icon13.png" alt="細菌" />
+		    		<p>細菌</p>
+		    	</li>
+		    	<li>
+		    		<img src="images/icon11.png" alt="部分重金屬" />
+		    		<p class="pc-show">部分<br />重金屬</p>
+		    		<p class="m-show">部分重金屬</p>
+		    	</li>
+		    	<li>
+		    		<img src="images/icon08.png" alt="石棉" />
+		    		<p>石棉</p>
+		    	</li>
+		    	<li>
+		    		<img src="images/icon09.png" alt="農藥" />
+		    		<p>農藥</p>
+		    	</li>
+		    	<div style="clear: both;"></div>
+		    </ul>
+	    </div>
+
+		<!--產品特點2-->
+		<div class="box_05">
+			<div class="f-title"><span>02</span>即淨即飲，長效低負擔</div>
+		    <div class="txt">
+		    	<p>單個濾心可使用半年，有2,839公升的大處理量，每分鐘出水量2.8公升，滿足租屋族、小家庭即開即飲的需求，安心便利又省錢。<span>（此為3入組合的產品）</span></p>
+		    </div>
+		    <div class="family"><img src="images/family.png" alt="" /></div>
+		    <div class="pd"><img src="images/pd_f2.png" alt="" /></div>
+		    <div style="clear: both;"></div>
+		</div>
+
+		<!--產品特點3-->
+		<div class="box_06">
+		    <div class="f-title"><span>03</span>小體積省空間</div>
+		    <div class="txt">
+		    	<p>不需插電、不排廢水，可簡單自行DIY，免鑽孔施工同樣享有高過濾品質的純淨飲用水。</p>
+		    </div>
+		    <!--桌機版-->
+		    <div class="b-content pc-show">
+			    <ul>
+			    	<li class="b">
+			    		<img src="images/img_10.png" alt="" />
+			    		<div class="title">step.1</div>
+			    		<p>以內附酒精棉片或乾布擦拭欲黏著的牆面，待乾。<br />&emsp;</p>
+			    	</li>
+			    	<li class="b">
+			    		<img src="images/img_11.png" alt="" />
+			    		<div class="title">step.2</div>
+			    		<p>撕下濾頭背部魔力扣的離型膠紙，固定貼合於適當位置後，請務必靜置三天。</p>
+			    	</li>
+			    	<li class="b">
+			    		<img src="images/img_12.png" alt="" />
+			    		<div class="title">step.3</div>
+			    		<p>將水龍頭原起泡頭及墊片轉下拆除。<br />&emsp;</p>
+			    	</li>
+			    </ul>
+			    <ul>
+			    	<li class="b">
+			    		<img src="images/img_13.png" alt="" />
+			    		<div class="title">step.4</div>
+			    		<p>安裝分流器於水龍頭出水處。<br />&emsp;<br />&emsp;</p>
+			    	</li>
+			    	<li class="b">
+			    		<img src="images/img_14.png" alt="" />
+			    		<div class="title">step.5</div>
+			    		<p>2分管裁切適當長度後，將分流器水管接頭的螺帽轉下，套入二分管，接上水管接頭之後再旋緊螺帽。</p>
+			    	</li>
+			    	<li class="b">
+			    		<img src="images/img_15.png" alt="" />
+			    		<div class="title">step.6</div>
+			    		<p>自來水入水水管連結淨水器進水孔。<br />&emsp;</p>
+			    	</li>
+			    </ul>
+			    <ul>
+			    	<div>
+				    	<li class="b">
+				    		<img src="images/img_16.png" alt="" />
+				    		<div class="title">step.7</div>
+				    		<p>過濾水出水連結淨水器出水孔。<br />&emsp;<br />&emsp;</p>
+				    	</li>
+				    	<li class="b">
+				    		<img src="images/img_17.png" alt="" />
+				    		<div class="title">step.8</div>
+				    		<p>分流器以板手鎖緊即可完成安裝，輕鬆享受過濾水及自來水的雙重便捷。</p>
+				    	</li>
+				    </div>
+				</ul>
+			</div>
+			<!--手機版-->
+			<div class="b-content m-show">
+			    <ul>
+			    	<li class="b">
+			    		<ul>
+				    		<li>
+					    		<div class="m-p"><img src="images/img_10.png" alt="" /></div>
+					    		<div class="m-p"><img src="images/img_11.png" alt="" /></div>
+					    	</li>
+					    	<li>
+					    		<div class="m-p">
+						    		<div class="title">step.1</div>
+						    		<p>以內附酒精棉片或乾布擦拭欲黏著的牆面，待乾。</p>
+						    	</div>
+						    	<div class="m-p">
+						    		<div class="title">step.2</div>
+						    		<p>撕下濾頭背部魔力扣的離型膠紙，固定貼合於適當位置後，請務必靜置三天。</p>
+						    	</div>
+						    </li>
+						</ul>
+			    	</li>
+			    	<li class="b">
+			    		<ul>
+				    		<li>
+					    		<div class="m-p"><img src="images/img_12.png" alt="" /></div>
+					    		<div class="m-p"><img src="images/img_13.png" alt="" /></div>
+					    	</li>
+					    	<li>
+					    		<div class="m-p">
+						    		<div class="title">step.3</div>
+						    		<p>將水龍頭原起泡頭及墊片轉下拆除。</p>
+						    	</div>
+						    	<div class="m-p">
+						    		<div class="title">step.4</div>
+						    		<p>安裝分流器於水龍頭出水處。</p>
+						    	</div>
+						    </li>
+						</ul>
+			    	</li>
+			    	<li class="b">
+			    		<ul>
+				    		<li>
+					    		<div class="m-p"><img src="images/img_14.png" alt="" /></div>
+					    		<div class="m-p"><img src="images/img_15.png" alt="" /></div>
+					    	</li>
+					    	<li>
+					    		<div class="m-p">
+						    		<div class="title">step.5</div>
+						    		<p>2分管裁切適當長度後，將分流器水管接頭的螺帽轉下，套入二分管，接上水管接頭之後再旋緊螺帽。</p>
+						    	</div>
+						    	<div class="m-p">
+						    		<div class="title">step.6</div>
+						    		<p>自來水入水水管連結淨水器進水孔。</p>
+						    	</div>
+						    </li>
+						</ul>
+			    	</li>
+			    	<li class="b">
+			    		<ul>
+				    		<li>
+					    		<div class="m-p"><img src="images/img_16.png" alt="" /></div>
+					    		<div class="m-p"><img src="images/img_17.png" alt="" /></div>
+					    	</li>
+					    	<li>
+					    		<div class="m-p">
+						    		<div class="title">step.7</div>
+						    		<p>過濾水出水連結淨水器出水孔。</p>
+						    	</div>
+						    	<div class="m-p">
+						    		<div class="title">step.8</div>
+						    		<p>分流器以板手鎖緊即可完成安裝，輕鬆享受過濾水及自來水的雙重便捷。</p>
+						    	</div>
+						    </li>
+						</ul>
+			    	</li>
+			    </ul>
+			</div>
+		</div>
+
+		<!--產品特點4-->
+		<div class="box_07">
+		    <div class="f-title"><span>04</span>更換濾心方便</div>
+		    <div class="txt">
+		    	<p>採用SQC快拆式兩分路設計，<span>5秒鐘</span>免工具快速完成安裝或更換，更加衛生無汙染。</p>
+		    </div>
+		    <ul>
+		    	<li>
+		    		<img src="images/img_18.png" alt="" />
+		    		<p>1. 將濾頭背部的魔力扣與牆面分離。</p>
+		    	</li>
+		    	<li>
+		    		<img src="images/img_19.png" alt="" />
+		    		<p>2. 順時鐘方向輕輕旋開，鬆開舊濾心。</p>
+		    	</li>
+		    	<li>
+		    		<img src="images/img_20.png" alt="" />
+		    		<p>3. 將舊濾心往下拉，與接頭脫離。</p>
+		    	</li>
+		    	<li>
+		    		<img src="images/img_21.png" alt="" />
+		    		<p>4. 逆時針旋緊新濾心，待水流過5分鐘後即可使用。</p>
+		    	</li>
+		    	<div style="clear: both;"></div>
+		    </ul>
+		    <p class="note"><span>*貼心小提醒：</span>請將安裝日期填寫於濾心貼標下方，以作為更換時間參考</p>
+		</div>
+
+		<!--過濾水的生活應用-->
+		<div class="box_08">
+		    <h1><span>過濾水的生活應用</span></h1>
+		    <ul>
+		    	<li>
+		    		<img src="images/img_22.png" alt="" />
+		    		<p>日常飲用</p>
+		    	</li>
+		    	<li>
+		    		<img src="images/img_23.png" alt="" />
+		    		<p>洗滌食材</p>
+		    	</li>
+		    	<li>
+		    		<img src="images/img_24.png" alt="" />
+		    		<p>料理烹飪</p>
+		    	</li>
+		    	<li>
+		    		<img src="images/img_25.png" alt="" />
+		    		<p>沖調飲品</p>
+		    	</li>
+		    </ul>
+		</div>
+
+		<!--淨水專家-->
+		<div class="box_09">
+		    <div class="txt">
+			    <div class="title"><font class="font">3M</font>世界級淨水專家<span>實驗室等級的居家好水</span></div>
+			    <p><font class="font">3M</font>專注淨水科技，擁有超過80年的液體過濾與淨水經驗。全球千位淨水團隊，從實驗到研發層層把關<br />實驗室等級的安心純淨，讓您在家也能夠擁有</p>
+		  	</div>
+		  	<div class="over"><img src="images/over.png" alt="" /></div>
+		  	<div class="pro m-show"><img src="images/m_pro.png" alt="" /></div>
+		</div>
+
+		<!--產品規格-->
+		<div class="box_10">
+		    <h1><span>產品規格</span></h1>
+		    <div class="pd"><img src="images/pd.jpg" alt="3M:DS02極淨便捷DIY淨水器"></div>
+		    <div class="table">
+			    <ul>
+		            <li>
+		            	<div class="name">商品名稱</div>
+		            	<div class="content"><font class="font">3M™</font> DS03極淨便捷DIY淨水器</div>
+		            	<div style="clear: both;"></div>
+		            </li>
+		            <li>
+		            	<div class="name">商品型號</div>
+		            	<div class="content">主系統：DS03/ 濾心：3DS-F003-5</div>
+		            	<div style="clear: both;"></div>
+		            </li>
+		            <li>
+		            	<div class="name">總濾水量</div>
+		            	<div class="content">單支濾心2,839公升（750加侖）</div>
+		            	<div style="clear: both;"></div>
+		            </li>
+		            <li>
+		            	<div class="name">適用水源</div>
+		            	<div class="content">0.5微米</div>
+		            	<div style="clear: both;"></div>
+		            </li>
+		            <li>
+		            	<div class="name">有效流速</div>
+		            	<div class="content">每分鐘2.8公升</div>
+		            	<div style="clear: both;"></div>
+		            </li>
+		            <li>
+		            	<div class="name">耗材更換</div>
+		            	<div class="content">活性碳濾心：6個月</div>
+		            	<div style="clear: both;"></div>
+		            </li>
+		            <li>
+		            	<div class="name">原產地</div>
+		            	<div class="content">台灣（濾心產地：墨西哥）</div>
+		            	<div style="clear: both;"></div>
+		            </li>
+		            <li>
+		            	<div class="name">商品尺寸</div>
+		            	<div class="content">單個淨水器系統：寬6 x 深6.8 x 高32.5公分 </div>
+		            	<div style="clear: both;"></div>
+		            </li>
+		             <li>
+		            	<div class="name">商品重量</div>
+		            	<div class="content">單個淨水器系統450 ± 10公克</div>
+		            	<div style="clear: both;"></div>
+		            </li>
+		            <li>
+		            	<div class="name">主要材質</div>
+		            	<div class="content">濾心外殼&濾心座：聚丙烯（PP）、<br />濾心材質：高密度活性碳棒</div>
+		            	<div style="clear: both;"></div>
+		            </li>
+		            <li>
+		            	<div class="name">適用溫度</div>
+		            	<div class="content">4.4~37.8℃</div>
+		            	<div style="clear: both;"></div>
+		            </li>
+		            <li>
+		            	<div class="name">操作水壓</div>
+		            	<div class="content">15~54 psi</div>
+		            	<div style="clear: both;"></div>
+		            </li>
+		        </ul>
+			</div>
+	        <div style="clear: both;"></div>
+	    </div>
+	</div>
+</body>
+</html>
