@@ -212,13 +212,12 @@ span.i{ width: 25px; display: inline-block; margin-right: 10px; float: left; }
 .cough ul li.box{ padding: 40px; }
 .cough ul li.box ul li p{ width: 87%; }
 .cough_doc{ padding: 80px 20px 0; }
-.cancer-c{ width: 70%; }
+.cancer-c, .dad-t, .dad-c{ width: 70%; }
 .cancer-c ul li p{ width: 91%; }
 .cancer-doc{ padding: 120px 120px 80px; }
 .food ul li{ width: 42%; margin: 30px 4%; border-radius: 40px; }
 .food ul li:nth-child(odd){ margin-top: 30px; }
 .food ul li dl dt img{ width: 100% ;}
-.dad-t, .dad-c{ width: 70%; }
 .dad-box ul li p{ width: 93%; }
 }
 
@@ -226,18 +225,15 @@ span.i{ width: 25px; display: inline-block; margin-right: 10px; float: left; }
 .header, .k1{ display: none; }
 .menu-m { position:fixed;left: 0; width: 100%; z-index: 999; -ms-background-color: initial; top: 0; padding: 0; }
 span.logo{ width: 60px; }
-.menu-m ul.active { display:none;}
 .menu-m ul { width:100%; position:absolute; top:58px; left:0px; background: #fff; z-index: 99; padding: 0 0 10px 0;
 border-bottom-right-radius: 40px;border-bottom-left-radius: 40px;-moz-box-shadow:0px 8px 10px rgba(0, 0, 0, 0.1);
 -webkit-box-shadow:0px 8px 10px rgba(0, 0, 0, 0.1); box-shadow:0px 8px 10px rgba(0, 0, 0, 0.1);}
 .menu-m li { margin:5px 0px 5px 0px; display:block; font-size: 1rem; padding: 10px 0; text-align: center;}
-.menu-m li.m5{ border-bottom: none; }
-.menu-m li p.mt-2{ padding-bottom: 0;}
 .menu-m li p { color: #fff; font-size: 1.25rem; }
 .menu-m li span { display: none!important; }
-.menu-m a, #navigation-menu  li .button{ display:block;}
-.menu-m li a,#navigation-menu  li.active a, #navigation-menu  li .button{ font-size: 1.25rem; color: #e05c5e; font-weight: bold;}
-.menu-m li a:hover, #navigation-menu  .current-item a{ text-decoration:none;}
+.menu-m a{ display:block;}
+.menu-m li a{ font-size: 1.25rem; color: #e05c5e; font-weight: bold;}
+.menu-m li a:hover{ text-decoration:none;}
 .menu-m li .button:before{ content: none;}
 .menu-m li.buy{ background-color: #000;}
 .menu-m li.buy a{ color: #fff;}
@@ -344,7 +340,6 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .cancer-doc .pic{ width: 65%; }
 .dad-box{ padding: 30px; }
 .dad-box ul li p{ width: 88%; }
-
 }
 
 @media screen and (max-width: 414px){
@@ -365,10 +360,9 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .cough_doc li{ width: 100%; }
 .cough_doc li{ margin: 30px auto; }
 .comma{ width: 60px; }
-.cancer-box{ width: 100%; }
+.cancer-box, .food ul li{ width: 100%; }
 .cancer-doc{ padding: 90px 20px 80px; }
 .cancer-c ul li p{ width: 83%; }
-.food ul li{ width: 100%; }
 .food-re{ padding: 100px 0 0; }
 .food-re p{ text-align: left;font-size: 1rem; }
 .dad-box{ padding: 20px; }
