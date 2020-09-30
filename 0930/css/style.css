@@ -288,7 +288,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .dad{ background: url(../images/dad_bg.jpg) no-repeat right bottom;background-attachment: fixed;}
 .dad-t, .dad-c{ width: 100%; }
 .cancer-doc dl dt{ text-align: center; }
-.dad{ background-attachment: inherit; }
+.dad{ background-attachment: inherit; background-size: cover; }
 }
 
 @media screen and (max-width: 767px){
