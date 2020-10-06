@@ -47,30 +47,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="wrap">
 	
 	<!--kv-->
-	<nav class="menu-m">
-		<ul>
-			<li><a id="bt-qa" href="#qac">網紅媽咪Q&A</a></li>
-			<li><a id="bt-cough" href="#coughc">守護攻略-百日咳</a></li>
-			<li><a id="bt-cancer" href="#cancerc">守護攻略-子宮頸癌</a></li>
-			<li><a id="bt-food" href="#foodc">健康小叮嚀</a></li>
-			<li><a id="bt-dad" href="#dadc">神隊友助攻</a></li>
-		</ul>
-		<div class="c-hamburger toggle-nav">
-			<span class="c-hamburger__line"></span>
-			<span class="c-hamburger__line"></span>
-			<span class="c-hamburger__line"></span>
-			<span class="logo"><img src="images/logo.png" alt="康健"></span>
-		</div>
-	</nav>
-	<div class="kv">
+	<div id="kvc" class="kv">
 		<div class="yellow_1"><img src="images/yellow_1.png" alt=""></div>
 		<div class="yellow_2"><img src="images/yellow_2.png" alt=""></div>
-		<div class="k3"><img src="images/k_3.png" alt=""></div>
-		<div class="k4"><img src="images/k_4.png" alt=""></div>
-		<div class="k5"><img src="images/k_5.png" alt=""></div>
+		<div data-stellar-ratio="0.5" class="k3 animated fadeIn-3"><img class="animated UpDown-2" src="images/k_3.png" alt=""></div>
+		<div data-stellar-ratio="0.5" class="k4 animated fadeIn-3"><img class="animated UpDown-3" src="images/k_4.png" alt=""></div>
+		<div data-stellar-ratio="0.5" class="k5 animated fadeIn-3"><img class="animated UpDown-2" src="images/k_5.png" alt=""></div>
 		<!--header-->
 		<div class="header">
-			<div class="logo"><img src="images/logo.png" alt="康健"></div>
+			<span class="logo"><a id="bts-kv" href="#kvc"><img src="images/logo.png" alt="康健"></a></span>
+			<div class="c-hamburger toggle-nav">
+				<span class="c-hamburger__line"></span>
+				<span class="c-hamburger__line"></span>
+				<span class="c-hamburger__line"></span>
+				
+			</div>
+			<div class="logo"><a id="bt-kv" href="#kvc"><img src="images/logo.png" alt="康健"></a></div>
 			<div class="navigation">
 				<ul>
 					<li><a id="bt-qa" href="#qac">網紅媽咪Q&A</a></li>
@@ -78,22 +70,40 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<li><a id="bt-cancer" href="#cancerc">守護攻略-子宮頸癌</a></li>
 					<li><a id="bt-food" href="#foodc">健康小叮嚀</a></li>
 					<li><a id="bt-dad" href="#dadc">神隊友助攻</a></li>
+					<li>
+						<!-- Load Facebook SDK for JavaScript -->
+						<div id="fb-root"></div>
+						<script>(function(d, s, id) {
+						var js, fjs = d.getElementsByTagName(s)[0];
+						if (d.getElementById(id)) return;
+						js = d.createElement(s); js.id = id;
+						js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+						fjs.parentNode.insertBefore(js, fjs);
+						}(document, 'script', 'facebook-jssdk'));</script>
+
+						<!-- Your share button code -->
+						<div class="fb-share-button" 
+						data-href="https://www.your-domain.com/your-page.html" 
+						data-layout="button">
+						</div>
+					</li>
+					<li><a class="social-line" href="http://line.naver.jp/R/msg/text/?大家跟我一起用Line分享吧!%0D%0Ahttp://blog.ja-anything.com/"><img src="images/share-a.png" /></a></li>
+					
 				</ul>
 			</div>
 			<div class="clear"></div>
 		</div>
-	
 		<div class="contain">
 			<ul>
-				<li class="title">
+				<li class="title animated fadeIn">
 					<div class="t"><img src="images/title.png" alt="準媽咪攻略"></div>
 					<p>懷孕是女人一生的大事，不只是因為即將迎接新生命的到來，更重要的是，準媽咪必須更小心照顧自己，同時保護寶寶的健康。<br />因此，懷孕期間準媽咪除了要關注每日的飲食營養攝取，預防疾病避免感染腹中胎兒之外，產後的照護也不容忽視，才能讓孩子平安出生，媽媽也能健康的陪著寶寶長大。</p>
-					<div class="down"><img src="images/scroll.png" alt="scroll"></div>
+					<div class="down"><a id="bt-scroll" class="animated UpDown-1"><img src="images/scroll.jpg" alt="scroll"></a></div>
 				</li>
-				<li class="sub"><img src="images/sub.png" alt="健康寶寶我守護"></li>
-				<li class="k1"><img src="images/k_1.png" alt=""></li>
-				<li class="k2"><img src="images/k_2.png" alt=""></li>
-				<li class="k_mom"><img src="images/k_mom.png" alt=""></li>
+				<li class="sub animated fadeInDown-1"><img src="images/sub.png" alt="健康寶寶我守護"></li>
+				<li class="k1 animated fadeIn-1"><img class="animated UpDown-4" src="images/k_1.png" alt=""></li>
+				<li class="k2 animated fadeIn-2"><img class="animated UpDown-5" src="images/k_2.png" alt=""></li>
+				<li class="k_mom animated fadeInDown-1"><img src="images/k_mom.png" alt=""></li>
 			</ul>
 		</div>
 	</div>
@@ -101,34 +111,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 	<!--qa-->
 	<div id="qac" class="qa">
-		<div class="red_1"><img src="images/red_1.png"></div>
-		<div class="red_2"><img src="images/red_2.png"></div>
+		<div data-stellar-ratio="1.5" class="red_1"><img src="images/red_1.png"></div>
+		<div data-stellar-ratio="2.5" class="red_2"><img src="images/red_2.png"></div>
 		<div class="contain">
-			<div class="icon"><img src="images/icon_1.png" alt=""></div>
-			<h2 class="stitle"><img src="images/qa_title.png" alt="請問醫師！網紅媽咪的孕期、孕後Q&A"></h2>
-			<p class="qa_intro intro">孕期間的媽咪做了各式各樣的檢查與產撿，目的是讓小朋友安全又健康，新手媽媽還特別需要注意哪些地方呢？</p>
+			<div class="icon animated"><img src="images/icon_1.png" alt=""></div>
+			<h2 class="stitle animated"><img src="images/qa_title.png" alt="請問醫師！網紅媽咪的孕期、孕後Q&A"></h2>
+			<p class="qa_intro intro animated">孕期間的媽咪做了各式各樣的檢查與產撿，目的是讓小朋友安全又健康，新手媽媽還特別需要注意哪些地方呢？</p>
 		
 			<!--video-->
 			<div class="owl-carousel owl-theme">
-	            <div class="qa_c">
+	            <div class="qa_c animated">
 	            	<ul>
 	            		<li>
 	            			<img src="images/y_1.png">
-	            			<p>Youtuber<span>陳彥婷</span></p>
+	            			<p>Youtuber<span>彥婷x巨人</span></p>
 	            		</li>
 	            		<li class="plus"><img src="images/icon_11.png"></li>
 	            		<li>
 	            			<img src="images/y_2.png">
-	            			<p>禾馨民權婦幼醫院<span>許峻睿醫師</span></p>
+	            			<p>禾馨醫療 婦產科<span>許峻睿醫師</span></p>
 	            		</li>
 	            		<div class="clear"></div>
 	            	</ul>
 	            	<div class="video_c">
-	            		<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/7c__KUuWAqU?rel=0&amp;autoplay=0&amp;enablejsapi=1" frameborder="0"allowfullscreen=""></iframe></div>
+	            		<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/L0OazdKvGiw?rel=0&amp;autoplay=0&amp;enablejsapi=1" frameborder="0"allowfullscreen=""></iframe></div>
 	            	</div>
-	            	<p class="v_txt">【懷孕知識補給站】男女都該看！生小孩到底要花多少錢？自費產檢這麼多有需要嗎？(假字)</p>
+	            	<p class="v_txt">【百日咳不止成年人會得，新生兒更要注意！？】<br /><span>每年都有新生兒得到百日咳而併發重症，但鮮少人真正了解百日咳的嚴重性。 孕媽咪該如何在孕期間超前部署，保護寶寶呢？</span></p>
 				</div>
-	            <div class="qa_c">
+	            <div class="qa_c animated">
 	            	<ul>
 	            		<li>
 	            			<img src="images/y_1.png">
@@ -163,22 +173,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<div class="cough-b">
 			<div class="contain">
 				<ul>
-					<li class="box">
+					<li class="box animated">
 						<div class="arrow_l"><img src="images/arrow_l.png" alt=""></div>
 						<div class="name">不分季節、年齡，隨時都可能感染</div>
 						<p>百日咳是一種呼吸道細菌感染的法定傳染疾病，不僅具有高度傳染力，且沒有流行季節、不分年齡、地區，全球各地每月都有病例發生。任何人都有可能因此受感染。<br />主要感染途徑，是經由染病帶菌者，透過咳嗽、打噴嚏時的飛沫傳染造成。當準媽咪不知不覺感染百日咳，不僅可能引發肺炎等嚴重併發症，同時會造成胎兒成長的安全疑慮。<br />更令人擔憂的是，寶寶出生0至2個月，在尚未接種疫苗的空窗期、免疫力較弱時，百日咳對寶寶健康威脅更大。</p>
 					</li>
-					<li class="box">
+					<li class="box animated">
 						<div class="arrow_r"><img src="images/arrow_r.png" alt=""></div>
 						<div class="name">是感冒還是百日咳？就醫診療最安心</div>
 						<p>其實，百日咳最棘手是感染後不易察覺，因為一開始發病的症狀，包括︰流鼻水、鼻塞、打噴嚏、發燒及輕微咳嗽等，都與普通感冒非常相似、難以區分。因此，許多人在感染後，以為小感冒往往不以為意，未及時就醫治療導致健康陷入危機。準媽咪一定要特別注意，當你連續兩週不停咳嗽，且出現陣發性咳嗽、發出吸入性哮喘聲或咳嗽後有嘔吐現象時，就必須提高警覺，可能已經感染了百日咳，並且盡快接受醫師診療，對寶寶的健康威脅降到最低。<br />寶寶在出生後六個月內是百日咳的重症高危險群，當寶寶感染百日咳，會發生很強烈的連續咳嗽，並且常常合併臉部漲紅、嘔吐現象，可能引起呼吸中止、肺炎、癲癇、腦病變或因持續性嘔吐導致營養失調，媽媽不可不當心！</p>
 					</li>
-					<li class="box">
+					<li class="box animated">
 						<div class="arrow_l"><img src="images/arrow_l.png" alt=""></div>
 						<div class="name">家人是百日咳傳播高危險群</div>
 						<p>在台灣絕大部分的成年人在幼兒時期皆已接種百日咳疫苗，但其實疫苗的免疫效力，在3-5年之後即開始降低，而且僅約可維持5～10年。疫苗完成接種12年後，可能完全偵測不出抗體。因此，青少年及成年人都有可能因失去抵抗力而遭受感染，成為家裡的病菌傳播者。<br />根據衛生福利部疾病管制署的資料顯示，百日咳病菌經常是由父母及兄弟姊妹，外出後不小心帶回家傳染給家人，也就是說準媽咪身邊所有的家人與親友，都是傳播百日咳的高危險族群，甚至寶寶出生後，這些最親近的家人，也將成為寶寶感染百日咳的主要來源。</p>
 					</li>
-					<li class="box">
+					<li class="box animated">
 						<div class="arrow_r"><img src="images/arrow_r.png" alt=""></div>
 						<div class="name">日常預防︰保持良好衛生習慣</div>
 						<p>預防百日咳，除了接種疫苗外，不管在家裡或出門在外，日常生活中都要注意衛生、保持良好習慣，做到全面性阻隔，同時保護自己及寶寶。</p>
@@ -222,25 +232,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					</li>
 					<div class="clear"></div>
 				</ul>
-				<ul class="cough_doc">
+				<ul class="cough_doc animated">
 					<div class="comma"><img src="images/comma_1.png" alt=""></div>
 					<li>
-						<div class="pic"><img src="images/doc_1.png" alt="許峻睿醫生"></div>
-						<p class="n">許峻睿<span>醫生</span></p>
-						<p>很多孕媽咪害怕打針會影響胎兒，也擔心會出現副作用或過敏問題。對此小兒科醫師黃瑽寧表示，百日咳（假字）...</p>
-						<a class="more" href="#" target="blanc">了解更多</a>
+						<div class="pic"><img src="images/doc_1.png" alt="蘇維鈞醫師"></div>
+						<p class="n">蘇維鈞<span>醫師</span></p>
+						<p>多年來大家對百日咳已失去警戒心，但它並沒有在國際間消失，對嬰幼兒、老人，及有慢性阻塞性肺炎、氣喘的成人，同樣具高度危險性。</p>
+						<a class="more" href="https://www.commonhealth.com.tw/article/article.action?nid=82863" target="blanc">了解更多</a>
 					</li>
 					<li>
-						<div class="pic"><img src="images/doc_2.png" alt="許峻睿醫生"></div>
-						<p class="n">許峻睿<span>醫生</span></p>
-						<p>很多孕媽咪害怕打針會影響胎兒，也擔心會出現副作用或過敏問題。對此小兒科醫師黃瑽寧表示，百日咳（假字）...</p>
-						<a class="more" href="#" target="blanc">了解更多</a>
+						<div class="pic"><img src="images/doc_2.png" alt="黃立民醫師"></div>
+						<p class="n">黃立民<span>醫師</span></p>
+						<p>多年來百日咳未絕跡，而且傳染力高、症狀難以分辨，別輕忽對嬰幼兒的大傷害！</p>
+						<a class="more" href="https://www.commonhealth.com.tw/article/article.preview?nid=82872&preview=ce8e2bc88a33c1ba20d4b22e325592ae75109fd0" target="blanc">了解更多</a>
 					</li>
 					<li>
-						<div class="pic"><img src="images/doc_3.png" alt="許峻睿醫生"></div>
-						<p class="n">許峻睿<span>醫生</span></p>
-						<p>很多孕媽咪害怕打針會影響胎兒，也擔心會出現副作用或過敏問題。對此小兒科醫師黃瑽寧表示，百日咳（假字）...</p>
-						<a class="more" href="#" target="blanc">了解更多</a>
+						<div class="pic"><img src="images/doc_3.png" alt="陳春木醫師+高佳惠醫師"></div>
+						<p class="n">陳春木<span>醫師 、 </span>高佳惠<span>醫師</span></p>
+						<p>百日咳一直都在我們身邊，嬰幼兒症狀又比大人嚴重許多。需要透過家人照顧者有意識的預防，能減少很多遺憾。</p>
+						<a class="more" href="https://www.commonhealth.com.tw/article/article.preview?nid=82878&preview=48a8d6e998a9df7f686bad438455d74e4c88ef7a" target="blanc">了解更多</a>
 					</li>
 				</ul>
 			</div>
@@ -249,13 +259,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<div class="top_2"></div>
 	<!--cancer-->
 	<div id="cancerc" class="cancer">
-		<div class="love-1"><img src="images/love_1.png" alt=""></div>
-		<div class="love-2"><img src="images/love_2.png" alt=""></div>
+		<div data-stellar-ratio="0.5" class="love-1"><img src="images/love_1.png" alt=""></div>
+		<div data-stellar-ratio="0.5" class="love-2"><img src="images/love_2.png" alt=""></div>
 		<div class="contain">
-			<div class="icon"><img src="images/icon_3.png" alt=""></div>
-			<h2 class="stitle"><img src="images/cancer_title.png" alt="疾病預防媽咪必知!產後免疫力降低 嚴防子宮頸癌入侵"></h2>
-			<p class="intro cancer_intro">歷經十個月懷孕辛苦，終於開心迎接寶寶誕生，此時必須全心照顧孩子的媽媽，千萬別忘了也要細心照料自己，做好產後保養。產後身體虛弱、免疫力較差，健康風險相對增高。特別在生產過程中，子宮頸有更多接觸細菌機會，罹患子宮頸癌機率大為提升。<br />依據資料顯示，每篩檢70位婦女，就可以找到一位子宮頸癌前病變或子宮頸癌個案。提醒各位準媽媽們，產後儘快施打子宮頸疫苗，讓自己有多一層保護！</p>
-			<div class="cancer-box">
+			<div class="icon animated"><img src="images/icon_3.png" alt=""></div>
+			<h2 class="stitle animated"><img src="images/cancer_title.png" alt="疾病預防媽咪必知!產後免疫力降低 嚴防子宮頸癌入侵"></h2>
+			<p class="intro cancer_intro animated">歷經十個月懷孕辛苦，終於開心迎接寶寶誕生，此時必須全心照顧孩子的媽媽，千萬別忘了也要細心照料自己，做好產後保養。產後身體虛弱、免疫力較差，健康風險相對增高。特別在生產過程中，子宮頸有更多接觸細菌機會，罹患子宮頸癌機率大為提升。<br />依據資料顯示，每篩檢70位婦女，就可以找到一位子宮頸癌前病變或子宮頸癌個案。提醒各位準媽媽們，產後儘快施打子宮頸疫苗，讓自己有多一層保護！</p>
+			<div class="cancer-box animated">
 				<div class="cancer-icon"><img src="images/icon_6.png" alt=""></div>
 				<dl class="cancer-c">
 					<dt>產後恢復︰身體清潔+均衡飲食+適量運動</dt>
@@ -280,7 +290,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</dl>
 				<div class="clear"></div>
 			</div>
-			<div class="cancer-box">
+			<div class="cancer-box animated">
 				<div class="cancer-icon"><img src="images/icon_7.png" alt=""></div>
 				<dl class="cancer-c">
 					<dt>免疫力低落，小心子宮頸癌找上門</dt>
@@ -288,7 +298,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</dl>
 				<div class="clear"></div>
 			</div>
-			<div class="cancer-box">
+			<div class="cancer-box animated">
 				<div class="cancer-icon"><img src="images/icon_8.png" alt=""></div>
 				<dl class="cancer-c">
 					<dt>產婦風險高出一般女性2倍</dt>
@@ -296,7 +306,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</dl>
 				<div class="clear"></div>
 			</div>
-			<div class="cancer-box">
+			<div class="cancer-box animated">
 				<div class="cancer-icon"><img src="images/icon_9.png" alt=""></div>
 				<dl class="cancer-c">
 					<dt>接種疫苗，為自己建立防護網</dt>
@@ -304,13 +314,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</dl>
 				<div class="clear"></div>
 			</div>
-			<div class="cancer-doc">
+			<div class="cancer-doc animated">
 				<div class="comma comma-2"><img src="images/comma_2.png" alt=""></div>
-				<div class="pic"><img src="images/doc_4.png" alt="許峻睿醫生"></div>
+				<div class="pic"><img src="images/doc_4.png" alt="鄭文芳醫師"></div>
 				<dl>
-					<dt>許峻睿<span>醫生</span></dt>
-					<dd>除此之外還有子宮頸癌。懷孕初期、中期、後期還會各接受一次超音波檢查。總而言之，懷孕初期做檢查，可以更容易地分辨出子宮和卵巢是否有異常現象，有這麼多的檢查，也是希望能讓媽媽更安心，確保胎兒能平安長大(假字)...</dd>
-					<a class="more more-2" href="#" target="blanc">了解更多</a>
+					<dt>鄭文芳<span>醫師</span></dt>
+					<dd>全世界有80個國家全面接種子宮頸癌疫苗，台灣衛福部也從2018年開放國中女學生公費施打。但你知道即使是有過性經驗的成年女性、甚至是男性都可以施打嗎？如何才能選擇到保護濃度高又持久的疫苗？</dd>
+					<a class="more more-2" href="https://www.commonhealth.com.tw/article/article.preview?nid=82881&preview=fbdbdbd08e92d1393442028509a44911273d8945" target="blanc">了解更多</a>
 				</dl>
 				<div class="clear"></div>
 			</div>
@@ -320,11 +330,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<!--food-->
 	<div id="foodc" class="food">
 		<div class="contain">
-			<div class="icon icon-2"><img src="images/icon_4.png" alt=""></div>
-			<h2 class="stitle"><img src="images/food_title.png" alt="健康小叮嚀!媽媽吃得剛剛好 寶寶成長都完好"></h2>
-			<p class="intro">孕媽咪除了照顧自己之外，還要擔負起腹中寶寶健康發育所需要的大量營養。這些營養來源，必須依靠孕媽咪在日常飲食中充份攝取，即使可能會面對懷孕早期發生的食慾不佳、孕吐等狀況，提醒孕媽咪還是要保持正常的飲食，讓寶寶平安健康出生。</p>
+			<div class="icon icon-2 animated"><img src="images/icon_4.png" alt=""></div>
+			<h2 class="stitle animated"><img src="images/food_title.png" alt="健康小叮嚀!媽媽吃得剛剛好 寶寶成長都完好"></h2>
+			<p class="intro animated">孕媽咪除了照顧自己之外，還要擔負起腹中寶寶健康發育所需要的大量營養。這些營養來源，必須依靠孕媽咪在日常飲食中充份攝取，即使可能會面對懷孕早期發生的食慾不佳、孕吐等狀況，提醒孕媽咪還是要保持正常的飲食，讓寶寶平安健康出生。</p>
 			<ul>
-				<li>
+				<li class="f1 animated">
 					<dl>
 						<dt><img src="images/food_1.png" alt=""></dt>
 						<dd>
@@ -333,7 +343,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						</dd>
 					</dl>
 				</li>
-				<li>
+				<li class="f2 animated">
 					<dl>
 						<dt><img src="images/food_2.png" alt=""></dt>
 						<dd>
@@ -342,7 +352,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						</dd>
 					</dl>
 				</li>
-				<li>
+				<li class="f3 animated">
 					<dl>
 						<dt><img src="images/food_3.png" alt=""></dt>
 						<dd>
@@ -351,7 +361,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						</dd>
 					</dl>
 				</li>
-				<li>
+				<li class="f4 animated">
 					<dl>
 						<dt><img src="images/food_4.png" alt=""></dt>
 						<dd>
@@ -362,24 +372,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</li>
 				<div class="clear"></div>
 			</ul>
-			<div class="food-re">
+			<div class="food-re animated">
 				<div class="comma comma-2"><img src="images/comma_1.png" alt=""></div>
 				<div class="t">嚴選食物，吃得安心</div>
 				<p>雖然強調孕期飲食要保持多元與均衡，嘗試各類食物，但也要提醒孕媽咪，以下幾類食物要忌口<span>減少攝取</span>，才能平安度過人生最辛苦、卻也最寶貴的懷孕時期。</p>
 				<ul>
-					<li>
+					<li class="animated UpDown-4">
 						<img src="images/food_5.png" alt="">
 						<p>菸、酒、咖啡、濃茶</p>
 					</li>
-					<li>
+					<li class="animated UpDown-5">
 						<img src="images/food_6.png" alt="">
 						<p>脂肪含量過多的食物</p>
 					</li>
-					<li>
+					<li class="animated UpDown-4">
 						<img src="images/food_7.png" alt="">
 						<p>煙燻加工食物</p>
 					</li>
-					<li>
+					<li class="animated UpDown-5">
 						<img src="images/food_8.png" alt="">
 						<p>空熱量食物(速食、披薩、糖果、汽水等)</p>
 					</li>
@@ -393,9 +403,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<div id="dadc" class="dad">
 		<div class="contain">
 			<div class="dad-t">
-				<div class="icon icon-3"><img src="images/icon_5.png" alt=""></div>
-				<h2 class="stitle"><img src="images/dad_title.png" alt="神隊友助攻!成為媽咪最佳得力助手，一同參與孕期重要大事"></h2>
-				<p class="intro cancer_intro dad_intro">從懷孕至生產後，媽媽要面對孕期間身體一連串變化，緊接著又要負擔哺育孩子的沉重壓力，導致情緒起伏較不穩定，胃口也跟著改變、無所適從、壓力太大更增加早產的風險。這段日子，身為媽媽最親密的支持力量，準爸爸除了成為媽媽精神上堅實的依靠外，也要積極參與懷孕及分娩過程，在各方面成功扮演另一半的最佳得力助手，讓媽媽一路放寬心，健康平安的順產。</p>
+				<div class="icon icon-3 animated"><img src="images/icon_5.png" alt=""></div>
+				<h2 class="stitle animated"><img src="images/dad_title.png" alt="神隊友助攻!成為媽咪最佳得力助手，一同參與孕期重要大事"></h2>
+				<p class="intro cancer_intro dad_intro animated">從懷孕至生產後，媽媽要面對孕期間身體一連串變化，緊接著又要負擔哺育孩子的沉重壓力，導致情緒起伏較不穩定，胃口也跟著改變、無所適從、壓力太大更增加早產的風險。這段日子，身為媽媽最親密的支持力量，準爸爸除了成為媽媽精神上堅實的依靠外，也要積極參與懷孕及分娩過程，在各方面成功扮演另一半的最佳得力助手，讓媽媽一路放寬心，健康平安的順產。</p>
 			</div>
 			<div class="dad-c">
 				<div class="dad-box">
@@ -481,27 +491,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!--footer-->
 <div class="footer">
 	<div id="commonhealth_footer">
-		<div class="commonhealth_footer-channel">
+		<div class="commonhealth_footer-channel lite">
 		    <ul>
 			    <li><a href="https://www.commonhealth.com.tw/" target="_blank">康健雜誌</a></li>
 			    <li><a href="https://www.commonhealth.com.tw/book/index.action" target="_blank">康健出版</a></li>
-			     <li><a href="https://www.youtube.com/user/CommonHealthTV" target="_blank">康健影音</a></li>
-			    <li><a href="https://line.me/ti/p/@commonhealth" target="_blank">康健LINE</a></li>
+			    <li><a href="https://www.youtube.com/user/CommonHealthTV" target="_blank">康健影音</a></li>
 			    <br>
-			    <li><a href="https://www.facebook.com/commonhealth/" target="_blank">康健FB</a></li>
 			    <li><a href="https://kb.commonhealth.com.tw/" target="_blank">康健知識庫</a></li>
 			    <li><a href="https://club.commonhealth.com.tw/" target="_blank">大人社團</a></li>
 			    <li><a href="https://shop.commonhealth.com.tw/" target="_blank">大人好物</a></li>
 		    </ul>
 		</div>
 		<div class="commonhealth_footer-copyright">
-		    Copyright © 2019 康健雜誌. <br>All rights reserved. 版權所有，禁止擅自轉貼節錄
+		    Copyright © 2020 康健雜誌<br />All rights reserved. 本網站內容不得轉載、公開播送或公開傳輸。
 		</div>
 	</div>
 </div>
 <!--footer end-->
-<script src="js/jquery-3.5.1.js"></script>
+<script src="js/jquery-2.0.2.js"></script>
 <script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
 <script src="js/action.js"></script>
 <script>
 	$(document).ready(function(){
@@ -510,7 +519,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		});
 	});
 	$(document).ready(function(){
-		$(".menu-m li a").click(function(){
+		$(".navigation li a").click(function(){
 			$(".c-hamburger").removeClass("is-open");
 		});
 	});
@@ -535,72 +544,81 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		    }
 	    })
     })
-
+    $(document).ready(function () {
+		$.stellar(
+			
+		);
+	});
 </script>
-
 <!--animation-->
 <script>
 	$(window).scroll(function() {
-		$('.classic-content, .ig-content, .food-box, .spot-box').each(function(){
+		$('.icon, .stitle, .qa_intro ,.intro, .cough ul li.box, .cough_doc, .cancer-box, .cancer-doc, .food-re, .f1').each(function(){
 			var imagePos = $(this).offset().top;
 
 			var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+700) {
+			if (imagePos < topOfWindow+750) {
 			$(this).addClass("fadeIndown");
 			}
-
 			var ww = $(window).width();
-			if (ww < 769) {
+			if (ww < 767) {
 		    $(this).removeClass("fadeIndown");
 		    }
 		});
 	});
-	
-
 	$(window).scroll(function() {
-		$('.p1, .p2, .p3, .p4, .p5, .p10, .p11, .p12').each(function(){
+		$('.f2').each(function(){
 			var imagePos = $(this).offset().top;
 
 			var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+700) {
-			$(this).addClass("fadeIn-2");
+			if (imagePos < topOfWindow+750) {
+			$(this).addClass("fadeIndown-2");
 			}
-
 			var ww = $(window).width();
-			if (ww < 769) {
-		    $(this).removeClass("fadeIn-2");
+			if (ww < 767) {
+		    $(this).removeClass("fadeIndown-2");
 		    }
 		});
 	});
-
 	$(window).scroll(function() {
-		$('.tip-2 img, .tip-3 img, .tip-4 img').each(function(){
+		$('.f3').each(function(){
 			var imagePos = $(this).offset().top;
 
 			var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+700) {
-			$(this).addClass("flipInX-2");
+			if (imagePos < topOfWindow+750) {
+			$(this).addClass("fadeIndown-3");
 			}
-
 			var ww = $(window).width();
-			if (ww < 769) {
-		    $(this).removeClass("flipInX-2");
+			if (ww < 767) {
+		    $(this).removeClass("fadeIndown-3");
 		    }
 		});
 	});
-
 	$(window).scroll(function() {
-		$('.p9').each(function(){
+		$('.f4').each(function(){
 			var imagePos = $(this).offset().top;
 
 			var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+700) {
-			$(this).addClass("fadeInRight");
+			if (imagePos < topOfWindow+750) {
+			$(this).addClass("fadeIndown-4");
 			}
-
 			var ww = $(window).width();
-			if (ww < 769) {
-		    $(this).removeClass("fadeInRight");
+			if (ww < 767) {
+		    $(this).removeClass("fadeIndown-4");
+		    }
+		});
+	});
+	$(window).scroll(function() {
+		$('.qa_c').each(function(){
+			var imagePos = $(this).offset().top;
+
+			var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+750) {
+			$(this).addClass("fadeIndown-5");
+			}
+			var ww = $(window).width();
+			if (ww < 767) {
+		    $(this).removeClass("fadeIndown-5");
 		    }
 		});
 	});
