@@ -349,7 +349,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 }
 
 @media screen and (max-width: 414px){
-.k_mom, .red_1, .red_2, .love-1, .love-2{ display: none; }
+.k_mom, .red_1, .red_2, .love-1, .love-2{ display: none !important; }
 .kv{ min-height: 770px; }
 .title{ width: 100%;  margin: 110px 0 0 0;}
 .title .t{ margin: 0; }
