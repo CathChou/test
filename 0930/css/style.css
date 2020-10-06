@@ -59,9 +59,9 @@ box-shadow:0 0 9px rgba(0, 0, 0, 0.2); position: fixed; z-index: 100; left: 0; r
 .bg_2{ background:url(../images/bg_qa.png) no-repeat center; height:168px;position: relative;}
 .yellow_1{ width: 716px; position: absolute; left: 0; top: 0; }
 .yellow_2{ width: 199px; position: absolute; right: 0; bottom: 10px; }
-.k3{ width: 72px;position: absolute;top: 240px; left: 70px; }
-.k4{ width: 100px; position: absolute; top: 250px; right: 70px;}
-.k5{ width: 100px; position: absolute; bottom:140px; right: 30px;}
+.k3{ width: 72px;position: absolute;top: 240px; left: 70px; display: block !important;}
+.k4{ width: 100px; position: absolute; top: 250px; right: 70px;display: block !important;}
+.k5{ width: 100px; position: absolute; bottom:140px; right: 30px;display: block !important;}
 .kv .contain li{ position: absolute; list-style: none;}
 .title{ top: 140px; left: 50%; margin-left: -290px; width: 580px;z-index: 1;}
 .title .t{width: 497px; margin: 0 auto;}
@@ -79,7 +79,7 @@ box-shadow:0 0 9px rgba(0, 0, 0, 0.2); position: fixed; z-index: 100; left: 0; r
 .qa_2{  position: relative; padding: 200px 0 310px; }
 .qa_intro{ color: #fee1e2; width: 610px;}
 .red_1{ width: 581px; position: absolute; top: 0; right: -240px; display: block !important; }
-.red_2{ width: 871px; position: absolute; bottom: 30px; left: -500px; }
+.red_2{ width: 871px; position: absolute; bottom: 30px; left: -500px;display: block !important; }
 .qa_c ul { padding: 0 250px; margin: 0 auto; }
 .qa_c ul li{ width: 25%; float: left; margin:0 10.5%; }
 .qa_c ul li.plus{ width: 5%; margin: 0; padding: 60px 0; }
@@ -147,8 +147,8 @@ box-shadow:0 0 12px rgba(153, 32, 34, 0.2); }
 .more-2{ background: #fff; color: #eb6b6d; margin:20px 0 0 0; float: right;  }
 .more-2:hover{background: #e45557; color: #fff; }
 .comma-2{ top: 50px; left: 60px; }
-.love-1{ position: absolute; width: 709px; left: -100px; top: 550px; }
-.love-2{ position: absolute; width: 664px; right: -100px; top: 850px; }
+.love-1{ position: absolute; width: 709px; left: -100px; top: 550px; display: block !important;}
+.love-2{ position: absolute; width: 664px; right: -100px; top: 850px; display: block !important;}
 
 /*----- food -----*/
 .top_3{ background: url(../images/bg_3.png) no-repeat center bottom; height: 159px; position: relative;}
