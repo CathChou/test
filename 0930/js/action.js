@@ -1,11 +1,11 @@
 //reload
-//var windowWidth = $(window).width();
-    //$(window).resize(function() {
-    //if(windowWidth != $(window).width()){
-    //location.reload();
-    //return;
-    //}
-//});
+var windowWidth = $(window).width();
+    $(window).resize(function() {
+    if(windowWidth != $(window).width()){
+    location.reload();
+    return;
+    }
+});
 
 
 //手機板選單收合
