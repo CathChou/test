@@ -61,7 +61,7 @@ box-shadow:0 0 9px rgba(0, 0, 0, 0.2); position: fixed; z-index: 100; left: 0; r
 .yellow_2{ width: 199px; position: absolute; right: 0; bottom: 10px; }
 .k3{ width: 72px;position: absolute;top: 240px; left: 70px; }
 .k4{ width: 100px; position: absolute; top: 250px; right: 70px;}
-.k5{ width: 100px; position: absolute; top: 530px; right: 30px;}
+.k5{ width: 100px; position: absolute; top: 630px; right: 30px;}
 .kv .contain li{ position: absolute; list-style: none;}
 .title{ top: 140px; left: 50%; margin-left: -290px; width: 580px;z-index: 1;}
 .title .t{width: 497px; margin: 0 auto;}
