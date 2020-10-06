@@ -79,7 +79,7 @@ box-shadow:0 0 9px rgba(0, 0, 0, 0.2); position: fixed; z-index: 100; left: 0; r
 .qa_2{  position: relative; padding: 200px 0 310px; }
 .qa_intro{ color: #fee1e2; width: 610px;}
 .red_1{ width: 581px; position: absolute; top: 0; right: -240px; }
-.red_2{ width: 871px; position: absolute; bottom: 30px; left: -500px; }
+.red_2{ width: 871px; position: absolute; top: 70px; left: -500px; }
 .qa_c ul { padding: 0 250px; margin: 0 auto; }
 .qa_c ul li{ width: 25%; float: left; margin:0 10.5%; }
 .qa_c ul li.plus{ width: 5%; margin: 0; padding: 60px 0; }
