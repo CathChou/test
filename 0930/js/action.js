@@ -25,7 +25,7 @@ $(window).bind('resize orientationchange', function() {
 var adjustMenu = function() {
     if (ww < 1024) {
     $(".navigation ul li").unbind('mouseenter mouseleave');
-    $(".navigation ul li a").click(function(){
+    $(".navigation ul li a, .logo a").click(function(){
             $(".navigation ul").hide();
     }); 
     }
