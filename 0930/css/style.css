@@ -51,7 +51,7 @@ box-shadow:0 0 9px rgba(0, 0, 0, 0.2); position: fixed; z-index: 100; left: 0; r
 .navigation li a{ font-size: 1.25rem; font-weight: bold; color: #eb6b6d;}
 .navigation li a:hover{ color: #ae86b7; }
 .navigation li:last-child { vertical-align: middle; }
-.social-line{ width: 50px; display: inline-block; }
+.social-line{ width: 48px; display: inline-block; }
 
 /*----- kv -----*/
 .kv{ width: 100%; margin: 0 auto ; overflow: hidden; background:#fbf0ef; position: relative; min-height: 950px;}
