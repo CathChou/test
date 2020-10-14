@@ -323,6 +323,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 
 }
 @media screen and (max-width: 550px){
+.header{ position: relative; }
 .kv{ min-height: 765px; }
 .title{ width: 75%; margin: 100px 0 0 0; }
 .title .t{ width: 235px; }
