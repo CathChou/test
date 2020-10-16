@@ -298,7 +298,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 @media screen and (max-width: 767px){
 .k2{ display: none;}
 .kv{ min-height: 745px; }
-.title{ width: 78%; margin: 90px 0 0 0; position: inherit !important;top: inherit; left: inherit; }
+.title{ width: 78%; margin: 100px 0 0 0; position: inherit !important;top: inherit; left: inherit; }
 .title .t{ width: 315px; }
 .title p{ font-size: 1rem; line-height: 28px; margin: 20px 0 0; }
 .title .down{ width: 50px; margin: 20px auto 0;}
@@ -326,7 +326,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 @media screen and (max-width: 550px){
 .header{ position: relative; }
 .kv{ min-height: 765px; }
-.title{ width: 75%; margin: 100px 0 0 0; }
+.title{ width: 75%; margin: 70px 0 0 0; }
 .title .t{ width: 235px; }
 .k_mom{ width: 238px; top: 240px; right: -77px; }
 .contain{ padding: 0 30px; }
@@ -354,7 +354,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 @media screen and (max-width: 414px){
 .k_mom, .red_1, .red_2, .love-1, .love-2{ display: none !important; }
 .kv{ min-height: 770px; }
-.title{ width: 100%;  margin: 110px 0 0 0;}
+.title{ width: 100%; }
 .title .t{ margin: 0; }
 .title p{ margin: 40px 0 0; }
 .title .down{ margin: 20px auto 0; }
@@ -379,7 +379,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 }
 
 @media screen and (max-width: 320px){
-.title{ margin: 90px 0 0 0;}
+.title{ margin: 40px 0 0 0;}
 .sub{ width: 100px; top: 85px; right: 20px; width: 95px; }
 .qa_c ul li p span{ font-size: 1rem; }
 .qa_c ul li p{ font-size: 0.875rem; }
