@@ -115,14 +115,14 @@ span.number{ background: -webkit-linear-gradient(left top,#ec6e6d,#fbb070);backg
 background: -moz-linear-gradient(bottom right,#ec6e6d,#fbb070);background: linear-gradient(to bottom right,#ec6e6d,#fbb070);
 border-radius:999em; width: 32px; height: 32px; text-align: center; line-height: 32px;display: inline-block; color: #fff; 
 font-size: 1.25rem; font-weight: bold; margin-right: 10px; float: left; }
-.cough_doc{ padding-top:80px; position: relative;}
-.cough_doc li{ display: inline-block; width: 27%; margin: 0 3%;}
+.cough_doc{ padding-top:80px; position: relative; text-align: center;}
+.cough_doc li{ display: inline-block; width: 33%; margin: 40px 3%;}
 .cough_doc li .pic { width: 60%; margin: 0 auto;}
 .cough_doc li p{ min-height: 108px; }
-.cough_doc li:last-child .pic {width: 80%;}
+/*.cough_doc li:last-child .pic {width: 80%;}*/
 .cough_doc li .n{ font-size: 1.25rem; color:#eb6b6d; font-weight: bold; margin: 30px 0 20px; text-align: center; min-height: inherit;}
 .cough_doc li .n span{ font-size: 1rem; color:#444; margin-left: 5px;}
-.more{ font-size: 1.125rem; background: #eb6b6d; font-weight: bold;color: #fff; margin: 40px auto 0; display: block;width: 135px; 
+.more{ font-size: 1.125rem; background: #eb6b6d; font-weight: bold;color: #fff; margin: 0 auto; display: block;width: 135px; 
 text-align: center; padding: 5px 0; border-radius: 20px;}
 .more:hover{background: #ae86b7;}
 .comma{ width: 76px; position: absolute; top: -40px }
@@ -320,6 +320,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .dad-box{ margin: 20px 0; }
 .stitle, .qa_intro, .icon, .qa_c, .intro, .cough ul li.box, .cough_doc, .cancer-box, .cancer-doc
 , .f1, .f2, .f3, .f4, .food-re, .f1, .f2, .f3, .f4, .qa_c{ visibility: visible !important; }
+.more{margin: 30px auto 0;}
 
 }
 @media screen and (max-width: 550px){
