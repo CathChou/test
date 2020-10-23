@@ -44,7 +44,7 @@ image-rendering: crisp-edges;
 /*----- header -----*/
 .header{ background: #fff; border-radius: 60px; padding: 7px 60px; width: 80%; margin: auto;
 -moz-box-shadow:0 0 9px rgba(0, 0, 0, 0.2); -webkit-box-shadow:0 0 9px rgba(0, 0, 0, 0.2); 
-box-shadow:0 0 9px rgba(0, 0, 0, 0.2); position: fixed; z-index: 100; left: 0; right: 0; top: 20px;}
+box-shadow:0 0 9px rgba(0, 0, 0, 0.2); position: absolute; z-index: 100; left: 0; right: 0; top: 20px;}
 .logo{ float: left; width: 86px; }
 #bt-kv{ display: block; }
 .navigation{ float: right; }
