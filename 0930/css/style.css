@@ -170,7 +170,7 @@ box-shadow:0 0 12px rgba(153, 32, 34, 0.2); }
 .food-re ul li:nth-child(odd){ margin-top: 0;}
 .food-teeth{ padding-top: 70px; }
 .food-teeth dl dt{ color: #eb6b6d; text-align: left; padding: 0 20px; }
-.food-teeth dl dd{ color: #444444; font-size: 1.125rem; line-height: 32px; text-align: left;  }
+.food-teeth dl dd{ color: #444444; font-size: 1.125rem; line-height: 32px; text-align: left; text-align: justify;  }
 .food-teeth a{ float: right; margin: 0; }
 
 /*----- dad -----*/
@@ -288,7 +288,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .cancer-c{ width: 100%; float: none; margin-top: 20px; }
 .cancer-doc .pic, .food-teeth .pic{ float: none; margin:0 auto; width: 55%;}
 .cancer-doc dl, .food-teeth dl{ width: 100%; float: none; }
-.food-teeth dl dt, .food-teeth dl dd{ text-align: center;}
+.food-teeth dl dt{ text-align: center;}
 .food-teeth a{ float: none; margin: 0 auto; }
 .more-2{ float: none; margin: 20px auto 0; }
 .food ul li{ width: 46%; margin: 30px 2%; }
@@ -299,6 +299,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .cancer-doc dl dt{ text-align: center; }
 .dad{ background-attachment: inherit; background-size: cover; }
 .cough_doc li p{ min-height: inherit; }
+.txtjust{ text-align: justify; }
 }
 
 @media screen and (max-width: 767px){
