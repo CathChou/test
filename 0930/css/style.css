@@ -299,7 +299,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .cancer-doc dl dt{ text-align: center; }
 .dad{ background-attachment: inherit; background-size: cover; }
 .cough_doc li p{ min-height: inherit; }
-.txtjust{ text-align: justify; }
+.txtjust{ text-align: justify !important; }
 }
 
 @media screen and (max-width: 767px){
