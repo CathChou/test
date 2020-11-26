@@ -116,7 +116,7 @@ background: -moz-linear-gradient(bottom right,#ec6e6d,#fbb070);background: linea
 border-radius:999em; width: 32px; height: 32px; text-align: center; line-height: 32px;display: inline-block; color: #fff; 
 font-size: 1.25rem; font-weight: bold; margin-right: 10px; float: left; }
 .cough_doc{ padding-top:80px; position: relative; text-align: center;}
-.cough_doc li{ display: inline-block; width: 27%; margin: 40px 3%;}
+.cough_doc li{ display: inline-block; width: 33.3%; margin: 40px 3%;}
 .cough_doc li .pic { width: 60%; margin: 0 auto;}
 .cough_doc li p{ min-height: 108px; }
 /*.cough_doc li:last-child .pic {width: 80%;}*/
@@ -140,10 +140,10 @@ box-shadow:0 0 12px rgba(153, 32, 34, 0.2); }
 .cancer-c dd{ margin: 20px 0; }
 .cancer-c ul li p{ float: left;width: 93%; }
 .cancer-doc{ position: relative; padding: 120px; }
-.cancer-doc .pic{ float: left; width: 26%; }
-.cancer-doc dl{ float: right; width: 65%; color: #fff; padding-top: 20px; }
-.cancer-doc dl dt{ font-size: 1.375rem; font-weight: bold; }
-.cancer-doc dl dt span{ font-size: 1rem; margin-left: 5px;}
+.cancer-doc .pic, .food-teeth .pic{ float: left; width: 26%; }
+.cancer-doc dl, .food-teeth dl{ float: right; width: 65%; color: #fff; padding-top: 20px; }
+.cancer-doc dl dt, .food-teeth dl dt{ font-size: 1.375rem; font-weight: bold; }
+.cancer-doc dl dt span, .food-teeth dl dt span{ font-size: 1rem; margin-left: 5px;}
 .cancer-doc dl dd{ color: #fee1e2; font-size: 1.125rem; line-height: 32px; margin:20px 0;  }
 .more-2{ background: #fff; color: #eb6b6d; margin:20px 0 0 0; float: right;  }
 .more-2:hover{background: #e45557; color: #fff; }
@@ -168,6 +168,10 @@ box-shadow:0 0 12px rgba(153, 32, 34, 0.2); }
 .food-re .t{ font-size: 2rem; font-weight: bold;color: #eb6b6d;}
 .food-re ul li{ background: none; box-shadow: none; width: 18% !important; margin: 0 3.5% !important; }
 .food-re ul li:nth-child(odd){ margin-top: 0;}
+.food-teeth{ padding-top: 70px; }
+.food-teeth dl dt{ color: #eb6b6d; text-align: left; padding: 0 20px; }
+.food-teeth dl dd{ color: #444444; font-size: 1.125rem; line-height: 32px; text-align: left;  }
+.food-teeth a{ float: right; margin: 0; }
 
 /*----- dad -----*/
 .top_4{ background: url(../images/bg_5.png) no-repeat center bottom; height: 247px; position: relative; z-index: 1;}
@@ -282,8 +286,10 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .cancer-box{ padding: 50px 50px 30px; }
 .cancer-icon{ float: none; margin: 0 auto; }
 .cancer-c{ width: 100%; float: none; margin-top: 20px; }
-.cancer-doc .pic{ float: none; margin:0 auto; width: 55%;}
-.cancer-doc dl{ width: 100%; float: none; }
+.cancer-doc .pic, .food-teeth .pic{ float: none; margin:0 auto; width: 55%;}
+.cancer-doc dl, .food-teeth dl{ width: 100%; float: none; }
+.food-teeth dl dt, .food-teeth dl dd{ text-align: center;}
+.food-teeth a{ float: none; margin: 0 auto; }
 .more-2{ float: none; margin: 20px auto 0; }
 .food ul li{ width: 46%; margin: 30px 2%; }
 .food-re{padding: 120px 80px 30px 80px;}
