@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name='viewport' content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;'>
+<title>R8-TL</title>
+<style>
+/* CSS Document */
+body, p, h1, h2 { padding: 0; margin: 0; font-family: "Arial","微軟正黑體","Microsoft JhengHei"; font-weight: 500;}
+ul, li, dd, dl{padding: 0; margin: 0; list-style: none;}
+h1{font-size: 46px; color: #00a8d2; font-weight: bold; letter-spacing: 2px; margin-bottom: 20px; line-height: 60px;}
+h1 span{ color: #545454; }
+h1 span.small{ border-bottom: none; font-size: 30px;}
+
+
+/*fonts*/
+@font-face {
+  font-family: "3MCircularTT-Regular";
+  src: url(fonts/3MCircularTT-Regular.ttf);
+}
+@font-face {
+  font-family: "3MCircularTT-Bold";
+  src: url(fonts/3MCircularTT-Bold.ttf);
+}
+
+.wrap { max-width: 960px; display: block; margin: 0 auto; }
+.pc-show{ display: block; }
+.m-show{ display: none; }
+.font{ font-family: "3MCircularTT-Regular","3MCircularTT-Bold"; }
+.highlight{ font-size: 36px; color: #00a8d2; font-weight: bold; }
+.box_03 p, .box_04 p, .box_05 p, .box_06 p, .box_07 p, .box_08 p, .box_09 p{ font-size: 20px; color: #545454; line-height: 30px; }
+
+/*kv*/
+.kv { padding: 0px; }
+.kv img { width:100%; display: block; }
+
+/*content*/
+.box_01 img, .box_02 img, .box_03 img, .box_04 img, .box_04 .pic img, .box_05 img, .box_06 img, .box_07 img, .box_08 img
+, .box_09 img, .box_10 img, .box_11 img{ max-width:100%; display: block; height: auto;
+image-rendering: -moz-crisp-edges; /*Firefox*/
+image-rendering: -o-crisp-edges; /*Opera*/
+image-rendering: -webkit-optimize-contrast; /*Webkit*/
+image-rendering: crisp-edges;
+-ms-interpolation-mode: nearest-neighbor; /*IE*/
+}
+.box_01{ width: 100%; background: #f7f7ea; padding: 60px 0; text-align: center; box-sizing: border-box; 
+background-image: linear-gradient(to top left, #ffffff 30%, #e0f1fa 90%);}
+.box_01 .contain{ padding: 0 70px; }
+.box_01 p{ font-size: 24px; color: #545454; margin-top: 20px; font-weight: bold; }
+.box_01 .icon{ width:20%; display: inline-block; margin: 22px 40px;}
+.box_01 .water{ margin-bottom: -70px; }
+.box_01 .pure{ width: 367px; margin: 40px auto 10px; }
+.box_01 .issue{ border-radius: 20px; background: #eeeeee; width: 95%;padding: 30px 50px; box-sizing: border-box; margin: 0 auto 40px;}
+.box_01 .issue ul { margin-top: 20px;}
+.box_01 .issue ul li{ display: inline-block; width: 24%;}
+.box_01 .issue ul li .i{ width: 110px; margin: 0 auto;}
+.box_01 .issue ul li p{ font-size: 20px; }
+.box_01 .warn{ font-size: 44px;color: #00a8d2; font-weight: 500; }
+.box_01 .warn span{ width: 40px; display: inline-block; margin-right: 10px; }
+
+.box_02{ width: 100%; background: #fff; background-image: url(images/bg_4.jpg); background-repeat: no-repeat;background-position: center top;padding: 70px 80px 60px; box-sizing: border-box; text-align: center; position: relative;}
+.box_02 .arrow{ position: absolute;left: 50%; top: 220px; margin-left: -425px;}
+.box_02 .arrow_d{ margin: 0 auto; width: 100px; display: none; }
+.box_02 .container{ display: flex; }
+.box_02 .container .pd{ width: 33%; text-align: left; color: #00a8d2; font-size: 18px; position: relative; padding-bottom: 50px; margin: 0 10px; z-index: 1;}
+.box_02 .container .pd .f1, .box_02 .container .pd .f2, .box_02 .container .pd .f3{ margin: 0 auto 20px; min-height: 300px; }
+.box_02 .container .pd .f1{ width: 78px; }
+.box_02 .container .pd .f3{ width: 83px; }
+.box_02 .container .pd .f2{ width: 58px; }
+.box_02 .container .pd .title{ font-size: 32px;font-weight: bold;}
+.box_02 .container .pd .title span{ font-size: 24px; display: inline-block; background: #00a8d2; color: #fff; border-radius: 9999px; padding: 3px 10px; vertical-align: text-top; margin-right: 10px;}
+.box_02 .container .pd .time{ background:#57b4e1; color: #fff; font-size: 20px; border-radius: 999px; padding: 10px 12px; text-align: center; margin-left: 40px; position: absolute; bottom: 0; box-sizing: border-box; }
+.box_02 .container .pd ul{ margin: 0 auto; margin-left: 30px; }
+.box_02 .container .pd ul li{ display: inline-block; width: 30%; margin: 5px 0; vertical-align: top; }
+.box_02 .container .pd ul li div{ width: 50px; margin:0 auto; }
+.box_02 .container .pd ul li p{ text-align: center; margin: 10px 0; font-size: 16px; color: #545454; }
+.box_02 .container .pd dl{ margin: 0 0 20px 40px; }
+.box_02 .container .pd dl dt{ font-size: 22px; font-weight: bold; }
+.box_02 .container .pd dl dd{ color: #545454; margin: 10px 0; min-height: 145px; }
+.box_02 .tip{ color: #ea7900; font-size: 18px; text-align: left; margin:30px 0 0 40px;}
+
+.box_03{ width: 100%; background: url(images/bg_1.jpg) center top no-repeat; text-align: center; padding: 60px 0 40px;
+box-sizing: border-box; position: relative;}
+.box_03 p{ font-size: 20px; color: #545454; }
+.box_03 .kid{  width: 714px; position: absolute; left: 0; bottom: 0;}
+.box_03 .pd{ float: right; width: 45%; position: relative; z-index: 1; text-align: left; margin-top: 20px; }
+.box_03 .pd .name{ color: #00a8d2; font-size: 24px; font-weight: bold;  margin-top: 20px;}
+.box_03 .pd .pic{ width: 235px;}
+.box_03 .pd dl, .box_04 .pd dl{ font-size: 20px; color: #545454; margin:10px 0;}
+.box_03 .pd dl dt, .box_04 .pd dl dt{ background: #00a8d2; border-radius: 30px; width: 260px; padding: 5px 20px;font-weight: 500;
+color: #fff; box-sizing: border-box; margin-bottom: 5px;}
+
+.box_04{ width: 100%;background-image: url(images/bg_2.jpg); background-repeat: no-repeat;background-position: right top;
+background-color: #fafafa; position: relative; padding: 120px 100px 80px; box-sizing: border-box;}
+.box_04 .txt{ float: left; width: 45%; }
+.box_04 .txt .pic{ width: 167px; margin-top: 30px;}
+.box_04 .pd{ position: absolute; bottom: 0; right: 160px; text-align: center;}
+.box_04 .pd dl{ margin: 0; }
+.box_04 .pd dl dd{ width: 166px; margin: 0 auto; }
+
+.box_05{ width: 100%; padding: 140px 80px 0; box-sizing: border-box; background-color: #fff;background-image: url(images/bg_3.jpg); background-repeat: no-repeat;background-position: left top; min-height: 484px;}
+.box_05 .txt{ float: right; width: 50%; text-align: right; }
+
+.box_06{ width: 100%; background: #fff; background-image: url(images/bg_4.jpg); background-repeat: no-repeat;background-position: center top;padding: 70px 80px 60px; box-sizing: border-box; text-align: center;}
+.box_06 p{ text-align: left; }
+.box_06 .content{ display: flex; margin-top: 20px; position: relative;}
+.box_06 .light{ width: 60%; }
+.box_06 .light .light-p{ width: 357px; margin-bottom: 30px; position: relative; z-index: 1; }
+.box_06 .light .i01, .box_06 .light .i02{ display: inline-block; vertical-align: text-top; margin-right: 5px; }
+.box_06 .light .i01{width: 20px; }
+.box_06 .light .i02{width: 23px; }
+.box_06 .light p{ margin: 10px 0; }
+.box_06 .light span{ color: #00a8d2; }
+.box_06 .light span.h{ display: inline-block; border: 2px solid #00a8d2; padding: 0 10px; border-radius: 20px; margin: 0 2px; }
+.box_06 .pd .pd-p{ width: 307px; }
+.box_06 ul li { font-weight: 500; font-size: 18px; color: #545454; border-bottom: 1px #9cd0e8 solid; display: flex; text-align: left;
+padding: 10px 5px;}
+.box_06 .tab-content{ margin-top: -30px; }
+.box_06 .tab-content .t{ font-size: 20px; color: #00a8d2; font-weight: bold; margin-bottom: 10px; }
+.box_06 .tab-content .t span{ color: #ea7900; }
+.box_06 .tab-content .head{ border-top: 2px solid #9cd0e8; border-bottom: 2px solid #9cd0e8; }
+.box_06 .tab-content .head .name{ color: #545454; }
+.box_06 .name{ width: 30%;color: #00a8d2;}
+.box_06 .name span{ display: inline-block;}
+.box_06 .notice{ width: 70%; text-align: left; background: #fff; padding-left: 20px;}
+.box_06 .notice span{ color: #00a8d2; }
+.box_06 .line{ position: absolute; height: 2px; background: #00a8d2; width: 250px; left: 40%; top: 65px; }
+
+.box_07{ width: 100%; padding: 70px 80px; box-sizing: border-box; background-color: #f7f7f7;background-image: url(images/bg_5.jpg); background-repeat: no-repeat;background-position: center bottom; min-height: 566px; text-align: center;}
+.box_07 p span, .box_08 p span{ color: #00a8d2; font-weight: bold;}
+
+.box_08{ width: 100%; position: relative; padding: 60px 60px 80px; box-sizing: border-box; background: #fff; text-align: center; }
+.box_08 ul li{ width: 22.5%; margin: 0 10px; padding-top: 30px; float: left; box-sizing: border-box;}
+
+.box_09{ width: 100%;  background-color: #fff;background-image: url(images/bg_6.jpg); background-repeat: no-repeat; background-position: center top; 
+position: relative; padding: 80px 50px; box-sizing: border-box; text-align: center;}
+.box_09 ul li{ display: inline-block; width: 22%; margin: 0 10px;}
+.box_09 ul li p{ color: #393939; font-size: 24px; margin-top: 20px; font-weight: normal; letter-spacing: 3px; }
+
+.box_10{ width: 100%; height: 370px; background: url(images/bg_pro.jpg) no-repeat; padding: 100px 70px 0; box-sizing: border-box;
+position: relative;}
+.box_10 .txt{ font-size: 40px; color: #00a8d2; float: right; width: 47%;}
+.box_10 .txt .title{ border-bottom: 1px #00a8d2 solid; padding-bottom: 10px; margin-bottom: 30px; font-weight: bold; }
+.box_10 .txt span{ font-size: 22px; font-weight: normal; display: block; }
+.box_10 .txt p{ font-size: 15px; line-height: 26px; color: #545454; font-weight: normal; }
+.box_10 .over{ width: 105px; position: absolute; top: -30px; right: 70px; }
+
+.box_11{ width: 100%; background:#fff;background-image: url(images/bg_7.jpg); background-repeat: no-repeat; background-position: center top;text-align: center; padding: 80px 50px; box-sizing: border-box;text-align: left;}
+.box_11 .container{ display: flex; }
+.box_11 .container2{ display: flex; margin-top: 80px; }
+.box_11 .pd{ width: 40%; }
+.box_11 .pd .pic1{ margin-top: 180px; }
+.box_11 .pd .pic2{ margin-top: 0;  width: 285px;}
+.box_11 .table{ width: 60%; background:#fff; }
+.box_11 .table2{ margin-top: 95px; }
+.box_11 ul { font-weight: bold; margin: 0px; background: #57b4e1;}
+.box_11 ul li { font-weight: bold; font-size: 16px; color: #545454; line-height: 26px; border-top: 1px #bfd8df solid;border-right: 1px #bfd8df solid;}
+.box_11 ul li:last-child{ border-bottom: 1px #bfd8df solid; } 
+.box_11 .table .name{ float: left; width: 25%;color: #fff; padding: 5px 0 5px 5px;}
+.box_11 .table .content{ float: right; width: 70%; text-align: left; background: #fff; padding: 5px}
+
+.box_12{ background:#eeeeee;padding: 40px 60px;}
+.box_12 ul li{ color: #00a8d2; margin: 10px 0;list-style: inherit; }
+.box_12 ul li p{color: #545454;font-size: 16px; }
+.box_12 ul.square { list-style-type: square; margin-left: 25px;}
+
+/*小於960的顯示*/
+@media (max-width:959px) {
+.pc-show{ display: none; }
+.m-show{ display: block; }
+.edm960{ width: 100%; overflow: hidden; }
+.kv { padding: 0px; }
+.box_05, .box_06, .box_07, .box_08, .box_10{ padding: 80px 30px; }
+.box_01{padding: 80px 0;}
+.box_01 .issue{ width: 100%;padding: 30px 10px; }
+.box_01 .issue ul li p{ font-size: 18px; }
+.box_01 .icon{ width: 23%; margin: 20px; }
+.box_02{ padding: 80px 30px;}
+.box_02 .container .pd .time{ font-size: 16px; }
+
+.box_03 .kid{ width: 600px; }
+.box_03 .pd dl, .box_04 .pd dl{ font-size: 18px; }
+.box_04{ padding: 60px 50px 140px;}
+.box_04 ul{ padding: 50px 20px 30px; }
+.box_04 .txt{ width: 52%; }
+.box_05{background-position: -60px top;}
+.box_05 .txt{ width: 55%; }
+.box_07 ul li{ width: 22%; height: 300px; }
+.box_08 ul li{ width: 21%; }
+.box_09{ padding: 80px 30px; height: inherit;}
+.box_09 ul li{ width: 20.5%; }
+.box_10{ padding: 60px 0 0; background: #f0f0f0; height: inherit;}
+.box_10 .txt{ float: none; width: 70%; margin: 0 auto; }
+.box_10 .txt p{ margin-bottom: 10px; }
+.box_10 .pro{ width: 80%; }
+.box_11{ padding: 60px 30px; }
+.box_11 .container, .box_11 .container2{ display: block; }
+.box_11 .pd{ float: none; width: 60%; margin: 0 auto 40px; padding-top: 20px; text-align: center; }
+.box_11 .pd .pic1{ margin-top: 40px; }
+.box_11 .pd .pic2{ margin: 40px auto 0; }
+.box_11 .table{ float: none;width: 95%;margin: 0 auto; }
+}
+
+@media (max-width:767px) {
+h1{ font-size: 34px; line-height: 40px; letter-spacing: 0px; }
+.box_01, .box_05, .box_06, .box_07, .box_08{ padding: 60px 30px; }
+.box_07 p, .box_08 p{ text-align: left; }
+.box_01{ padding: 60px 0; }
+.box_01 .icon{ width: 30%; margin: 15px; }
+.box_01 .contain{ padding: 0; }
+.box_01 p{ font-size: 20px; }
+.box_01 .water{ margin-bottom: 0; margin-top: 30px; }
+.box_01 .issue{ width: 85%; }
+.box_01 .issue ul li{ width: 44%; margin: 20px 0; }
+.box_01 .warn{ font-size: 26px; }
+.box_01 .warn span{ width: 30px;}
+
+.box_02{ padding: 60px 30px 30px; }
+.box_02 .arrow{ display: none; }
+.box_02 .container{ display: block; }
+.box_02 .container .pd{ width: 100%; margin: 30px 0 20px; }
+.box_02 .container .pd dl dd{ min-height: inherit; }
+.box_02 .container .pd .time{ width: 100%; margin-left: 0;}
+.box_02 .container .pd ul{ text-align: center; }
+.box_02 .arrow_d{ display: block; }
+.box_02 .tip{ margin: 30px 0 0 0; }
+
+.box_03{ padding: 40px 30px 0; }
+.box_03 .kid{ position: inherit; margin-left: -30px; width: 120%; }
+.box_03 .pd{ float: none; width: 90%; margin: 0 auto; }
+.box_03 .pd .pic{ margin: 30px auto 0; }
+.box_03 .pd .name{ text-align: center; }
+.box_03 .pd dl dt, .box_04 .pd dl dt{ width: 100%; text-align: center; }
+
+.box_04{ padding: 40px 40px 60px ;background-image: url(images/bg_2_m.jpg); background-position: center bottom; background-size: 100%;}
+.box_04 .txt{ width: 98%; float: none; margin-bottom: 370px;}
+.box_04 .pd{ right: 50%; margin-right: -110px; }
+
+.box_05{ background-image: url(images/bg_3_m.jpg); background-position: center bottom; background-size: 100%; min-height: inherit;}
+.box_05 .txt{ width: 100%; float: none; margin-bottom: 250px; }
+
+.box_06 .pd .pd-p, .box_06 .line{ display: none; }
+.box_06 .light{ width: 100%; }
+.box_06 .light .light-p{ margin: 0 auto 30px; }
+.box_06 .content{ margin-top: 30px; display: block; }
+.box_06 .tab-content{ margin-top: 30px; }
+.box_06 .name span{ display: block; }
+.box_06 .name{ width: 40%; }
+.box_06 .notice{ width: 60%; }
+.box_06 ul li{ font-size: 14px; }
+.box_07{ background-size: 150%; min-height: 500px; }
+.box_08 ul li{ width: 44%; margin: 10px; }
+.box_09{padding: 60px 30px;}
+.box_09 ul li{ width: 43%; margin:10px; }
+.box_10{ padding: 100px 0 0; }
+.box_10 .txt{ width: 80%; }
+.box_10 .txt .title{ font-size: 36px; }
+.box_10 .pro{ width: 90%; }
+.box_11{ background-position: right top; }
+.box_11 .pd{ width: 80%; padding-top: 0;}
+.box_11 .pd .pic1{ margin-top: 0; }
+.box_11 .pd .pic2{ width: 80%; }
+.box_11 .table{ width: 100%; }
+.box_11 ul li{ font-size: 14px; line-height: 40px; }
+.box_11 .table .name{ width: 32%; }
+.box_11 .table .content{ width: 62%; padding-left: 10px; }
+}
+
+@media (max-width:414px) {
+h1, .highlight{ font-size: 30px; letter-spacing: 1px; }
+.box_03 p, .box_04 p, .box_05 p, .box_06 p, .box_07 p, .box_08 p, .box_09 p{ font-size: 18px; }
+.box_05, .box_06, .box_07, .box_08, .box_10{ padding: 40px 20px; }
+.box_01{ padding: 40px 0; }
+.box_01 .issue{ padding:30px 0;margin: 0 auto 20px; }
+.box_01 .issue ul li{ margin: 10px 0; }
+.box_01 .issue ul li p{ font-size: 16px; }
+.box_01 .pure{margin: 40px auto 0; width: 80%;}
+.box_01 .icon{ width: 35%; margin: 20px 10px;}
+.box_01 p{ margin-top: 0; }
+.box_01 .issue ul li .i{ margin: 0 auto 10px; }
+.box_02{ padding: 40px 30px 40px; }
+.box_02 .arrow_d{ width: 80px; }
+.box_02 .tip{ margin: 20px 0 0 0; font-size: 16px; }
+.box_03{ padding: 40px 20px 0; }
+.box_03 .kid{ width: 110%; }
+.box_03 p{ text-align: left; }
+.box_04{ padding: 40px 30px;}
+.box_04 .txt{ margin-bottom: 350px; }
+.box_04 .txt .pic{ width: 150px; }
+.box_05 .txt{ margin-bottom: 220px; }
+.box_06 .light .light-p{ width: 100%; }
+.box_07{ min-height: 440px; }
+.box_08 ul li{ padding-top: 10px; }
+.box_09{ padding: 40px 20px; }
+.box_10{ padding: 80px 0 0 }
+.box_10 .txt{ width: 85%; }
+.box_10 .txt .title{ text-align: center; }
+.box_10 .over{ right: 30px; width: 95px; }
+.box_10 .pro{ width: 100%; }
+.box_11 .table .name{ width: 36%; }
+.box_11 .table .content{ width: 57%; }
+.box_12{ padding: 40px; }
+}
+
+@media (max-width:375px) {
+.box_01 .issue ul li .i{ width: 90px; }
+.box_01 .warn{ font-size: 20px; }
+.box_01 .warn span{ width: 20px; margin-right:5px; }
+.box_03 .pd{ width: 100%; }
+.box_06 .name{ width: 45%; }
+.box_06 .notice{ width: 55%; }
+}
+
+@media (max-width:360px) {
+h1{ font-size: 26px; }
+.box_03 p, .box_04 p, .box_05 p, .box_06 p, .box_07 p, .box_08 p, .box_09 p{ font-size: 15px; line-height: 24px;s }
+.box_01 p{ font-size: 18px; }
+.box_01 .icon{ margin: 15px 10px; }
+.box_01 .issue ul li p{ font-size: 14px; }
+.box_08 ul li, .box_09 ul li{ width: 42%; }
+.box_10 .txt{ width: 90%; }
+.box_10 .txt .title{ font-size: 32px; }
+.box_11{ padding:60px 20px;}
+.box_11 .table .name{ width: 40%; }
+.box_11 .table .content{ width: 52%; }
+}
+</style>
+</head>
+
+<body>
+	<div class="wrap">
+		<!--KV banner -->
+		<div class="kv"> 
+			<div class="pc-show"><img src="images/kv_960.jpg" alt="3M" /></div>
+			<div class="m-show"><img src="images/kv_m_960.jpg" alt="3M" /></div>
+		</div>
+
+		<!--1. 無桶直出-->     
+		<div class="box_01">
+			<div class="contain">
+			  	<h1>無桶直出，好水更新鮮！</h1>
+			  	<ul>
+				    <li class="icon">
+				    	<div><img src="images/icon01.png" alt="三道過濾軟水" /></div>
+				    	<p>三道過濾軟水</p>
+					</li>
+					<li class="icon">
+				    	<div><img src="images/icon02.png" alt="長效型大流量" /></div>
+				    	<p>長效型大流量</p>
+					</li>
+					<li class="icon">
+				    	<div><img src="images/icon03.png" alt="櫥下省空間" /></div>
+				    	<p>櫥下省空間</p>
+					</li>
+					<li class="icon">
+				    	<div><img src="images/icon04.png" alt="智能安全提示" /></div>
+				    	<p>智能安全提示</p>
+					</li>
+					<li class="icon">
+				    	<div><img src="images/icon05.png" alt="抑噪安靜設計" /></div>
+				    	<p>抑噪安靜設計</p>
+					</li>
+					<li class="icon">
+				    	<div><img src="images/icon06.png" alt="簡易更換濾心" /></div>
+				    	<p>簡易更換濾心</p>
+					</li>
+				</ul>
+			</div>
+			<div class="water"><img src="images/water1.png" alt="" /></div>
+			<div class="contain">
+				<h1><span>你喝的是</span>最純淨的水<span>嗎？</span></h1>
+				<div class="pure"><img src="images/pure.png" alt="" /></div>
+				<div class="issue">
+					<div class="highlight">常見水質問題</div>
+					<ul>
+						<li>
+							<div class="i"><img src="images/icon07.png" alt="" /></div>
+		    				<p>水源、管線污染<br />易含雜質</p>
+						</li>
+						<li>
+							<div class="i"><img src="images/icon08.png" alt="" /></div>
+		    				<p>工業汙染，易殘留<br />重金屬、異味 </p>
+						</li>
+						<li>
+							<div class="i"><img src="images/icon09.png" alt="" /></div>
+		    				<p>自來水消毒<br />易殘留氯氣</p>
+						</li>
+						<li>
+							<div class="i"><img src="images/icon10.png" alt="" /></div>
+		    				<p>水中含有礦物質<br />易產生水垢</p>
+						</li>
+					</ul>
+				</div>
+				<div class="warn"><span><img src="images/warn.png" alt="" /></span>別再讓身體成為家中淨水器！</div>
+			</div>
+
+		</div>
+
+		<!--2. 三道濾淨軟水-->
+		<div class="box_02">
+			<h1>三道濾淨軟水</h1>
+			<div class="arrow"><img src="images/arrow.png" alt="" /></div>
+			<div class="container">
+				<div class="pd">
+					<div class="f1"><img src="images/f1.png" alt="F1摺疊膜碳棒複合濾心" /></div>
+					<div class="title"><span>1</span>F1</div>
+					<dl>
+						<dt>摺疊膜碳棒複合濾心</dt>
+						<dd>以摺疊膜包覆活性碳棒結構，有效攔截水中泥沙、鐵鏽等大顆粒雜質，吸附餘氯、異味、有機汙染物等，同時保護逆滲透膜、延長其使用壽命。</dd>
+					</dl>
+					<ul>
+						<li>
+							<div><img src="images/icon11.png" alt="鐵鏽" /></div>
+							<p>鐵鏽</p>
+						</li>
+						<li>
+							<div><img src="images/icon12.png" alt="泥沙" /></div>
+							<p>泥沙</p>
+						</li>
+						<li>
+							<div><img src="images/icon13.png" alt="沉澱物" /></div>
+							<p>沉澱物</p>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<div><img src="images/icon14.png" alt="餘氯" /></div>
+							<p>餘氯</p>
+						</li>
+						<li>
+							<div><img src="images/icon15.png" alt="毛髮纖維" /></div>
+							<p>毛髮纖維</p>
+						</li>
+						<li>
+							<div><img src="images/icon16.png" alt="膠類" /></div>
+							<p>膠類</p>
+						</li>
+					</ul>
+					<div class="time">更換時間：約12個月</div>
+				</div>
+				<div class="arrow_d"><img src="images/arrow_down.png" alt="" /></div>
+				<div class="pd">
+					<div class="f3"><img src="images/f3.png" alt="F3逆渗透膜濾心" /></div>
+					<div class="title"><span>2</span>F3</div>
+					<dl>
+						<dt>逆渗透膜濾心</dt>
+						<dd>採用400加侖RO膜，過濾孔徑小至0.0001微米，通過SGS過濾效能測試，品質有保證。</dd>
+					</dl>
+					<ul>
+						<li>
+							<div><img src="images/icon17.png" alt="部分重金屬" /></div>
+							<p>部分<br />重金屬</p>
+						</li>
+						<li>
+							<div><img src="images/icon18.png" alt="石灰質鈣、鎂" /></div>
+							<p>石灰質<br />鈣、鎂</p>
+						</li>
+						<li>
+							<div><img src="images/icon19.png" alt="TDS" /></div>
+							<p>TDS</p>
+						</li>
+					</ul>
+					<div class="time">更換時間：約24個月</div>
+				</div>
+				<div class="arrow_d"><img src="images/arrow_down.png" alt="" /></div>
+				<div class="pd">
+					<div class="f2"><img src="images/f2.png" alt="F2後置活性碳棒濾心" /></div>
+					<div class="title"><span>2</span>F2</div>
+					<dl>
+						<dt>後置活性碳棒濾心</dt>
+						<dd>進口椰殼高效活性碳，以壓縮燒結技術充分釋放碳棒活性，有效去除餘氯及異味，提升水質口感。</dd>
+					</dl>
+					<ul>
+						<li>
+							<div><img src="images/icon14.png" alt="餘氯" /></div>
+							<p>餘氯</p>
+						</li>
+						<li>
+							<div><img src="images/icon20.png" alt="異味" /></div>
+							<p>異味</p>
+						</li>
+					</ul>
+					<div class="time">更換時間：約12個月</div>
+				</div>
+			</div>
+			<p class="tip">* 若出現水量變小或水垢明顯產生時亦需更換 </p>
+		</div> 
+
+		<!--3. 長效型大流量-->
+		<div class="box_03">
+		    <h1>長效型大流量</h1>
+		    <p>每分鐘出水量最大可達1公升，即開即飲，滿足全家人最純淨的飲水需求。</p>
+		    <div class="pd">
+		    	<div class="pic"><img src="images/pd_1.png" alt="R8-TL無桶直出式RO純水機" /></div>
+		    	<div class="name">R8-TL無桶直出式RO純水機</div>
+		    	<dl>
+		    		<dt>F1 摺疊膜碳棒複合濾心</dt>
+		    		<dd>每年8000公升處理量，單支可使用1年</dd>
+		    	</dl>
+		    	<dl>
+		    		<dt>F2 後置活性碳棒濾心</dt>
+		    		<dd>每年4000公升處理量，單支可使用1年</dd>
+		    	</dl>
+		    	<dl>
+		    		<dt>F3 逆渗透膜濾心</dt>
+		    		<dd>每年10000公升處理量，單支可使用2年</dd>
+		    	</dl>
+		    </div>
+		    <div style="clear: both;"></div>
+		    <div class="kid"><img src="images/kid.png" alt="" /></div>
+		    
+		    
+		</div>
+
+		<!--4. 無桶直出設計-->
+		<div class="box_04">
+			<div class="txt">
+		    	<h1>無桶直出設計，<br />櫥下省空間</h1>
+		    	<p>免裝儲水桶，超低廢水比（約1:1.3）<br />薄型緊湊機身，安裝不佔空間，<br />維持檯面、櫥下空間舒適整潔。</p>
+		    	<div class="pic"><img src="images/img_01.png" alt="" /></div>
+		    </div>
+		    <div style="clear: both;"></div>
+		    <div class="pd">
+		    	<dl>
+		    		<dt>含3M到府基本安裝服務</dt>
+		    		<dd><img src="images/pd_2.png" alt="" /></dd>
+		    	</dl>
+		    </div>
+		</div>
+
+		<!--5. 即濾即飲-->
+		<div class="box_05">
+			<div class="txt">
+		    	<h1>即濾即飲，<br />新鮮好水不必等。</h1>
+		    	<p>400加侖逆滲透膜，滿足持續用水需求，<br />無孳生細菌風險，更安心無慮。</p>
+		    </div>
+		    <div style="clear: both;"></div>
+		</div>
+
+		<!--6. 智能安全提示 -->
+		<div class="box_06">
+		    <h1>智能安全提示 </h1>
+		    <p>每道濾心皆有更換提醒，由24個扇形白燈組成，隨著濾心壽命的消耗，從順時針方向開始減少白燈。</p>
+		    <div class="content">
+		    	<div class="line"></div>
+		    	<div class="light">
+		    		<div class="light-p"><img src="images/3m_light.png" alt="" /></div>
+		    		<p><span class="i01"><img src="images/light_i01.png" alt="" /></span><span>製水</span>：表示機器正在運作中</p>
+		    		<p><span class="i02"><img src="images/light_i02.png" alt="" /></span><span>換心</span>：當任意一支濾心壽命用盡時，即亮起提醒。</p>
+		    		<p><span class="h">選擇</span><span class="h">恢復</span>：選擇及恢復濾心壽命燈</p>
+		    	</div>
+		    	<div class="pd">
+		    		<div class="pd-p"><img src="images/pd_3.png" alt="" /></div>
+		    	</div>
+		    </div>
+		    <div class="tab-content">
+			    <p class="t">每月只要達到<span>使用流量限制</span>或<span>使用期限</span>：</p>
+			    <ul>
+			    	<li class="head">
+		            	<div class="name">濾心名稱</div>
+		            	<div class="notice">燈號顯示說明</div>
+		            </li>
+			    	<li>
+		            	<div class="name"><span>F1</span>摺疊膜碳棒複合濾心</div>
+		            	<div class="notice">每8.3% x 8,000 L=664 L掉2格 <span>or</span> 每個月掉2格</div>
+		            </li>
+		            <li>
+		            	<div class="name"><span>F2</span>後置活性碳棒濾心</div>
+		            	<div class="notice">每8.3% x 4,000 L=332 L掉2格 <span>or</span> 每個月掉2格</div>
+		            </li>
+		            <li>
+		            	<div class="name"><span>F3</span>逆渗透膜濾心</div>
+		            	<div class="notice">每2格為一單位倒扣。前22格，每8.3% x 12,000 L=996 L 掉2格<br />最後2格，每8.7% x 12,000 L=1,044 L掉2格 <span>or</span> 每2個月掉2格</div>
+		            </li>
+			    </ul>
+		    </div>
+		</div>
+
+		<!--7. 抑噪安靜設計-->
+		<div class="box_07">
+			<h1>抑噪安靜設計</h1>
+		    <p>馬達採用懸浮馬達吸震結構，造水時僅有<span class="highlight">55</span><span>分貝</span>，輕聲濾淨不擾眠。</p>
+		</div>
+
+		<!--8. 簡易更換濾心 -->
+		<div class="box_08">
+			<h1>簡易更換濾心</h1>
+		    <p>採用SQC快拆式兩分路設計，<span class="highlight">5</span><span>秒鐘</span>免工具快速完成安裝或更換，更加衛生無汙染。</p>
+		    <ul>
+		    	<li>
+		    		<img src="images/img_02.jpg" alt="" />
+		    	</li>
+		    	<li>
+		    		<img src="images/img_03.jpg" alt="" />
+		    	</li>
+		    	<li>
+		    		<img src="images/img_04.jpg" alt="" />
+		    	</li>
+		    	<li>
+		    		<img src="images/img_05.jpg" alt="" />
+		    	</li>
+		    	<div style="clear: both;"></div>
+		    </ul>
+		</div>
+
+		<!--9. 過濾水的生活應用-->
+		<div class="box_09">
+		    <h1>過濾水的生活應用</h1>
+		    <ul>
+		    	<li>
+		    		<img src="images/img_06.png" alt="" />
+		    		<p>日常飲用</p>
+		    	</li>
+		    	<li>
+		    		<img src="images/img_07.png" alt="" />
+		    		<p>洗滌食材</p>
+		    	</li>
+		    	<li>
+		    		<img src="images/img_08.png" alt="" />
+		    		<p>料理烹飪</p>
+		    	</li>
+		    	<li>
+		    		<img src="images/img_09.png" alt="" />
+		    		<p>沖調飲品</p>
+		    	</li>
+		    </ul>
+		</div>
+
+		<!--10. 淨水專家-->
+		<div class="box_10">
+		    <div class="txt">
+			    <div class="title"><font class="font">3M</font>世界級淨水專家<span>實驗室等級的居家好水</span></div>
+			    <p><font class="font">3M</font>專注淨水科技，擁有超過80年的液體過濾與淨水經驗。全球千位淨水團隊，從實驗到研發層層把關，實驗室等級的安心純淨，讓您在家也能夠擁有。</p>
+		  	</div>
+		  	<div class="over"><img src="images/over.png" alt="" /></div>
+		  	<div class="pro m-show"><img src="images/m_pro.png" alt="" /></div>
+		</div>
+
+		<!--11. 產品規格-->
+		<div class="box_11">
+			<div class="container">
+			    <div class="pd">
+			    	<h1>產品規格</h1>
+			    	<div class="pic1"><img src="images/pd.jpg" alt="3M:TR1無桶直出式RO純水機"></div>
+			    </div>
+			    <div class="table">
+				    <ul>
+			            <li>
+			            	<div class="name">商品名稱</div>
+			            	<div class="content"><font class="font">3M™</font>R8-TL無桶直出式RO純水機</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			            <li>
+			            	<div class="name">濾心型號</div>
+			            	<div class="content">摺疊膜碳棒複合濾心：F1-R8<br />後置活性碳棒濾心：F2-R8<br />逆渗透膜濾心：F3-R8</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			            <li>
+			            	<div class="name">濾心孔徑</div>
+			            	<div class="content">摺疊膜碳棒複合濾心 / 後置活性碳棒濾心：5微米<br />逆渗透膜濾心：0.0001微米</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			            <li>
+			            	<div class="name">有效流速</div>
+			            	<div class="content">每分鐘約1公升</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			            <li>
+			            	<div class="name">耗材更換</div>
+			            	<div class="content">摺疊膜碳棒複合濾心：12個月<br />後置活性碳棒濾心：12個月<br />逆渗透膜濾心：24個月</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			           <li>
+			            	<div class="name">原產地</div>
+			            	<div class="content">中國大陸</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			            <li>
+			            	<div class="name">商品尺寸 / 重量</div>
+			            	<div class="content">淨水器系統：寬13.5 x 長40.7 x 高43.1公分 /  約9公斤</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			             <li>
+			            	<div class="name">濾心尺寸 / 重量</div>
+			            	<div class="content">摺疊膜碳棒複合濾心：直徑9 x 36.3公分 / 1045g±20g<br />後置活性碳棒濾心：直徑6.1 x 32.9公分 / 540g±20g<br />逆渗透膜濾心：直徑9.6 x 36.3公分 / 1450g±40g</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			            <li>
+			            	<div class="name">主要材質</div>
+			            	<div class="content">濾心瓶身材質：PP塑膠<br />主機上蓋材質：ABS塑膠<br />管材材質：PE管</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			            <li>
+			            	<div class="name">適用溫度</div>
+			            	<div class="content">5~38℃</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			            <li>
+			            	<div class="name">操作水壓</div>
+			            	<div class="content">14~50 psi</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			            <li>
+			            	<div class="name">適用水源條件</div>
+			            	<div class="content">家用合格自來水水源</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			            <li>
+			            	<div class="name">逆滲透膜造水流量</div>
+			            	<div class="content">400GDP ± 20%</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			            <li>
+			            	<div class="name">額定電壓</div>
+			            	<div class="content">110V / 60Hz</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			            <li>
+			            	<div class="name">額定消耗電功率</div>
+			            	<div class="content">85W</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			        </ul>
+					<div style="clear: both;"></div>
+				</div>
+			</div>
+			<div class="container2">
+				<div class="pd">
+			    	<h1>搭配龍頭規格</h1>
+			    	<div class="pic2"><img src="images/pd_4.jpg" alt="3M:TR1無桶直出式RO純水機"></div>
+			    </div>
+			    <div class="table table2">
+				    <ul>
+			            <li>
+			            	<div class="name">產品名稱</div>
+			            	<div class="content"><font class="font">3M™</font>鵝頸龍頭</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			            <li>
+			            	<div class="name">產品功能</div>
+			            	<div class="content">生飲淨水出水龍頭</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			            <li>
+			            	<div class="name">主要材質</div>
+			            	<div class="content">鵝頸龍頭彎管：不鏽鋼（SUS304）<br />鵝頸龍頭座本體外殼（非觸水元件）：鋅合金<br />鵝頸龍頭座本體內材（觸水元件）：食品級陶瓷材料</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			            <li>
+			            	<div class="name">產品規格</div>
+			            	<div class="content">136 X 285 X 72(寬 X 高 X 深 mm)</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			            <li>
+			            	<div class="name">原產地</div>
+			            	<div class="content">台灣</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			        </ul>
+					<div style="clear: both;"></div>
+		    	</div>
+		    </div>
+		</div>
+		<!--12. 安裝注意事項 -->
+		<div class="box_12">
+			<h1>安裝注意事項</h1>
+		    <ul class="square">
+		    	<li><p>本產品內含標準安裝，安裝時間將於貨到後三個工作天內，由專人與您聯絡約定時間。(全台本島皆可安裝，不包含外島)</p></li>
+		    	<li><p>若是於週末訂購商品，三個工作天將由隔週一開始算起。</p></li>
+		    	<li><p>主商品到府時請勿自行拆封安裝，以免有產品瑕疵責任歸屬爭議。</p></li>
+		    	<li><p>現場安裝時會針對客戶家中環境予以安裝建議，若有超出材料外的施工或耗材需另行付費。<br />(例如：水壓過小時會建議自費加裝馬達、水壓過大時會建議自費加裝減壓閥)</p></li>
+		    	<li><p>如收到商品後三天內無收到聯絡通知，請撥打3M客服專線0800-212-171洽詢。</p></li>
+		    </ul>
+		</div>
+	</div>
+</body>
+</html>
