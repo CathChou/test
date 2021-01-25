@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name='viewport' content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;'>
+<title>S301櫥下型三道式淨水器</title>
+<style>
+/* CSS Document */
+body, p, h1, h2 { padding: 0; margin: 0; font-family: "Arial","微軟正黑體","Microsoft JhengHei"; font-weight: 500;}
+ul, li, dd, dl{padding: 0; margin: 0; list-style: none;}
+h1{font-size: 46px; color: #505050; font-weight: bold; letter-spacing: 1px; margin-bottom: 20px; line-height: 60px;}
+h1 span{ color: #315d95; }
+.wrap { max-width: 960px; display: block; margin: 0 auto; }
+.pc-show{ display: block; }
+.m-show{ display: none; }
+.highlight{ font-size: 20px; color: #ea7900; font-weight: bold; }
+.tip{ font-size: 16px; color: #ea7900; text-align: left;}
+.box_04 p, .box_05 p, .box_06 p, .box_07 p, .box_08 p, .box_09 p{ font-size: 18px; color: #505050; line-height: 30px; }
+
+/*kv*/
+.kv { padding: 0px; }
+.kv img { width:100%; display: block; }
+
+/*content*/
+.box_01 img, .box_02 img, .box_03 img, .box_04 img, .box_04 .pic img, .box_05 img, .box_06 img, .box_07 img, .box_08 img
+, .box_09 img, .box_10 img, .bg img{ max-width:100%; display: block; height: auto;
+image-rendering: -moz-crisp-edges; /*Firefox*/
+image-rendering: -o-crisp-edges; /*Opera*/
+image-rendering: -webkit-optimize-contrast; /*Webkit*/
+image-rendering: crisp-edges;
+-ms-interpolation-mode: nearest-neighbor; /*IE*/
+}
+.box_03 .contain, .box_03 .trouble .c, .box_04 .contain, .box_05 .compare, .box_05 .compare .info .price-c, .box_06 .step, .box_06 .cal .contain, .box_10 .container, .box_10 .container2{ display: flex; }
+
+.box_01{ width: 100%; background: #e8e8e6; padding: 60px 0; text-align: center; box-sizing: border-box;}
+.box_01 .contain{ padding: 0 50px; }
+.box_01 p{ font-size: 20px; color: #505050; margin-top: 20px; font-weight: bold; }
+.box_01 .icon{ width:14%; display: inline-block; margin: 22px 20px;}
+
+.box_02{ width: 100%; background: #ffffff; position: relative; text-align: center; padding: 80px 50px; box-sizing: border-box;}
+.box_02 ul{ margin-top: 40px; }
+.box_02 ul li{ width: 22%;border-radius: 15px; float: left; position: relative; margin: 0 9px; background: #e9f1f7; }
+.box_02 .number{ width: 32px; height: 32px; background:#6496c8; border-radius: 99em; text-align: center; color: #fff;
+font-weight: bold; position: absolute; top: -10px; left: -10px; line-height: 32px;}
+.box_02 .pic{ margin-top: -1px; }
+.box_02 .p-content{ padding: 20px 15px; height: 166px; box-sizing: border-box;}
+.p-content .p-title{ font-size: 20px; background:#6496c8; border-radius: 20px; width: 100%; color: #fff; padding: 5px 0;
+margin-bottom: 10px;}
+.p-content p{ color: #393939; line-height: 26px;}
+
+.box_03{ width: 100%;background-color: #c4dbe7; background-image: url(images/bg_1.jpg); background-position:  center top; background-repeat: no-repeat; text-align: center; padding: 80px 100px; box-sizing: border-box;}
+.box_03 .contain{ padding: 10px 50px 30px; }
+.box_03 .taiwan{ width: 284px;margin-right: 40px; }
+.box_03 .info{ color: #505050; font-size: 14px; text-align: left; padding-top: 70px; }
+.box_03 .info .title{ font-size: 28px; margin-bottom: 5px; }
+.box_03 .info .title span.t1{ color: #315d95; }
+.box_03 .info .title span.t2{ font-size: 40px; font-weight: bold;color: #315d95; }
+.box_03 .info .pic{ width: 178px; margin-top: 60px;}
+.box_03 .trouble{ border-radius: 20px; background: #fff;margin-top: -20px;}
+.box_03 .sub{ background: #6496c8; font-size: 28px; color: #fff; width: 45%; font-weight: bold;border-radius: 999px; padding: 5px 0; margin: 0 auto; position: relative; }
+.box_03 .trouble .c{ padding:50px 60px 30px 70px;}
+.box_03 .trouble .c dt.pic{ width: 291px;}
+.box_03 .trouble .c dd.example{ width: 50%; margin-left: 30px; font-size: 15px; color: #505050; }
+.box_03 .trouble .c dd.example ul li{ display: inline-block; width: 43%; margin-bottom: 20px; }
+.box_03 .trouble .c dd.example ul li .i{ width: 87px; margin:0 auto 10px; }
+
+
+.box_04{ width: 100%; background: #fff; background-image: url(images/bg_5.jpg); background-repeat: no-repeat;background-position: right top;padding: 70px 50px 60px; box-sizing: border-box; text-align: center; position: relative;}
+.box_04 .arrow{ position: absolute;left: 50%; top: 160px; left: 335px;}
+.box_04 .tip{ margin-top: 30px; }
+.box_04 .arrow_d, .box_04 .contain .pd ul li span.num{ display: none;}
+.box_04 .contain{ padding-top: 70px; }
+.box_04 .contain .pd{ width: 35%; }
+.box_04 .contain .pd1{ background: url(images/bg_pd01.png) left 30px no-repeat;}
+.box_04 .contain .pd2{ background: url(images/bg_pd02.png) left 30px no-repeat;}
+.box_04 .contain .pd3{ background: url(images/bg_pd03.png) left 30px no-repeat;}
+.box_04 .contain .pd ul li{ display: inline-block; color: #315d95; font-size: 22px; font-weight: bold; padding: 0 10px; text-align: left; }
+.box_04 .contain .pd ul li.second{ padding-right: 20px; }
+.box_04 .contain .pd ul li.pic{ width: 47px; vertical-align: middle; }
+.box_04 .contain .info{ width: 55%; margin-left: 10%; }
+.box_04 .contain .info p{ font-size: 16px; line-height: 24px; text-align: left; }
+.box_04 .contain .info p span{ font-weight: bold; color: #f8883d;}
+.box_04 .contain .info p.time{ color: #6496c8; }
+.box_04 .contain .info .icons{ background-color: #eef3f6; border-radius: 15px; padding: 10px 28px; margin: 10px 0;}
+.box_04 .contain .info .icons li{ width: 18%; margin: 10px auto; display: inline-block; }
+.box_04 .contain .info .icons li.first{ width: 22%;}
+.box_04 .contain .info .icons li .icon{ width: 45px; margin: 0 auto; }
+.box_04 .contain .info .icons li p{ color: #6496c8; margin-top: 10px; font-size: 15px; line-height: 18px; text-align: center;}
+
+
+.box_05{ width: 100%; padding: 120px 80px 0 ; box-sizing: border-box; background-color: #e8e8e6;background-image: url(images/bg_3.jpg); background-repeat: no-repeat;background-position: center top; text-align: center; }
+.box_05 p{ text-align: left; margin: 40px 0 50px; }
+.box_05 .title{ background: #6496c8; border-radius: 999px; width: 45%; margin: 0 auto; font-size: 32px; font-weight: bold; color: #fff; padding: 5px 0; }
+.box_05 .title span{ font-size: 18px; font-weight: normal; }
+.box_05 .compare{ margin: 40px 0 10px; }
+.box_05 .compare:last-child{ margin: 0; }
+.box_05 .compare .pd{ width: 35%; margin:0 2%;}
+.box_05 .compare .info{ width: 60%;margin:20px 2%;}
+.box_05 .compare .info .name, .box_05 .compare .pd-name{ color: #315d95; font-size: 30px; font-weight: bold; text-align: center; letter-spacing: 1px; }
+.box_05 .compare .info .name .model{ font-size: 22px; }
+.box_05 .compare .note{ font-size: 14px; display: block; color: #505050; text-align: center; margin: 0;}
+.box_05 .compare .info .price-c{ background: #fff; border-radius: 20px; padding: 30px 15px; margin: 30px 0 20px; position: relative; }
+.box_05 .compare .info .price-c .win{ width: 84px; position: absolute; top: -40px; right: -20px; }
+.box_05 .compare .info .price-c .txt{ font-size: 18px; font-weight: bold; padding: 0 25px; margin: 0 auto;border-right:1px #e8e8e6 solid;}
+.box_05 .compare .info .price-c .txt1{ padding: 0 35px; }
+.box_05 .compare .info .price-c .txt:last-child{ border-right:none;}
+.box_05 .compare .info .price-c .txt p{ margin: 10px 0; font-weight: bold; }
+.box_05 .compare .info .price-c .txt p span{font-size: 16px; }
+.box_05 .compare .info .price-c .txt p span.price{ color: #ea7900; font-size: 44px; }
+.box_05 .pcshow{ display: block; }
+.box_05 .mshow{ display: none; }
+
+
+.box_06{ width: 100%; position: relative; padding: 60px 60px 80px; box-sizing: border-box; background: #fff; text-align: center; }
+.box_06 p{ text-align: left; margin: 40px 0 20px; }
+.box_06 .step .s{ width: 46%; position: relative; margin: 0 4%; }
+.box_06 .step .s .txt{ position: absolute; font-size: 22px; color: #505050; width: 63%; left: 0; right: 0; bottom: 40px; margin: 0 auto; text-align: center; }
+.box_06 .cal{ background: #ededed; border-radius: 20px; margin: 80px 4% 0; padding: 30px 120px;}
+.box_06 .cal .cal-p{ width: 130px; margin: -60px 40px 0 0; }
+.box_06 .cal .cal-txt{ font-size: 26px; color: #ea7900; font-weight: bold; text-align: left; }
+.box_06 .cal .cal-txt ul li{ display: inline-block; }
+.box_06 .cal .cal-txt .icon{ width: 29px; vertical-align: top; }
+.box_06 .cal .cal-txt p{ font-size: 16px; margin: 5px 0 0; }
+
+
+.box_07{ width: 100%;background-image: url(images/bg_2.jpg); background-repeat: no-repeat;background-position: right top;background-color: #fafafa; position: relative; padding: 120px 100px 80px; box-sizing: border-box;
+min-height: 620px;}
+.box_07 .txt{ float: left; width: 45%; }
+.box_07 .txt .pic{ width: 167px; margin-top: 30px;}
+.box_07 .pd{ position: absolute; bottom: 55px; right: 230px; text-align: center; width: 161px; margin: 0 auto; }
+
+.box_08{ width: 100%;  background: #c4dbe7; position: relative; padding: 80px 50px; box-sizing: border-box; text-align: center;}
+.box_08 ul li{ display: inline-block; width: 22%; margin: 0 10px;}
+.box_08 ul li p{ color: #505050; font-size: 24px; margin-top: 20px; font-weight: normal;}
+
+.box_09{ width: 100%; height: 370px; background: url(images/bg_pro.jpg) no-repeat; padding: 100px 70px 0; box-sizing: border-box;
+position: relative;}
+.box_09 .txt{ font-size: 40px; color: #315d95; float: right; width: 47%;}
+.box_09 .txt .title{ border-bottom: 1px #315d95 solid; padding-bottom: 10px; margin-bottom: 30px; font-weight: bold; }
+.box_09 .txt span{ font-size: 22px; font-weight: normal; display: block; }
+.box_09 .txt p{ font-size: 15px; line-height: 26px; color: #545454; font-weight: normal; }
+.box_09 .over{ width: 105px; position: absolute; top: -30px; right: 70px; }
+
+.box_10{ width: 100%; background:#fff; text-align: center; padding: 80px 50px 60px; box-sizing: border-box;text-align: left;}
+.box_10 .container2{ margin-top: 40px; }
+.box_10 .pd{ width: 37%; margin-right: 3%; }
+.box_10 .pd .pic1{ margin-top: 90px; }
+.box_10 .pd .pic2{ margin-top: 0;  width: 285px;}
+.box_10 .table{ width: 60%; }
+.box_10 .table2{ margin-top: 95px; }
+.box_10 ul { margin: 0px;}
+.box_10 ul li { font-size: 16px; color: #505050; line-height: 26px; background: #ebf2f5; margin-bottom: 5px; border-radius: 5px; padding: 7px 20px;}
+.box_10 .table .name{ float: left; width: 17%; color: #315D97;font-weight: bold;}
+.box_10 .table .content{ float: right; width: 78%; text-align: left;}
+
+
+/*小於960的顯示*/
+@media (max-width:959px) {
+.pc-show{ display: none; }
+.m-show, .box_10 .container, .box_10 .container2, .box_04 .contain{ display: block; }
+.edm960{ width: 100%; overflow: hidden; }
+.kv { padding: 0px; }
+.box_06, .box_07, .box_08, .box_10{ padding: 80px 50px; }
+.box_01{padding: 80px 0;}
+.box_01 .icon{ width: 23%; margin: 20px; }
+.box_02{ padding: 80px 50px ;}
+.box_03{ padding: 80px 50px ;}
+.box_03 .contain{ padding: 10px 0px; }
+.box_03 .trouble .c{ padding: 50px 30px 30px 50px; }
+.box_04{ padding: 60px 50px 140px;}
+.box_04 .arrow{ display: none; }
+.box_04 .contain .pd1, .box_04 .contain .pd2, .box_04 .contain .pd3{ background: none; }
+.box_04 .contain .pd{ width: 100%; }
+.box_04 .contain .pd ul li{ display: block; text-align: center; margin: 0 auto; }
+.box_04 .contain .info{ margin-left: 0; width: 100%; }
+.box_04 .contain .pd ul li.pic{ margin: 30px auto; width: 70px; }
+.box_04 .contain .pd ul li span.num{ display: inline-block; }
+.box_04 .arrow_d{ display: block;width: 80px; margin: 0 auto;}
+.box_04 .contain .info .icons{ padding: 10px 70px; }
+.box_05{ padding: 120px 50px 60px; }
+.box_05 .compare .pd{ width: 30%; }
+.box_05 .compare .info{ width: 64%; }
+.box_05 .compare .info .price-c{ padding: 30px 0; }
+.box_05 .compare .info .price-c .txt p span.price{ font-size: 33px; }
+.box_05 .compare .info{ margin: 0 2% 40px; }
+.box_06 .step .s .txt{ width: 80%; bottom: 30px; }
+.box_06 .cal .cal-txt p{ line-height: 22px; margin: 10px 0 0; }
+.box_08 ul li{ width: 21%; }
+.box_09{ padding: 80px 30px; height: inherit;}
+.box_09 ul li{ width: 20.5%; }
+.box_09{ padding: 60px 0 0; background: #f0f0f0; height: inherit;}
+.box_09 .txt{ float: none; width: 70%; margin: 0 auto; }
+.box_09 .txt p{ margin-bottom: 10px; }
+.box_09 .pro{ width: 80%; }
+.box_10{ padding: 60px 30px; }
+.box_10 .pd{ float: none; width: 60%; margin: 0 auto 40px; padding-top: 20px; text-align: center; }
+.box_10 .pd .pic1{ margin-top: 40px; }
+.box_10 .pd .pic2{ margin: 40px auto 0; }
+.box_10 .table{ float: none;width: 95%;margin: 0 auto; }
+}
+
+@media (max-width:767px) {
+h1{ font-size: 34px; line-height: 45px; letter-spacing: 0px; }
+.box_01, .box_04, .box_06, .box_07, .box_08, .box_10{ padding: 60px 30px; }
+.box_07 p{ text-align: left; }
+.box_01{ padding: 60px 0; }
+.box_01 .icon{ width: 30%; margin: 15px; }
+.box_01 .contain{ padding: 0; }
+.box_01 p{ font-size: 20px; }
+.box_02{ padding: 60px 30px;}
+.box_02 ul li{ width: 44%; margin: 0 9px 20px; }
+.box_03{padding: 60px 30px;}
+.box_03 .contain, .box_03 .trouble .c, .box_05 .compare .info .price-c, .box_05 .mshow, .box_06 .step, .box_06 .cal .contain{ display: block; }
+.box_03 .taiwan{ width: 80%; margin: 0 auto; }
+.box_03 .info{ text-align: center; padding-top: 40px; }
+.box_03 .sub{ font-size: 24px; width: 80%; margin: 40px auto 0; }
+.box_03 .info .pic{ margin: 40px auto 0; }
+.box_03 .trouble .c{ padding: 50px 30px 30px; }
+.box_03 .trouble .c dt.pic{ width: 100%; max-width: 291px; margin: 0 auto; }
+.box_03 .trouble .c dd.example{ width: 100%; margin: 30px auto 0; }
+.box_04 .contain{ padding-top: 30px; }
+.box_04 .txt{ width: 98%; float: none; margin-bottom: 370px;}
+.box_04 .pd{ right: 50%; margin-right: -110px; }
+.box_04 .contain .info .icons li.first{ width: 26%; }
+.box_04 .contain .info .icons li p{ font-size: 14px; letter-spacing: -1px; }
+.box_04 .contain .info .icons{ padding: 10px 0; }
+.box_04 .contain .info .icons li{ width: 19%; }
+.box_05{ padding: 100px 30px 60px; }
+.box_05 p, .box_06 p{ margin: 20px 0 30px; }
+.box_05 .title{ width: 80%; font-size: 24px; }
+.box_05 .compare{ display: block; margin: 50px 0 60px; }
+.box_05 .compare .pd{ width: 80%; margin: 10px auto; }
+.box_05 .compare .info{ width: 100%; margin: -20px auto 0; }
+.box_05 .compare .info .price-c .txt p{ text-align: center; }
+.box_05 .compare .info .price-c .txt1, .box_05 .compare .info .price-c .txt{ border-right: none; border-bottom: 1px #e8e8e6 solid; width: 80%; margin: 0 auto; padding: 0; }
+.box_05 .compare .info .price-c .txt p span.price{ font-size: 40px; }
+.box_05 .compare .info .price-c .txt:last-child{ border-bottom: none; }
+.box_05 .pcshow{ display: none; }
+.box_06 .step .s{ width: 100%; margin: 0 auto 30px; }
+.box_06 .cal{ padding: 30px 40px; }
+.box_06 .cal .cal-p{ margin: -60px auto 20px; }
+.box_06 .step .s .txt{ bottom: 50px; }
+.box_07{ background-image: url(images/bg_2_m.jpg); background-position: center bottom; background-size: 100%; padding: 60px 40px; min-height: inherit; }
+.box_07 .txt{ float: none; width: 100%; margin-bottom: 480px; }
+.box_07 .pd{ right: 50%; margin-right: -80px; bottom: 40px; }
+.box_08 ul li{ width: 43%; margin: 10px; }
+.box_09{padding: 60px 30px;}
+.box_09 ul li{ width: 43%; margin:10px; }
+.box_09{ padding: 100px 0 0; }
+.box_09 .txt{ width: 80%; }
+.box_09 .txt .title{ font-size: 36px; }
+.box_09 .pro{ width: 90%; }
+.box_10 h1{ margin-bottom: 40px; }
+.box_10 .pd{ width: 80%; padding-top: 0;}
+.box_10 .pd .pic1{ margin-top: 0; }
+.box_10 .pd .pic2{ width: 80%; }
+.box_10 .table{ width: 100%; }
+.box_10 ul li{ font-size: 14px; line-height: 22px; }
+.box_10 .table .name{ width: 25%; }
+.box_10 .table .content{ width: 70%; padding-left: 10px; }
+}
+
+@media (max-width:414px) {
+h1{ font-size: 30px; letter-spacing: 1px; }
+.box_03 p, .box_04 p, .box_05 p, .box_06 p, .box_07 p, .box_08 p, .box_09 p{ font-size: 18px; }
+.box_06, .box_07, .box_08, .box_10{ padding: 50px 30px; }
+.box_01{ padding: 50px 0 20px; }
+.box_01 .icon{ width: 32%; margin: 10px 10px 30px;}
+.box_01 p{ margin-top: 10px; }
+.box_02{ padding: 40px 20px 40px; }
+.box_03 .trouble .c dd.example ul li{ width: 49%; }
+.box_03 .trouble .c dd.example ul li p{ font-size: 16px; }
+.box_04{ padding: 50px 20px;}
+.box_04 h1{ width: 65%; margin: 0 auto;}
+.box_04 .contain .info .icons li{ width: 25%; min-height: 91px; vertical-align: top; }
+.box_05{ padding: 80px 30px 40px; }
+.box_05 .compare .info .price-c .win{ right: 0; }
+.box_06 ul li p{ line-height: 24px; }
+.box_07 .pd{ width: 130px; margin-right: -65px; bottom: 60px; }
+.box_08 ul li{ padding-top: 10px; }
+.box_09{ padding: 40px 20px; }
+.box_09{ padding: 80px 0 0 }
+.box_09 .txt{ width: 85%; }
+.box_09 .txt .title{ text-align: center; }
+.box_09 .over{ right: 30px; width: 95px; }
+.box_09 .pro{ width: 100%; }
+.box_10 .table .name{ width: 23%; }
+.box_10 .table .content{ width: 73%; }
+.box_10 ul li{ padding: 7px 10px; }
+}
+
+@media (max-width:375px) {
+.box_02{ padding: 50px 20px 30px;}
+.box_03, .box_06, .box_08, .box_10{ padding: 50px 20px; }
+.box_03 p{ font-size: 16px; }
+.box_03 .info .title{ font-size: 22px; }
+.box_03 .info .pic{ margin: 20px auto 0; }
+.box_03 .sub{ width: 90%; font-size: 22px; margin:20px auto 0; }
+.box_03 .trouble .c{padding: 50px 10px 10px;}
+.box_03 .trouble .c dt.pic{ padding: 0 10px; box-sizing: border-box; }
+.box_05{ padding: 80px 20px 40px;}
+.box_06 .cal{ margin: 60px 0 0; }
+.box_07 .txt{ margin-bottom: 410px; }
+.box_07 .pd{ bottom: 50px; }
+}
+
+@media (max-width:360px) {
+h1{ font-size: 26px; line-height: 35px;}
+.box_03 p, .box_04 p, .box_05 p, .box_06 p, .box_07 p, .box_08 p, .box_09 p{ font-size: 15px; line-height: 24px; }
+.box_01 p{ font-size: 18px; }
+.box_01 .icon{ margin: 0 10px 20px; width: 35%; }
+.box_02 ul li{ float: none; width: 88%; margin: 0 auto 20px; }
+.box_02 .p-content{ height: inherit; }
+.box_04{ padding: 50px 20px 10px; }
+.box_04 h1{ width: 68%; }
+.box_05 .title{ font-size: 20px; }
+.box_05 .compare .info .name, .box_05 .compare .pd-name{ font-size: 26px; }
+.box_05 .compare{ margin: 40px 0 50px; }
+.box_07 .txt{ margin-bottom: 400px; }
+.box_07 .pd{ width: 120px; bottom: 40px; }
+.box_08 ul li, .box_09 ul li{ width: 42%; }
+.box_09 .txt{ width: 90%; }
+.box_09 .txt .title{ font-size: 32px; }
+}
+</style>
+</head>
+
+<body>
+	<div class="wrap">
+		<!--KV banner -->
+		<div class="kv"> 
+			<div class="pc-show"><img src="images/kv_960.jpg" alt="3M" /></div>
+			<div class="m-show"><img src="images/kv_m_960.jpg" alt="3M" /></div>
+		</div>
+
+		<!--1. 三道淨化把關-->     
+		<div class="box_01">
+			<div class="contain">
+			  	<h1>三道淨化把關，<br /><span>多人家庭</span>使用推薦</h1>
+			  	<ul>
+				    <li class="icon">
+				    	<div><img src="images/icon01.png" alt="三道濾淨技術" /></div>
+				    	<p>三道濾淨技術</p>
+					</li>
+					<li class="icon">
+				    	<div><img src="images/icon02.png" alt="長效型大流量" /></div>
+				    	<p>長效型大流量</p>
+					</li>
+					<li class="icon">
+				    	<div><img src="images/icon03.png" alt="簡易更換濾心" /></div>
+				    	<p>簡易更換濾心</p>
+					</li>
+					<li class="icon">
+				    	<div><img src="images/icon04.png" alt="櫥下省空間" /></div>
+				    	<p>櫥下省空間</p>
+					</li>
+					<li class="icon">
+				    	<div><img src="images/icon05.png" alt="免插電無廢水" /></div>
+				    	<p>免插電無廢水</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!--2. 居家用水疑慮-->
+		<div class="box_02">
+		    <h1>居家用水疑慮</h1>
+		    <div><img src="images/img_01.jpg" alt="污染物質" /></div>
+		    <ul>
+		    	<li>
+		    		<div class="number">1</div>
+		    		<div class="pic"><img src="images/img_02.png" alt="水源污染" /></div>
+		    		<div class="p-content">
+			    		<div class="p-title">水源污染</div>
+			    		<p>養殖排遺物<br />農藥地表滲透<br />工業廢棄物排放</p>
+		    		</div>
+		    	</li>
+		    	<li>
+		    		<div class="number">2</div>
+		    		<div class="pic"><img src="images/img_03.png" alt="自來水廠" /></div>
+		    		<div class="p-content">
+			    		<div class="p-title">自來水廠</div>
+			    		<p>自來水廠<br />餘氯殘留</p>
+		    		</div>
+		    	</li>
+		    	<li>
+		    		<div class="number">3</div>
+		    		<div class="pic"><img src="images/img_04.png" alt="管線汙染" /></div>
+		    		<div class="p-content">
+			    		<div class="p-title">管線汙染</div>
+			    		<p>配水管道老舊<br />或滲裂</p>
+		    		</div>
+		    	</li>
+		    	<li>
+		    		<div class="number">4</div>
+		    		<div class="pic"><img src="images/img_05.png" alt="設備污染" /></div>
+		    		<div class="p-content">
+			    		<div class="p-title">設備污染</div>
+			    		<p>滋菌或污水回滲<br />原有淨水設備老舊</p>
+		    		</div>
+		    	</li>
+		    	<div style="clear: both;"></div>
+		    </ul>
+		</div>
+		
+		<!--3. 硬水區域-->
+		<div class="box_03">
+			<h1>你的居家水源處於硬水區域嗎？</h1>
+			<div class="contain">
+				<div class="taiwan"><img src="images/taiwan.png" alt="" /></div>
+				<div class="info">
+					<p class="title">含有硬水區域占<span class="t1">全臺</span><span class="t2">85</span><span class="t1">％</span></p>
+					<p>資料來源：自來水公司各縣市平均水質分析</p>
+					<div class="pic"><img src="images/taiwan_2.png" alt="" /></div>
+				</div>
+			</div>
+			<div class="sub">硬水所帶來的生活困擾</div>
+			<div class="trouble">
+				
+				<dl class="c">
+					<dt class="pic"><img src="images/img_10.jpg" alt="" /></dt>
+					<dd class="example">
+						<ul>
+							<li>
+								<div class="i"><img src="images/icon06.png" alt="" /></div>
+								<p>易產生水垢<br />較不美觀</p>
+							</li>
+							<li>
+								<div class="i"><img src="images/icon07.png" alt="" /></div>
+								<p>長期水垢沉積影響<br />管線及設備效能</p>
+							</li>
+							<li>
+								<div class="i"><img src="images/icon08.png" alt="" /></div>
+								<p>清潔品不易起泡沫<br />需浪費較多清潔</p>
+							</li>
+							<li>
+								<div class="i"><img src="images/icon09.png" alt="" /></div>
+								<p>影響加熱效能<br />浪費能源</p>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+		</div>
+
+		<!--4. 三道濾淨技術-->
+		<div class="box_04">
+			<h1><span>三道濾淨技術</span>，飲用更安心</h1>
+			<div class="arrow"><img src="images/arrow.png" alt="" /></div>
+			<div class="contain">
+				<div class="pd pd1">
+					<ul>
+						<li><span class="num">1. </span>前置無鈉樹脂</li>
+						<li class="pic"><img src="images/f1.png" alt="前置無鈉樹脂" /></li>
+					</ul>
+				</div>
+				<div class="info">
+					<p>去除水中石灰質、軟化水質，並減少水垢生成，保護家中鍋具及淨水設備，使加熱設備效能更佳。</p>
+					<div class="icons">
+						<ul>
+							<li class="first">
+								<div class="icon"><img src="images/icon10.png" alt="石灰質鈣、鎂" /></div>
+								<p>石灰質鈣、鎂</p>
+							</li>
+						</ul>
+					</div>
+					<p class="time">· 更換時間：2-4個月</p>
+				</div>
+			</div>
+			<div class="arrow_d"><img src="images/arrow_down.png" alt=""></div>
+			<div class="contain">
+				<div class="pd pd2">
+					<ul>
+						<li class="second"><span class="num">2. </span>前置PP濾心</li>
+						<li class="pic"><img src="images/f2.png" alt="前置PP濾心" /></li>
+					</ul>
+				</div>
+				<div class="info">
+					<p>去除水中石灰質、軟化水質，並減少水垢生成，保護家中鍋具及淨水設備，使加熱設備效能更佳。</p>
+					<div class="icons">
+						<ul>
+							<li>
+								<div class="icon"><img src="images/icon11.png" alt="鐵鏽" /></div>
+								<p>鐵鏽</p>
+							</li>
+							<li>
+								<div class="icon"><img src="images/icon12.png" alt="泥沙" /></div>
+								<p>泥沙</p>
+							</li>
+							<li>
+								<div class="icon"><img src="images/icon13.png" alt="沉澱物" /></div>
+								<p>沉澱物</p>
+							</li>
+							<li>
+								<div class="icon"><img src="images/icon14.png" alt="毛髮纖維" /></div>
+								<p>毛髮纖維</p>
+							</li>
+							<li>
+								<div class="icon"><img src="images/icon15.png" alt="膠類" /></div>
+								<p>膠類</p>
+							</li>
+						</ul>
+					</div>
+					<p class="time">· 更換時間：3-6個月</p>
+				</div>
+			</div>
+			<div class="arrow_d"><img src="images/arrow_down.png" alt=""></div>
+			<div class="contain">
+				<div class="pd pd3">
+					<ul>
+						<li><span class="num">3. </span>S004<br />活性碳棒濾心</li>
+						<li class="pic"><img src="images/f3.png" alt="S004活性碳棒濾心" /></li>
+					</ul>
+				</div>
+				<div class="info">
+					<p>使用<span>0.5微米高密度活性碳</span>，大面積吸附雜質與污染物，可有效濾除水中餘氯、異味、重金屬、孢子囊菌等有害微生物，並保留礦物質、改善口感。</p>
+					<div class="icons">
+						<ul>
+							<li>
+								<div class="icon"><img src="images/icon16.png" alt="囊胞菌" /></div>
+								<p>囊胞菌</p>
+							</li>
+							<li>
+								<div class="icon"><img src="images/icon17.png" alt="餘氯" /></div>
+								<p>餘氯</p>
+							</li>
+							<li>
+								<div class="icon"><img src="images/icon18.png" alt="塑化劑" /></div>
+								<p>塑化劑</p>
+							</li>
+							<li>
+								<div class="icon"><img src="images/icon19.png" alt="壬基酚" /></div>
+								<p>壬基酚</p>
+							</li>
+							<li>
+								<div class="icon"><img src="images/icon20.png" alt="雙酚A" /></div>
+								<p>雙酚A</p>
+							</li>
+							<li>
+								<div class="icon"><img src="images/icon21.png" alt="部分重金屬" /></div>
+								<p>部分<br />重金屬</p>
+							</li>
+							<li>
+								<div class="icon"><img src="images/icon22.png" alt="揮發性有機化合物" /></div>
+								<p>揮發性<br />有機化合物</p>
+							</li>
+						</ul>
+					</div>
+					<p class="time">· 更換時間：12個月</p>
+					<div class="tip">* 若出現水量變小或水垢明顯產生時亦需更換<br />* 濾心順序資訊將依製造日期 2020 / 11 後為主</div>
+				</div>
+			</div>
+			
+		</div> 
+
+
+		<!--5. 長效型大流量-->
+		<div class="box_05">
+		    <h1>長效型<span>大流量</span></h1>
+		    <p>主濾心至多可使用一年，有7,571公升的大處理量，每分鐘出水量最大可達1.8公升，滿足4人以上大家庭即開即飲的需求，安心便利又省錢。</p>
+		    <div class="title">7,571公升<span> / 一年使用量</span></div>
+		    <div class="compare">
+		    	<div class="pd-name mshow"><span class="model">S301</span><br />櫥下型三道式淨水器</div>
+		    	<div class="pd"><img src="images/pd_2.png" alt="S301櫥下型三道式淨水器" /></div>
+		    	<dl class="info">
+		    		<dt class="name pcshow"><span class="model">S301</span><br />櫥下型三道式淨水器</dt>
+		    		<dd class="price-c">
+		    			<div class="win"><img src="images/win.png" alt="" /></div>
+		    			<div class="txt txt1">
+		    				<p>三道替換濾心<span>(1年)</span></p>
+		    				<p><span class="price">$6,620</span>元</p>
+		    			</div>
+		    			<div class="txt">
+		    				<p>每公升</p>
+		    				<p><span class="price">$0.87</span>元</p>
+		    			</div>
+		    		</dd>
+		    		<div class="tip">* 淨水器的購置金額並無計入，計算總成本時需另行加計</div>
+		    	</dl>
+		    </div>
+		    <div class="compare">
+		    	<div class="pd-name mshow">
+	    			850ml一般市售瓶裝水
+	    			<p class="note">(以市售30元計算)</p>
+	    		</div>
+	    		<div class="pd m-show"><img src="images/water.png" alt="" /></div>
+		    	<dl class="info">
+		    		<dt class="name pcshow">
+		    			850ml一般市售瓶裝水
+		    			<p class="note">(以市售30元計算)</p>
+		    		</dt>
+		    		<dd class="price-c">
+		    			<div class="txt">
+		    				<p>8,907瓶<span>(1年)</span></p>
+		    				<p><span class="price">$267,210</span>元</p>
+		    			</div>
+		    			<div class="txt">
+		    				<p>每公升</p>
+		    				<p><span class="price">$35.3</span>元</p>
+		    			</div>
+		    		</dd>
+		    	</dl>
+		    	<div class="pd pc-show"><img src="images/water.png" alt="" /></div>
+		    </div>
+		</div>
+		<div class="bg"><img src="images/bg_4.jpg" alt="" /></div>
+
+		<!--6. 更換濾心方便 -->
+		<div class="box_06">
+			<h1><span>更換濾心</span>方便</h1>
+		    <p>採用SQC快拆式兩分路設計，<span class="highlight">5秒鐘</span>免工具快速完成安裝或更換，更加衛生無汙染，此系列皆內含<span class="highlight">流量計</span>提醒更換濾心。</p>
+		    <div class="step">
+		    	<div class="s">
+		    		<img src="images/step01.png" alt="" />
+		    		<p class="txt">將舊濾心以順時針方向旋轉，簡單卸下</p>
+		    	</div>
+		    	<div class="s">
+		    		<img src="images/step02.png" alt="" />
+		    		<p class="txt">將新濾心以逆時鐘方向旋轉安裝</p>
+		    	</div>
+		    </div>
+		    <div class="cal">
+		    	<div class="contain">
+		    		<div class="cal-p"><img src="images/cal.png" alt="" /></div>
+		    		<div class="cal-txt">
+		    			<ul>
+		    				<li class="icon"><img src="images/cal-icon.png" alt="" /></li>
+		    				<li>流量計</li>
+		    			</ul>
+		    			<p>顯示目前使用流量，可輔助提醒更換濾心的時間。</p>
+		    		</div>
+		    	</div>
+		    </div>
+		</div>
+
+		<!--7. 櫥下省空間-->
+		<div class="box_07">
+			<div class="txt">
+		    	<h1>櫥下<span>省空間</span>，<br />免插電無廢水</h1>
+		    	<p>免插電無廢水設計，安裝不佔空間，維持檯面、櫥下空間舒適整潔，使用更便利無慮，此系列皆含<span class="highlight">3M到府基本安裝服務。</span></p>
+		    </div>
+		    <div style="clear: both;"></div>
+		    <div class="pd"><img src="images/pd_1.png" alt="" /></div>
+		</div>
+
+		<!--8. 過濾水的生活應用-->
+		<div class="box_08">
+		    <h1>過濾水的<span>生活應用</span></h1>
+		    <ul>
+		    	<li>
+		    		<img src="images/img_06.png" alt="" />
+		    		<p>日常飲用</p>
+		    	</li>
+		    	<li>
+		    		<img src="images/img_07.png" alt="" />
+		    		<p>洗滌食材</p>
+		    	</li>
+		    	<li>
+		    		<img src="images/img_08.png" alt="" />
+		    		<p>料理烹飪</p>
+		    	</li>
+		    	<li>
+		    		<img src="images/img_09.png" alt="" />
+		    		<p>沖調飲品</p>
+		    	</li>
+		    </ul>
+		</div>
+
+		<!--9. 淨水專家-->
+		<div class="box_09">
+		    <div class="txt">
+			    <div class="title">3M世界級淨水專家<span>實驗室等級的居家好水</span></div>
+			    <p>3M專注淨水科技，擁有超過80年的液體過濾與淨水經驗。全球千位淨水團隊，從實驗到研發層層把關，實驗室等級的安心純淨，讓您在家也能夠擁有。</p>
+		  	</div>
+		  	<div class="over"><img src="images/over.png" alt="" /></div>
+		  	<div class="pro m-show"><img src="images/m_pro.png" alt="" /></div>
+		</div>
+
+		<!--10. 產品規格-->
+		<div class="box_10">
+			<div class="container">
+			    <div class="pd">
+			    	<h1>產品規格</h1>
+			    	<div class="pic1"><img src="images/pd.jpg" alt="3M:S301櫥下型三道式淨水器"></div>
+			    </div>
+			    <div class="table">
+				    <ul>
+			            <li>
+			            	<div class="name">商品名稱</div>
+			            	<div class="content">3M™ S301櫥下型三道式淨水系統</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			            <li>
+			            	<div class="name">濾心型號</div>
+			            	<div class="content">前置PP濾心：3RS-F001-5<br />前置樹脂軟水濾心：3RF-F001-5<br />高密度活性碳濾心：3US-F004-5</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			            <li>
+			            	<div class="name">總濾水量</div>
+			            	<div class="content">7,571公升(2,000加侖)</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			            <li>
+			            	<div class="name">主濾心孔徑</div>
+			            	<div class="content">0.5微米</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			            <li>
+			            	<div class="name">有效流速</div>
+			            	<div class="content">每分鐘1.8公升</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			           <li>
+			            	<div class="name">耗材更換</div>
+			            	<div class="content">前置PP濾心：3-6個月<br />前置樹脂軟水濾心：2-4個月<br />高密度活性碳濾心：12個月
+</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			            <li>
+			            	<div class="name">原產地</div>
+			            	<div class="content">台灣</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			             <li>
+			            	<div class="name">商品尺寸</div>
+			            	<div class="content">淨水器系統：寬28.9 x 深11 x 高39.2公分</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			            <li>
+			            	<div class="name">商品重量</div>
+			            	<div class="content">淨水器系統：2.4公斤</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			            <li>
+			            	<div class="name">主要材質</div>
+			            	<div class="content">濾心：高效能活性碳 / PP / 樹脂<br />濾心外殼：PP<br />快接頭座：聚丙烯（PP）<br />產品外殼：ABS</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			            <li>
+			            	<div class="name">適用溫度</div>
+			            	<div class="content">4.4~37.8℃</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			            <li>
+			            	<div class="name">操作水壓</div>
+			            	<div class="content">25~54 psi</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			        </ul>
+					<div style="clear: both;"></div>
+				</div>
+			</div>
+			<div class="container2">
+				<div class="pd">
+			    	<h1>搭配龍頭規格</h1>
+			    	<div class="pic2"><img src="images/pd_4.jpg" alt="3M:TR1無桶直出式RO純水機"></div>
+			    </div>
+			    <div class="table table2">
+				    <ul>
+			            <li>
+			            	<div class="name">產品名稱</div>
+			            	<div class="content">3M™鵝頸龍頭</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			            <li>
+			            	<div class="name">產品功能</div>
+			            	<div class="content">生飲淨水出水龍頭</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			            <li>
+			            	<div class="name">主要材質</div>
+			            	<div class="content">鵝頸龍頭彎管：不鏽鋼（SUS304）<br />鵝頸龍頭座本體外殼（非觸水元件）：鋅合金<br />鵝頸龍頭座本體內材（觸水元件）：食品級陶瓷材料</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			            <li>
+			            	<div class="name">產品規格</div>
+			            	<div class="content">136 X 285 X 72(寬 X 高 X 深 mm)</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			            <li>
+			            	<div class="name">原產地</div>
+			            	<div class="content">台灣</div>
+			            	<div style="clear: both;"></div>
+			            </li>
+			        </ul>
+					<div style="clear: both;"></div>
+		    	</div>
+		    </div>
+		</div>
+	</div>
+</body>
+</html>
