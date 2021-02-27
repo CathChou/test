@@ -177,6 +177,7 @@ header nav a{ padding: 20px 0; }
 .dropdown:hover .dropdown-content {
   display: block;
 }
+header nav a:hover .dropdown-content{ display: none; }
 }
 
 @media screen and (max-width: 1023px){
