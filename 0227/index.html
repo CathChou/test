@@ -36,12 +36,12 @@
   </ul>
   <input type="checkbox" id="x7" />
   <ul id="main">
-    <a href="#">
+    <a href="shs.html">
       <li class="x1">
         Link 1
       </li>
     </a>
-    <a href="shs.html">
+    <a href="#">
       <li class="x1">
         Link 2
       </li>
@@ -192,6 +192,19 @@ clickx.addEventListener('click', function(){
   clickx.classList.toggle('diam');
 });
 </script>
+	
+<script>
+window.addEventListener( "pageshow", function ( event ) {
+  var historyTraversal = event.persisted || 
+                         ( typeof window.performance != "undefined" && 
+                              window.performance.navigation.type === 2 );
+  if ( historyTraversal ) {
+    // Handle page restore.
+    window.location.reload();
+  }
+});
+</script>
+
 
 </body>
 </html>
