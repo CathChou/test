@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>2021 ASUS Solution Week</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content=""/>
+<meta property="og:title" content="2021 ASUS Solution Week">
+<meta property="og:description" content=""/>
+<meta property="og:image" content="">
+<link rel="image_src" href="">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/action.js"></script>
+
+</head>
+
+<body>
+<h1>2021 ASUS Solution Week</h1>
+<div class="wrap">
+
+
+	<header>
+  		<a class="logo" href="http://minimaldev.com"><img src="images/logo.png"></a>
+		<input id="nav" type="checkbox">
+		<label for="nav">
+			<div id="hamburger">
+			   <span></span>
+			   <span></span>
+			   <span></span>
+			</div>
+		</label>
+		<nav>
+		    <ul>
+			    <li>
+			    	<div class="dropdown">
+					    <button class="dropbtn">About ASUS IoT 
+					      <i class="fa fa-caret-down"></i>
+					    </button>
+					    <div class="dropdown-content">
+					      <a href="#">Link 1</a>
+					      <a href="#">Link 2</a>
+					      <a href="#">Link 3</a>
+					    </div>
+					  </div> 
+			    </li>
+
+				<li><a href="#">Join Webinar</a></li>
+				<li><a href="#">Smart Healthcare</a></li>
+				<li><a href="#">Smart Retail</a></li>
+				<li><a href="#">Smart Manufacturing</a></li>
+				<li><a href="#">Edge AI Solution</a></li>
+		    </ul>
+		</nav> 
+	</header>
+	
+	<!--index banner-->
+	<div class="index-banner"><img src="images/banner.jpg"></div>
+
+	<!--index content-->
+	<div class="index-row">
+		<div class="c-box"><a href="#"><img src="images/index-01.jpg"></a></div>
+		<div class="c-box">
+			<p><a href="#"><img src="images/index-02.jpg"></a></p>
+			<p><a href="#"><img src="images/index-03.jpg"></a></p>
+		</div>
+	</div>
+	<div class="index-row">
+		<div class="c-box"><a href="#"><img src="images/index-04.jpg"></a></div>
+		<div class="c-box"><a href="#"><img src="images/index-05.jpg"></a></div>
+	</div>
+
+	<!--footer-->
+	<div class="footer">
+		<div class="logo"><img src="images/logo.png"></div>
+		<div class="menu">
+			<ul>
+				<li class="menu-box">
+					<p>About ASUS IoT</p>
+					<a href="#">Vision</a>
+					<a href="#">Mission</a>
+					<a href="#">Advantage(why ASUS IoT)</a>
+				</li>
+				<li class="menu-box">
+					<p>Smart Healthcare</p>
+					<a href="#">ASUS IoT product page</a>
+					<a href="#">Mini PC product page</a>
+					<a href="#">Healthcare</a>
+				</li>
+				<li class="menu-box">
+					<p>Smart Retail</p>
+					<a href="#">ASUS IoT product page</a>
+					<a href="#">Tinker product page</a>
+					<a href="#">Mini PC product page</a>
+				</li>
+				<li class="menu-box">
+					<p>Smart Manufacturing</p>
+					<a href="#">ASUS IoT product page</a>
+					<a href="#">AI solution</a>
+				</li>
+				<li class="menu-box">
+					<p>Edge AI Solution</p>
+					<a href="#">ASUS IoT product page</a>
+					<a href="#">Microsoft project /</a>
+					<a href="#">product page</a>
+				</li>
+			</ul>
+		</div>
+		<div class="clearFloat"></div>
+	</div>
+
+	<div class="copyright">©ASUSTEK COMPUTER INC. ALL RIGHTS RESERVED. TERMS OF USE NOTICE PRIVACY POLICY</div>
+	
+</div>
+<!--animation-->
+<script>
+	const clickx= document.getElementById('hamburger');
+
+clickx.addEventListener('click', function(){
+  clickx.classList.toggle('diam');
+});
+</script>
+</body>
+</html>
