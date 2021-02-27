@@ -36,12 +36,12 @@
   </ul>
   <input type="checkbox" id="x7" />
   <ul id="main">
-    <a class="test" href="shs.html">
+    <a href="#">
       <li class="x1">
         Link 1
       </li>
     </a>
-    <a class="test" href="#">
+    <a href="shs.html">
       <li class="x1">
         Link 2
       </li>
@@ -192,19 +192,6 @@ clickx.addEventListener('click', function(){
   clickx.classList.toggle('diam');
 });
 </script>
-<script>
-	const menu = document.querySelector('#main');
-const menuToggle = document.querySelector('.test');
 
-menuToggle.addEventListener('click', (e) => {
-  e.preventDefault();
-
-  if (window.getComputedStyle(menu).display === 'block') {
-    menu.style.display = 'none';
-  } else  {
-    menu.style.display = 'block';
-  }
-});
-</script>
 </body>
 </html>
