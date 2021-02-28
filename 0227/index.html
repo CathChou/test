@@ -24,65 +24,67 @@
 <body>
 <h1>2021 ASUS Solution Week</h1>
 <div class="wrap">
-
 	<nav>
-  <ul id="header">
-    <a href="#" id="brand">
-      <li>
-        Pure CSS Dropdown
-      </li>
-    </a>
-    <label id="trigger2" for="x7"><i class="fa fa-bars"></i></label>
-  </ul>
-  <input type="checkbox" id="x7" />
-  <ul id="main">
-    <a href="shs.html">
-      <li class="x1">
-        Link 1
-      </li>
-    </a>
-    <a href="#">
-      <li class="x1">
-        Link 2
-      </li>
-    </a>
-    <a href="#">
-      <li class="x1">
-        Link 3
-      </li>
-    </a>
-    <a href="#" id="trigger">
-      <li class="x1">
-        Dropdown&nbsp;
-        <span id="caret"></span>
-      </li>
-    </a>
-    <ul id="dropdown">
-      <a href="shs.html">
-        <li>
-          Link 1
-        </li>
-      </a>
-      <a href="#">
-        <li>
-          Link 2
-        </li>
-      </a>
-      <a href="#">
-        <li>
-          Link 3
-        </li>
-      </a>
-      <a href="#">
-        <li>
-          Link 4
-        </li>
-      </a>
-    </ul>
-  </ul>
-</nav>
+		<div class="logo">
+		    <a href="index.html"><img src="images/logo.png"></a>
+		</div>
+		<label id="hamburger" for="ctrl">
+			<span></span>
+			<span></span>
+			<span></span>
+		</label>
+		<input type="checkbox" id="ctrl" />
+	  	<ul class="main">
+	  		<!-- 1 -->
+		    <a href="#" class="drop">
+		        <li>About ASUS IoT<span class="arrow"></span></li>
+		    </a>
+		    <ul class="dropdown d1">
+			    <a href="#"><li>Vision</li></a>
+			    <a href="#"><li>Mission</li></a>
+			    <a href="#"><li>Advantage(why ASUS IoT)</li></a>
+			</ul>
+			<!-- 2 -->
+		    <a href="#" class="drop"><li>Join Webinar</li></a>
+		    <!-- 3 -->
+		    <a href="#" class="drop">
+		        <li>Smart Healthcare<span class="arrow"></span></li>
+		    </a>
+		    <ul class="dropdown d3">
+			    <a href="#"><li>ASUS IoT product page</li></a>
+			    <a href="#"><li>Mini PC product page</li></a>
+			    <a href="#"><li>Healthcare</li></a>
+			</ul>
+		    <!-- 4 -->
+		    <a href="#" class="drop">
+		        <li>Smart Retail<span class="arrow"></span></li>
+		    </a>
+		    <ul class="dropdown d4">
+			    <a href="#"><li>ASUS IoT product page</li></a>
+			    <a href="#"><li>Tinker product page</li></a>
+			    <a href="#"><li>Mini PC product page</li></a>
+			</ul>
+			<!-- 5 -->
+		    <a href="#" class="drop">
+		        <li>Smart Manufacturing<span class="arrow"></span></li>
+		    </a>
+		    <ul class="dropdown d5">
+			    <a href="#"><li>ASUS IoT product page</li></a>
+			    <a href="#"><li>AI solution</li></a>
+			</ul>
+			<!-- 6 -->
+		    <a href="#" class="drop">
+		        <li>Edge AI Solution<span class="arrow"></span></li>
+		    </a>
+		    <ul class="dropdown d6">
+			    <a href="#"><li>ASUS IoT product page</li></a>
+			    <a href="#"><li>Microsoft project</li></a>
+			    <a href="#"><li>product page</li></a>
+			</ul>
+		</ul>
+	</nav>
 	<!--<header>
-  		<a class="logo" href="http://minimaldev.com"><img src="images/logo.png"></a>
+  		<a class="logo" href="#"><img src="images/logo.png"></a>
 		<input id="nav" type="checkbox">
 		<label for="nav">
 			<div id="hamburger">
