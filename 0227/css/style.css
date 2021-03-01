@@ -178,6 +178,9 @@ nav{ padding: 10px 20px; }
 @media screen and (max-width: 767px){
 .container .date{ font-size: 1.5rem; }
 }
+@media screen and (max-width: 414px){
+.container li{ width: 100%; margin: 5px 0; box-sizing: border-box; }
+}
 
 /*----- page -----*/
 .kv-shs{ background: url(../images/banner_shs.jpg) center no-repeat; }
