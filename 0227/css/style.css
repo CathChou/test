@@ -22,6 +22,7 @@ a, button{ text-decoration:none; transition: all .3s ease;-webkit-transition:all
 /*----- common -----*/	
 .wrap{ width: 1440px; margin: 98px auto 0; }
 .clearFloat{ clear: both; }
+.m-mb10{ margin-bottom: 0 }
 nav img, .footer img, .index-banner img, .index-row img, .page-content img, .pd-info img{ width: 100%; height: auto; display: block; }
 @media screen and (max-width: 1439px){
 .wrap{ width: 100%; }
@@ -161,11 +162,18 @@ nav{ padding: 10px 20px; }
 .container{ width: 66%; }
 .container .title{ font-size: 4.8rem; }
 .container li{ padding: 10px; margin-right: 20px; }
+.c-box .web, .c-box .name{ font-size: 1.5rem; }
+.c-box .web p.t{ font-size: 5rem; }
+.c-box .name p span{ font-size: 1rem; }
+.c-box .name p.t{ font-size: 1.25rem; }
 }
 @media screen and (max-width: 1024px){
 .container{ width: 82%;}
 .container .date{ font-size: 2.75rem; }
 .container li{ width: 160px; }
+.index-row{ display: block; }
+.c-box{ width: 100%; }
+.m-mb10{ margin-bottom:10px;}
 }
 @media screen and (max-width: 767px){
 .index-banner{ height: 500px; }
@@ -174,12 +182,14 @@ nav{ padding: 10px 20px; }
 .container .date{ font-size: 1.875rem; }
 .container li{ width: 101px; font-size: 0.87rem; padding:7px; margin-right: 5px;  }
 .container li p.location{ font-size: 0.93rem; }
-}
-@media screen and (max-width: 767px){
 .container .date{ font-size: 1.5rem; }
+.c-box .web p.t{ font-size: 4rem; }
 }
 @media screen and (max-width: 414px){
 .container li{ width: 100%; margin: 5px 0; box-sizing: border-box; }
+.c-box .web{ top: 20px; }
+.c-box .web p.t{ font-size: 3rem; }
+.c-box .web a{ margin: 20px auto 0; }
 }
 
 /*----- page -----*/
