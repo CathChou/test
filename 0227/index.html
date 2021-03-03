@@ -16,9 +16,6 @@
 
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/action.js"></script>
-
 </head>
 
 <body>
@@ -84,7 +81,7 @@
 </nav>
 <div class="wrap">
 	<!--index banner-->
-	<div class="index-banner">
+	<div class="index-banner animated fadeIn">
 		<div class="container">
 			<div class="title">AIOT FORUM WEBINAR SERIES</div>
 			<div class="date">March 22 - 26</div>
@@ -107,7 +104,7 @@
 	
 	<!--index content-->
 	<div class="index-row">
-		<div class="c-box">
+		<div class="c-box animated fadeIn-1">
 			<dl>
 				<dt class="web">
 					<p>ASUS IoT Solution Days</p>
@@ -117,7 +114,7 @@
 				<dd><a href="wld.html"><img src="images/index-01.jpg" class="img"></a></dd>
 			</dl>
 		</div>
-		<div class="c-box">
+		<div class="c-box animated fadeIn-2">
 			<dl>
 				<dt class="name">
 					<p>March 22<span>th</span></p>
@@ -136,14 +133,14 @@
 		</div>
 	</div>
 	<div class="index-row">
-		<div class="c-box m-mb10">
+		<div class="c-box m-mb10 animated fadeIn-3">
 			<div class="name">
 				<p>March 25<span>th</span></p>
 				<p class="t">Smart Healthcare</p>
 			</div>
 			<a href="shs.html"><img src="images/index-04.jpg" class="img"></a>
 		</div>
-		<div class="c-box">
+		<div class="c-box animated fadeIn-4">
 			<div class="name">
 				<p>March 24<span>th</span></p>
 				<p class="t">Smart Manufacturing</p>
@@ -195,7 +192,8 @@
 	<div class="copyright">©ASUSTEK COMPUTER INC. ALL RIGHTS RESERVED. TERMS OF USE NOTICE PRIVACY POLICY</div>
 	
 </div>
-<!--animation-->
+<script src="js/jquery-2.0.2.js"></script>
+<script src="js/action.js"></script>
 <script>
 	const clickx= document.getElementById('hamburger');
 		clickx.addEventListener('click', function(){
@@ -212,6 +210,23 @@ window.addEventListener( "pageshow", function ( event ) {
 	    window.location.reload();
 	  }
 });
+</script>
+<!--animation-->
+<script>
+	$(window).scroll(function() {
+		$('.index-banner, .c-box').each(function(){
+			var imagePos = $(this).offset().top;
+
+			var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+750) {
+			$(this).addClass("fadeIn");
+			}
+			var ww = $(window).width();
+			if (ww < 767) {
+		    $(this).removeClass("fadeIn");
+		    }
+		});
+	});
 </script>
 
 
