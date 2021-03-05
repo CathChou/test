@@ -52,11 +52,3 @@ function clock()
 // end hiding  -->
 
 //JavaScript特定日期倒數計時 END//
-
-
-
-
-  const clickx= document.getElementById('hamburger');
-    clickx.addEventListener('click', function(){
-      clickx.classList.toggle('diam');
-});
