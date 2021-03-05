@@ -13,13 +13,7 @@
 <link rel="image_src" href="">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700;900&display=swap" rel="stylesheet">
-
-
 <link rel="stylesheet" type="text/css" href="css/style.css" />
-
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/action.js"></script>
-
 </head>
 
 <body>
@@ -243,13 +237,27 @@ Digitizing patient’s medical data during transportation of intelligent ambulan
 
 	<div class="copyright">©ASUSTEK COMPUTER INC. ALL RIGHTS RESERVED. TERMS OF USE NOTICE PRIVACY POLICY</div>
 </div>
-<!--animation-->
+<script src="js/jquery-2.0.2.js"></script>
+<script src="js/action.js"></script>
 <script>
 	const clickx= document.getElementById('hamburger');
 
 clickx.addEventListener('click', function(){
   clickx.classList.toggle('diam');
 });
+</script>
+<!--animation-->
+<script>
+	$(window).scroll(function() {
+		$('.t-box, .pd-box, .agenda-t, .product').each(function(){
+			var imagePos = $(this).offset().top;
+
+			var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+850) {
+			$(this).addClass("fadeIndown");
+			}
+		});
+	});
 </script>
 </body>
 </html>
