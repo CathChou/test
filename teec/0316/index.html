@@ -78,7 +78,7 @@
 			</ul>
 			<div id="tabs-content">
 			    <div id="tab1" class="tab-content">
-			     	<div class="test">
+			     	<div class="test slider">
 						<div>
 							<img src="images/patents_01.png">
 							<p>化成槽氣罩一</p>
@@ -106,7 +106,7 @@
 					</div>
 			    </div>
 			    <div id="tab2" class="tab-content">
-			     	<div class="test2">
+			     	<div class="test">
 						<div>
 							<img src="images/patents_01.png">
 							<p>化成槽氣罩一</p>
@@ -267,7 +267,7 @@ $('#tabs-nav li').click(function(){
 </script>
 
 <script>
-$('.test, .test2').slick({
+$('.test').slick({
   infinite: true,
   slidesToShow: 4,
   autoplay: true,
@@ -276,6 +276,12 @@ $('.test, .test2').slick({
   arrows: false,
   speed: 1500
 });
+$('a[data-toggle="tab"]').on('shown.bs.tab', function() {   
+  $($(this).attr('href')).find('.test').not('.slick-initialized').slick({
+    dots: true,
+    arrows: true
+  })
+}).first().trigger('shown.bs.tab');
 </script>
 
 </body>
