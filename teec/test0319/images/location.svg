@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="20px" viewBox="0 0 14 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 3</title>
+    <defs>
+        <polygon id="path-1" points="0 0 14 0 14 20 0 20"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="index_pc" transform="translate(-848.000000, -3852.000000)">
+            <g id="footer" transform="translate(0.000000, 3791.000000)">
+                <g id="Group-4" transform="translate(848.000000, 60.000000)">
+                    <g id="Group-3" transform="translate(0.000000, 1.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M6.99681905,4.00180021 C8.74634191,4.00180021 10.1815868,5.50130849 10.1815868,7.33418899 C10.1815868,9.16773624 8.74634191,10.6705782 6.99681905,10.6705782 C5.24729619,10.6705782 3.81714078,9.16773624 3.81714078,7.33418899 C3.81714078,5.50130849 5.24729619,4.00180021 6.99681905,4.00180021 M6.99681905,0 C3.13959829,0 0,3.29171737 0,7.33418899 C0,14.4476856 6.60301736,19.8549831 6.60301736,19.8549831 C6.83522676,20.048339 7.16350086,20.048339 7.39571026,19.8549831 C7.39571026,19.8549831 14,14.4476856 14,7.33418899 C14,3.29171737 10.8540398,0 6.99681905,0" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
