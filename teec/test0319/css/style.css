@@ -67,6 +67,7 @@ font-family: 'icomoon' !important; speak: never; font-style: normal; font-weight
 .navbar .social-item { font-size: 1.65rem; line-height: inherit; margin: 0 0.5rem; color: #252a32; transition: all 0.35s ease;}
 .navbar .social-item:hover { color: #148cb8;}
 .logo{ width: 400px; display: block; }
+.menu li.menu-item:last-child a{ border-bottom: none; }
 
 /*----- footer -----*/  
 .footer{ width: 100%; color: #fff; font-size: 0.93rem;
