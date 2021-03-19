@@ -20,51 +20,15 @@
 <script src="js/jquery-2.0.2.js"></script>
 <script src="js/slick.min.js"></script>
 <script>
-function includeHTML() {
-  var z, i, elmnt, file, xhttp;
-  /*loop through a collection of all HTML elements:*/
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    /*search for elements with a certain atrribute:*/
-    file = elmnt.getAttribute("w3-include-html");
-    if (file) {
-      /*make an HTTP request using the attribute value as the file name:*/
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /*remove the attribute, and call this function once more:*/
-          elmnt.removeAttribute("w3-include-html");
-          includeHTML();
-        }
-      }      
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      /*exit the function:*/
-      return;
-    }
-  }
-};
+$("#header").load( "header.html");
 </script>
-<script>
-	const burgerMenu = document.getElementById("burger");
-	const navbarMenu = document.getElementById("menu");
 
-	// Responsive Navbar Toggle
-	burgerMenu.clickfunction () {
-	navbarMenu.classList.toggle("active");
-	burgerMenu.classList.toggle("active");
-};
-
-</script>
 </head>
 
 <body>
 <div class="wrap">
 	<!--header-->
-	<div w3-include-html="header.html"></div> 
+	<div id="header"></div>
 	
 
 	<!--kv-->
@@ -377,7 +341,17 @@ function includeHTML() {
 	</div>
 </div>
 
+<script>
+	const burgerMenu = document.getElementById("burger");
+	const navbarMenu = document.getElementById("menu");
 
+	// Responsive Navbar Toggle
+	burgerMenu.addEventListener("click", function () {
+	navbarMenu.classList.toggle("active");
+	burgerMenu.classList.toggle("active");
+});
+
+</script>
 <script>
 $(document).ready(function(){
 	$(".tabs li a").click(function() {
