@@ -25,7 +25,7 @@ nav img, .kv img, .product_box img, .footer_logo img, .tabs-content img, .slick-
 h2{ font-size: 2rem; font-weight: bold;}
 .unit_t{font-size: 1.125rem; color: #183276; margin: 30px 0;}
 .serif{font-family: 'Noto Serif TC', serif;}
-.breadcrumb{ font-size: 0.875rem; text-align: left; color: #2F85CB;}
+.breadcrumb{ font-size: 0.875rem; text-align: left; color: #2F85CB; padding-top: 40px;}
 .breadcrumb span{ padding: 0 10px; }
 .breadcrumb a{ color: #9D9D9D; }
 .breadcrumb a:hover{ color: #2F85CB; }
@@ -145,7 +145,7 @@ ul.tabs li a:hover, ul.tabs li a.active { background-color: #484848;color: #fff;
 .page{ background: #F2F2F2;}
 .page_w{ background: #fff;}
 .page .u_t{ top: -30px; }
-.page_t{ background: #fff; width: 100%; text-align: center; padding:70px 0 120px; }
+.page_t{ background: #fff; width: 100%; text-align: center; padding:0 0 120px; }
 .page_content{ width: 1400px;margin: 0 auto; text-align: center; }
 /* equipment */
 .equipment_content{ display: flex; margin-bottom: 80px;}
@@ -168,7 +168,7 @@ background: linear-gradient(to bottom right,#183276,#2F85CB); }
 .pd .p_intro .name p{ color: #183276; font-size: 1.125rem; margin-top: 10px; }
 .pd .p_intro ul{ margin-bottom: 20px; }
 .pd .p_intro li{ list-style: disc; margin-left: 20px; }
-.feature{ display: flex;text-align: left; margin: 100px 0; }
+.feature{ display: flex;text-align: left; margin: 80px 0; }
 .feature .f_box{ width: 50%; }
 .feature .f_box:first-child{ margin-right: 80px; }
 .feature .f_title{ width: 100%; border-bottom: 1px solid #D5D5D5; font-size: 1.5rem; color: #183276; margin-bottom: 40px;padding-bottom: 5px; font-weight: bold; }
