@@ -216,6 +216,7 @@ ul.tabs li a:hover, ul.tabs li a.active { background-color: #484848;color: #fff;
 }
 
 @media (max-width: 1023px) {
+.wrap, .page{ margin-top: 92px; }
 /* index */ 
 .kv{ height: auto; }
 .kv .pic, .kv .title{ float: none; width: 100%; }
@@ -241,7 +242,8 @@ ul.tabs li a:hover, ul.tabs li a.active { background-color: #484848;color: #fff;
 .footer_intro li{ margin: 10px; }
 /* page */
 .equipment_content{ display: block; margin-bottom: 0; }
-.equipment_box{ width: 80%; margin: 50px auto; } 
+.equipment_box{ width: 70%; margin: 60px auto; } 
+.page_t{ padding: 50px 0 70px; }
 }
 
 @media screen and (max-width: 767px){
@@ -252,6 +254,7 @@ h2{ font-size: 1.5rem; }
 .navbar .menu-link{ color: #fff; display: block; padding-bottom: 20px; font-size: 1.25rem; border-bottom: 1px solid #8da8c6; }
 .navbar .menu-item{ margin: 15px 0; padding: 0 3rem; }
 .navbar .menu.active{ height: auto; box-sizing: border-box;}
+.logo{ width: 90%:; }
 /* index */ 
 .patents{padding:80px 20px 60px;}
 .tab_content_container{ padding: 0; }
@@ -265,6 +268,11 @@ h2{ font-size: 1.5rem; }
 .product_c{ padding: 0 20px; }
 .product_intro ul{ margin-top: 10px; }
 .product a.more{ width: 80%; background: #484848; border: none; color: #fff; }
+/* page */ 
+.page_t{ padding: 20px 0 50px; }
+.page_content{ padding: 0 30px; }
+.breadcrumb{ margin-bottom: 15px; }
+.equipment_box{ width: 90%; margin: 50px auto; }
 }
 
 @media screen and (max-width: 414px){
