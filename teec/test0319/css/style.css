@@ -239,9 +239,9 @@ ul.tabs li a:hover, ul.tabs li a.active { background-color: #484848;color: #fff;
 .footer_intro li{ display: block; }
 .footer_c{ padding: 40px 40px 30px; }
 .footer_intro li{ margin: 10px; }
-/* page 
-/*.equipment_content{ display: block; }
-.equipment_box{ width: 80%; margin: 0 auto; }*/ 
+/* page */
+.equipment_content{ display: block; margin-bottom: 0; }
+.equipment_box{ width: 80%; margin: 50px auto; } 
 }
 
 @media screen and (max-width: 767px){
