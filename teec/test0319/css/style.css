@@ -300,6 +300,7 @@ ul.tabs li{ margin: 30px 10px; font-size: 1rem; }
 /* page */ 
 .breadcrumb span{ padding: 0 5px; }
 /* equipment */
+.equipment_box{ width: 100%; }
 .equipment_box dd{ padding: 20px 10px; }
 }
 
