@@ -160,7 +160,7 @@ background: -webkit-linear-gradient(left top,#183276,#2F85CB);
 background: -o-linear-gradient(bottom right,#183276,#2F85CB);
 background: -moz-linear-gradient(bottom right,#183276,#2F85CB);
 background: linear-gradient(to bottom right,#183276,#2F85CB); }
-.test{ position: absolute; }
+.pd_bg{ position: absolute; }
 .pd_content{ padding-bottom: 40px; }
 .pd .p_img{ width: 50%; margin: -200px 0 0 0; position: relative; float: left; }
 .pd .p_intro{ color: #fff; text-align: left; margin: -140px 70px 0 0; width: 40%; float: right; }
@@ -182,7 +182,7 @@ background: -webkit-linear-gradient(left top,#183276,#2F85CB);
 background: -o-linear-gradient(bottom right,#183276,#2F85CB);
 background: -moz-linear-gradient(bottom right,#183276,#2F85CB);
 background: linear-gradient(to bottom right,#183276,#2F85CB);}
-.model .m_box{ width: 27%; float: left; margin: 0 40px;box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1); margin-top: -50px; }
+.model .m_box{ width: 26.5%; float: left; margin: 0 40px;box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1); margin-top: -50px; }
 .model .m_box dd p{ font-size: 1rem; font-weight: normal; }
 .model .mTop{ margin-top: -100px; }
 .switch{ width: 100%; margin: 80px 0 70px; }
@@ -247,6 +247,8 @@ background: linear-gradient(to bottom right,#183276,#2F85CB);}
 .page_t{ padding: 0 0 100px; }
 /* equipment */
 .equipment_box{ margin: 0 10px; }
+/* equipment_page */
+.pd .p_intro .name{ font-size: 2rem; margin-bottom: 100px; }
 }
 
 @media (max-width: 1024px) {
@@ -285,6 +287,20 @@ background: linear-gradient(to bottom right,#183276,#2F85CB);}
 /* equipment */
 .equipment_content{ display: block; margin-bottom: 0; }
 .equipment_box{ width: 70%; margin: 60px auto; } 
+/* equipment-page */
+.pd{ background:none; margin-top: 0;  }
+.pd_bg_m{ position: absolute; height: 300px; width: 100%; bottom: 0;
+background: -webkit-linear-gradient(left top,#183276,#2F85CB);
+background: -o-linear-gradient(bottom right,#183276,#2F85CB);
+background: -moz-linear-gradient(bottom right,#183276,#2F85CB);
+background: linear-gradient(to bottom right,#183276,#2F85CB);
+}
+.pd_bg{ display: none; }
+.pd .p_intro, .pd .p_img{ float: none; width: 100%; margin: 0; color: #3c3c3c; }
+.pd .p_img{ margin-top: 60px; }
+.pd_content{ padding-top: 40px; }
+.pd .p_intro .name{ margin-bottom: 40px; }
+.pd .p_intro ul{ margin-bottom: 10px; }
 }
 
 @media screen and (max-width: 767px){
