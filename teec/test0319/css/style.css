@@ -63,7 +63,7 @@ font-family: 'icomoon' !important; speak: never; font-style: normal; font-weight
 .navbar .navbrand .burger { display: flex; flex-direction: row; justify-content: center; align-items: center; cursor: pointer; border: none; outline: none; background: none; transition: all 0.35s ease;}
 .navbar .navbrand .burger-close, .navbar .navbrand .burger.active .burger-open  { display: none;}
 .navbar .navbrand .burger.active .burger-close { display: flex;}
-.navbar .menu { width: 100%; height: 0; overflow: hidden; transition: all 0.5s ease;}
+.navbar .menu { width: 100%; height: 0; overflow: hidden; transition: all 0.5s ease; padding-right: 1rem;}
 .navbar .menu-item { margin: 0.5rem 0;}
 .navbar .menu-link { font-family: inherit; font-size: 1rem; font-weight: 500; line-height: inherit; color: #183276; text-transform: uppercase; text-rendering: optimizeLegibility; transition: all 0.35s ease;}
 .navbar .menu-link:hover { color: #2F85CB;}
