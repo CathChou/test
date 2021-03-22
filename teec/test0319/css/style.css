@@ -183,6 +183,7 @@ background: -o-linear-gradient(bottom right,#183276,#2F85CB);
 background: -moz-linear-gradient(bottom right,#183276,#2F85CB);
 background: linear-gradient(to bottom right,#183276,#2F85CB);}
 .model .m_box{ width: 27%; float: left; margin: 0 40px;box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1); margin-top: -50px; }
+.model .m_box dd p{ font-size: 1rem; font-weight: normal; }
 .model .mTop{ margin-top: -100px; }
 .switch{ width: 100%; margin: 80px 0 70px; }
 .switch_c{ padding-bottom: 50px;border-bottom: 1px solid #D5D5D5; margin-bottom: 60px;}
