@@ -243,7 +243,7 @@ background: linear-gradient(to bottom right,#183276,#2F85CB);}
 .footer_logo{ width: 32%; float: none; margin: 10px auto 20px; }
 .footer_intro{ float: none; text-align: center; }
 /* page */ 
-.page_t{ padding: 50px 0 100px; }
+.page_t{ padding: 0 0 100px; }
 /* equipment */
 .equipment_box{ margin: 0 10px; }
 }
@@ -280,7 +280,7 @@ background: linear-gradient(to bottom right,#183276,#2F85CB);}
 .footer_c{ padding: 40px 40px 30px; }
 .footer_intro li{ margin: 10px; }
 /* page */
-.page_t{ padding: 50px 0 70px; }
+.page_t{ padding: 0 0 70px; }
 /* equipment */
 .equipment_content{ display: block; margin-bottom: 0; }
 .equipment_box{ width: 70%; margin: 60px auto; } 
@@ -309,9 +309,9 @@ h2{ font-size: 1.5rem; }
 .product_intro ul{ margin-top: 10px; }
 .product a.more{ width: 80%; background: #484848; border: none; color: #fff; }
 /* page */ 
-.page_t{ padding: 20px 0 50px; }
+.page_t{ padding: 0 0 50px; }
 .page_content{ padding: 0 30px; }
-.breadcrumb{ margin-bottom: 15px; }
+.breadcrumb{ margin-bottom: 15px; padding-top: 20px; }
 /* equipment */
 .equipment_box{ width: 90%; margin: 50px auto; }
 }
