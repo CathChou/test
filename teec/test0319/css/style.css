@@ -63,7 +63,7 @@ font-family: 'icomoon' !important; speak: never; font-style: normal; font-weight
 .navbar .navbrand .burger { display: flex; flex-direction: row; justify-content: center; align-items: center; cursor: pointer; border: none; outline: none; background: none; transition: all 0.35s ease;}
 .navbar .navbrand .burger-close, .navbar .navbrand .burger.active .burger-open  { display: none;}
 .navbar .navbrand .burger.active .burger-close { display: flex;}
-.navbar .menu { width: 100%; height: 0; overflow: hidden; transition: all 0.5s ease;}
+.navbar .menu { width: 100%; height: 0; overflow: hidden; transition: all 0.5s ease; padding: 1rem;}
 .navbar .menu-item { margin: 0.5rem 0;}
 .navbar .menu-link { font-family: inherit; font-size: 1rem; font-weight: 500; line-height: inherit; color: #183276; text-transform: uppercase; text-rendering: optimizeLegibility; transition: all 0.35s ease;}
 .navbar .menu-link:hover { color: #2F85CB;}
@@ -150,7 +150,7 @@ ul.tabs li a:hover, ul.tabs li a.active { background-color: #484848;color: #fff;
 .equipment_box{ width: 33%; margin: 0 25px; }
 .equipment_box dd{ background: #2F85CB; color: #fff; padding: 30px 0; font-size: 1.125rem; font-weight: bold; }
 .equipment_box ul{ margin-top: 20px; }
-.equipment_box li{ text-align: left; margin-top: 5px; background: url(../images/triangle_2.png) left no-repeat; padding-left: 15px; }
+.equipment_box li{ text-align: left; margin-top: 5px; background: url(../images/triangle_2.png) left 8px no-repeat; padding-left: 15px; }
 
 
 
@@ -189,7 +189,7 @@ ul.tabs li a:hover, ul.tabs li a.active { background-color: #484848;color: #fff;
 }
 
 @media screen and (max-width: 1280px){
-.wrap{ margin-top: 80px; }
+.wrap, .page{ margin-top: 80px; }
 .logo{ width: 100%; }
 .kv, .kv .pic .slide{ height: 460px; }
 .kv .title{ font-size: 1.25rem; }
@@ -204,6 +204,9 @@ ul.tabs li a:hover, ul.tabs li a.active { background-color: #484848;color: #fff;
 /* footer */ 
 .footer_logo{ width: 32%; float: none; margin: 10px auto 20px; }
 .footer_intro{ float: none; text-align: center; }
+/* page */ 
+.page_t{ padding: 50px 0 100px; }
+.equipment_box{ margin: 0 10px; }
 }
 
 @media (max-width: 1024px) {
@@ -236,6 +239,9 @@ ul.tabs li a:hover, ul.tabs li a.active { background-color: #484848;color: #fff;
 .footer_intro li{ display: block; }
 .footer_c{ padding: 40px 40px 30px; }
 .footer_intro li{ margin: 10px; }
+/* page */ 
+.equipment_content{ display: block; }
+.equipment_box{ width: 80%; margin: 0 auto; }
 }
 
 @media screen and (max-width: 767px){
