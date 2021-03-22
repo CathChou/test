@@ -21,19 +21,20 @@ a, button, .mask{ text-decoration:none; transition: all .3s ease;-webkit-transit
 /*----- common -----*/	
 .wrap{ margin: 0 auto; margin-top: 92px; }
 .clearFloat{ clear: both; }
-nav img, .kv img, .product_box img, .footer_logo img, .tabs-content img, .slick-slide img{ width: 100%; height: auto; display: block; }
+nav img, .kv img, .product_box img, .footer_logo img, .tabs-content img, .slick-slide img, .equipment_box img{ width: 100%; height: auto; display: block; }
 h2{ font-size: 2rem; font-weight: bold;}
 .unit_t{font-size: 1.125rem; color: #183276; margin: 30px 0;}
 .serif{font-family: 'Noto Serif TC', serif;}
+.breadcrumb{ font-size: 0.875rem; text-align: left; }
 
 /*----- icon -----*/	
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?dgf1l4');
-  src:  url('../fonts/icomoon.eot?dgf1l4#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?dgf1l4') format('truetype'),
-    url('../fonts/icomoon.woff?dgf1l4') format('woff'),
-    url('../fonts/icomoon.svg?dgf1l4#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?v36uji');
+  src:  url('../fonts/icomoon.eot?v36uji#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?v36uji') format('truetype'),
+    url('../fonts/icomoon.woff?v36uji') format('woff'),
+    url('../fonts/icomoon.svg?v36uji#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -49,8 +50,10 @@ font-family: 'icomoon' !important; speak: never; font-style: normal; font-weight
 .icon_location:before { content: "\e901";}
 .icon_mail:before { content: "\e902";}
 .icon_phone:before { content: "\e903";}
+.icon_home:before { content: "\e905";}
 .icon_mail{font-size: 0.875rem;}
 .icon_arrow_r{ margin-left: 20px; }
+
 
 /*----- header -----*/  
 .navbar { width: 100%; height: auto; color: #252a32; background: #ffffff; box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1), 0 1px 10px rgba(0, 0, 0, 0.15); position: fixed; z-index: 10; box-sizing: border-box; top: 0;}
@@ -135,9 +138,16 @@ ul.tabs li a:hover, ul.tabs li a.active { background-color: #484848;color: #fff;
 .product_intro li{ font-size: 1rem; list-style: disc; margin: 5px 0 0 25px; }
 
 /*----- page -----*/
-
-
-
+.page{ background: #F2F2F2;}
+.page_t{ background: #fff; width: 100%; text-align: center; padding-bottom: 150px; }
+.page_content{ width: 1440px;margin: 0 auto; text-align: center; }
+/* equipment */
+.equipment_content{ display: flex; margin-bottom: 80px;}
+.equipment_content:first-child{ margin-top: -80px; }
+.equipment_box{ width: 33%; margin: 0 25px; }
+.equipment_box dd{ background: #2F85CB; color: #fff; padding: 30px 0; font-size: 1.125rem; }
+.equipment_box ul{ margin-top: 20px; }
+.equipment_box li{ list-style: disc; text-align: left; margin: 5px 0 0 25px; }
 
 
 
