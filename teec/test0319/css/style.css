@@ -185,7 +185,7 @@ ul.tabs li a:hover, ul.tabs li a.active { background-color: #484848;color: #fff;
 .footer_logo{ width: 22%; }
 .footer_intro li{ margin: 0 10px; }
 /* page */ 
-.page_content{ width: 100%; }
+.page_content{ width: 100%; padding: 0 40px; }
 }
 
 @media screen and (max-width: 1280px){
