@@ -5,9 +5,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>台灣公害處理工程股份有限公司</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- HTTP 1.1 -->
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<!-- HTTP 1.0 -->
+<meta http-equiv="Pragma" content="no-cache"/>
+<!-- Cache Expires -->
+<meta http-equiv="Expires" content="0"/>
 <meta content="telephone=no" name="format-detection">
 <meta name="description" content=""/>
-<meta property="og:title" content="2021 ASUS Solution Week">
+<meta property="og:title" content="台灣公害處理工程股份有限公司">
 <meta property="og:description" content=""/>
 <meta property="og:image" content="">
 <link rel="image_src" href="">
@@ -19,37 +25,20 @@
 <link rel="stylesheet" type="text/css" href="css/slick.css"/>
 <script src="js/jquery-2.0.2.js"></script>
 <script src="js/slick.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#header').load('header.html');
+    $('#footer').load('footer.html');
+});
+</script>
+
 </head>
 
 <body>
 <div class="wrap">
 	<!--header-->
-	<nav class="navbar">
-		<div class="navbrand">
-			<h1><a class="logo" href="index.html" class="brand"><img src="images/logo.svg"></a></h1>
-			<div class="burger" id="burger">
-				<span class="burger-open">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
-						<g fill="#252a32" fill-rule="evenodd">
-							<path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z" />
-						</g>
-					</svg>
-				</span>
-				<span class="burger-close">
-					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-						<path fill="#252a32" fill-rule="evenodd" d="M17.778.808l1.414 1.414L11.414 10l7.778 7.778-1.414 1.414L10 11.414l-7.778 7.778-1.414-1.414L8.586 10 .808 2.222 2.222.808 10 8.586 17.778.808z" />
-					</svg>
-				</span>
-			</div>
-		</div>
-		<ul class="menu" id="menu">
-			<li class="menu-item"><a href="javascript: void(0)" class="menu-link">公司簡介</a></li>
-			<li class="menu-item"><a href="javascript: void(0)" class="menu-link">處理設備</a></li>
-			<li class="menu-item"><a href="javascript: void(0)" class="menu-link">諮詢服務</a></li>
-			<li class="menu-item"><a href="javascript: void(0)" class="menu-link">工程實績</a></li>
-			<li class="menu-item"><a href="javascript: void(0)" class="menu-link">En</a></li>
-		</ul>
-	</nav>
+	<div id="header"></div>
+	
 
 	<!--kv-->
 	<div class="kv">
@@ -60,7 +49,7 @@
 			</dl>
 			<p>Scroll</p>
 		</div>
-		<div class="pic test">
+		<div class="pic slide_KV">
 			<div class="slide slide_1"></div>
 			<div class="slide slide_2"></div>
 			<div class="slide slide_3"></div>
@@ -131,23 +120,23 @@
 					</div>
 					<div>
 						<img src="images/patents_t_11.jpg">
-						<p>穩壓裝置</p>
+						<p>通風穩壓裝置</p>
 					</div>
 					<div>
 						<img src="images/patents_t_12.jpg">
-						<p>Cartridge</p>
+						<p>Cartridge過濾管</p>
 					</div>
 					<div>
 						<img src="images/patents_t_13.jpg">
-						<p>DR</p>
+						<p>乾式廢氣脫酸裝置</p>
 					</div>
 					<div>
 						<img src="images/patents_t_14.jpg">
-						<p>RTO</p>
+						<p>RTO有機氣體氧化裝置</p>
 					</div>
 					<div>
 						<img src="images/patents_t_15.jpg">
-						<p>>RTO + 廢水氣提</p>
+						<p>RTO + 廢水VOC氣提</p>
 					</div>
 					<div>
 						<img src="images/patents_t_16.jpg">
@@ -155,7 +144,7 @@
 					</div>
 					<div>
 						<img src="images/patents_t_17.jpg">
-						<p>RTO + 熱煤油</p>
+						<p>RTO + 熱媒油系統</p>
 					</div>
 					<div>
 						<img src="images/patents_t_18.jpg">
@@ -163,7 +152,7 @@
 					</div>
 					<div>
 						<img src="images/patents_t_19.jpg">
-						<p>TCS</p>
+						<p>濕式離心洗滌塔</p>
 					</div>
 				</div>
 	        </div>
@@ -191,31 +180,31 @@
 						</div>
 						<div>
 							<img src="images/patents_c_06.jpg">
-							<p>穩壓裝置</p>
+							<p>通風穩壓裝置</p>
 						</div>
 						<div>
 							<img src="images/patents_c_07.jpg">
-							<p>Cartridge</p>
+							<p>Cartridge過濾管</p>
 						</div>
 						<div>
 							<img src="images/patents_c_08.jpg">
-							<p>DR</p>
+							<p>乾式廢氣脫酸裝置</p>
 						</div>
 						<div>
 							<img src="images/patents_c_09.jpg">
-							<p>RTO</p>
+							<p>RTO有機氣體氧化裝置</p>
 						</div>
 						<div>
 							<img src="images/patents_c_10.jpg">
-							<p>RTO + 廢水氣提</p>
+							<p>RTO + 廢水VOC氣提</p>
 						</div>
-						<div>
+						<div>穩壓
 							<img src="images/patents_c_11.jpg">
 							<p>RTO + 熱回收</p>
 						</div>
 						<div>
 							<img src="images/patents_c_12.jpg">
-							<p>RTO + 熱煤油</p>
+							<p>RTO + 熱媒油系統</p>
 						</div>
 						<div>
 							<img src="images/patents_c_13.jpg">
@@ -223,7 +212,7 @@
 						</div>
 						<div>
 							<img src="images/patents_c_14.jpg">
-							<p>TCS</p>
+							<p>濕式離心洗滌塔</p>
 						</div>
 					</div>
 	        </div>
@@ -232,7 +221,7 @@
 
 	<!--about-->
 	<div class="about">
-		<p>台灣公害處理工程股份有限公司創立於1979年，早期即致力於工廠作業環境通風改善及排放廢氣的淨化處理，完成了無數工程實績，績效斐然。<a class="btn btn_white" href="javascript: void(0)">公司簡介<span class="icon icon_arrow_r"></span></a></p>
+		<p>台灣公害處理工程股份有限公司創立於1979年，早期即致力於工廠作業環境通風改善及排放廢氣的淨化處理，完成了無數工程實績，績效斐然。<a class="btn btn_white" href="about.html">公司簡介<span class="icon icon_arrow_r"></span></a></p>
 		
 		<div class="clearFloat"></div>
 	</div>
@@ -240,8 +229,8 @@
 	<!--product-->
 	<div class="product">
 		<div class="product_t">
-			<div class="u_t serif">System & Equipment</div>
-			<h2 class="serif">Patents & Certifcates</h2>
+			<div class="u_t serif">Equipment & System</div>
+			<h2 class="serif">Equipment & System</h2>
 			<p class="unit_t">處理系統與處理設備</p>
 		</div>
 		
@@ -249,7 +238,7 @@
 			<!--1-->
 			<div class="product_box">
 				<div>
-					<a href="javascript: void(0)">
+					<a href="equipment_01.html">
 						<div class="mask">more</div>
 						<img src="images/pd_list_01.jpg">
 					</a>
@@ -266,7 +255,7 @@
 			<!--2-->
 			<div class="product_box">
 				<div>
-					<a href="javascript: void(0)">
+					<a href="equipment_04.html">
 						<div class="mask">more</div>
 						<img src="images/pd_list_04.jpg">
 					</a>	
@@ -281,7 +270,7 @@
 			<!--3-->
 			<div class="product_box">
 				<div>
-					<a href="javascript: void(0)">
+					<a href="equipment_02.html">
 						<div class="mask">more</div>
 						<img src="images/pd_list_02.jpg">
 					</a>
@@ -298,7 +287,7 @@
 			<!--4-->
 			<div class="product_box">
 				<div>
-					<a href="javascript: void(0)">
+					<a href="equipment_05.html">
 						<div class="mask">more</div>
 						<img src="images/pd_list_05.jpg">
 					</a>
@@ -313,7 +302,7 @@
 			<!--5-->
 			<div class="product_box">
 				<div>
-					<a href="javascript: void(0)">
+					<a href="equipment_17.html">
 						<div class="mask">more</div>
 						<img src="images/pd_list_17.jpg">
 					</a>
@@ -329,7 +318,7 @@
 			<!--6-->
 			<div class="product_box">
 				<div>
-					<a href="javascript: void(0)">
+					<a href="equipment_13.html">
 						<div class="mask">more</div>
 						<img src="images/pd_list_13.jpg">
 					</a>
@@ -342,36 +331,12 @@
 				</div>
 			</div>
 		</div>
-		<a class="btn btn_white more" href="javascript: void(0)">更多設備<span class="icon icon_arrow_r"></span></a>
+		<a class="btn btn_white more" href="equipment.html">更多設備<span class="icon icon_arrow_r"></span></a>
 	</div>
 	<!--footer-->
-	<div class="footer">
-		<div class="footer_c">
-			<div class="footer_logo"><img src="images/f_logo.svg"></div>
-			<div class="footer_intro">
-				<ul>
-					<li><span class="icon icon_location"></span>23553 台北縣中和市連城路258號15樓之3</li>
-					<li><span class="icon icon_phone"></span>+886-2-8227 1299</li>
-					<li><span class="icon icon_fax"></span>+886-2-8227 1289</li>
-					<li><span class="icon icon_mail"></span>teec@teec.com.tw</li>
-				</ul>
-			</div>
-			<div class="clearFloat"></div>
-		</div>
-	</div>
+	<div id="footer"></div>
+	
 </div>
-
-<script>
-	const burgerMenu = document.getElementById("burger");
-	const navbarMenu = document.getElementById("menu");
-
-	// Responsive Navbar Toggle
-	burgerMenu.addEventListener("click", function () {
-	navbarMenu.classList.toggle("active");
-	burgerMenu.classList.toggle("active");
-});
-
-</script>
 <script>
 $(document).ready(function(){
 	$(".tabs li a").click(function() {
@@ -385,11 +350,8 @@ $(document).ready(function(){
 		$(this.rel).fadeIn(500).addClass("tab_content_active");
 		
 	});	
-
 });
 </script>
-
-
 <script>
 $('.slide_P').slick({
   infinite: true,
@@ -415,12 +377,9 @@ $('.slide_P').slick({
         slidesToScroll: 1
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
+]
 });
-$('.test').slick({
+$('.slide_KV').slick({
   infinite: true,
   slidesToShow: 1,
   autoplay: true,
@@ -432,6 +391,12 @@ $('.test').slick({
   pauseOnHover: false
 });
 </script>
-
+<script>
+	window.onpageshow = function(event) {
+  if (event.persisted) {
+    window.location.reload() 
+  }
+};
+</script>
 </body>
 </html>
