@@ -5,6 +5,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>台灣公害處理工程股份有限公司</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- HTTP 1.1 -->
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<!-- HTTP 1.0 -->
+<meta http-equiv="Pragma" content="no-cache"/>
+<!-- Cache Expires -->
+<meta http-equiv="Expires" content="0"/>
 <meta content="telephone=no" name="format-detection">
 <meta name="description" content=""/>
 <meta property="og:title" content="台灣公害處理工程股份有限公司">
@@ -28,7 +34,7 @@ $(document).ready(function() {
 
 </head>
 
-<body onload="clock();return true">
+<body>
 <div class="wrap">
 	<!--header-->
 	<div id="header"></div>
@@ -256,5 +262,12 @@ $(document).ready(function() {
 	<div id="footer"></div>
 	
 </div>
+<script>
+	window.onpageshow = function(event) {
+  if (event.persisted) {
+    window.location.reload() 
+  }
+};
+</script>
 </body>
 </html>
