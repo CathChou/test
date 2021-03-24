@@ -413,6 +413,10 @@ textarea:focus:invalid{
 .model .mTop{ margin-top: -60px; }
 .model .m_box dd p{ font-size: 0.875rem; }
 .switch{ margin: 40px 0 70px; }
+/* contact */
+.contact li.check{ width: 16%; }
+form p{ padding: 15px 0; }
+input.t2{ width: 62%; }
 }
 
 @media screen and (max-width: 767px){
@@ -423,7 +427,7 @@ h2{ font-size: 1.5rem; }
 .navbar .menu-link{ color: #fff; display: block; padding-bottom: 20px; font-size: 1.25rem; border-bottom: 1px solid #8da8c6; }
 .navbar .menu-item{ margin: 15px 0; padding: 0 3rem; }
 .navbar .menu.active{ height: auto; box-sizing: border-box;}
-.logo{ width: 90%:; }
+.logo{ width: 90%; }
 /* index */ 
 .patents{padding:80px 20px 60px;}
 .tab_content_container{ padding: 0; }
