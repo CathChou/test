@@ -243,6 +243,7 @@ input:focus {
 input[type="checkbox"] + label { 
   margin: 0;
   font-weight: normal; 
+  display: inline-block;
 }
 
 
@@ -254,10 +255,9 @@ textarea { line-height: 1.25em; }
 input[type=checkbox]{
   box-sizing: border-box;
   padding: 0;
-  display: block;
+  display: inline-block;
   margin-right: 0.25em;
   margin-top: 8px;
-  float: left;
   clear: both;
   width: auto;
 }
