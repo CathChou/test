@@ -340,7 +340,7 @@ textarea:focus:invalid{
 
 @media screen and (max-width: 1280px){
 .wrap, .page, .page_w{ margin-top: 80px; }
-.logo{ width: 100%; }
+.logo, .contact{ width: 100%; }
 .kv, .kv .pic .slide{ height: 460px; }
 .kv .title{ font-size: 1.25rem; }
 .kv .title .t{ font-size: 1.875rem; }
