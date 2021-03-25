@@ -14,14 +14,14 @@ a, a:link, a:visited, a:hover, a:active {text-decoration: none;}
 ol, ul {list-style: none;} 
 input, textarea, select, button {font-size: 100%; font-family: inherit;}
 body, html { background:#fff; width: 100%; height: 100%;font-family: 'Noto Sans TC',Helvetica,Arial,Hiragino Sans GB,
-WenQuanYi Zen Hei,儷黑 Pro,LiHei Pro,微軟正黑體,sans-serif; color: #3C3C3C; letter-spacing: 1px; font-size: 1rem;}
+WenQuanYi Zen Hei,儷黑 Pro,LiHei Pro,微軟正黑體,sans-serif; color: #3C3C3C; letter-spacing: 1px; font-size: 1rem; line-height: 1.5;}
 a, button, .mask{ text-decoration:none; transition: all .3s ease;-webkit-transition:all .3s ease;-o-transition:all .3s ease;
 -moz-transition:all .3s ease;}
 
 /*----- common -----*/	
 .wrap{ margin: 0 auto; margin-top: 92px; }
 .clearFloat{ clear: both; }
-nav img, .kv img, .product_box img, .footer_logo img, .tabs-content img, .slick-slide img, .equipment_box img, .pd img, .model img, .img img{ 
+nav img, .kv img, .product_box img, .footer_logo img, .tabs-content img, .slick-slide img, .equipment_box img, .pd img, .model img, .img img, .picbox img, .s_box img{ 
 width: 100%; height: auto; display: block;
 image-rendering: -moz-crisp-edges; /*Firefox*/
 image-rendering: -o-crisp-edges; /*Opera*/
@@ -148,7 +148,7 @@ ul.tabs li a:hover, ul.tabs li a.active { background-color: #484848;color: #fff;
 .product_intro li{ font-size: 1rem; list-style: disc; margin: 5px 0 0 25px; }
 
 /*----- page -----*/
-.page, .page_w{ margin-top: 92px; position: relative; padding-bottom: 10px;}
+.page, .page_w{ margin-top: 92px; position: relative;}
 .page{ background: #F2F2F2;}
 .page_w{ background: #fff;}
 .page .u_t{ top: -30px; }
@@ -236,6 +236,41 @@ input:focus:invalid, textarea:focus:invalid{ color: #3c3c3c;}
 :-ms-input-placeholder { /* Internet Explorer 10-11 */ color: #CDCDCD;}
 ::-ms-input-placeholder { /* Microsoft Edge */ color: #CDCDCD;}
 
+/* about */
+.about_page{ text-align: left; font-size: 1.125rem; }
+.pic_c{ display: flex; }
+.pic_c .picbox{ width: 50%; margin-top: -20px; }
+.pic_c .picbox:first-child{ margin: -60px 80px 0 0; }
+.about_page .subt{ font-size: 2.25rem; margin-top: 40px; }
+.about_page .subt p{ font-size: 1rem; color: #2F85CB; font-weight: bold; margin: 30px 0 10px; }
+.about_page .s_l{ height: 4px; background: #2F85CB; width: 50px; margin-bottom: 40px; }
+.txt_c{ display: flex; }
+.txt_c .txt{ margin-right: 60px; width: 50%; }
+.txt_c .txt p{ margin-bottom: 20px; }
+.txt_c .history{ font-size: 1rem; display: flex; width: 44%; margin: 0 auto; }
+.txt_c .history ul{ width: 80%; }
+.txt_c .history ul.item{ width: 20%; color: #183276; padding-left: 0; }
+.txt_c .history li{ padding: 20px 0 20px 20px; border-top: 1px solid #D5D5D5; }
+.txt_c .history ul.item li{ border-top: 1px solid #183276; padding-left: 0; }
+.txt_c .history ul.item li:last-child{ border-bottom: 1px solid #183276;}
+.txt_c .history ul li:last-child{ border-bottom: 1px solid #D5D5D5;}
+.award{ background: url(../images/bg_award.jpg) center no-repeat; width: 100%; margin-top: 100px; font-size: 2.25rem; color: #fff; text-align: center; padding: 90px 0; }
+.award p{ font-size: 1rem; margin: 30px 0 20px; }
+.award li{ display: inline-block; margin: 0 70px;position: relative;}
+.award li p{ position: absolute; font-size: 1.5rem; right: 0; left: 0; margin: auto; top: 40%; }
+.service{  text-align: left; width: 100%; margin: 0 auto; position: relative; background: #fff; padding: 100px 0; }
+.service_c{ width: 1000px; margin: 0 auto;}
+.service_c .s_box{ width: 50%; margin-right: 100px; position: relative;}
+.service_c .s_box p{ margin-bottom: 40px; font-size: 2.25rem; }
+.service_c .s_box_s{ float: left; }
+.service_c .s_box_e{ float: right; margin: 80px 0 0 0; }
+.service_c .list{ margin-top: 80px; position: relative; display: inline-block; }
+.service_c .list p{ color: #183276; font-size: 1.5rem; font-weight: bold; margin-bottom: 20px; }
+.service_c .list ul{ padding: 10px 0; }
+.service_c .list li{ font-size: 1.125rem; margin:10px 0; list-style: disc; margin-left: 25px; }
+.bg{ position: absolute; background: #F2F2F2; height: 90%; width: 60%; }
+.bg_s{ right: 0; }
+.bg_e{ left: 0; }
 
 /*----- RWD -----*/
 /* table */ 
