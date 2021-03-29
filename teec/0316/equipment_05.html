@@ -53,7 +53,7 @@ $(document).ready(function() {
 			<div class="pd_bg_m"></div>
 			<div class="pd_bg"><img src="images/bg_pd.png"></div>
 			<div class="page_content">
-				<div class="pd_content">
+				<div class="pd_content animated fadeIndown">
 					<div class="p_intro">
 						<div class="name">袋濾式集塵機<p>Pulse Jet Bag House</p></div>
 						<ul>
@@ -67,7 +67,7 @@ $(document).ready(function() {
 			</div>
 		</div>
 		<div class="page_content">
-			<div class="feature">
+			<div class="feature animated">
 				<div class="f_box">
 					<div class="f_title"><span>傳統型濾管</span></div>
 					<div class="f_content">
@@ -96,7 +96,7 @@ $(document).ready(function() {
 			<h2 class="serif">Model List</h2>
 			<p class="unit_t">機型一覽</p>
 		</div>
-		<div class="model">
+		<div class="model animated">
 			<div class="model_bg"></div>
 			<div class="page_content">
 				<div class="m_box">
@@ -148,6 +148,22 @@ $(document).ready(function() {
     window.location.reload() 
   }
 };
+</script>
+<script>
+	$(window).scroll(function() {
+		$('.feature, .model').each(function(){
+			var imagePos = $(this).offset().top;
+
+			var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+750) {
+			$(this).addClass("fadeIndown");
+			}
+			var ww = $(window).width();
+			if (ww < 769) {
+		    $(this).removeClass("fadeIndown");
+		    }
+		});
+	});
 </script>
 </body>
 </html>

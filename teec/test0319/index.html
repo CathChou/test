@@ -42,10 +42,10 @@ $(document).ready(function() {
 
 	<!--kv-->
 	<div class="kv">
-		<div class="scroll serif">
+		<div class="scroll serif animated fadeIn">
 			<dl>
 				<dt></dt>
-				<dd></dd>
+				<dd class="animated UpDown"></dd>
 			</dl>
 			<p>Scroll</p>
 		</div>
@@ -75,7 +75,7 @@ $(document).ready(function() {
 	        <li><a href="javascript:void(0);" rel="#taiwan" class="tab active">台灣</a></li>
 	        <li><a href="javascript:void(0);" rel="#china" class="tab">中國</a></li>
         </ul>
-    	<div class="tab_content_container">
+    	<div class="tab_content_container animated">
 	        <div class="tab_content tab_content_active" id="taiwan">
 	            <div class="slide_P">
 					<div>
@@ -234,7 +234,7 @@ $(document).ready(function() {
 			<p class="unit_t">處理系統與處理設備</p>
 		</div>
 		
-		<div class="product_c product_c1">
+		<div class="product_c product_c1 animated">
 			<!--1-->
 			<div class="product_box">
 				<div>
@@ -397,6 +397,22 @@ $('.slide_KV').slick({
     window.location.reload() 
   }
 };
+</script>
+<script>
+	$(window).scroll(function() {
+		$('.tab_content_container, .product_c').each(function(){
+			var imagePos = $(this).offset().top;
+
+			var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+750) {
+			$(this).addClass("fadeIndown");
+			}
+			var ww = $(window).width();
+			if (ww < 769) {
+		    $(this).removeClass("fadeIndown");
+		    }
+		});
+	});
 </script>
 </body>
 </html>
