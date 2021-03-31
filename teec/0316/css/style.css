@@ -158,7 +158,7 @@ ul.tabs li a:hover, ul.tabs li a.active { background-color: #484848;color: #fff;
 .page_content{ width: 1400px;margin: 0 auto; text-align: center; }
 /* equipment */
 .equipment_content{ display: flex; padding-bottom: 80px;}
-.equipment_content:first-child{ margin-top: -50px; }
+.equipment_content:first-child{ margin-top: -60px; }
 .equipment_box{ width: 33%; margin: 0 25px; }
 .equipment_box dd, .m_box dd{ background: #2F85CB; color: #fff; padding: 30px 0; font-size: 1.125rem; font-weight: bold; }
 .equipment_box ul{ margin-top: 20px; }
@@ -429,7 +429,8 @@ background: linear-gradient(to bottom right,#183276,#2F85CB);
 /* page */
 .page_t{ padding: 0 0 70px; }
 /* equipment */
-.equipment_content{ display: block; margin-bottom: 0; }
+.equipment_content{ display: block; margin-bottom: 0; padding-bottom: 0; }
+.equipment_content:last-child{ padding-bottom: 60px; }
 .equipment_box{ width: 70%; margin: 60px auto; } 
 /* equipment-page */
 .pd{ margin-top: 220px; }
