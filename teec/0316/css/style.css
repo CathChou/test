@@ -273,7 +273,7 @@ input:focus:invalid, textarea:focus:invalid{ color: #3c3c3c;}
 .service_c .list p{ color: #183276; font-size: 1.5rem; font-weight: bold; margin-bottom: 20px; }
 .service_c .list ul{ padding: 10px 0; }
 .service_c .list li{ font-size: 1.125rem; margin:10px 0; list-style: disc; margin-left: 25px; }
-.bg{ position: absolute; background: #F2F2F2; height: 100%; width: 60%; }
+.bg{ position: absolute; background: #F2F2F2; height: 100%; width: 100%; }
 .bg_s{ right: 0; }
 .bg_e{ left: 0; }
 
