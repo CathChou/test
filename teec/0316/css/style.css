@@ -36,7 +36,9 @@ h2{ font-size: 2rem; font-weight: bold;}
 .breadcrumb span{ padding: 0 10px; }
 .breadcrumb a{ color: #9D9D9D; }
 .breadcrumb a:hover{ color: #2F85CB; }
-.scroll, .tab_content_container, .product_c, .award li, .service_c, .feature, .model, .pd_table, .img{ visibility: hidden; }
+.scroll, .tab_content_container, .product_c, .award li, .service_c, .model, .pd_table, .img{ visibility: hidden; }
+.full{ width: 100% !important; }
+.m_t60{ margin-top: 60px; }
 
 /*----- icon -----*/	
 @font-face {
@@ -155,7 +157,7 @@ ul.tabs li a:hover, ul.tabs li a.active { background-color: #484848;color: #fff;
 .page_t{ background: #fff; width: 100%; text-align: center; padding:0 0 80px; }
 .page_content{ width: 1400px;margin: 0 auto; text-align: center; }
 /* equipment */
-.equipment_content{ display: flex; margin-bottom: 80px;}
+.equipment_content{ display: flex; padding-bottom: 80px;}
 .equipment_content:first-child{ margin-top: -50px; }
 .equipment_box{ width: 33%; margin: 0 25px; }
 .equipment_box dd, .m_box dd{ background: #2F85CB; color: #fff; padding: 30px 0; font-size: 1.125rem; font-weight: bold; }
@@ -170,6 +172,7 @@ background: linear-gradient(to bottom right,#183276,#2F85CB); }
 .pd_bg{ position: absolute; }
 .pd_content{ padding-bottom: 40px; }
 .pd .p_img{ width: 50%; margin: -200px 0 0 0; position: relative; float: left; }
+.pd .p_img_s{ width: 42%; padding-bottom: 30px; }
 .pd .p_intro{ color: #fff; text-align: left; margin: -140px 70px 0 0; width: 40%; float: right; }
 .pd .p_intro .name{ color: #3c3c3c; font-size: 2rem; margin-bottom: 120px;}
 .pd .p_intro .name p{ color: #183276; font-size: 0.93rem; margin-top: 10px; letter-spacing: 0 }
@@ -196,9 +199,11 @@ background: linear-gradient(to bottom right,#183276,#2F85CB);
 }
 .model .m_box{ width: 26.5%; float: left; margin: 0 40px;box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1); position: relative; }
 .model .m_box dd p{ font-size: 1rem; font-weight: normal; }
+.model_center .m_box{ display: inline-block; float: none; }
 .model .mTop{ margin-top: -60px; }
 .pd_table{ padding-top: 80px; }
-.rwd_table, .table{ width: 100%; margin-bottom: 20px; background-color: #fefefe; display: inline-block;}
+.pd_table_noP{ padding-top: 0; }
+.rwd_table, .table{ width: 100%; margin-bottom: 20px; background-color: #fefefe; display: inline-block; word-break: break-all;}
 .rwd_table thead { display: none;}
 .rwd_table tbody { display: table; width: 100%; margin-bottom: 30px; font-size: 0.93rem; border: 1px solid #183276;}
 .rwd_table tbody:last-child { margin-bottom: 0;}
@@ -209,7 +214,7 @@ background: linear-gradient(to bottom right,#183276,#2F85CB);
 
 .switch{ width: 100%; margin: 80px 0 70px; }
 .switch_c{ padding-bottom: 50px;border-bottom: 1px solid #D5D5D5; margin-bottom: 60px;}
-.switch_c a{ display: block; font-size: 1.5rem; color: #3c3c3c; }
+.switch_c a{ display: block; font-size: 1.5rem; color: #3c3c3c;  }
 .switch_c a:hover{ color: #183276; }
 .switch_c a p{ font-size: 1rem; margin-bottom: 10px; }
 .switch_c a.prev{ float: left;text-align: left; }
@@ -248,7 +253,7 @@ input:focus:invalid, textarea:focus:invalid{ color: #3c3c3c;}
 .txt_c{ display: flex; }
 .txt_c .txt{ margin-right: 60px; width: 50%; }
 .txt_c .txt p{ margin-bottom: 20px; }
-.txt_c .history{ font-size: 1rem; width: 44%; margin: 0 auto; }
+.txt_c .history{ font-size: 1rem; width: 100%; margin: 0 auto; }
 .txt_c .history p{ padding: 20px 0 20px 20px; border-top: 1px solid #D5D5D5; }
 .txt_c .history p.item{ width: 20%; color: #183276; padding-left: 0; float: left;border-top: 1px solid #183276; }
 .txt_c .history p.detail{ float: left; width: 74%; }
@@ -258,17 +263,17 @@ input:focus:invalid, textarea:focus:invalid{ color: #3c3c3c;}
 .award p{ font-size: 1rem; margin: 30px 0 20px; }
 .award li{ display: inline-block; margin: 0 70px;position: relative;}
 .award li p{ position: absolute; font-size: 1.5rem; right: 0; left: 0; margin: auto; top: 40%; }
-.service{  text-align: left; width: 100%; margin: 0 auto; position: relative; background: #fff; padding: 100px 0; }
-.service_c{ width: 1000px; margin: 0 auto;}
+.service{  text-align: left; width: 100%; margin: 0 auto; position: relative; background: #fff; padding-bottom: 50px;}
+.service_c{ width: 1000px; margin: 0 auto; padding: 60px 0 0;}
 .service_c .s_box{ width: 50%; margin-right: 100px; position: relative;}
 .service_c .s_box p{ margin-bottom: 40px; font-size: 2.25rem; }
 .service_c .s_box_s{ float: left; margin-top: 20px; }
-.service_c .s_box_e{ float: right; margin: 80px 0 0 0; }
+.service_c .s_box_e{ float: right; margin: 30px 0 0 0; }
 .service_c .list{ margin-top: 80px; position: relative; display: inline-block; }
 .service_c .list p{ color: #183276; font-size: 1.5rem; font-weight: bold; margin-bottom: 20px; }
 .service_c .list ul{ padding: 10px 0; }
 .service_c .list li{ font-size: 1.125rem; margin:10px 0; list-style: disc; margin-left: 25px; }
-.bg{ position: absolute; background: #F2F2F2; height: 91%; width: 60%; }
+.bg{ position: absolute; background: #F2F2F2; height: 100%; width: 60%; }
 .bg_s{ right: 0; }
 .bg_e{ left: 0; }
 
@@ -383,9 +388,8 @@ background: linear-gradient(to bottom right,#183276,#2F85CB);
 /* about */
 .about_page .subt, .service_c .s_box p, .award{ font-size: 1.875rem; }
 .about_page{ font-size: 1rem; }
-.txt_c .history{ width: 52%; }
 .txt_c .history li{ padding: 20px 0; }
-.service_c{ width: 100%; padding: 0 60px; }
+.service_c{ width: 100%; padding: 60px 60px 0; }
 /* install */
 .install_kv{ margin-top: -70px; }
 .install_kv .pic{ height: 400px !important; }
@@ -447,14 +451,14 @@ input.t2{ width: 62%; }
 .pic_c .picbox:first-child{ margin: -60px 60px 0 0; }
 .txt_c{ display: block; }
 .txt_c .txt{ width: 100%; }
-.txt_c .history{ width: 100%; margin: 40px auto 0; }
+.txt_c .history{ margin: 40px auto 0; }
 .award{ margin-top: 60px; }
 .award li{ width: 30%; margin: 0 30px; }
 .award li p{ font-size: 1.25rem; }
-.service{ padding: 80px 0; }
-.bg{ height: 93%; width: 70%; }
-.service_c .s_box{ width: 40%; }
-.service_c .s_box_s{ margin-right: 50px; }
+.bg{ height: 100%; width: 100%; }
+.service_c .s_box{ width: 70%; margin: 0 auto; }
+.service_c .list{ margin: 80px auto 0; display: block; width: 70%; }
+.service_c .s_box_e, .service_c .s_box_s{ float: none; }
 /* install */
 .install_kv{ margin-top: -50px; }
 .install_kv .pic{ height: 320px !important;}
@@ -462,12 +466,13 @@ input.t2{ width: 62%; }
 }
 
 @media screen and (max-width: 769px){
-.scroll, .tab_content_container, .product_c, .award li, .service_c, .feature, .model, .pd_table, .img{ visibility: visible; }
+.scroll, .tab_content_container, .product_c, .award li, .service_c, .model, .pd_table, .img{ visibility: visible; }
 }
 
 @media screen and (max-width: 767px){
 h2{ font-size: 1.5rem; }
 .btn{ width: 100%; }
+.m_t60{ margin-top: 60px; }
 /* header */ 
 .navbar{ background: url(../images/bg_menu.jpg) no-repeat; background-size: cover; background-position: center right;}
 .navbar .menu-link{ color: #fff; display: block; padding-bottom: 20px; font-size: 1.25rem; border-bottom: 1px solid #8da8c6; }
@@ -507,13 +512,14 @@ background: linear-gradient(to bottom right,#183276,#2F85CB);
 .pd_content{ padding-top: 20px; }
 .pd .p_intro .name{ margin-bottom: 40px; }
 .pd .p_intro ul{ margin-bottom: 10px; }
-.feature{ margin: 60px 0; }
+.feature{ margin: 60px 0 0; }
 .f_title{ font-size: 1.25rem; margin-bottom: 20px; }
 .model{ padding-bottom: 30px; }
 .model .m_box{ width: 95%; margin: 0 auto 40px; margin-top: 0; float: none; }
 .model .mTop{ margin-top: 0; }
 .f_content ul.normal, .f_content ul.strong, .f_content ul.no_bg{ padding: 10px 10px 10px 40px; }
 .pd_table{ padding-top: 60px; }
+.f_box{ margin: 40px 0 0; }
 /* contact */
 .contact{ padding: 50px 0; }
 form{ font-size: 1rem; }
@@ -534,10 +540,10 @@ input.t2{ margin: 0; }
 .award li{ width: 42%; margin: 0 10px; }
 .bg{ width: 100%; height: 100%; }
 .service{ padding: 0; }
-.service_c{ width: 100%; padding: 60px 40px; }
+.service_c{ width: 100%; padding:60px 40px 20px; }
 .service_c .s_box{ width: 100%; margin: 0; }
 .service_c .s_box p{ text-align: center; }
-.service_c .list{ margin-top: 40px; }
+.service_c .list{ margin-top: 40px; width: 90%; }
 .service_c .list p{ font-size: 1.25rem; margin-bottom: 10px; }
 /* install */
 .install_kv .pic{ height: 240px !important; }
@@ -578,6 +584,7 @@ form div{ padding: 10px 0; }
 .award{ background: url(../images/bg_award_m.jpg) center no-repeat; padding: 60px 0 40px; }
 .award p{ margin: 10px 0 30px; }
 .award li{ width: 70%; margin: 20px auto; }
+.service_c .list{ width: 100%; }
 /* install */
 .pagination a{ padding: 0; }
 .install_kv .slick-dots{ margin-top: 20px; }
