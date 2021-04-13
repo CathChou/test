@@ -324,6 +324,9 @@ background: linear-gradient(to bottom right,#183276,#2F85CB);
 .rwd_table tr { display: table-cell;}
 .rwd_table tr, .rwd_table tr:nth-child(odd) { border-bottom: none;}
 .rwd_table td { border: 0; display: inline-block; padding: 10px; text-align: center;}
+}
+/* header */  
+@media only screen and (min-width: 769px) {
 .navbar { display: flex; flex-direction: row; justify-content: space-between; align-items: center; margin: 0 auto;}
 .navbar .navbrand .burger { display: none;}
 .navbar .menu { height: auto; text-align: right;}
