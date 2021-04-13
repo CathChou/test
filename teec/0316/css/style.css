@@ -258,8 +258,6 @@ input:focus:invalid, textarea:focus:invalid{ color: #3c3c3c;}
 .txt_c .history p{ padding: 20px 0 20px 20px; border-top: 1px solid #D5D5D5; }
 .txt_c .history p.item{ width: 20%; color: #183276; padding-left: 0; float: left;border-top: 1px solid #183276; }
 .txt_c .history p.detail{ float: left; width: 74%; }
-.txt_c .history div:last-child p.item{ border-bottom: 1px solid #183276;}
-.txt_c .history div:last-child p.detail{ border-bottom: 1px solid #D5D5D5;}
 .award{ background: url(../images/bg_award.jpg) center no-repeat; width: 100%; margin-top: 100px; font-size: 2.25rem; color: #fff; text-align: center; padding: 90px 0; }
 .award p{ font-size: 1rem; margin: 30px 0 20px; }
 .award li{ display: inline-block; margin: 0 70px;position: relative;}
@@ -605,6 +603,10 @@ form div{ padding: 10px 0; }
 .en .about{ padding-right: 180px; }
 .en .about p{ width: 50%; }
 .en .footer_intro li{ display: block; margin: 5px 15px; }
+.en .unit_t{ opacity: 0; }
+.en .service_c .list{ width: 40%; }
+.en .award li p{ font-size: 1.25rem; }
+.en .award .award_t{ padding: 0 30px; }
 
 
 @media screen and (max-width: 1439px){
@@ -619,6 +621,7 @@ form div{ padding: 10px 0; }
 .en .kv .title{ font-size: 0.875rem; }
 .en .w{ width: 85%; }
 .en .about{ padding-right: 100px; padding-top: 100px; }
+.en .service_c .s_box_s{ margin-right: 90px; }
 }
 
 @media screen and (max-width: 1023px){
@@ -627,13 +630,22 @@ form div{ padding: 10px 0; }
 .en .w{ width: 100%; }
 .en .about{ padding: 350px 60px 60px; }
 .en .about p{ width: 100%; }
+.en .service_c .list{ width: 100%; }
+.en .award li{ width: 40%; }
 }
+
+@media screen and (max-width: 1023px){
+.en .award li p{ font-size: 1rem; }	
+}
+
+
 
 @media screen and (max-width: 414px){
 .en .kv .title .t{ font-size: 1.5rem; }
 .en .about{ padding: 200px 30px 40px; }
-.en .about p{ font-size: 1rem; }
+.en .about p, .en .award li p{ font-size: 1rem; }
 .en .patents{ padding: 80px 20px 30px; }
+.en .award li{ width: 80%; }
 }
 
 
