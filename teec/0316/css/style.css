@@ -294,7 +294,7 @@ background: linear-gradient(to bottom right,#183276,#2F85CB);
 .install_kv .slick-dots li{ display: inline-block; }
 .install_kv .slick-dots li button{ text-indent: -9999px; background:#fff; outline: none; border: none; padding: 0 20px; margin: 0 10px; height: 4px; cursor: pointer; }
 .install_kv .slick-dots li.slick-active button, .install_kv .slick-dots li button:hover{ background:#2F85CB;}
-.install{ padding-bottom: 80px; background: #fff; }
+.install{ padding-bottom: 80px; background: #fff; padding-top: 10px; }
 .table{ display: table; color: #183276; }
 .table tr:nth-child(even) { background-color: #F2F2F2;}
 .table tr:nth-child(odd) { background-color: #fff;}
