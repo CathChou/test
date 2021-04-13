@@ -555,7 +555,7 @@ input.t2{ margin: 0; }
 }
 
 @media screen and (max-width: 414px){
-.wrap, .page, .page_w{ margin-top: 77px; }
+.wrap, .page, .page_w{ margin-top: 72px; }
 /* header */
 .navbar .navbrand{ padding: 1rem; }
 .logo{ width: 85%; }
@@ -632,7 +632,6 @@ form div{ padding: 10px 0; }
 .en .kv .title .t{ font-size: 1.5rem; }
 .en .about{ padding: 200px 30px 40px; }
 .en .about p{ font-size: 1rem; }
-.en ul.tabs li a{ padding: 10px 26px; }
 .en .patents{ padding: 80px 20px 30px; }
 }
 
