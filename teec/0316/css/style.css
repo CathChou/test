@@ -604,6 +604,7 @@ form div{ padding: 10px 0; }
 .en .kv .title{ font-size: 1.25rem; letter-spacing: 2px; }
 .en .about{ padding-right: 180px; }
 .en .about p{ width: 50%; }
+.en .footer_intro li{ display: block; margin: 5px 15px; }
 
 
 @media screen and (max-width: 1439px){
