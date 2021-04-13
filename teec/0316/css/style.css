@@ -36,7 +36,7 @@ h2{ font-size: 2rem; font-weight: bold;}
 .breadcrumb span{ padding: 0 10px; }
 .breadcrumb a{ color: #9D9D9D; }
 .breadcrumb a:hover{ color: #2F85CB; }
-.scroll, .tab_content_container, .product_c, .award li, .service_c, .model, .pd_table, .img{ visibility: hidden; }
+.scroll, .tab_content_container, .product_c1, .product_c2, .award li, .service_c, .model, .pd_table, .img{ visibility: hidden; }
 .full{ width: 100% !important; }
 .m_t60{ margin-top: 60px; }
 
@@ -468,7 +468,7 @@ input.t2{ width: 62%; }
 }
 
 @media screen and (max-width: 769px){
-.scroll, .tab_content_container, .product_c, .award li, .service_c, .model, .pd_table, .img{ visibility: visible; }
+.scroll, .tab_content_container, .product_c1, .product_c2, .award li, .service_c, .model, .pd_table, .img{ visibility: visible; }
 }
 
 @media screen and (max-width: 767px){
