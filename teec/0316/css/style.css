@@ -148,6 +148,7 @@ ul.tabs li a:hover, ul.tabs li a.active { background-color: #484848;color: #fff;
 .product_intro{ font-size: 1.5rem; margin-top: 50px; }
 .product_intro ul{ margin-top: 20px; }
 .product_intro li{ font-size: 1rem; list-style: disc; margin: 5px 0 0 25px; }
+.slide_P p{ font-size: 0.875rem; }
 
 /*----- page -----*/
 .page, .page_w{ margin-top: 92px; position: relative;}
@@ -493,6 +494,7 @@ h2{ font-size: 1.5rem; }
 .product_c{ padding: 0 20px; }
 .product_intro ul{ margin-top: 10px; }
 .product a.more{ width: 80%; background: #484848; border: none; color: #fff; }
+
 /* page */ 
 .page_t{ padding: 0 0 50px; }
 .page_content{ padding: 0 30px; }
@@ -592,6 +594,45 @@ form div{ padding: 10px 0; }
 .table th.number{ width: 22%; }
 .install_kv .pic{ height: 200px !important; }
 }
+
+
+/*----- en -----*/
+.en .w{ width: 80%; }
+.en .kv .title .t{ font-size: 3rem; margin-bottom: 60px; }
+.en .kv .title{ font-size: 1.25rem; letter-spacing: 2px; }
+.en .about{ padding-right: 180px; }
+.en .about p{ width: 50%; }
+
+@media screen and (max-width: 1439px){
+.en .kv .title{ font-size: 1rem; }
+.en .about{ padding-right: 100px; }
+.en .about p{ width: 70%; }
+}
+
+@media screen and (max-width: 1280px){
+.en .kv .title .t{ font-size: 2rem; }
+.en .kv .title{ font-size: 0.875rem; }
+.en .w{ width: 85%; }
+.en .about{ padding-right: 100px; padding-top: 100px; }
+}
+
+@media screen and (max-width: 1023px){
+.en .kv .title{  padding: 60px 30px; }
+.en .kv .title .t{ margin-bottom: 10px; }
+.en .w{ width: 100%; }
+.en .about{ padding: 350px 60px 60px; }
+.en .about p{ width: 100%; }
+}
+
+@media screen and (max-width: 414px){
+.en .kv .title .t{ font-size: 1.5rem; }
+.en .about{ padding: 200px 30px 40px; }
+.en .about p{ font-size: 1rem; }
+.en ul.tabs li a{ padding: 10px 26px; }
+.en .patents{ padding: 80px 20px 30px; }
+}
+
+
 
 /*----- animation -----*/
 .animated { animation-fill-mode: both;-webkit-animation-fill-mode: both; animation-duration: 1s; -webkit-animation-duration: 1s;}
