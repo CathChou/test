@@ -603,10 +603,19 @@ form div{ padding: 10px 0; }
 .en .about{ padding-right: 180px; }
 .en .about p{ width: 50%; }
 
+@media only screen and (min-width: 1024px) {
+.en .navbar { display: flex; flex-direction: row; justify-content: space-between; align-items: center; margin: 0 auto;}
+.en .navbar .navbrand .burger { display: none;}
+.en .navbar .menu { height: auto; text-align: right;}
+.en .navbar .menu-item { padding: 0; margin: 0 2rem; display: inline-block;}
+.en .navbar .social { display: flex;}
+}
+
 @media screen and (max-width: 1439px){
 .en .kv .title{ font-size: 1rem; }
 .en .about{ padding-right: 100px; }
 .en .about p{ width: 70%; }
+.en .navbar .menu-item{ margin: 0 0.875em; }
 }
 
 @media screen and (max-width: 1280px){
