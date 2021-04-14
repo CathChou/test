@@ -653,6 +653,8 @@ form div{ padding: 10px 0; }
 .en .pd_content{ padding-top: 20px; }
 .en .pd .p_intro .name{ margin-bottom: 40px; font-size: 1.5rem;}
 .en .breadcrumb span{ padding: 0 5px; }
+.en .contact li.check{ display: block; margin: 10px 0; }
+.en .contact ul{ margin-top: 5px; }
 }
 
 
