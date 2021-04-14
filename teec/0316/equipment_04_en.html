@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>台灣公害處理工程股份有限公司</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- HTTP 1.1 -->
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<!-- HTTP 1.0 -->
+<meta http-equiv="Pragma" content="no-cache"/>
+<!-- Cache Expires -->
+<meta http-equiv="Expires" content="0"/>
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content=""/>
+<meta property="og:title" content="台灣公害處理工程股份有限公司">
+<meta property="og:description" content=""/>
+<meta property="og:image" content="">
+<link rel="image_src" href="">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+<script src="js/jquery-2.0.2.js"></script>
+<script src="js/slick.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#header').load('header.html');
+    $('#footer').load('footer.html');
+});
+</script>
+
+</head>
+
+<body>
+<div class="wrap">
+	<!--header-->
+	<div id="header"></div>
+	<div class="page_w">
+		<div class="page_content">
+			<!--breadcrumb-->
+			<div class="breadcrumb">
+				<a href="index.html"><span class="icon_home"></span></a>
+				<span><img src="images/triangle.png"></span>
+				<a href="equipment.html"><span>處理設備</span></a>
+				<span><img src="images/triangle.png"></span>
+				<span>中央真空集塵系統</span>
+			</div>
+		</div>
+		<div class="pd">
+			<div class="pd_bg_m"></div>
+			<div class="pd_bg"><img src="images/bg_pd.png"></div>
+			<div class="page_content">
+				<div class="pd_content animated fadeIndown">
+					<div class="p_intro">
+						<div class="name">中央真空集塵系統<p>Central Vacuum Dust Collector</p></div>
+						<ul>
+							<li>高科廠房的清掃利器</li>
+						</ul>
+					</div>
+					<div class="p_img p_img_s"><img src="images/pd_04.jpg"></div>
+					<div class="clearFloat"></div>
+				</div>
+			</div>
+		</div>
+		<div class="page_content">
+			<div class="feature animated fadeIndown">
+				<div class="f_box full">
+					<div class="f_title"><span>說明</span></div>
+					<div class="f_content">
+						<ul class="strong">
+							<li>簡單的配管即可從事大面積的清掃</li>
+							<li>採用高效率、低噪音真空鼓風機</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="page_content">
+			<div class="switch">
+				<div class="switch_c">
+					<a class="prev" href="equipment_03.html">
+						<p> < Prev</p>
+						電子高科製程廢氣濕式處理系統
+					</a>
+					<a class="next" href="equipment_05.html">
+						<p> > Next</p>
+						袋濾式集塵機
+					</a>
+					<div class="clearFloat"></div>
+				</div>
+				<a class="btn btn_black" href="equipment.html">設備一覽<span class="icon icon_arrow_r"></span></a>
+			</div>
+
+		</div>
+	</div>
+	<!--footer-->
+	<div id="footer"></div>
+	
+</div>
+<script>
+	window.onpageshow = function(event) {
+  if (event.persisted) {
+    window.location.reload() 
+  }
+};
+</script>
+<script>
+	$(window).scroll(function() {
+		$('.model, .img').each(function(){
+			var imagePos = $(this).offset().top;
+
+			var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+750) {
+			$(this).addClass("fadeIndown");
+			}
+			var ww = $(window).width();
+			if (ww < 769) {
+		    $(this).removeClass("fadeIndown");
+		    }
+		});
+	});
+</script>
+</body>
+</html>
