@@ -612,6 +612,8 @@ form div{ padding: 10px 0; }
 .en .unit_t{ opacity: 0; margin: 0; }
 .en .switch_c a.prev, .en .switch_c a.next{ width: 50%; }
 .en .rwd_table thead{ font-size: 0.875rem; letter-spacing: 0; }
+.en .navbar .menu-link{ font-weight: bold; }
+
 
 @media screen and (max-width: 1439px){
 .en .kv .title{ font-size: 1rem; }
@@ -664,6 +666,8 @@ form div{ padding: 10px 0; }
 .en .about p, .en .award li p{ font-size: 1rem; }
 .en .patents{ padding: 80px 20px 30px; }
 .en .award li{ width: 80%; }
+.en .table thead{ font-size: 0.875rem; }
+.en .table th.number{ width: 19%; }
 }
 
 
