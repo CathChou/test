@@ -633,6 +633,8 @@ form div{ padding: 10px 0; }
 .en .switch_c a{ font-size: 1.25rem; }
 .en .f_title, .f_content li{ font-size: 1rem; }
 .en .f_box:first-child{ margin-right:40px;}
+.en .navbar .menu-link{ font-size: 0.93rem; }
+.en .navbar .menu-item{ margin:0 0.5em; }
 }
 
 @media screen and (max-width: 1023px){
