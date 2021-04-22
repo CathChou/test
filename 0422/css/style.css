@@ -271,14 +271,14 @@ image-rendering: crisp-edges;
 .wrap{ padding-top: 60px; }
 .header ul, .k1, .k3, .pc{ display: none; }
 .m{display: block;}
-span.logo{ width: 265px; display: block; margin: 8px 0 5px;}
+span.logo{ width: 285px; display: block; margin: 8px 0 5px;}
 .navigation{ float: none; }
 .navigation li{ display: block; text-align: center; margin: 10px 7px; }
 .navigation li a{ font-size: 1.25rem; }
 .header {padding: 5px 0;}
 .toggle-nav { padding:45px 12px 7px 15px; text-align: left; font-size:1.2rem; transition:color linear 0.15s; color: #fff;display: block;}
 .c-hamburger{position: relative; overflow: hidden;}
-.c-hamburger__line{ width: 25px; height: 4px;position: absolute;right: 15px;background-color: #ef5a5a;transition: transform 0.3s ease, top 0.3s ease 0.4s;
+.c-hamburger__line{ width: 25px; height: 4px;position: absolute;right: 15px;background-color: #f07c90;transition: transform 0.3s ease, top 0.3s ease 0.4s;
 border-radius: 4px;}
 .c-hamburger__line:nth-child(1){top: 17px;}
 .c-hamburger__line:nth-child(2){top: 25px;}
@@ -410,6 +410,8 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 }
 
 @media screen and (max-width: 414px){
+.c-hamburger__line{ right: 0; }
+span.logo{ width: 250px; margin: 10px 0 5px; }
 .contain{ padding: 0 30px; }
 .subt{ width: 100%; }
 .video_c, .a_titlesub{ width: 100%; }
