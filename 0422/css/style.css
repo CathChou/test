@@ -22,7 +22,7 @@ button{ transition: all .5s ease; -webkit-transition: all .5s ease; -o-transitio
 /*----- common -----*/
 .wrap{ padding-top: 80px; position: relative;}
 #navigation-menu img, .header img, .kv img, .subt img, .p1 img, .p2 img, .p3 img, .p_info img, .post_box img, .p4 img, .care img, .r_more img, .p5 img, .p6 img, .a1 img, .a_titlesub img
-, .a2 img, .a3 img, .a4 img, .a_body section .btn span img, .pic img
+, .a2 img, .a3 img, .a4 img, .a_body section .btn span img, .pic img, .link_box img
 { max-width: 100%; height: auto;
 image-rendering: -moz-crisp-edges; /*Firefox*/
 image-rendering: -o-crisp-edges; /*Opera*/
@@ -39,6 +39,8 @@ image-rendering: crisp-edges;
 .btn_more{ font-size: 1.375rem; background: #f07c90; border-radius: 999px; padding: 15px 60px; color: #fff; font-weight: bold; }
 .pc{display: block;}
 .m, .m_kv{display: none;}
+#fb-root {display: none;}
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {width: 100% !important;}
 
 /*----- header -----*/
 .header{ background: #fff; padding: 14px 0; width: 100%; -moz-box-shadow:0 0 9px rgba(0, 0, 0, 0.2); -webkit-box-shadow:0 0 9px rgba(0, 0, 0, 0.2); box-shadow:0 0 9px rgba(0, 0, 0, 0.2); position: fixed; z-index: 10;}
@@ -159,7 +161,12 @@ image-rendering: crisp-edges;
 .r_txt span{ font-size: 1.625rem; font-weight: bold; }
 
 /*----- link -----*/
-.link{ height: 600px; background: #c7e0de; position: relative; }
+.link{ background: #c7e0de; padding: 80px 0; position: relative; }
+.link_c{ display: flex; width: 1000px ; margin: 0 auto;}
+.link_box{ width: 50%; text-align: center; font-size: 1.625rem; font-weight: bold; margin: 0 40px; }
+.link_logo{ margin:20px 0 40px; }
+
+
 
 
 /*----- article -----*/
@@ -265,6 +272,7 @@ image-rendering: crisp-edges;
 .a1{ width: 205px; top: -95px; }
 .step dl{ width: 30%; }
 .a_body section .btn{ display: block; width: 300px; text-align: center; margin-top: 20px; }
+
 }
 
 @media screen and (max-width: 1023px){
@@ -338,6 +346,10 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .a4{ width: 90px;  }
 .step dl{ margin: 0 15px; }
 .step dt{ font-size: 1.125rem; }
+.link{ padding: 80px 50px; }
+.link_c{ width: 100%; }
+.link_box{ margin: 0 20px; font-size: 1.25rem; }
+.link_logo{ margin: 20px 0; }
 }
 
 @media screen and (max-width: 767px){
@@ -400,6 +412,9 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .step dd{ text-align: center; }
 .a_body section .btn{ width: 90%; margin: 20px auto 0; font-size: 1.25rem; padding: 5px 0; }
 .table th, .table td{ padding: 5px 15px; vertical-align: top; }
+.link{ padding: 30px; }
+.link_c{ display: block; }
+.link_box{ width: 100%; margin: 50px 0; }
 }
 
 @media screen and (max-width: 550px){
