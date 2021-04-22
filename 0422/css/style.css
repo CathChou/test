@@ -416,12 +416,13 @@ span.logo{ width: 250px; margin: 10px 0 5px; }
 .subt{ width: 100%; }
 .video_c, .a_titlesub{ width: 100%; }
 .owl-theme .owl-dots{ padding-top: 20px; }
-.form{ padding: 0;}
+.form{ padding: 0; width: 95%;}
 .a_t{ font-size: 1.25rem; }
 .a_title{ font-size: 1.875rem; line-height: 1.5; }
 .a_body{ padding:0 20px 60px; }
 .step dl{ width: 90%; }
 .a_body section ol{ padding: 20px 20px 30px; } 
+.r_txt{ font-size: 1rem; }
 }
 
 
