@@ -22,7 +22,7 @@ button{ transition: all .5s ease; -webkit-transition: all .5s ease; -o-transitio
 /*----- common -----*/
 .wrap{ padding-top: 80px; position: relative;}
 #navigation-menu img, .header img, .kv img, .subt img, .p1 img, .p2 img, .p3 img, .p_info img, .post_box img, .p4 img, .care img, .r_more img, .p5 img, .p6 img, .a1 img, .a_titlesub img
-, .a2 img, .a3 img, .a4 img, .a_body section .btn span img, .pic img, .link_box img
+, .a2 img, .a3 img, .a4 img, .a_body section .btn span img, .pic img, .link_box img, .float img
 { max-width: 100%; height: auto;
 image-rendering: -moz-crisp-edges; /*Firefox*/
 image-rendering: -o-crisp-edges; /*Opera*/
@@ -78,7 +78,8 @@ image-rendering: crisp-edges;
 .k8{ width: 21px; right: 320px; top: 485px; }
 .k_mom{ width: 430px; position: absolute; left: 120px; top: 110px; }
 .ktxt{ top: 620px; text-align: center; z-index: 1; }
-
+.float{ position: fixed; right: 20px; bottom: 15%; width: 138px; z-index: 3; background:url(../images/float.png); background-size: 100%; height: 211px;}
+.float:hover{ background:url(../images/float_hover.png); background-size: 100%;}
 
 /*----- quiz -----*/
 .quiz{ background:#f07c90; padding: 100px 0 200px; color: #fff;}
@@ -415,6 +416,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .link{ padding: 30px; }
 .link_c{ display: block; }
 .link_box{ width: 100%; margin: 50px 0; }
+.float{ right: 10px; width: 100px; height: 153px; }
 }
 
 @media screen and (max-width: 550px){
@@ -632,8 +634,13 @@ span.logo{ width: 250px; margin: 10px 0 5px; }
 }
 
 /*----- footer -----*/
-.footer{ padding: 30px 0; background: #fff; }
-#commonhealth_footer {}
+.footer{ background: #fff; position: relative; }
+
+#commonhealth_footer {
+  text-align: center;
+  background: #fff;
+  padding: 25px 0;
+}
 .commonhealth_footer-channel {
   width: 100%;
   font-size: 0.9375rem;
@@ -687,8 +694,16 @@ span.logo{ width: 250px; margin: 10px 0 5px; }
   font-size: 14px;
   text-align: center;
 }
+.commonhealth_footer-copyright a {
+  display:inline-block;
+  border-bottom:1px dotted #555;
+  padding-bottom:1px;
+}
 .commonhealth_footer-channel br, .commonhealth_footer-copyright br {
   display: none;
+}
+.uiGuideline-boxs {
+  min-height: 80vh;
 }
 @media (max-width: 768px) {
   .commonhealth_footer-channel {
@@ -699,6 +714,11 @@ span.logo{ width: 250px; margin: 10px 0 5px; }
     padding-right: 5px;
     margin-right: 3px;
   }
+  .commonhealth_footer-channel li:nth-child(5) {
+    border-right: 0;
+    padding-right: 0;
+    margin-right: 0;
+  }
   .commonhealth_footer-copyright {
     font-size: 0.8125rem;
     font-size: 13px;
@@ -707,7 +727,8 @@ span.logo{ width: 250px; margin: 10px 0 5px; }
   .commonhealth_footer-channel br, .commonhealth_footer-copyright br {
     display: inline-block;
   }
-  .commonhealth_footer-channel li:nth-child(4) {
+  /*Lite*/
+  .commonhealth_footer-channel.lite li:nth-child(4) {
     border-right: 0;
     padding-right: 0;
     margin-right: 0;
@@ -719,6 +740,7 @@ span.logo{ width: 250px; margin: 10px 0 5px; }
     font-size: 12px;
   }
 }
+                      
 
 
 

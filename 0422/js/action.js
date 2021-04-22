@@ -46,10 +46,10 @@ $(function(){
         $('body,html').animate({scrollTop:$('#post').offset().top}, 800);
     });
     $('#bt-video').click(function(){
-        $('body,html').animate({scrollTop:$('#video').offset().top}, 800);
+        $('body,html').animate({scrollTop:$('#video').offset().top-120}, 800);
     });
-    $('#bt-reserve, #next-q6').click(function(){
-        $('body,html').animate({scrollTop:$('#reserve').offset().top}, 800);
+    $('#bt-reserve, #next-q6, #bt-float').click(function(){
+        $('body,html').animate({scrollTop:$('#reserve').offset().top-150}, 800);
     });
 
 });
