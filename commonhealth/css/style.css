@@ -46,14 +46,15 @@ image-rendering: crisp-edges;
 
 
 /*----- header -----*/
-.header{ background: #fff; padding: 14px 0; width: 100%; -moz-box-shadow:0 0 9px rgba(0, 0, 0, 0.2); -webkit-box-shadow:0 0 9px rgba(0, 0, 0, 0.2); box-shadow:0 0 9px rgba(0, 0, 0, 0.2); position: fixed; z-index: 10;}
+.header{ background: #fff; padding: 14px 0 12px; width: 100%; -moz-box-shadow:0 0 9px rgba(0, 0, 0, 0.2); -webkit-box-shadow:0 0 9px rgba(0, 0, 0, 0.2); box-shadow:0 0 9px rgba(0, 0, 0, 0.2); position: fixed; z-index: 10;}
 .logo{ float: left; width: 380px; }
 .navigation{ float: right; }
-.navigation li{ display: inline-block; padding: 12px 0; margin: 0 10px; }
+.navigation li{ display: inline-block; padding: 10px 0 0; margin: 0 10px; vertical-align: middle; }
 .navigation li a{ font-size: 1.125rem; font-weight: bold; color: #f07c90;}
 .navigation li a:hover{ color: #ae86b7; }
 .navigation li:last-child { vertical-align: middle; }
 .social-line{ width: 48px; display: inline-block; }
+.social-line iframe{ width: 53px !important; height: 28px !important; margin-bottom: -8px; }
 
 /*----- bg -----*/
 .bg1{ background: url(../images/top_01.png) no-repeat center; height: 208px; margin-top: -200px; position: relative; }
@@ -358,6 +359,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .link_c{ width: 100%; }
 .link_box{ margin: 0 20px; font-size: 1.25rem; }
 .link_logo{ margin: 20px 0; }
+.social-line{ margin: 10px auto !important;}
 }
 
 @media screen and (max-width: 767px){
