@@ -48,23 +48,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<li><a href="index.html#video">影片專區</a></li>
 				<li><a href="index.html#bg5">免費關節保健預約</a></li>
 				<li>
-					 <!--Load Facebook SDK for JavaScript -->
-					<div id="fb-root"></div>
-					<script>(function(d, s, id) {
-					var js, fjs = d.getElementsByTagName(s)[0];
-					if (d.getElementById(id)) return;
-					js = d.createElement(s); js.id = id;
-					js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-					fjs.parentNode.insertBefore(js, fjs);
-					}(document, 'script', 'facebook-jssdk'));</script>
+					<a id="fbshare" data-category="web_event" data-action="2021icareyousrf" data-label="click-header-fbshare" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fevent.commonhealth.com.tw%2F2021icareyousrf%2F?from=fbshare" class="fb-xfbml-parse-ignore">
 
-					 <!--Your share button code -->
-					<div class="fb-share-button" 
-					data-href="https://event.commonhealth.com.tw/2020GSK/" 
-					data-layout="button">
-					</div>
+						<iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fcathchou.github.io%2Ftest%2Fcommonhealth&layout=button&size=small&width=60&height=20&appId" width="60" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+					</a>
 				</li>
-				<li><a class="social-line" href="http://line.naver.jp/R/msg/text/?準媽咪攻略！健康寶寶我守護%0D%0Ahttps://event.commonhealth.com.tw/2020GSK/"><img src="images/share-a.png" /></a></li>
+
+				<li class="social-line">
+					<a id="lineshare" data-category="web_event" data-action="2021icareyousrf" data-label="click-header-lineshare" class="line-it-button" href="https://line.me/R/msg/text/?https://event.commonhealth.com.tw/2021icareyousrf/?from=lineshare" target="_blank">
+
+						<div class="line-it-button" data-lang="zh_Hant" data-type="share-a" data-ver="3" data-url="http://cathchou.github.io/test/commonhealth" data-color="default" data-size="small" data-count="false" style="display: none;"></div>
+						<script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+					</a>
+				</li>
 				
 			</ul>
 		</div>
@@ -73,8 +69,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 
 <div class="wrap">
-	<a href="index.html#reserve" class="float float2"></a>
-	<div class="bg"></div>
+	<a href="index.html#reserve" id="floatlink" class="float float2 float-link" data-category="web_event" data-action="2021icareyousrf" data-label="click-subject-floatlink"></a><div class="bg"></div>
     <div class="article">
         <div class="contain">
 			<h2 class="a_title">退化性膝關節炎大多是女性？</h2>
@@ -111,20 +106,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					</section>
 					<section>
 						<div class="a_sub">最新免動刀退化性關節炎保養推薦《SRF優適骨》
-							<a class="btn" href="https://bit.ly/3g2vcNH" target="_blank">立即前往<span><img src="images/arrow.png" /></span></a>
+							<a id="outarticle1" href="https://bit.ly/3g2vcNH" target="_blank" class="btn btn-next gtm-event" data-category="web_event" data-action="2021icareyousrf" data-label="click-article-content-exlink1">立即前往<span><img src="images/arrow.png" /></span></a>
+
 						</div>
 					</section>
 					
 					
 					<div class="others">
 						<span>其他文章快速連結:</span>
-						<a href="article1.html">可怕的併發症</a>、
-						<a href="article2.html">小心四大症狀</a>、
-						<a href="article4.html">一定得開刀嗎</a>
+						<a href="article1.html" id="articlelink1" data-category="web_event" data-action="2021icareyousrf" data-label="click-article-content-1">可怕的併發症</a>、
+						<a href="article2.html" id="articlelink2" data-category="web_event" data-action="2021icareyousrf" data-label="click-article-content-2">小心4大症狀</a>、
+						<a href="article4.html" id="articlelink4" data-category="web_event" data-action="2021icareyousrf" data-label="click-article-content-4">一定得開刀嗎？</a>
 					</div>
 				</div>
 			</div>
-			<a class="btn_more" href="index.html">回首頁</a>
+			<a id="backhome" class="btn_more" href="index.html" data-category="web_event" data-action="2021icareyousrf" data-label="click-article-content-backhome">回首頁</a>
 		</div>
 	</div>
 </div>
