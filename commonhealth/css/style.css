@@ -363,6 +363,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 }
 
 @media screen and (max-width: 767px){
+.subt, .intro, .quiz_box, .diabox, .post_c, .video_c{ visibility: visible; }
 .m_show, .a_intro, .step, .link_c{ display: block; }
 .pc_show{display: none;}
 .m_show .m_txt{ padding: 0 40px 40px; margin-top: -30px; }
