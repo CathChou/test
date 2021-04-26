@@ -52,9 +52,8 @@ image-rendering: crisp-edges;
 .navigation li{ display: inline-block; padding: 10px 0 0; margin: 0 10px; vertical-align: middle; }
 .navigation li a{ font-size: 1.125rem; font-weight: bold; color: #f07c90;}
 .navigation li a:hover{ color: #ae86b7; }
-.navigation li:last-child { vertical-align: middle; }
-.social-line{ width: 48px; display: inline-block; }
-.social-line iframe{ width: 53px !important; height: 28px !important; margin-bottom: -8px; }
+.social-line{ display: inline-block; margin: 0 !important; }
+.social-line iframe{ width: 31px !important; height: 30px !important; }
 
 /*----- bg -----*/
 .bg1{ background: url(../images/top_01.png) no-repeat center bottom; height: 208px; margin-top: -200px; position: relative; background-size: 150%;}
