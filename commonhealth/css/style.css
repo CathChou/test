@@ -57,11 +57,11 @@ image-rendering: crisp-edges;
 .social-line iframe{ width: 53px !important; height: 28px !important; margin-bottom: -8px; }
 
 /*----- bg -----*/
-.bg1{ background: url(../images/top_01.png) no-repeat center; height: 208px; margin-top: -200px; position: relative; }
-.bg2{ background: url(../images/top_02.png) no-repeat center; height: 223px; margin-top: -230px;}
-.bg3{ background: url(../images/top_03.png) no-repeat center; height: 212px; margin-top: -210px; position: relative; }
-.bg4{ background: url(../images/top_04.png) no-repeat center; height: 586px; margin-top: -220px; position: relative; }
-.bg5{ background: url(../images/top_05.png) no-repeat center; height: 175px; margin-top: -140px; position: relative; }
+.bg1{ background: url(../images/top_01.png) no-repeat center bottom; height: 208px; margin-top: -200px; position: relative; background-size: 150%;}
+.bg2{ background: url(../images/top_02.png) no-repeat center bottom; height: 223px; margin-top: -230px; background-size: 150%;}
+.bg3{ background: url(../images/top_03.png) no-repeat center bottom; height: 212px; margin-top: -210px; position: relative;background-size: 150%; }
+.bg4{ background: url(../images/top_04.png) no-repeat center; height: 586px; margin-top: -220px; position: relative; background-size: 150%;}
+.bg5{ background: url(../images/top_05.png) no-repeat center top; height: 175px; margin-top: -140px; position: relative; background-size: 150%;}
 
 /*----- kv -----*/
 .kv{ width: 100%; margin: 0 auto ; overflow: hidden; background:#fef2f3; position: relative; min-height: 900px;}
@@ -174,9 +174,9 @@ image-rendering: crisp-edges;
 .r_txt span{ font-size: 1.625rem; font-weight: bold; }
 
 /*----- link -----*/
-.link{ background: #c7e0de; padding: 80px 0; position: relative; }
+.link{ background: #c7e0de; padding: 80px 0; position: relative;  text-align: center; font-size: 1.625rem;font-weight: bold; }
 .link_c{ display: flex; width: 1000px ; margin: 0 auto;}
-.link_box{ width: 50%; text-align: center; font-size: 1.625rem; font-weight: bold; margin: 0 40px; }
+.link_box{ width: 50%; margin: 0 40px; }
 .link_logo{ margin:20px 0 40px; }
 
 
@@ -213,10 +213,13 @@ image-rendering: crisp-edges;
 .a_body section .btn{ border-radius: 999px; padding: 10px 30px; font-size: 1.375rem; border: 2px solid #3cb6bb; color: #3cb6bb; margin-left: 20px;}
 .a_body section .btn:hover{ background:#3cb6bb; color: #fff; }
 .a_body section .btn span{ width: 28px; display: inline-block; vertical-align: middle; margin: 4px 0 0 10px;}
-.a_body section ol{ background: #f4f4f4; border-radius: 30px; padding: 20px 30px 30px; margin-top: 30px; }
+.a_body section ol, .a_body .highlight{ background: #f4f4f4; border-radius: 30px; padding: 20px 30px 30px; margin-top: 30px; }
+.a_body .highlight{ margin-top: 0; }
 .a_body section ol li{ list-style: decimal; color: #3cb6bb; font-weight: bold; margin: 20px 0 10px 20px;}
 .a_body section ol li p{ color: #4d5056; font-weight: normal; line-height: 1.5; }
 .table{ margin: 30px auto 0; border-spacing: inherit; text-align: center; font-size: 1rem; }
+.table thead .win{ position: relative; }
+.table thead .win img{ position: absolute; width: 28px; left: 30px; top: 5px; }
 .table .left{ text-align: left; }
 .table tbody tr:nth-child(even) { background: #f4f4f4; }
 .table th{ background: #cde3e2; }
@@ -424,10 +427,11 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .step dd{ text-align: center; }
 .a_body section .btn{ width: 90%; margin: 20px auto 0; font-size: 1.25rem; padding: 5px 0; }
 .table th, .table td{ padding: 5px 15px; vertical-align: top; }
-.link{ padding: 30px; }
+.link{ padding: 80px 30px 30px; font-size: 1.5rem; }
 .link_box{ width: 100%; margin: 50px 0; }
 .float{ right: 10px; width: 100px; height: 153px; }
 .reserve{ padding: 0 0 100px; }
+.table thead .win img{ left: 10px; }
 }
 
 @media screen and (max-width: 550px){
@@ -435,6 +439,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .owl-prev, .owl-next{ background-size: 50% !important;}
 .owl-prev{ background-position: left !important;}
 .owl-next{ background-position: right !important;}
+.table thead .win img{ left: -10px; }
 }
 
 @media screen and (max-width: 414px){
@@ -544,20 +549,20 @@ span.logo{ width: 250px; margin: 10px 0 5px; }
 	-webkit-animation-duration: 1s;
 }
 
-@keyframes left {
+@keyframes toleft {
   0% { transform: translate3d(-20%, 0, 0);}
   50% { transform: translate3d(0, 0, 0);}
   100% {  transform: translate3d(-20%, 0, 0);}
 }
-@-webkit-keyframes left {
+@-webkit-keyframes toleft {
   0% { transform: translate3d(-20%, 0, 0);}
   50% {  transform: translate3d(0, 0, 0);}
   100% {  transform: translate3d(-20%, 0, 0);}
 }
 
-.left {
-	animation-name: left;
-	-webkit-animation-name: left;
+.toleft {
+	animation-name: toleft;
+	-webkit-animation-name: toleft;
 	animation-iteration-count: infinite;
 	-webkit-animation-iteration-count: infinite;
 	animation-duration: 1s;
@@ -566,20 +571,20 @@ span.logo{ width: 250px; margin: 10px 0 5px; }
 	-webkit-animation-delay: 2s;
 }
 
-@keyframes right {
+@keyframes toright {
   0% { transform: translate3d(20%, 0, 0);}
   50% { transform: translate3d(0, 0, 0);}
   100% {  transform: translate3d(20%, 0, 0);}
 }
-@-webkit-keyframes right {
+@-webkit-keyframes toright {
   0% { transform: translate3d(20%, 0, 0);}
   50% {  transform: translate3d(0, 0, 0);}
   100% {  transform: translate3d(20%, 0, 0);}
 }
 
-.right {
-	animation-name: right;
-	-webkit-animation-name: right;
+.toright {
+	animation-name: toright;
+	-webkit-animation-name: toright;
 	animation-iteration-count: infinite;
 	-webkit-animation-iteration-count: infinite;
 	animation-duration: 1s;
