@@ -58,7 +58,7 @@ font-family: 'icomoon' !important; speak: never; font-style: normal; font-weight
 /* Better Font Rendering =========== */
 -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 .icon{ margin-right: 8px; font-size: 1rem; color: #fff; }
-.icon_arrow_r:before { content: "\e904";}
+
 .icon_fax:before { content: "\e900"}
 .icon_location:before { content: "\e901";}
 .icon_mail:before { content: "\e902";}
