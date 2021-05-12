@@ -59,12 +59,11 @@ font-family: 'icomoon' !important; speak: never; font-style: normal; font-weight
 -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 .icon{ margin-right: 8px; font-size: 1rem; color: #fff; vertical-align: middle; }
 
-.icon_fax:before { content: "\e900"}
-.icon_location:before { content: "\e901";}
-.icon_mail:before { content: "\e902";}
+
+
 
 .icon_home:before { content: "\e905";}
-.icon_mail{font-size: 0.875rem;}
+
 .icon_arrow_r{ margin-left: 20px; display: inline-block; margin-bottom: 5px; }
 
 /*----- header -----*/  
