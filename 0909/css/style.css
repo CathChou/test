@@ -495,20 +495,20 @@ span.logo{ width: 230px; margin: 10px 0 5px 20px; }
 	visibility:visible !important;
 }
 .fadeIn-2 {
+	animation-delay: 1.2s;
+	-webkit-animation-delay: 1.2s;
+}
+.fadeIn-3 {
 	animation-delay: 1.4s;
 	-webkit-animation-delay: 1.4s;
 }
-.fadeIn-3 {
-	animation-delay: 1.8s;
-	-webkit-animation-delay: 1.8s;
-}
 .fadeIn-4 {
-	animation-delay: 2.2s;
-	-webkit-animation-delay: 2.2s;
+	animation-delay: 1.6s;
+	-webkit-animation-delay: 1.6s;
 }
 .fadeIn-5 {
-	animation-delay: 2.2s;
-	-webkit-animation-delay: 2.2s;
+	animation-delay: 1.8s;
+	-webkit-animation-delay: 1.8s;
 }
 .fadeIn-6 {
 	visibility:visible !important;
