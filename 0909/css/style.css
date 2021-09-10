@@ -72,7 +72,7 @@ image-rendering: crisp-edges;
 .quiz, .info{ background: url(../images/bg_quiz.jpg) repeat; position: relative; padding: 80px 0;}
 .quiz_c{ margin: 0 200px; }
 .bgdot{ background: url(../images/bg_quiz_2.jpg) repeat; position: absolute; top: 0; width: 100%; height: 262px;}
-.progress { height: 14px; border-radius: 999px; background-color: #fff9e1; display:-ms-flexbox; display:flex; overflow:hidden; font-size:.75rem; border: 2px #56412c solid; margin: 60px 0 40px;}
+.progress { height: 11px; border-radius: 999px; background-color: #fff9e1; display:-ms-flexbox; display:flex; overflow:hidden; font-size:.75rem; border: 2px #56412c solid; margin: 40px 0 20px;}
 .progress .progress-bar { background: #d84444; display:-ms-flexbox; display:flex; -ms-flex-direction:column; flex-direction:column; -ms-flex-pack:center; justify-content:center; color:#fff; text-align:center; white-space:nowrap; transition:width .6s ease;}
 @media screen and (prefers-reduced-motion:reduce){
   .progress-bar{ transition:none;}
@@ -80,9 +80,9 @@ image-rendering: crisp-edges;
 .progress-bar-striped{ background-image:linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-size:1rem 1rem;}
 .progress-bar-animated{ -webkit-animation:progress-bar-stripes 1s linear infinite; animation:progress-bar-stripes 1s linear infinite;}
 #qa #qa-start .question { width: 100%; color: #493824; font-size: 1.5rem; padding: 15px 0 0; font-weight: bold;}
-.quiz_pic{ width: 549px; margin: 0 auto 20px;}
+.quiz_pic{ width: 500px; margin: 0 auto 20px;}
 .quiz_option{ margin-top: 20px; }
-.quiz_option a{ background: #493824; width: 46%; display: inline-block; color: #fff3df; font-size: 1.125rem; text-align: center; padding: 12px 0; border-radius: 999px; margin: 10px 13px;}
+.quiz_option a{ background: #493824; width: 46%; display: inline-block; color: #fff3df; font-size: 1.125rem; text-align: center; padding: 10px 0; border-radius: 999px; margin: 7px 13px;}
 .quiz_option a:hover{ background: #d84444; }
 .result_pic{ width: 721px; margin:0 auto;}
 
@@ -394,8 +394,8 @@ span.logo{ width: 230px; margin: 10px 0 5px 20px; }
 .vaccine{ width: 50px; top: -145px;}
 .title{ width: 95%; }
 .progress{ margin: 30px 0 20px; }
-.quiz_pic{ width: 90%; }
-.quiz_option a{ margin: 10px 0; }
+.quiz_pic{ width: 80%; }
+.quiz_option a{ margin: 5px 0; font-size: 1rem; }
 .quiz_c{ margin: 0; }
 .quiz, .info, .school, .link, .more, .page_result_c{ padding: 40px 0; }
 .school_box{ padding: 40px 20px 40px; }
@@ -418,6 +418,7 @@ span.logo{ width: 230px; margin: 10px 0 5px 20px; }
 .btn_float{ width: 100px; height: 167px; right: 10px; }
 .btn_float a.fb{  left: 12px; top: 52px; width: 35px;}
 .btn_float a.line{  right: 12px; top:52px; width: 35px;}
+.quiz_option{ margin-top: 10px; }
 }
 
 @media screen and (max-width: 320px){
