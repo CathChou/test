@@ -127,8 +127,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						        </div>
 					          	<!-- 現在題目的內容(已經作答) -->
 					            <div class="answer" v-else>
-					              <h3 class="a_title">{{answerResult.head}}</h3>
-					                <p class="text-left">{{answerResult.msg}}</p>
+					              <h3 class="a_title" v-html="answerResult.head"></h3>
+					                <p class="text-left" v-html="answerResult.msg"></p>
 					                <div class="a_bt">
 					                	<a @click="next_qa()">{{modal_btn}}</a>
 					            	</div>
@@ -397,7 +397,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					</div>
 					<div class="info_content">
 						<div class="a"><img src="images/a.jpg" alt=""></div>
-						建議每年都要接種1次流感疫苗！<br />完成流感疫苗接種約2週後疫苗會產生保護力。<br />流感疫苗的保護效力有時限，而且流感疫苗容易變異，每年流行的病毒株不同，因此每年都要定期施打流感疫苗。
+						建議每年都要接種1次流感疫苗！<br />完成流感疫苗接種約2週後疫苗會產生保護力。<br />流感疫苗的保護效力有時限，而且流感病毒容易變異，每年流行的病毒株不同，因此每年都要定期施打流感疫苗。
 					</div>
 				</div>
 			</div>
