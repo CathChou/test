@@ -280,7 +280,7 @@ let qa = new Vue({
         info: 'WOW！流感防疫小尖兵就是你！往下看更多：',
         image: 'images/result_a.jpg',
         shareLink:{
-          line: 'https://social-plugins.line.me/lineit/share?url=https://cathchou.github.io/test/0909/qa-result-a.html',
+          line: 'https://line.me/R/msg/text/?https://cathchou.github.io/test/0909/qa-result-a.html',
           facebook: 'https://www.facebook.com/sharer/sharer.php?u=https://cathchou.github.io/test/0909/qa-result-a.html'
         }
       },
