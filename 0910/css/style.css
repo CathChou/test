@@ -82,7 +82,7 @@ image-rendering: crisp-edges;
 .progress-bar-striped{ background-image:linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-size:1rem 1rem;}
 .progress-bar-animated{ -webkit-animation:progress-bar-stripes 1s linear infinite; animation:progress-bar-stripes 1s linear infinite;}
 #qa #qa-start .question { width: 100%; color: #493824; font-size: 1.5rem; padding: 15px 0 0; font-weight: bold;}
-.quiz_pic{ width: 500px; margin: 0 auto 20px;}
+.quiz_pic{ width: 440px; margin: 0 auto 20px;}
 .quiz_option{ margin-top: 20px; }
 .quiz_option a{ background: #493824; width: 46%; display: inline-block; color: #fff3df; font-size: 1.125rem; text-align: center; padding: 10px 0; border-radius: 999px; margin: 7px 13px;}
 .quiz_option a:hover{ background: #d84444; }
