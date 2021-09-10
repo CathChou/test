@@ -326,6 +326,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .more_box{ padding: 0 50px; }
 .result_pic{ width: 90%; }
 .UpDown-1, .UpDown-2, .UpDown-3{ animation-name: none !important;}
+.quiz_option a:hover{ background: #493824; }
 }
 
 @media screen and (max-width: 767px){
