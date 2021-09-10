@@ -116,7 +116,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 								<!-- 現在題目的內容(尚未作答) -->
 					            <div v-if="!showAnswer">
 						            <!-- 題目問題與作答按鈕 -->
-					                <span>Q{{question_index + 1}}. {{now_question.title}}</span>
+					                <span v-html="'Q'+(question_index+1)+'. '+now_question.title"></span>
 
 					                <!-- 按鈕YES OR NO -->
 					                <div class="quiz_option">
