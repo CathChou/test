@@ -311,7 +311,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .link_c{ padding: 0 40px; }
 .link_box{ margin: 0 20px; }
 .info_box, .more_box{ display: block; }
-.info_txt{ width: 80%; margin: 30px auto; padding: 0; }
+.info_txt{ width: 80%; margin: 20px auto 30px; padding: 0; }
 .info_pic{ margin: 0 auto; }
 .info p{ margin: 0 auto 80px 0; }
 .info_v1{ width: 220px; }
@@ -628,6 +628,13 @@ span.logo{ width: 230px; margin: 10px 0 5px 20px; }
   font-size: 0.875rem;
   font-size: 14px;
   text-align: center;
+}
+.commonhealth_footer-copyright a{
+	color: #493824;
+	text-decoration: underline;
+}
+.commonhealth_footer-copyright a:hover{
+	color: #0f0901;
 }
 .commonhealth_footer-channel br, .commonhealth_footer-copyright br {
   display: none;
