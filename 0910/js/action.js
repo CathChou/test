@@ -39,7 +39,7 @@ $(function(){
     $('#bt-quiz').click(function(){
         $('body,html').animate({scrollTop:$('#quiz').offset().top-50}, 800);
     });
-    $('#bt-school, #bt-scroll').click(function(){
+    $('#bt-school').click(function(){
         $('body,html').animate({scrollTop:$('#school').offset().top-50}, 800);
     });
     $('#bt-info').click(function(){
@@ -48,5 +48,8 @@ $(function(){
     $('#bt-more').click(function(){
         $('body,html').animate({scrollTop:$('#more').offset().top-50}, 800);
     });
+});
+$(document).on("click","#bt-scroll",function(e){
+    $('body,html').animate({scrollTop:$('#school').offset().top-50}, 800);
 });
 

@@ -129,6 +129,7 @@ image-rendering: crisp-edges;
 .long{ background: #d84444; color: #ffffff !important; border-radius: 999px; padding: 5px 12px 2px; margin-left: 5px;}
 .icon{ width: 22px; display: inline-block; vertical-align: middle; margin-bottom: 4px; margin-right: 5px; }
 .no_show{ text-indent: -999px; }
+.compare{ background:#F1EBE4;}
 
 .prevent{ width: 21%; margin-right: 45px; position: relative; display: inline-block; vertical-align: top;}
 .prevent .number{ position: absolute; left: 20px; width: 40px; top:-15px;}
@@ -210,6 +211,7 @@ image-rendering: crisp-edges;
 .rwd_table th, .rwd_table td, .table th, .table td{ padding: 10px 20px; }
 .long{ background: #d84444; color: #ffffff !important; border-radius: 999px; padding: 5px 12px 2px; margin-left: 5px;}
 .icon{ width: 22px; display: inline-block; vertical-align: middle; margin-bottom: 4px; margin-right: 5px; }
+.compare{ background:inherit;}
 }
 
 @media screen and (max-width: 1500px){
