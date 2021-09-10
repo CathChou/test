@@ -415,6 +415,9 @@ span.logo{ width: 230px; margin: 10px 0 5px 20px; }
 .more_txt{ margin-top: 30px; }
 .more_txt dd{ margin: 25px 0; }
 .rwd_table th{ width: 34%; }
+.btn_float{ width: 120px; height: 201px; right: 10px; }
+.btn_float a.fb{  left: 18px; top: 64px;}
+.btn_float a.line{  right: 18px; top:64px;}
 }
 
 @media screen and (max-width: 320px){
