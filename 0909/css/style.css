@@ -40,6 +40,8 @@ image-rendering: crisp-edges;
 .btn_float a{ width: 40px; position: absolute; }
 .btn_float a.fb{  left: 25px; top: 80px;}
 .btn_float a.line{  right: 25px; top:80px;}
+.pc{ display: block; }
+.m{ display: none; }
 
 /*----- header -----*/
 .header{ background: #fff8ec; padding: 7px 60px; width: 100%; margin: auto;position: fixed; z-index: 100; left: 0; right: 0; }
@@ -326,8 +328,8 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 }
 
 @media screen and (max-width: 767px){
-.k1, .k2, .info_v1, .owl-theme .owl-nav{ display: none !important;}
-.link_c{ display: block; }
+.k1, .k2, .owl-theme .owl-nav, .pc{ display: none !important;}
+.link_c, .m{ display: block; }
 .kv{ min-height: 745px; padding-top: 60px; }
 .info_box, .info_v1, .info_v2, .school_d1, .school_d2, .school_d3, .school_d4, .school_d5{ visibility: visible; }
 .stitle{ width: 330px; }
@@ -365,6 +367,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .quiz_option a{ margin: 10px 0; }
 .page_result_c p, .result_txt{ text-align: center !important; }
 .result_pic{ width: 100%;}
+.info_v1{ width: 120px; top: 0; }
 }
 
 @media screen and (max-width: 550px){
