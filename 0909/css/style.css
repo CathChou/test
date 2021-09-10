@@ -482,7 +482,7 @@ span.logo{ width: 230px; margin: 10px 0 5px 20px; }
   0% { opacity: 0;}
   100% { opacity: 1;}
 }
-.fadeIn-1, .fadeIn-2, .fadeIn-3, .fadeIn-4, .fadeIn-5{
+.fadeIn-1, .fadeIn-2, .fadeIn-3, .fadeIn-4, .fadeIn-5, .fadeIn-6{
 	animation-name: fadeIn;
 	-webkit-animation-name: fadeIn;
 }
@@ -506,6 +506,9 @@ span.logo{ width: 230px; margin: 10px 0 5px 20px; }
 .fadeIn-5 {
 	animation-delay: 2.2s;
 	-webkit-animation-delay: 2.2s;
+}
+.fadeIn-6 {
+	visibility:visible !important;
 }
 
 @keyframes UpDown {
