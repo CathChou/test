@@ -280,8 +280,8 @@ let qa = new Vue({
         info: 'WOW！流感防疫小尖兵就是你！往下看更多：',
         image: 'images/result_a.jpg',
         shareLink:{
-          line: 'https://line.me/R/msg/text/?https://cathchou.github.io/test/0910/qa-result-a.html',
-          facebook: 'https://www.facebook.com/sharer/sharer.php?u=https://cathchou.github.io/test/0909/qa-result-a.html'
+          line: 'https://social-plugins.line.me/lineit/share?url=https://cathchou.github.io/test/0910/qa-result-a.html',
+          facebook: 'https://www.facebook.com/sharer/sharer.php?u=https://cathchou.github.io/test/0910/qa-result-a.html'
         }
       },
       {
@@ -289,8 +289,8 @@ let qa = new Vue({
         info: '唉啊！差一點！馬上查看流感懶人包，看看有什麼事你不知道的吧！',
         image: 'images/result_b.jpg',
         shareLink:{
-          line: 'https://line.me/R/msg/text/?https://cathchou.github.io/test/0910/qa-result-b.html',
-          facebook: 'https://www.facebook.com/sharer/sharer.php?u=https://cathchou.github.io/test/0909/qa-result-b.html'
+          line: 'https://social-plugins.line.me/lineit/share?url=https://cathchou.github.io/test/0910/qa-result-b.html',
+          facebook: 'https://www.facebook.com/sharer/sharer.php?u=https://cathchou.github.io/test/0910/qa-result-b.html'
         }
       },
       {
@@ -298,8 +298,8 @@ let qa = new Vue({
         info: '馬上查看流感小學堂，讓我們一起更了解流感吧！',
         image: 'images/result_c.jpg',
         shareLink:{
-          line: 'https://line.me/R/msg/text/?https://cathchou.github.io/test/0910/qa-result-c.html',
-          facebook: 'https://www.facebook.com/sharer/sharer.php?u=https://cathchou.github.io/test/0909/qa-result-c.html'
+          line: 'https://social-plugins.line.me/lineit/share?url=https://cathchou.github.io/test/0910/qa-result-c.html',
+          facebook: 'https://www.facebook.com/sharer/sharer.php?u=https://cathchou.github.io/test/0910/qa-result-c.html'
         }
       },
     ],
