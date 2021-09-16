@@ -623,8 +623,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		$('.info_box').each(function(){
 			var imagePos = $(this).offset().top;
 
-			var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+750) {
+			var topOfWindow = $(window).scrollTop() + $(window).height() * 0.8
+			if (imagePos < topOfWindow) {
 			$(this).addClass("fadeInDown-2");
 			}
 			var ww = $(window).width();
@@ -637,8 +637,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		$('.info_v1, .info_v2, .school_d1, .school_d2, .school_d3, .school_d4, .school_d5').each(function(){
 			var imagePos = $(this).offset().top;
 
-			var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+750) {
+			var topOfWindow = $(window).scrollTop() + $(window).height() * 0.8
+			if (imagePos < topOfWindow) {
 			$(this).addClass("fadeIn-6");
 			}
 			var ww = $(window).width();
