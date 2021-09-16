@@ -388,10 +388,9 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .vaccine{ right: 0; top: -185px; }
 .school_box{ margin: 60px 0; }
 .school_box .title{ top: -30px; }
-}
-
-@media screen and (max-width: 516px){
-.prevent, .risk{ width: 41.5%; }
+.prevent{ width: 100%; margin: 20px 0; }
+.risk{ width: 100%; margin: 15px 0; }
+.risk dd p{ text-align: center; }
 }
 
 @media screen and (max-width: 414px){
@@ -412,11 +411,9 @@ span.logo{ width: 230px; margin: 10px 0 5px 20px; }
 .school_box{ padding: 40px 20px 40px; }
 .school_box .title1, .school_box .title2, .school_box .title3, .school_box .title4{ width: 98%; }
 .school_box .title{ font-size: 1.125rem; }
-.prevent{ width: 100%; margin: 20px 0; }
 .risk_box{ padding: 60px 0 0; }
 .risk_box p{ padding: 0 20px; text-align: left; }
-.risk{ width: 100%; margin: 15px 0; }
-.risk dd p, .info_share{ text-align: center; }
+.info_share{ text-align: center; }
 .strong p, .link_c{ padding: 0; }
 .strong{ padding: 30px; }
 .school_box{ margin: 60px 0 20px; }
