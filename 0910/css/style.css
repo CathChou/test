@@ -390,6 +390,10 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .school_box .title{ top: -30px; }
 }
 
+@media screen and (max-width: 516px){
+.prevent, .risk{ width: 41.5%; }
+}
+
 @media screen and (max-width: 414px){
 .link p span, .info_v2{ display: none; }
 span.logo{ width: 230px; margin: 10px 0 5px 20px; }
