@@ -372,6 +372,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .page_result_c p, .result_txt{ text-align: center !important; }
 .result_pic{ width: 100%;}
 .info_v1{ width: 120px; top: 0; }
+.info_box, .info_v1, .info_v2, .school_d1, .school_d2, .school_d3, .school_d4, .school_d5{ animation-name: none !important;}
 }
 
 @media screen and (max-width: 550px){
