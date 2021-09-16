@@ -51,8 +51,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <h1>流感疫言堂，一起守護家人的健康!</h1>
 <div class="wrap">
 	<div class="btn_float">
-		<a class="fb" href="https://www.facebook.com/sharer/sharer.php?u=https://cathchou.github.io/test/0910/qa-result-c.html&amp;src=sdkpreparse" target="_blank"><img src="images/fb_share.png" alt=""></a>
-		<a class="line" href="https://line.me/R/msg/text/?https://cathchou.github.io/test/0910/index.html" target="_blank"><img src="images/line_share.png" alt=""></a>
+		<a class="fb" href="https://www.facebook.com/sharer/sharer.php?u=https://cathchou.github.io/test/0910/index.html&amp;src=sdkpreparse" target="_blank"><img src="images/fb_share.png" alt=""></a>
+		<a class="line" href="https://social-plugins.line.me/lineit/share?url=https://cathchou.github.io/test/0910/index.html" target="_blank"><img src="images/line_share.png" alt=""></a>
 	</div>
 	<!--header-->
 	<div class="header">
@@ -116,7 +116,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 								<!-- 現在題目的內容(尚未作答) -->
 					            <div v-if="!showAnswer">
 						            <!-- 題目問題與作答按鈕 -->
-					                <span>Q{{question_index + 1}}. {{now_question.title}}</span>
+					                <span v-html="'Q'+(question_index+1)+'. '+now_question.title"></span>
 
 					                <!-- 按鈕YES OR NO -->
 					                <div class="quiz_option">
@@ -127,8 +127,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						        </div>
 					          	<!-- 現在題目的內容(已經作答) -->
 					            <div class="answer" v-else>
-					              <h3 class="a_title">{{answerResult.head}}</h3>
-					                <p class="text-left">{{answerResult.msg}}</p>
+					              <h3 class="a_title" v-html="answerResult.head"></h3>
+					                <p class="text-left" v-html="answerResult.msg"></p>
 					                <div class="a_bt">
 					                	<a @click="next_qa()">{{modal_btn}}</a>
 					            	</div>
@@ -148,7 +148,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							</div>
 					        <p>{{result.info}}</p>
 					        <div class="a_bt">
-					            <a id="bt-scroll" href="#school">GO</a>
+					            <a id="bt-scroll">GO</a>
 					        </div>
 						</div>
 					</div>
@@ -190,91 +190,91 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					</thead>
 					<!--1-->
 					<tbody>
-						<tr><th class="no_show">比較</th><td>感染源</td></tr>
+						<tr><th class="no_show compare">比較</th><td class="compare">感染源</td></tr>
 					    <tr><th>新冠肺炎</th><td>冠狀病毒</td></tr>
 					    <tr><th>流感</th><td>流感病毒</td></tr>
 					    <tr><th>感冒</th><td>其他許多病毒(鼻病毒、呼吸 道融合病毒、腺病毒等)</td></tr>
 					</tbody>
 					<!--2-->
 					<tbody>
-						<tr><th class="no_show">比較</th><td>潛伏期</td></tr>
+						<tr><th class="no_show">比較</th><td class="compare">潛伏期</td></tr>
 					    <tr><th>新冠肺炎</th><td>1-14天<span class="long">最長</span></td></tr>
 					    <tr><th>流感</th><td>1-4天</td></tr>
 					    <tr><th>感冒</th><td>1-3天</td></tr>
 					</tbody>
 					<!--3-->
 					<tbody>
-						<tr><th class="no_show">比較</th><td>流行期間</td></tr>
+						<tr><th class="no_show">比較</th><td class="compare">流行期間</td></tr>
 					    <tr><th>新冠肺炎</th><td>全年</td></tr>
 					    <tr><th>流感</th><td><span>秋季&冬季</span></td></tr>
 					    <tr><th>感冒</th><td>全年</td></tr>
 					</tbody>
 					<!--4-->
 					<tbody>
-						<tr><th class="no_show">比較</th><td>病程</td></tr>
+						<tr><th class="no_show">比較</th><td class="compare">病程</td></tr>
 					    <tr><th>新冠肺炎</th><td><span>發病初期身體僅輕微不適</span>，部分患者在發病一週後惡化，也有部分無症狀感染者</td></tr>
 					    <tr><th>流感</th><td><span>症狀惡化速度非常快</span>，發病到痊癒約需1～3週</td></tr>
 					    <tr><th>感冒</th><td>一般可以在一週內痊癒</td></tr>
 					</tbody>
 					<!--5-->
 					<tbody>
-						<tr><th class="no_show">比較</th><td>發燒</td></tr>
+						<tr><th class="no_show">比較</th><td class="compare">發燒</td></tr>
 					    <tr><th>新冠肺炎</th><td><span class="icon"><img src="images/b_yes.png" alt=""></span>常見</td></tr>
 					    <tr><th>流感</th><td><span class="icon"><img src="images/b_yes.png" alt=""></span>常見</td></tr>
 					    <tr><th>感冒</th><td><span class="icon"><img src="images/r_less.png" alt=""></span><span>較少</span></td></tr>
 					</tbody>
 					<!--6-->
 					<tbody>
-						<tr><th class="no_show">比較</th><td>咳嗽/喉嚨痛</td></tr>
+						<tr><th class="no_show">比較</th><td class="compare">咳嗽/喉嚨痛</td></tr>
 					    <tr><th>新冠肺炎</th><td><span class="icon"><img src="images/b_yes.png" alt=""></span>常見</td></tr>
 					    <tr><th>流感</th><td><span class="icon"><img src="images/b_yes.png" alt=""></span>常見</td></tr>
 					    <tr><th>感冒</th><td><span class="icon"><img src="images/b_yes.png" alt=""></span>常見</td></tr>
 					</tbody>
 					<!--7-->
 					<tbody>
-						<tr><th class="no_show">比較</th><td>鼻塞/流鼻涕</td></tr>
+						<tr><th class="no_show">比較</th><td class="compare">鼻塞/流鼻涕</td></tr>
 					    <tr><th>新冠肺炎</th><td><span class="icon"><img src="images/r_less.png" alt=""></span><span>較少</span></td></tr>
 					    <tr><th>流感</th><td><span class="icon"><img src="images/b_yes.png" alt=""></span>常見</td></tr>
 					    <tr><th>感冒</th><td><span class="icon"><img src="images/b_yes.png" alt=""></span>常見</td></tr>
 					</tbody>
 					<!--8-->
 					<tbody>
-						<tr><th class="no_show">比較</th><td>頭痛</td></tr>
+						<tr><th class="no_show">比較</th><td class="compare">頭痛</td></tr>
 					    <tr><th>新冠肺炎</th><td><span class="icon"><img src="images/b_yes.png" alt=""></span>常見</td></tr>
 					    <tr><th>流感</th><td><span class="icon"><img src="images/b_yes.png" alt=""></span>常見</td></tr>
 					    <tr><th>感冒</th><td><span class="icon"><img src="images/r_less.png" alt=""></span><span>較少</span></td></tr>
 					</tbody>
 					<!--9-->
 					<tbody>
-						<tr><th class="no_show">比較</th><td>呼吸困難</td></tr>
+						<tr><th class="no_show">比較</th><td class="compare">呼吸困難</td></tr>
 					    <tr><th>新冠肺炎</th><td><span class="icon"><img src="images/r_yes.png" alt=""></span><span>重症時出現，發生率較高</span></td></tr>
 					    <tr><th>流感</th><td><span class="icon"><img src="images/b_less.png" alt=""></span>重症時出現</td></tr>
 					    <tr><th>感冒</th><td><span class="icon"><img src="images/b_no.png" alt=""></span>沒有</td></tr>
 					</tbody>
 					<!--10-->
 					<tbody>
-						<tr><th class="no_show">比較</th><td>腹瀉</td></tr>
+						<tr><th class="no_show">比較</th><td class="compare">腹瀉</td></tr>
 					    <tr><th>新冠肺炎</th><td><span class="icon"><img src="images/r_yes.png" alt=""></span><span>較多</span></td></tr>
 					    <tr><th>流感</th><td><span class="icon"><img src="images/b_less.png" alt=""></span>較少</td></tr>
 					    <tr><th>感冒</th><td><span class="icon"><img src="images/b_less.png" alt=""></span>較少</td></tr>
 					</tbody>
 					<!--11-->
 					<tbody>
-						<tr><th class="no_show">比較</th><td>肌肉痠痛</td></tr>
+						<tr><th class="no_show">比較</th><td class="compare">肌肉痠痛</td></tr>
 					    <tr><th>新冠肺炎</th><td><span class="icon"><img src="images/b_yes.png" alt=""></span>常見</td></tr>
 					    <tr><th>流感</th><td><span class="icon"><img src="images/b_yes.png" alt=""></span>常見</td></tr>
 					    <tr><th>感冒</th><td><span class="icon"><img src="images/r_no.png" alt=""></span><span>沒有</span></td></tr>
 					</tbody>
 					<!--12-->
 					<tbody>
-						<tr><th class="no_show">比較</th><td>全身無力</td></tr>
+						<tr><th class="no_show">比較</th><td class="compare">全身無力</td></tr>
 					    <tr><th>新冠肺炎</th><td><span class="icon"><img src="images/b_yes.png" alt=""></span>常見</td></tr>
 					    <tr><th>流感</th><td><span class="icon"><img src="images/b_yes.png" alt=""></span>常見</td></tr>
 					    <tr><th>感冒</th><td><span class="icon"><img src="images/r_less.png" alt=""></span><span>少見</span></td></tr>
 					</tbody>
 					<!--13-->
 					<tbody>
-						<tr><th class="no_show">比較</th><td>嗅/味覺喪失</td></tr>
+						<tr><th class="no_show">比較</th><td class="compare">嗅/味覺喪失</td></tr>
 					    <tr><th>新冠肺炎</th><td><span class="icon"><img src="images/r_yes.png" alt=""></span><span>常見</span></td></tr>
 					    <tr><th>流感</th><td><span class="icon"><img src="images/b_no.png" alt=""></span>沒有</td></tr>
 					    <tr><th>感冒</th><td><span class="icon"><img src="images/b_no.png" alt=""></span>沒有</td></tr>
@@ -386,7 +386,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<div class="info_v2 animated"><img class=" UpDown-3" src="images/vaccine_3.png" alt=""></div>
 			<div class="stitle pc"><img src="images/subtitle_3.png" alt="流感疫苗懶人包"></div>
 			<div class="stitle m"><img src="images/subtitle_3_m.png" alt="流感疫苗懶人包"></div>
-			<p>2021年度公費流感疫苗即將開打，符合公費接種的對象，可至全國各鄉鎮市區衛生所、合約院所進行疫苗接種，接種地點不受戶籍地限制，前往接種疫苗時，也別忘了攜帶健保卡及身分證件。<br /><br />合約院所名單，可以上流感防治一網通查詢或詢問縣市衛生局、疾管署1922疫情通報及諮詢專線。對於流感疫苗，是否還有很多疑惑呢？讓我們來為您解答！</p>
+			<p>2021年度公費流感疫苗於10月開打，符合公費接種的對象，可至全國各鄉鎮市區衛生所、合約院所進行疫苗接種，接種地點不受戶籍地限制，前往接種疫苗時，也別忘了攜帶健保卡及身分證件。<br /><br />合約院所名單，可以上流感防治一網通查詢或詢問縣市衛生局、疾管署1922疫情通報及諮詢專線。對於流感疫苗，是否還有很多疑惑呢？讓我們來為您解答！</p>
 			<div class="info_box info_box_1 animated">
 				<div class="order"><img src="images/num1.png" alt=""></div>
 				<div class="info_pic"><img src="images/info_1.jpg" alt=""></div>
@@ -397,7 +397,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					</div>
 					<div class="info_content">
 						<div class="a"><img src="images/a.jpg" alt=""></div>
-						建議每年都要接種1次流感疫苗！<br />完成流感疫苗接種約2週後疫苗會產生保護力。<br />流感疫苗的保護效力有時限，而且流感疫苗容易變異，每年流行的病毒株不同，因此每年都要定期施打流感疫苗。
+						建議每年都要接種1次流感疫苗！<br />完成流感疫苗接種約2週後疫苗會產生保護力。<br />流感疫苗的保護效力有時限，而且流感病毒容易變異，每年流行的病毒株不同，因此每年都要定期施打流感疫苗。
 					</div>
 				</div>
 			</div>
@@ -441,7 +441,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					</div>
 					<div class="info_content">
 						<div class="a"><img src="images/a.jpg" alt=""></div>
-						由於出生未滿6個月的新生兒還不適合接種流感疫苗，懷孕期間接種流感疫苗、或哺乳中的媽媽接種疫苗，都可以保護寶寶。<br />嬰兒父母與家中其他成員、照護者也建議可以接種流感疫苗，降低寶寶被感染的機率！
+						由於出生未滿6個月的新生兒還不適合接種流感疫苗，懷孕或哺乳中的媽媽接種疫苗，都可以保護寶寶。<br />嬰兒父母與家中其他成員、照護者也建議可以接種流感疫苗，降低寶寶被感染的機率！
 					</div>
 				</div>
 			</div>
@@ -471,7 +471,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					</div>
 					<div class="info_content">
 						<div class="a"><img src="images/a.jpg" alt=""></div>
-						流感疫苗常見副作用有注射部位紅腫和注射部位痠痛，少數人會出現發燒、頭痛、肌肉痠痛、噁心等症狀，但一般再發生後1-2天內會自然恢復。<br />嚴重副作用發生機率非常低，如有不適，應儘速就醫，並告知醫師疫苗接種時間。
+						流感疫苗常見副作用有注射部位紅腫和注射部位痠痛，少數人會出現發燒、頭痛、肌肉痠痛、噁心等症狀，但一般在發生後1-2天內會自然恢復。<br />嚴重副作用發生機率非常低，如有不適，應儘速就醫，並告知醫師疫苗接種時間。
 					</div>
 				</div>
 			</div>
@@ -479,7 +479,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<div class="info_share">
 				分享懶人包：
 				<a class="info_share" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcathchou.github.io%2Ftest%2F0910%2F%23info&amp;src=sdkpreparse" target="_blank"><img src="images/fb_share.png" alt=""></a>
-				<a class="info_share" href="https://line.me/R/msg/text/?https://cathchou.github.io/test/0910/index.html#info" target="_blank"><img src="images/line_share.png" alt=""></a>
+				<a class="info_share" href="https://social-plugins.line.me/lineit/share?url=https://cathchou.github.io/test/0910/index.html#info" target="_blank"><img src="images/line_share.png" alt=""></a>
 			</div>
 		</div>
 	</div>
@@ -623,8 +623,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		$('.info_box').each(function(){
 			var imagePos = $(this).offset().top;
 
-			var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+750) {
+			var topOfWindow = $(window).height() * 0.8
+			if (imagePos < topOfWindow) {
 			$(this).addClass("fadeInDown-2");
 			}
 			var ww = $(window).width();

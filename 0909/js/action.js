@@ -42,11 +42,14 @@ $(function(){
     $('#bt-school').click(function(){
         $('body,html').animate({scrollTop:$('#school').offset().top-50}, 800);
     });
-    $('#bt-info, #bt-scroll').click(function(){
+    $('#bt-info').click(function(){
         $('body,html').animate({scrollTop:$('#info').offset().top-50}, 800);
     });
     $('#bt-more').click(function(){
         $('body,html').animate({scrollTop:$('#more').offset().top-50}, 800);
     });
+});
+$(document).on("click","#bt-scroll",function(e){
+    $('body,html').animate({scrollTop:$('#school').offset().top-50}, 800);
 });
 

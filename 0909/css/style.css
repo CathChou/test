@@ -82,7 +82,7 @@ image-rendering: crisp-edges;
 .progress-bar-striped{ background-image:linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-size:1rem 1rem;}
 .progress-bar-animated{ -webkit-animation:progress-bar-stripes 1s linear infinite; animation:progress-bar-stripes 1s linear infinite;}
 #qa #qa-start .question { width: 100%; color: #493824; font-size: 1.5rem; padding: 15px 0 0; font-weight: bold;}
-.quiz_pic{ width: 500px; margin: 0 auto 20px;}
+.quiz_pic{ width: 440px; margin: 0 auto 20px;}
 .quiz_option{ margin-top: 20px; }
 .quiz_option a{ background: #493824; width: 46%; display: inline-block; color: #fff3df; font-size: 1.125rem; text-align: center; padding: 10px 0; border-radius: 999px; margin: 7px 13px;}
 .quiz_option a:hover{ background: #d84444; }
@@ -129,6 +129,7 @@ image-rendering: crisp-edges;
 .long{ background: #d84444; color: #ffffff !important; border-radius: 999px; padding: 5px 12px 2px; margin-left: 5px;}
 .icon{ width: 22px; display: inline-block; vertical-align: middle; margin-bottom: 4px; margin-right: 5px; }
 .no_show{ text-indent: -999px; }
+.compare{ background:#ffe6c1;}
 
 .prevent{ width: 21%; margin-right: 45px; position: relative; display: inline-block; vertical-align: top;}
 .prevent .number{ position: absolute; left: 20px; width: 40px; top:-15px;}
@@ -210,6 +211,7 @@ image-rendering: crisp-edges;
 .rwd_table th, .rwd_table td, .table th, .table td{ padding: 10px 20px; }
 .long{ background: #d84444; color: #ffffff !important; border-radius: 999px; padding: 5px 12px 2px; margin-left: 5px;}
 .icon{ width: 22px; display: inline-block; vertical-align: middle; margin-bottom: 4px; margin-right: 5px; }
+.compare{ background:inherit;}
 }
 
 @media screen and (max-width: 1500px){
@@ -386,6 +388,9 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .vaccine{ right: 0; top: -185px; }
 .school_box{ margin: 60px 0; }
 .school_box .title{ top: -30px; }
+.prevent{ width: 100%; margin: 20px 0; }
+.risk{ width: 100%; margin: 15px 0; }
+.risk dd p{ text-align: center; }
 }
 
 @media screen and (max-width: 414px){
@@ -406,11 +411,9 @@ span.logo{ width: 230px; margin: 10px 0 5px 20px; }
 .school_box{ padding: 40px 20px 40px; }
 .school_box .title1, .school_box .title2, .school_box .title3, .school_box .title4{ width: 98%; }
 .school_box .title{ font-size: 1.125rem; }
-.prevent{ width: 100%; margin: 20px 0; }
 .risk_box{ padding: 60px 0 0; }
 .risk_box p{ padding: 0 20px; text-align: left; }
-.risk{ width: 100%; margin: 15px 0; }
-.risk dd p, .info_share{ text-align: center; }
+.info_share{ text-align: center; }
 .strong p, .link_c{ padding: 0; }
 .strong{ padding: 30px; }
 .school_box{ margin: 60px 0 20px; }
