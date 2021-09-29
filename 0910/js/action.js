@@ -53,3 +53,70 @@ $(document).on("click","#bt-scroll",function(e){
     $('body,html').animate({scrollTop:$('#school').offset().top-50}, 800);
 });
 
+//曝光事件(非互動事件語法)
+let progEvent = [ 
+{name: '#kvc', label: 'section-index-kv', send: 0},
+{name: '#quiz', label: 'section-subject-quiz', send: 0},
+{name: '#school', label: 'section-subject-aboutflu', send: 0},
+{name: '#info', label: 'section-subject-qa', send: 0},
+{name: '#more', label: 'section-subject-more', send: 0},
+{name: '#qaresult_A', label: 'section-subject-quizresult-scroe8to10', send: 0},
+{name: '#qaresult_B', label: 'section-subject-quizresult-scroe5to7', send: 0},
+{name: '#qaresult_C', label: 'section-subject-quizresult-scroe0to4', send: 0}
+];
+
+
+function checkAreaViewEvent() {
+    let scrollTop = $(window).scrollTop();
+    let windowHeight = $(window).height();
+    let viewArea = scrollTop + windowHeight;
+
+    for (let i in progEvent){
+        if (progEvent[i].send !== 0) {
+            continue;
+        }
+
+        let element = $(progEvent[i].name);
+        if (element.length == 0) {
+            progEvent[i].send = 1;
+            continue;
+        }
+        let areaTop = element.offset().top;
+        let areaHeight = element.height();
+        let area = areaTop + areaHeight;
+
+        if (viewArea >= areaTop && scrollTop <= area) {
+            progEvent[i].send = 1;
+            dataLayer.push({
+                'event': 'sendMyEvent',
+                'eventCategory': 'web_event',
+                'eventAction': '2021fluvaccine',
+                'eventLabel': progEvent[i].label,
+            });
+
+        }
+
+    }
+
+}
+
+function debounce(func, delay) {
+    let timer = null;
+    return function() {
+        const context = this;
+        const args = arguments;
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+            func.apply(context, args);
+        }, delay);
+    };
+}
+
+$(document).on(
+    "scroll",
+    debounce(() => {
+        checkAreaViewEvent();
+    },30)
+);
+
+

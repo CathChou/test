@@ -12,24 +12,28 @@ let qa = new Vue({
             score: 0,
             msg: '流感的傳染途徑以「飛沫傳染」為主，由於病毒可以在寒冷低溼度的環境中存活數小時，也有可能經由「間接接觸」傳染，在空氣不流通的密閉空間中，最容易感染流感！',
             head: '答錯了！<br />正解：食物污染',
+            label: 'a',
           },
           {
             title: '接觸傳染',
             score: 0,
             msg: '流感的傳染途徑以「飛沫傳染」為主，由於病毒可以在寒冷低溼度的環境中存活數小時，也有可能經由「間接接觸」傳染，在空氣不流通的密閉空間中，最容易感染流感！',
             head: '答錯了！<br />正解：食物污染',
+            label: 'b',
           },
           {
             title: '食物污染',
             score: 1,
             msg: '流感的傳染途徑以「飛沫傳染」為主，由於病毒可以在寒冷低溼度的環境中存活數小時，也有可能經由「間接接觸」傳染，在空氣不流通的密閉空間中，最容易感染流感！',
             head: '答對囉！',
+            label: 'c-correct',
           },
           {
             title: '以上皆非',
             score: 0,
             msg: '流感的傳染途徑以「飛沫傳染」為主，由於病毒可以在寒冷低溼度的環境中存活數小時，也有可能經由「間接接觸」傳染，在空氣不流通的密閉空間中，最容易感染流感！',
             head: '答錯了！<br />正解：食物污染',
+            label: 'd',
           }
         ]
       },
@@ -42,24 +46,28 @@ let qa = new Vue({
             score: 0,
             msg: '嗅覺或味覺喪失是新冠肺炎常見的症狀，但並非流感常見症狀。',
             head: '答錯了！<br />正解：嗅覺或味覺喪失',
+            label: 'a',
           },
           {
             title: '肌肉痠痛',
             score: 0,
             msg: '嗅覺或味覺喪失是新冠肺炎常見的症狀，但並非流感常見症狀。',
             head: '答錯了！<br />正解：嗅覺或味覺喪失',
+            label: 'b',
           },
           {
             title: '嗅覺或味覺喪失',
             score: 1,
             msg: '嗅覺或味覺喪失是新冠肺炎常見的症狀，但並非流感常見症狀。',
             head: '答對囉！',
+            label: 'c-correct',
           },
           {
             title: '以上皆是',
             score: 0,
             msg: '嗅覺或味覺喪失是新冠肺炎常見的症狀，但並非流感常見症狀。',
             head: '答錯了！<br />正解：嗅覺或味覺喪失',
+            label: 'd',
           }
         ]
       },
@@ -72,24 +80,28 @@ let qa = new Vue({
             score: 0,
             msg: '任何人都有可能感染流感，即便是健康、抵抗力佳的成人也有感染流感的風險，還可能成為把病毒從外界帶回家的媒介。',
             head: '答錯了！<br />正解：以上皆有可能',
+            label: 'a',
           },
           {
             title: '58歲，有糖尿病的吳阿姨',
             score: 0,
             msg: '任何人都有可能感染流感，即便是健康、抵抗力佳的成人也有感染流感的風險，還可能成為把病毒從外界帶回家的媒介。',
             head: '答錯了！<br />正解：以上皆有可能',
+            label: 'b',
           },
           {
             title: '14歲，常感冒的國中生花花',
             score: 0,
             msg: '任何人都有可能感染流感，即便是健康、抵抗力佳的成人也有感染流感的風險，還可能成為把病毒從外界帶回家的媒介。',
             head: '答錯了！<br />正解：以上皆有可能',
+            label: 'c',
           },
           {
             title: '以上皆有可能',
             score: 1,
             msg: '任何人都有可能感染流感，即便是健康、抵抗力佳的成人也有感染流感的風險，還可能成為把病毒從外界帶回家的媒介。',
             head: '答對囉！',
+            label: 'd-correct',
           }
         ]
       },
@@ -102,24 +114,28 @@ let qa = new Vue({
             score: 0,
             msg: '50歲以上成人、孕婦、未滿五歲嬰幼兒、肥胖(BMI>=30)、慢性病（如：氣喘、糖尿病、心血管疾病、肝硬化、腎臟病等)或罕見疾病患者、免疫功能不全者都是感染流感的高風險族群。',
             head: '答錯了！<br />正解：以上皆是',
+            label: 'a',
           },
           {
             title: '三高患者',
             score: 0,
             msg: '50歲以上成人、孕婦、未滿五歲嬰幼兒、肥胖(BMI>=30)、慢性病（如：氣喘、糖尿病、心血管疾病、肝硬化、腎臟病等)或罕見疾病患者、免疫功能不全者都是感染流感的高風險族群。',
             head: '答錯了！<br />正解：以上皆是',
+            label: 'b',
           },
           {
             title: '幼稚園孩童',
             score: 0,
             msg: '50歲以上成人、孕婦、未滿五歲嬰幼兒、肥胖(BMI>=30)、慢性病（如：氣喘、糖尿病、心血管疾病、肝硬化、腎臟病等)或罕見疾病患者、免疫功能不全者都是感染流感的高風險族群。',
             head: '答錯了！<br />正解：以上皆是',
+            label: 'c',
           },
           {
             title: '以上皆是',
             score: 1,
             msg: '50歲以上成人、孕婦、未滿五歲嬰幼兒、肥胖(BMI>=30)、慢性病（如：氣喘、糖尿病、心血管疾病、肝硬化、腎臟病等)或罕見疾病患者、免疫功能不全者都是感染流感的高風險族群。',
             head: '答對囉！',
+            label: 'd-correct',
           }
         ]
       },
@@ -132,24 +148,28 @@ let qa = new Vue({
             score: 1,
             msg: '施打流感疫苗、戴口罩、勤洗手、少進出人多的場所、保持室內空氣流通才是正確有效預防流感的方式。',
             head: '答對囉！',
+            label: 'a-correct',
           },
           {
             title: '佩戴口罩',
             score: 0,
             msg: '施打流感疫苗、戴口罩、勤洗手、少進出人多的場所、保持室內空氣流通才是正確有效預防流感的方式。',
             head: '答錯了！<br />正解：多喝水',
+            label: 'b',
           },
           {
             title: '勤洗手',
             score: 0,
             msg: '施打流感疫苗、戴口罩、勤洗手、少進出人多的場所、保持室內空氣流通才是正確有效預防流感的方式。',
             head: '答錯了！<br />正解：多喝水',
+            label: 'c',
           },
           {
             title: '施打疫苗',
             score: 0,
             msg: '施打流感疫苗、戴口罩、勤洗手、少進出人多的場所、保持室內空氣流通才是正確有效預防流感的方式。',
             head: '答錯了！<br />正解：多喝水',
+            label: 'd',
           }
         ]
       },
@@ -162,24 +182,28 @@ let qa = new Vue({
             score: 0,
             msg: '未滿6個月嬰兒、對疫苗成分過敏、曾發嚴重疫苗不良反應者不適合施打疫苗。<br />有過敏體質者，應告知醫生，由醫師評估是否施打。有發燒或其他急性疾病者，建議等病情穩定後再進行接種。',
             head: '答錯了！<br />正解：未滿6個月嬰兒',
+            label: 'a',
           },
           {
             title: '孕婦',
             score: 0,
             msg: '未滿6個月嬰兒、對疫苗成分過敏、曾發嚴重疫苗不良反應者不適合施打疫苗。<br />有過敏體質者，應告知醫生，由醫師評估是否施打。有發燒或其他急性疾病者，建議等病情穩定後再進行接種。',
             head: '答錯了！<br />正解：未滿6個月嬰兒',
+            label: 'b',
           },
           {
             title: '未滿6個月嬰兒',
             score: 1,
             msg: '未滿6個月嬰兒、對疫苗成分過敏、曾發嚴重疫苗不良反應者不適合施打疫苗。<br />有過敏體質者，應告知醫生，由醫師評估是否施打。有發燒或其他急性疾病者，建議等病情穩定後再進行接種。',
             head: '答對囉！',
+            label: 'c-correct',
           },
           {
             title: '以上皆是',
             score: 0,
             msg: '未滿6個月嬰兒、對疫苗成分過敏、曾發嚴重疫苗不良反應者不適合施打疫苗。<br />有過敏體質者，應告知醫生，由醫師評估是否施打。有發燒或其他急性疾病者，建議等病情穩定後再進行接種。',
             head: '答錯了！<br />正解：未滿6個月嬰兒',
+            label: 'd',
           }
         ]
       },
@@ -192,24 +216,28 @@ let qa = new Vue({
             score: 0,
             msg: '流感疫苗的保護效力有時限，且每年流行的病毒株不同，建議每年都要定期接種流感疫苗。',
             head: '答錯了！<br />正解：每年接種一次',
+            label: 'a',
           },
           {
             title: '半年接種一次',
             score: 0,
             msg: '流感疫苗的保護效力有時限，且每年流行的病毒株不同，建議每年都要定期接種流感疫苗。',
             head: '答錯了！<br />正解：每年接種一次',
+            label: 'b',
           },
           {
             title: '每年接種一次',
             score: 1,
             msg: '流感疫苗的保護效力有時限，且每年流行的病毒株不同，建議每年都要定期接種流感疫苗。',
             head: '答對囉！',
+            label: 'c-correct',
           },
           {
             title: '三年接種一次',
             score: 0,
             msg: '流感疫苗的保護效力有時限，且每年流行的病毒株不同，建議每年都要定期接種流感疫苗。',
             head: '答錯了！<br />正解：每年接種一次',
+            label: 'd',
           }
         ]
       },
@@ -222,12 +250,14 @@ let qa = new Vue({
             score: 0,
             msg: '流感疫苗常見副作用有注射部位紅腫和注射部位痠痛，少數人會出現發燒、頭痛、肌肉痠痛、噁心等症狀，但一般發生後1-2天內會自然恢復，引發嚴重副作用發生機率非常低。若對接種疫苗有疑慮，可以請醫師協助評估。',
             head: '答錯了！',
+            label: 'yes',
           },
           {
             title: 'No',
             score: 1,
             msg: '流感疫苗常見副作用有注射部位紅腫和注射部位痠痛，少數人會出現發燒、頭痛、肌肉痠痛、噁心等症狀，但一般在發生後1-2天內會自然恢復，引發嚴重副作用發生機率非常低。若對接種疫苗有疑慮，可以請醫師協助評估。',
             head: '答對囉！',
+            label: 'no-correct',
           }
         ]
       },
@@ -240,12 +270,14 @@ let qa = new Vue({
             score: 0,
             msg: '流感和新冠肺炎屬於不同的病毒類型，目前並無足夠研究資料證實新冠肺炎疫苗對流感有交叉保護的效果。請遵循政府政策及醫師專業建議，評估接種新冠肺炎疫苗及流感疫苗。',
             head: '答錯了！',
+            label: 'yes',
           },
           {
             title: 'No',
             score: 1,
             msg: '流感和新冠肺炎屬於不同的病毒類型，目前並無足夠研究資料證實新冠肺炎疫苗對流感有交叉保護的效果。請遵循政府政策及醫師專業建議，評估接種新冠肺炎疫苗及流感疫苗。',
             head: '答對囉！',
+            label: 'no-correct',
           }
         ]
       },
@@ -258,12 +290,14 @@ let qa = new Vue({
             score: 0,
             msg: '流感疫苗最重要的功能是「避免造成死亡的重症與併發症發生」，提高自身保護力，也能避免將病毒帶回家傳染給家人。',
             head: '答錯了！',
+            label: 'yes',
           },
           {
             title: 'No',
             score: 1,
             msg: '流感疫苗最重要的功能是「避免造成死亡的重症與併發症發生」，提高自身保護力，也能避免將病毒帶回家傳染給家人。',
             head: '答對囉！',
+            label: 'no-correct',
           }
         ]
       },
@@ -279,27 +313,42 @@ let qa = new Vue({
         max_score: 10,
         info: 'WOW！流感防疫小尖兵就是你！往下看更多：',
         image: 'images/result_a.jpg',
+        id: 'qaresult_A',
+        shareLabel:{
+          line: 'click-share-line-quiz-score8to10',
+          facebook: 'click-share-fb-quiz-score8to10',
+        },
         shareLink:{
-          line: 'https://social-plugins.line.me/lineit/share?url=https://cathchou.github.io/test/0910/qa-result-a.html',
-          facebook: 'https://www.facebook.com/sharer/sharer.php?u=https://cathchou.github.io/test/0910/qa-result-a.html'
+          line: 'https://social-plugins.line.me/lineit/share?url=https://event.commonhealth.com.tw/2021flu/qa-result-a.html',
+          facebook: 'https://www.facebook.com/sharer/sharer.php?u=https://event.commonhealth.com.tw/2021flu/qa-result-a.html'
         }
       },
       {
         max_score: 7,
         info: '唉啊！差一點！馬上查看流感懶人包，看看有什麼事你不知道的吧！',
         image: 'images/result_b.jpg',
+        id: 'qaresult_B',
+        shareLabel:{
+          line: 'click-share-line-quiz-score5to7',
+          facebook: 'click-share-fb-quiz-score5to7',
+        },
         shareLink:{
-          line: 'https://social-plugins.line.me/lineit/share?url=https://cathchou.github.io/test/0910/qa-result-b.html',
-          facebook: 'https://www.facebook.com/sharer/sharer.php?u=https://cathchou.github.io/test/0910/qa-result-b.html'
+          line: 'https://social-plugins.line.me/lineit/share?url=https://event.commonhealth.com.tw/2021flu/qa-result-b.html',
+          facebook: 'https://www.facebook.com/sharer/sharer.php?u=https://event.commonhealth.com.tw/2021flu/qa-result-b.html'
         }
       },
       {
         max_score: 4,
         info: '馬上查看流感小學堂，讓我們一起更了解流感吧！',
         image: 'images/result_c.jpg',
+        id: 'qaresult_C',
+        shareLabel:{
+          line: 'click-share-line-quiz-score0to4',
+          facebook: 'click-share-fb-quiz-score0to4',
+        },
         shareLink:{
-          line: 'https://social-plugins.line.me/lineit/share?url=https://cathchou.github.io/test/0910/qa-result-c.html',
-          facebook: 'https://www.facebook.com/sharer/sharer.php?u=https://cathchou.github.io/test/0910/qa-result-c.html'
+          line: 'https://social-plugins.line.me/lineit/share?url=https://event.commonhealth.com.tw/2021flu/qa-result-c.html',
+          facebook: 'https://www.facebook.com/sharer/sharer.php?u=https://event.commonhealth.com.tw/2021flu/qa-result-c.html'
         }
       },
     ],
