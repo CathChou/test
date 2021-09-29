@@ -154,7 +154,7 @@ image-rendering: crisp-edges;
 .info_r{ position: absolute; right: 0; top: 0;}
 .info_l{ position: absolute; left: 0; bottom: 0;}
 .info p{ width: 840px; margin: 0 auto 80px;}
-.info p a{ color: #493824; text-decoration: underline;}
+.info p a, .info p span{ color: #6ca99e; text-decoration: underline;}
 .info p a:hover, .source a:hover{ color: #d84444;}
 .info_box{ width: 80%; border: 3px solid #493824; border-radius: 10px; display: flex; margin-bottom: 50px; position: relative;}
 .info_box_1{ background: url(../images/bg_info_box1.jpg) repeat; }
