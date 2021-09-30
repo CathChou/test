@@ -1,404 +1,232 @@
 /* CSS Reset */
-*{ margin: 0; padding: 0; 
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;}
-ul, li { margin: 0; padding: 0; list-style: none;}
+ul, li, dd { margin: 0; padding: 0; list-style: none;}
 img, div, iframe{ border: 0;}
-body, html { width: 100%; height: 100%;}
+body, html {font-family: 'Noto Sans TC', sans-serif; color: #2e2e2e; letter-spacing: 1px; width: 100%; height: 100%; margin: 0; font-size: 16px;}
 h1{ display: none;}
-li p, li span, li p span, p, dd{ font-size: 1.125rem; color: #444444; font-weight: 500;}
+h2{ font-size: 3.25rem;font-family: Helvetica-Bold; text-align: center; margin: 0;}
+p{font-size: 0.875rem; line-height: 1.8;}
 a{ text-decoration:none; transition: all .5s ease;-webkit-transition:all .5s ease;-o-transition:all .5s ease;
 -moz-transition:all .5s ease; cursor: pointer;}
 a:link, a:visited ,a:hover ,a:active {text-decoration: none;}
-body, html {height: 100%;width: 100%; -webkit-text-size-adjust: 100%; background: #fbf0ef;
-text-rendering: optimizeLegibility !important;
--webkit-font-smoothing: antialiased !important;
-font-family: Helvetica,Arial,Hiragino Sans GB,WenQuanYi Zen Hei,儷黑 Pro,LiHei Pro,微軟正黑體,sans-serif;}
-h1{ display: none;}
-button{ transition: all .5s ease; -webkit-transition: all .5s ease; -o-transition: all .5s ease;
--moz-transition: all .5s ease;}
+button{ transition: all .5s ease; -webkit-transition: all .5s ease; -o-transition: all .5s ease;-moz-transition: all .5s ease;}
 
-/*----- custom -----*/
-.wrap{}
-#navigation-menu img, .header img, .kv img, .stitle img, .qa img, .cough-c img, .arrow_l img, .arrow_r img
-, .cough_doc li .pic img, .comma img, .cancer img, .food img, .dad img, .toggle-nav img, .social-line img
-{ max-width: 100%; height: auto;
+/* common */
+@font-face {
+  font-family: Helvetica-Bold;
+  src: url(../fonts/Helvetica-Bold.ttf);
+}
+img{
+width: 100%; height: auto; display: block;
 image-rendering: -moz-crisp-edges; /*Firefox*/
 image-rendering: -o-crisp-edges; /*Opera*/
 image-rendering: -webkit-optimize-contrast; /*Webkit*/
 image-rendering: crisp-edges;
 -ms-interpolation-mode: nearest-neighbor; /*IE*/
 }
+.container{ width: 1200px; margin: 0 auto; position: relative;}
+.container_big{ width: 80%; margin: 0 auto; position: relative;}
 .clear{ clear: both; }
-.contain{ width: 1200px; margin: 0 auto; position: relative;}
-.content-r{ background: #eb6b6d; }
-.content-f{ background: #ffe0dd; }
-.stitle{ width: 545px; margin: 0 auto 35px;}
-.icon{ width: 76px; margin: 40px auto 30px;}
-.intro{text-align: center; margin: 0 auto 50px; letter-spacing: 1px;line-height: 31px; width: 850px; font-weight: bold; }
-.toggle-nav, .test, span.logo{ display: none;}
-.stitle, .qa_intro, .icon, .qa_c, .intro, .cough ul li.box, .cough_doc, .cancer-box, .cancer-doc
-, .f1, .f2, .f3, .f4, .food-re{ visibility: hidden; }
+.sub{ width: 115px; display: block; margin: 0 auto 15px;}
+.title{ margin-bottom: 60px; }
 
-/*----- header -----*/
-.header{ background: #fff; border-radius: 60px; padding: 7px 60px; width: 80%; margin: auto;
--moz-box-shadow:0 0 9px rgba(0, 0, 0, 0.2); -webkit-box-shadow:0 0 9px rgba(0, 0, 0, 0.2); 
-box-shadow:0 0 9px rgba(0, 0, 0, 0.2); position: absolute; z-index: 100; left: 0; right: 0; top: 20px;}
-.logo{ float: left; width: 86px; }
-#bt-kv{ display: block; }
-.navigation{ float: right; }
-.navigation li{ display: inline-block; padding: 12px 0; margin: 0 10px; }
-.navigation li a{ font-size: 1.25rem; font-weight: bold; color: #eb6b6d;}
-.navigation li a:hover{ color: #ae86b7; }
-.navigation li:last-child { vertical-align: middle; }
-.social-line{ width: 48px; display: inline-block; }
+/* nav */
+.header-fixed {position: fixed; top: 0; z-index: 9; width: 100%; }
+.navbar{ display: flex; padding: 40px 50px 0; z-index: 9; font-family: Helvetica-Bold; position: relative;}
+.navbar .logo{ display: flex; width: 20%;}
+.navbar .logo img{ width: 50px;}
+.navbar .logo p{ margin-left: 5px;}
+.navbar .logo a { display: block; font-size: 0.875rem; font-weight: bold; color: #2e2e2e;}
+.navbar .logo a:hover { color: #777777;}
+.navbar label { cursor: pointer; padding: 28px 20px; position: absolute;right:0; z-index: 3;}
+.navbar label i { height: 2px; position: relative; transition: background .2s ease-out; width: 18px;}
+.navbar label i:before, .navbar label i:after { content: ''; height: 100%; position: absolute; transition: all .2s ease-out; width: 100%;}
+.navbar label i, .navbar label i:before, .navbar label i:after { display: block; background: #eee;}
+.navbar label i:before { top: 5px;}
+.navbar label i:after { top: -5px;}
+.navbar #navbar-toggle {display: none;}
+.menu{ width: 80%;}
 
-/*----- kv -----*/
-.kv{ width: 100%; margin: 0 auto ; overflow: hidden; background:#fbf0ef; position: relative; min-height: 950px;}
-.bg_1{ background:url(../images/bg_1.png) no-repeat center; height:239px; margin-top: -238px; position: relative;}
-.bg_2{ background:url(../images/bg_qa.png) no-repeat center; height:168px;position: relative;}
-.yellow_1{ width: 716px; position: absolute; left: 0; top: 0; }
-.yellow_2{ width: 199px; position: absolute; right: 0; bottom: 10px; }
-.k3{ width: 72px;position: absolute;top: 240px; left: 70px; }
-.k4{ width: 100px; position: absolute; top: 250px; right: 70px;}
-.k5{ width: 100px; position: absolute; top: 630px; right: 30px;}
-.kv .contain li{ position: absolute; list-style: none;}
-.title{ top: 140px; left: 50%; margin-left: -290px; width: 580px;z-index: 1;}
-.title .t{width: 497px; margin: 0 auto;}
-.title p{ text-align: center; margin: 35px 0 50px; line-height: 31px; letter-spacing: 1px; }
-.title .down{ width: 63px; margin: 0 auto; }
-.title .down a{ display: block; cursor: pointer; }
-.title .down a:hover{ animation-play-state:paused;-webkit-animation-play-state:paused;}
-.sub{ width: 178px; right: 260px; top: 300px; }
-.k1{ width: 232px; left: 34px; top: 155px;}
-.k2{ width: 323px; left: -75px; top: 480px; z-index: 1; }
-.k_mom{ width: 474px; right: -140px; top: 120px; }
+.header #navbar-toggle:checked ~ .menu { visibility: visible; opacity: 0.99;}
+.header #navbar-toggle:checked ~ label { background: #212121; border-radius: 50%;}
+.header #navbar-toggle:checked ~ label i { background: transparent;}
+.header #navbar-toggle:checked ~ label i:before { transform: rotate(-45deg);}
+.header #navbar-toggle:checked ~ label i:after { transform: rotate(45deg);}
+.header #navbar-toggle:checked ~ label:not(.steps) i:before,
+.header #navbar-toggle:checked ~ label:not(.steps) i:after { top: 0;}
 
-/*----- qa -----*/
-.qa{ position: relative; background: #ea6c6d; overflow: hidden;}
-.qa_2{  position: relative; padding: 200px 0 310px; }
-.qa_intro{ color: #fee1e2; width: 610px;}
-.red_1{ width: 581px; position: absolute; top: 0; right: -240px; }
-.red_2{ width: 871px; position: absolute; top: 70px; left: -500px; }
-.qa_c ul { padding: 0 250px; margin: 0 auto; }
-.qa_c ul li{ width: 25%; float: left; margin:0 10.5%; }
-.qa_c ul li.plus{ width: 5%; margin: 0; padding: 60px 0; }
-.qa_c ul li p{ color: #ffe09c; font-weight: bold;text-align: center; font-size: 1rem; margin-top: 20px; }
-.qa_c ul li p span{ display: block; background: #fff; font-size: 1.25rem; border-radius: 20px;color: #eb6b6d; font-weight: bold;
-margin-top: 5px;}
-.video_c{ width: 70%; border: 25px #e05c5e solid; border-radius: 20px;margin:40px auto 20px; }
-.video{ position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;}
-.video iframe{ position: absolute; top: 0;left: 0; width: 100%; height: 100%;}
-.v_txt{ width: 70%; margin: 0 auto; text-align: left;color: #fff; font-weight: bold; }
-.v_txt span{ font-size: 1rem;font-weight: normal; }
+/* back to top */
+#back-top { position: fixed; bottom: 60px; right: 30px; z-index:99; text-align: center; width: 79px; height: 165px; display: block;background: url(../images/top.png) no-repeat bottom; background-size: 100%;line-height: 50px; font-size: 24px; color: #fff; font-weight: normal;-webkit-transition: .5s; -moz-transition: .5s; transition: .5s; }
+#back-top a { display: block; width: 80px; height: 70px;  background:#ffe763;border-radius: 10px;-webkit-transition: .5s; -moz-transition: 1s; transition: .5s; color: #fff;position: absolute;top: 0;display: flex;justify-items: center;align-items: center;}
+.tri{ width: 0;height: 0;border: 15px solid transparent;border-top: 20px solid #ffe763;position: absolute;bottom: -30px;left: 0;right: 0;margin: auto;}
+#back-top .top{ width: 31px; margin: 0 auto;}
+#back-top a:hover { top: -20px;}
 
-/*----- cough -----*/
-.cough{ margin-top: -450px; padding: 240px 0 80px; background: #ffe0dd;}
-.cough-c{ background: url(../images/cough_bg.jpg) repeat; padding: 240px 0 280px;}
-.cough-b{ margin-top: -280px; }
-.icon_cough{ width: 76px; margin: 40px auto; }
-.cough ul li.box{ float: left; margin:0 2.5%; width: 45%; background-color: #fff; border-radius: 20px; padding: 50px; line-height: 31px;
--moz-box-shadow:0 0 12px rgba(184, 123, 123, 0.2); -webkit-box-shadow:0 0 12px rgba(184, 123, 123, 0.2); 
-box-shadow:0 0 12px rgba(184, 123, 123, 0.2); position: relative;}
-.cough ul li.box:nth-child(2), .cough ul li.box:nth-child(4){ margin-top: 80px; }
-.cough ul li.box:nth-child(3){ margin-top: -80px; }
-.cough ul li .name{ font-size: 1.5rem; font-weight: bold; background: #eb6b6d; border-radius: 30px; padding: 12px 0; color: #fff; 
-text-align: center; margin-bottom: 30px;}
-.arrow_l{ width: 55px; position: absolute; left: -47px; }
-.arrow_r{ width: 55px; position: absolute; right: -47px; }
-.top_1{ background: url(../images/bg_6.png) no-repeat center bottom;margin-top: -248px; height: 248px;}
-.cough ul li.box ul{ margin-top: 30px; }
-.cough ul li.box li, .cancer-c ul li{ margin: 10px 0; }
-.cough ul li.box ul li p{ float: left; width: 90%; }
-span.number{ background: -webkit-linear-gradient(left top,#ec6e6d,#fbb070);background: -o-linear-gradient(bottom right,#ec6e6d,#fbb070);
-background: -moz-linear-gradient(bottom right,#ec6e6d,#fbb070);background: linear-gradient(to bottom right,#ec6e6d,#fbb070);
-border-radius:999em; width: 32px; height: 32px; text-align: center; line-height: 32px;display: inline-block; color: #fff; 
-font-size: 1.25rem; font-weight: bold; margin-right: 10px; float: left; }
-.cough_doc{ padding-top:80px; position: relative; text-align: center;}
-.cough_doc li{ display: inline-block; width: 33.3%; margin: 40px 3%;}
-.cough_doc li .pic { width: 60%; margin: 0 auto;}
-.cough_doc li p{ min-height: 108px; }
-/*.cough_doc li:last-child .pic {width: 80%;}*/
-.cough_doc li .n{ font-size: 1.25rem; color:#eb6b6d; font-weight: bold; margin: 30px 0 20px; text-align: center; min-height: inherit;}
-.cough_doc li .n span{ font-size: 1rem; color:#444; margin-left: 5px;}
-.more{ font-size: 1.125rem; background: #eb6b6d; font-weight: bold;color: #fff; margin: 30px auto 0; display: block;width: 135px; 
-text-align: center; padding: 5px 0; border-radius: 20px;}
-.more:hover{background: #ae86b7;}
-.comma{ width: 76px; position: absolute; top: -40px }
-.top_2{ background: url(../images/bg_2.png) no-repeat center bottom; height: 195px; position: relative; z-index: 1;}
-
-/*----- cancer -----*/
-.cancer{ background: #eb6b6d; margin-top: -190px; padding-top: 80px; position: relative; overflow: hidden;}
-.cancer_intro{ color: #fee1e2;}
-.cancer-box{ background: url(../images/cough_bg.jpg) repeat; border-radius: 20px; width: 90%; margin: 25px auto; padding: 50px 70px 30px;
-line-height: 32px;-moz-box-shadow:0 0 12px rgba(153, 32, 34, 0.2); -webkit-box-shadow:0 0 12px rgba(153, 32, 34, 0.2); 
-box-shadow:0 0 12px rgba(153, 32, 34, 0.2); }
-.cancer-icon{ width: 180px; float: left; }
-.cancer-c{ float: right; width: 75%; }
-.cancer-c dt{ font-size: 1.75rem; color: #eb6b6d; font-weight: bold; line-height: 38px; }
-.cancer-c dd{ margin: 20px 0; }
-.cancer-c ul li p{ float: left;width: 93%; }
-.cancer-doc{ position: relative; padding: 120px; }
-.cancer-doc .pic, .food-teeth .pic{ float: left; width: 26%; }
-.cancer-doc dl, .food-teeth dl{ float: right; width: 65%; color: #fff; padding-top: 20px; }
-.cancer-doc dl dt, .food-teeth dl dt{ font-size: 1.375rem; font-weight: bold; }
-.cancer-doc dl dt span, .food-teeth dl dt span{ font-size: 1rem; margin-left: 5px;}
-.cancer-doc dl dd{ color: #fee1e2; font-size: 1.125rem; line-height: 32px; margin:20px 0;  }
-.more-2{ background: #fff; color: #eb6b6d; margin:20px 0 0 0; float: right;  }
-.more-2:hover{background: #e45557; color: #fff; }
-.comma-2{ top: 50px; left: 60px; }
-.love-1{ position: absolute; width: 709px; left: -100px; top: 550px; }
-.love-2{ position: absolute; width: 664px; right: -100px; top: 850px; }
-
-/*----- food -----*/
-.top_3{ background: url(../images/bg_3.png) no-repeat center bottom; height: 159px; position: relative;}
-.food{ background: url(../images/cough_bg.jpg) repeat; margin-top: -150px; padding: 70px 0 0;}
-.icon-2{ width: 83px;}
-.food ul li{ float: left;width: 23%; background: #fff; border-radius: 20px; margin:0 1%;-moz-box-shadow:0 0 12px rgba(153, 32, 34, 0.2);
--webkit-box-shadow:0 0 12px rgba(153, 32, 34, 0.2); box-shadow:0 0 12px rgba(153, 32, 34, 0.2);}
-.food ul li:nth-child(odd){ margin-top: 50px; }
-.food dl dd{ padding: 30px 20px; }
-.food dl dd p{ font-size: 1rem; line-height: 26px; }
-.food dl dd p.name, .food dl dd p span.sub-t{color: #eb6b6d; font-weight: bold; text-align: center; }
-.food dl dd p.name{font-size: 1.5rem;}
-.food dl dd p span.sub-t{ display: block; font-size: 1rem; margin: 5px 0 15px;}
-.food-re{ padding: 120px 120px 30px 120px; position: relative; text-align: center; line-height: 32px; }
-.food-re p{ margin: 20px auto 30px; font-weight: bold; }
-.food-re .t{ font-size: 2rem; font-weight: bold;color: #eb6b6d;}
-.food-re ul li{ background: none; box-shadow: none; width: 18% !important; margin: 0 3.5% !important; }
-.food-re ul li:nth-child(odd){ margin-top: 0;}
-.food-teeth{ padding-top: 70px; }
-.food-teeth dl dt{ color: #eb6b6d; text-align: left; padding: 0 20px; }
-.food-teeth dl dd{ color: #444444; font-size: 1.125rem; line-height: 32px; text-align: left; text-align: justify;  }
-.food-teeth a{ float: right; margin: 0; }
-
-/*----- dad -----*/
-.top_4{ background: url(../images/bg_5.png) no-repeat center bottom; height: 247px; position: relative; z-index: 1;}
-.dad{ background: url(../images/dad_bg.jpg) no-repeat center bottom; background-attachment: fixed; padding: 80px 0 80px; position: relative; margin-top: -210px; }
-.icon-3{ width: 104px;}
-.dad-t, .dad-c{ width: 60%; float: right; }
-.dad_intro{ width: 100%; }
-.dad-box{ background: #fbf0ef; border-radius: 20px; padding: 40px; margin: 30px 0;}
-.dad-box p{font-size: 1rem; line-height: 28px;}
-.dad-box .t{ font-size: 1.75rem; color: #eb6b6d; font-weight: bold; margin-bottom: 20px; line-height: 36px; }
-.dad-box ul{ margin-top: 20px; }
-.dad-box ul li{ margin: 10px 0;font-size: 1rem; }
-.dad-box ul li p{ float: left; width: 94%; }
-.dad-box ul li b{ font-weight: bold; }
-span.i{ width: 25px; display: inline-block; margin-right: 10px; float: left; }
-
-
-/*----- Responsive -----*/
-@media screen and (max-width: 1500px){
-.header{ width: 90%; padding: 8px 40px 3px; }
-.logo{ width: 70px; }
-.navigation li{ padding: 9px 0; }
-.navigation li a{ font-size: 1rem; }	
-.kv{ min-height: 880px;}
-.k3{ width: 60px; top: 322px; left: 50px; }
-.k4{ width: 80px; top: 270px; right: 40px;}
-.k5{ width: 80px; bottom:120px;}
-.title{ width: 540px; }
-.title .t{ width: 457px; }
-.sub{width: 158px; right: 310px; top: 290px; }
-.k1{ width: 212px; left: 114px;}
-.k2{ width: 293px; left: 5px; top: 450px;}
-.k_mom{ width: 434px; right: -60px; top: 140px; }
-.yellow_2{ bottom: -10px; }
+@media (max-width: 768px) {
+    .navbar nav {
+      visibility: hidden;
+      opacity: 0;
+      z-index: 2;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      transition: all 0.3s ease-out;
+      display: table;
+      background: #ddd;
+    }
+    .navbar nav ul {
+      margin: 0;
+      padding: 20px 0;
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .navbar nav li {
+      display: block;
+      text-align: center;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 50px;
+      min-height: 50px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+    }
+   
 }
 
-@media screen and (max-width: 1280px){
-.header{ width: 90%; padding: 8px 30px 3px; }
-.navigation li{ margin: 0 7px; }
-.k3, .k4, .k5{ display: none !important; }
-.kv{ min-height: 810px; }
-.contain{ width: 100%; padding: 0 40px; }
-.title{ top: 120px; margin-left: -270px; }
-.title .t{ width: 400px; }
-.title p{ margin: 35px 0; }
-.sub{width: 148px; right: 190px; top: 230px; }
-.k1{ width: 202px; left: 54px; top: 120px;}
-.k2{ width: 261px; left: -15px; top: 420px;}
-.k_mom{ width: 370px; right: -100px; top: 160px; }
-.red_2{ left: -550px; }
-.red_1{ right: -310px; }
-.bg_2{ margin-top: -50px; }
-.qa, .top_3{ margin-top: -1px; }
-.qa_c ul{ padding: 0 200px; }
-.cough ul li .name{ padding: 10px 15px; text-align: left; }
-.cough ul li.box{ padding: 40px; }
-.cough ul li.box ul li p{ width: 87%; }
-.cough_doc{ padding: 80px 20px 0; }
-.cancer-c, .dad-t, .dad-c{ width: 70%; }
-.cancer-c ul li p{ width: 91%; }
-.cancer-doc{ padding: 120px 120px 80px; }
-.food ul li{ width: 42%; margin: 30px 4%; border-radius: 40px; }
-.food ul li:nth-child(odd){ margin-top: 30px; }
-.food ul li dl dt img{ width: 100% ;}
-.dad-box ul li p{ width: 93%; }
-.cough_doc li p{ min-height: 135px; }
+@media (min-width: 768px) {
+    .navbar nav ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .navbar nav li a {
+      display: block;
+      padding: 0 10px;
+      font-size: 0.875rem;
+      text-decoration: none;
+      color: #2e2e2e;
+    }
+    .navbar label {
+      display: none;
+    }
+    .navbar nav li:hover a {
+      color: #777777;
+      transition: all 0.3s ease-out;
+    }
+    
 }
 
-@media screen and (max-width: 1023px){
-.header ul, .k1, .logo{ display: none; }
-span.logo{ width: 60px; display: block; margin: 8px 0 5px;}
-.navigation{ float: none; }
-.navigation li{ display: block; text-align: center; margin: 10px 7px; }
-.navigation li a{ font-size: 1.25rem; }
-.header {padding: 5px 30px;}
-.toggle-nav { padding:45px 12px 7px 15px; text-align: left; font-size:1.2rem; transition:color linear 0.15s; color: #fff;display: block;}
-.title{ top:140px; }
-.c-hamburger{position: relative; overflow: hidden;}
-.c-hamburger__line{ width: 25px; height: 4px;position: absolute;right: 15px;background-color: #ef5a5a;transition: transform 0.3s ease, top 0.3s ease 0.4s;
-border-radius: 4px;}
-.c-hamburger__line:nth-child(1){top: 17px;}
-.c-hamburger__line:nth-child(2){top: 25px;}
-.c-hamburger__line:nth-child(3){top: 33px;}
-.is-open .c-hamburger__line{transition: top 0.3s ease, transform 0.3s ease 0.4s;}
-.is-open .c-hamburger__line:nth-child(1) ,.is-open .c-hamburger__line:nth-child(2){top: 23px;transform: rotate(135deg);
-transition: top 0.3s ease, transform 0.4s ease 0.4s;}
-.is-open .c-hamburger__line:nth-child(3){top: 23px;transform: rotate(225deg);}
-.yellow_1{ left: -130px; top: -20px; }
-.kv{ min-height: 870px; }
-.title{ width: 460px; top: 120px; margin-left: -310px; }
-.title .t{ width: 360px; }
-.title p{ text-align: left; margin: 35px 0 10px; }
-.k_mom{ top: 220px; }
-.sub{ top: 100px; right: 100px; width: 150px; }
-.k2{ width: 211px; top: 600px; left: -7px; }
-.qa_c ul{ padding: 0 100px; }
-.qa_c ul li{ width: 27%;margin: 0 10%; }
-.video_c{ border: 15px #e05c5e solid; width: 80%; }
-.v_txt{ width: 80%; }
-.owl-prev{ left: 0; }
-.owl-next{ right: 0; }
-.owl-prev, .owl-next{ background-size: 90% !important; }
-.intro{ width: 90%;}
-.red_2{ left: -600px;}
-.cough ul li.box{ width: 95%; margin: 20px 0 20px 5%;}
-.cough ul li.box:nth-child(2), .cough ul li.box:nth-child(4){ margin: 20px 5% 20px 0; }
-.cough ul li.box:nth-child(3){ margin-top: 20px; }
-.cough_doc{ text-align: center; padding: 30px 20px 0;}
-.cough_doc li{ width: 60%; margin: 50px auto; }
-.cough_doc li p{ text-align: left; }
-.comma{ top: 30px; }
-.cancer-box{ padding: 50px 50px 30px; }
-.cancer-icon{ float: none; margin: 0 auto; }
-.cancer-c{ width: 100%; float: none; margin-top: 20px; }
-.cancer-doc .pic, .food-teeth .pic{ float: none; margin:0 auto; width: 55%;}
-.cancer-doc dl, .food-teeth dl{ width: 100%; float: none; }
-.food-teeth dl dt{ text-align: center;}
-.food-teeth a{ float: none; margin: 0 auto; }
-.more-2{ float: none; margin: 20px auto 0; }
-.food ul li{ width: 46%; margin: 30px 2%; }
-.food-re{padding: 120px 80px 30px 80px;}
-.food-re ul li{ width: 38% !important; margin: 30px 6% !important; }
-.dad{ background: url(../images/dad_bg.jpg) no-repeat right bottom;background-attachment: fixed;}
-.dad-t, .dad-c{ width: 100%; }
-.cancer-doc dl dt{ text-align: center; }
-.dad{ background-attachment: inherit; background-size: cover; }
-.cough_doc li p{ min-height: inherit; }
-.txtjust{ text-align: justify !important; }
+/*---------index---------*/
+/* kv */
+.kv{ background-color: #ffe763; height: 720px; position: relative; font-family: 'Josefin Sans', sans-serif; font-weight: 100; display: flex; justify-items: center; align-items: center;}
+.kv .cath{ right: -100px; left: 0; margin: auto; top: 0;text-align: right; width: 1085px; position: absolute;}
+.kv_con{ width: 1200px; margin: 200px auto 0;}
+.kv_con .cath_svg{ float: left; width: 900px; position: relative;}
+/* intro */
+.index_about{ position: relative;}
+.about_round_1{ position: absolute; top: -100px; right: 0;}
+.about_round_2{ position: absolute; top: 650px; left: 0;}
+.about_round_3{ position: absolute; top: 940px; left: 0;}
+.intro{ display: flex; padding-bottom: 130px; position: relative;}
+.intro_round{ position: absolute; z-index: -1; top: 180px; right: -60px;}
+.profile{ margin-top: -80px; position: relative; width: 430px;}
+.intro_t{ padding: 130px 0 0 180px;}
+.intro_t dt{ font-size: 2.625rem;font-family: Helvetica-Bold;}
+.intro_t dd{ font-size: 0.875rem; line-height: 2;}
+.intro_t dd p{ font-size: 1.125rem; margin: 80px 0 50px;}
+
+/* skill */
+.skill{ padding-bottom: 180px;}
+.skill_content{ padding-top: 30px; }
+.skill_box{ width: 26%; margin: 0 40px; box-shadow: 0 0 15px rgb(0 0 0 / 10%); -webkit-box-shadow: 0 0 15px rgb(0 0 0 / 10%); padding: 30px 20px; text-align: center; background: #fff; float: left; box-sizing: border-box;}
+.skill_box:first-child{ margin-top: 155px; }
+.skill_box:nth-child(3){ margin-top: 75px; }
+.skill_box dt{ width: 114px; margin: 0 auto;}
+.skill_box dd{ font-size: 1.75rem; font-weight: 600 ; margin: 10px 0 25px;}
+.skill_box dd p{ font-size: 1.125rem; margin: 0; font-weight: normal; }
+.tool{ width: 28px; display: inline-block; vertical-align: middle; margin-right: 10px; }
+.btn_about{ background: url(../images/about_btn.png); width: 312px; height: 171px; background-size: 100%; display: block; float: right; margin-top: 25px;}
+.btn_about:hover{ background: url(../images/about_btn_hover.png); background-size: 100%; }
+/* works */
+.index_works{ padding-bottom: 200px; position: relative;}
+.indexw_content{ display: flex; padding-top: 30px; }
+.indexw_box{ width: 50%; margin: 0 50px; }
+.indexw_box:nth-child(even){ margin-top: 150px; }
+figure { overflow: hidden; margin: 0;}
+.hover figure img { -webkit-transform: scale(1); transform: scale(1); -webkit-transition: .4s ease-in-out; transition: .4s ease-in-out;}
+.hover figure:hover img { -webkit-transform: scale(1.1); transform: scale(1.1);}
+.project{ text-align: left; padding: 30px; font-size: 1rem; color: #7c7c7c;}
+.p_title{ font-size: 2.25rem; margin: 0 0 5px 0; color: #2e2e2e; }
+.p_tag{ font-size: 0.875rem; margin-top: 40px; display: block; text-decoration: underline; font-weight: bold;}
+.btn_works{ background: url(../images/works_btn.png); width: 312px; height: 171px; background-size: 100%; display: block; float: left; margin: 25px 0 0 120px;}
+.btn_works:hover{ background: url(../images/works_btn_hover.png); background-size: 100%; }
+.works_round_1{position: absolute; z-index: -1; top: -60px; right: 0;}
+.works_round_2{position: absolute; z-index: -1; top: 840px; left: -30px;}
+/* contact */
+.contact{ padding-bottom: 170px; position: relative; }
+.contact_content{ display: flex; padding-top: 30px; }
+.contact_content figure{ width: 634px; margin: 0 90px 0 -75px; }
+.contact_txt{ font-size: 1.125rem; display: flex; align-items: center; justify-items: center; }
+.mail{ margin: 70px 0 100px;}
+.mail a{ color: #2e2e2e;} 
+.mail a:hover{  color: #2e2e2e; background: #ffe763; } 
+span.line{ height: 1px; width: 100%; display: inline-block; background:#454545; margin-top: 30px; }
+.social span{ display: inline-block;}
+.fb{ width: 14px; margin-right: 30px;}
+.ig{ width: 26px;}
+.contact_round_1{position: absolute; z-index: -1; bottom: 0; right: 0;}
+.contact_round_2{position: absolute; z-index: -1; bottom: 0; left: 0;}
+.contact_round_3{position: absolute; z-index: -1; top: -30px; left: 0;}
+
+/*---------media query---------*/
+
+/*控制首頁banner*/
+@media (max-width:1920px) and (min-width:1600px) {
+#banner .maintxt{ left: 20rem; bottom: 7rem;}
+#banner .mainpic{ width: 800px;}
 }
 
-@media screen and (max-width: 767px){
-.k2{ display: none;}
-.kv{ min-height: 745px; }
-.title{ width: 78%; margin: 100px 0 0 0; position: inherit !important;top: inherit; left: inherit; }
-.title .t{ width: 315px; }
-.title p{ font-size: 1rem; line-height: 28px; margin: 20px 0 0; }
-.title .down{ width: 50px; margin: 20px auto 0;}
-.sub{ right: 20px; top: 65px; width: 120px; }
-.k_mom{ width: 249px; top: 206px; right: -70px; }
-.stitle{ width: 100%; }
-.qa, .top_3{ margin-top: -10px; }
-.qa_c ul{ padding: 0; }
-.qa_c ul li{ width: 28%; margin: 0 9%; }
-.video_c{ border: none; }
-.owl-prev, .owl-next{ background-size: 70% !important; top: 45%; }
-.cancer-c ul li p{ width: 87%; }
-.cancer-doc{ padding: 120px 80px 80px; }
-.food ul li{ width: 90%; float: none; margin: 30px auto; }
-.food-re{ padding: 120px 30px 30px }
-.food-re ul li{ margin: 0 6% !important; float: left;}
-.dad-box ul li p{ width: 91%; }
-.dad{padding: 80px 0 50px;}
-.dad-box{ margin: 20px 0; }
-.stitle, .qa_intro, .icon, .qa_c, .intro, .cough ul li.box, .cough_doc, .cancer-box, .cancer-doc
-, .f1, .f2, .f3, .f4, .food-re, .f1, .f2, .f3, .f4, .qa_c{ visibility: visible !important; }
-.more{margin: 30px auto 0;}
+
+
+@media (max-width: 576px){
 
 }
-@media screen and (max-width: 550px){
-.header{ position: relative; }
-.kv{ min-height: 765px; }
-.title{ width: 75%; margin: 70px 0 0 0; }
-.title .t{ width: 235px; }
-.k_mom{ width: 238px; top: 240px; right: -77px; }
-.contain{ padding: 0 30px; }
-.intro{ width: 100%; margin: 0 auto 40px; }
-.qa_c ul li{ width: 39%; margin: 0 4%; }
-.owl-prev, .owl-next{ background-size: 50% !important;}
-.owl-prev{ background-position: left !important;}
-.owl-next{ background-position: right !important;}
-.cough ul li.box{ padding: 20px; }
-.cough ul li .name{ margin-bottom: 15px; }
-.cough ul li.box ul li p{ width: 85%; }
-.cough_doc{ padding: 30px 0 0; }
-.cough_doc li{ width: 80%; }
-.cancer-box{ padding: 40px 20px 30px; }
-.cancer-icon{ width: 100px; }
-.cancer-c ul li p{ width:84%; }
-.top_2{ margin-top: -20px; }
-.comma-2{ left: 30px; }
-.cancer-doc{ padding: 120px 40px 80px; }
-.cancer-doc .pic{ width: 65%; }
-.dad-box{ padding: 30px; }
-.dad-box ul li p{ width: 88%; }
+
+@media (max-width: 992px){
+
 }
 
-@media screen and (max-width: 414px){
-.k_mom, .red_1, .red_2, .love-1, .love-2{ display: none !important; }
-.kv{ min-height: 770px; }
-.title{ width: 100%; }
-.title .t{ margin: 0; }
-.title p{ margin: 40px 0 0; }
-.title .down{ margin: 20px auto 0; }
-.sub{ top: 75px; right: 30px;width: 110px; }
-.contain{ padding: 0 30px; }
-.icon{ margin: 20px auto 30px; }
-.intro{ font-size: 1rem; line-height: 28px; margin: 0 auto 20px; text-align: left; }
-.stitle{margin: 0 auto 20px;}
-.video_c, .v_txt{ width: 100%; }
-.owl-theme .owl-dots{ padding-top: 20px; }
-.cough ul li.box ul li p{ width: 82%; }
-.cough_doc li{ width: 100%; }
-.cough_doc li{ margin: 30px auto; }
-.comma{ width: 60px; }
-.cancer-box, .food ul li{ width: 100%; }
-.cancer-doc{ padding: 90px 20px 80px; }
-.cancer-c ul li p{ width: 83%; }
-.food-re{ padding: 100px 0 0; }
-.food-re p{ text-align: left;font-size: 1rem; }
-.dad-box{ padding: 20px; }
-.dad-box ul li p{ width: 86%; }
+@media (max-width: 769px){
+.animation{ visibility: visible; }
 }
 
-@media screen and (max-width: 320px){
-.title{ margin: 40px 0 0 0;}
-.sub{ width: 100px; top: 85px; right: 20px; width: 95px; }
-.qa_c ul li p span{ font-size: 1rem; }
-.qa_c ul li p{ font-size: 0.875rem; }
-.cough ul li .name{ font-size: 1.25rem; }
-.cough ul li.box ul li p{ width: 79%; }
-.cancer-doc{ padding: 70px 0 80px; }
-.comma-2{ left: 0; top: 10px; }
-.food-re .t{ font-size: 1.5rem; }
-.dad-box ul li p{ width: 84%; }
-.dad-box .t{ font-size: 1.25rem; line-height: 28px; margin:10px; }
+@media (max-width: 768px){
+.work01-introtxt{ padding: 1.5rem;}
+.work02-introtxt, .work03-introtxt, .work04-introtxt, .work05-introtxt, .work06-introtxt, .work07-introtxt, .work08-introtxt, .work09-introtxt, .work10-introtxt{ padding: 1rem 4rem;}
+#work01-head, #work02-head, #work03-head, #work04-head, #work05-head, #work06-head, #work07-head, #work08-head, #work09-head, #work10-head{ padding: 2.5rem 0 4rem;}
+#work05-head{ padding: 2.5rem 0 2.5rem; }
+#work01-head .maintitle, #work02-head .maintitle, #work03-head .maintitle, #work04-head .maintitle, #work05-head .maintitle, #work06-head .maintitle, #work07-head .maintitle, #work08-head .maintitle, #work09-head .maintitle, #work10-head .maintitle{ font-size: 2rem; line-height: 1.2; padding-top: 6px; letter-spacing: .1rem; width: 100%; margin: 0 auto 1rem;}
+#work03-head .maintitle, #work07-head .maintitle, #work08-head .maintitle, #work10-head .maintitle{ font-size: 26px; letter-spacing: .3rem; margin: 0 auto .8rem;}
+#work03-head .subtitle, #work05-head .subtitle, #work07-head .subtitle, #work08-head .subtitle, #work09-head .subtitle, #work10-head .subtitle{ letter-spacing: .1rem;}
+#work04-head .maintitle{ width: 60%; font-size: 35px; line-height: 1.2; padding-top: 10px;}
+#work01-pic{ margin: -3.5rem 0 2.5rem;}
+.work-introtxt .sub{ font-size: 1.5rem; }
 }
 
+@media (max-width: 576px){
+.intro{ margin: 3.5rem 0 2rem;}
+.profile{ display: none;}
+.work01-intropic{ display: none;}
+.work01-introtxt, .work02-introtxt, .work03-introtxt, .work04-introtxt, .work05-introtxt, .work06-introtxt, .work07-introtxt, .work08-introtxt, .work09-introtxt, .work10-introtxt{ padding: 0 3rem 1rem; margin-top: -1rem; background-color: #fff;}
+.work01-page, .work02-page, .work03-page, .work05-page, .work06-page, .work08-page, .work09-page{ margin: 3rem 0; padding: 0 1.5rem; box-shadow: none;}
+#work01-head .maintitle, #work02-head .maintitle, #work03-head .maintitle, #work04-head .maintitle, #work05-head .maintitle, #work06-head .maintitle, #work07-head .maintitle, #work08-head .maintitle, #work09-head .maintitle, #work10-head .maintitle{border: none;}
+.ikea{ margin: 0 0 2rem;}
+.work05-bg{ padding: 3rem 0 1rem;}
+.sofy{ margin-bottom: 2rem;}
+}
 
 /*----- animation -----*/
 .animated {
@@ -407,6 +235,44 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 	animation-fill-mode: both;
 	-webkit-animation-fill-mode: both;
 }
+
+@keyframes fadeIndown {
+  0% { opacity: 0;transform: translateY(-5%);}
+  100% { opacity: 1;transform: translateY(0);}
+}
+@-webkit-keyframes fadeIndown {
+  0% { opacity: 0;transform: translateY(-5%);}
+  100% { opacity: 1;transform: translateY(0);}
+}
+.fadeIndown{
+	animation-name: fadeIndown;
+	-webkit-animation-name: fadeIndown;
+	visibility: visible !important;
+}
+.fadeIndown_l{
+	animation-name: fadeIndown;
+	-webkit-animation-name: fadeIndown;
+	visibility: visible !important;
+	animation-delay: .8s;
+	-webkit-animation-delay: .8s;
+}
+
+@keyframes fadeIndown2 {
+  0% { opacity: 0;transform: translateY(-1%);}
+  100% { opacity: 1;transform: translateY(0);}
+}
+@-webkit-keyframes fadeIndown2 {
+  0% { opacity: 0;transform: translateY(-1%);}
+  100% { opacity: 1;transform: translateY(0);}
+}
+
+.fadeIndown2{
+	animation-name: fadeIndown2;
+	-webkit-animation-name: fadeIndown2;
+	visibility: visible !important;
+}
+
+
 @keyframes fadeIn {
   0% { opacity: 0;}
   100% { opacity: 1;}
@@ -415,269 +281,16 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
   0% { opacity: 0;}
   100% { opacity: 1;}
 }
-.fadeIn, .fadeIn-1, .fadeIn-2, .fadeIn-3{
+.fadeIn{
 	animation-name: fadeIn;
 	-webkit-animation-name: fadeIn;
-}
-.fadeIn {
-	animation-delay: .3s;
-	-webkit-animation-delay: .3s;
-}
-.fadeIn-1 {
-	animation-delay: .8s;
-	-webkit-animation-delay: .8s;
-}
-.fadeIn-2 {
-	animation-delay: 1s;
-	-webkit-animation-delay: 1s;
-}
-.fadeIn-3 {
-	animation-delay: 1.5s;
-	-webkit-animation-delay: 1.5s;
-}
-
-@keyframes UpDown {
-  0% { transform: translate3d(0, 10%, 0);}
-  50% { transform: translate3d(0, 20%, 0);}
-  100% { transform: translate3d(0, 10%, 0);}
-}
-@-webkit-keyframes UpDown {
-  0% { transform: translate3d(0, 10%, 0);}
-  50% { transform: translate3d(0, 20%, 0);}
-  100% { transform: translate3d(0, 10%, 0);}
-}
-.UpDown-1, .UpDown-2{
-	animation-name: UpDown;
- 	-webkit-animation-name: UpDown;
- 	animation-iteration-count: infinite;
-	-webkit-animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	-webkit-animation-timing-function: linear;
-}
-.UpDown-1{
-	animation-duration: .8s;
-	-webkit-animation-duration: .8s;
-	animation-delay: 2s;
-	-webkit-animation-delay: 2s;
-}
-.UpDown-2{
-	animation-duration: 3s;
-	-webkit-animation-duration: 3s;
-}
-
-@keyframes UpDown2 {
-  0% { transform: translate3d(0, 20%, 0);}
-  50% { transform: translate3d(0, 10%, 0);}
-  100% { transform: translate3d(0, 20%, 0);}
-}
-@-webkit-keyframes UpDown2 {
-  0% { transform: translate3d(0, 20%, 0);}
-  50% { transform: translate3d(0, 10%, 0);}
-  100% { transform: translate3d(0, 20%, 0);}
-}
-.UpDown-3{
-	animation-name: UpDown2;
- 	-webkit-animation-name: UpDown2;
- 	animation-iteration-count: infinite;
-	-webkit-animation-iteration-count: infinite;
-	animation-duration: 3s;
-	-webkit-animation-duration: 3s;
-	animation-timing-function: linear;
-	-webkit-animation-timing-function: linear;
-}
-
-@keyframes UpDown3 {
-  0% { transform: translate3d(0, 14%, 0);}
-  50% { transform: translate3d(0, 10%, 0);}
-  100% { transform: translate3d(0, 14%, 0);}
-}
-@-webkit-keyframes UpDown3 {
-  0% { transform: translate3d(0, 14%, 0);}
-  50% { transform: translate3d(0, 10%, 0);}
-  100% { transform: translate3d(0, 14%, 0);}
-}
-.UpDown-4{
-	animation-name: UpDown3;
- 	-webkit-animation-name: UpDown3;
- 	animation-iteration-count: infinite;
-	-webkit-animation-iteration-count: infinite;
-	animation-duration: 3s;
-	-webkit-animation-duration: 3s;
-	animation-timing-function: linear;
-	-webkit-animation-timing-function: linear;
-}
-
-@keyframes UpDown4 {
-  0% { transform: translate3d(0, 10%, 0);}
-  50% { transform: translate3d(0, 14%, 0);}
-  100% { transform: translate3d(0, 10%, 0);}
-}
-@-webkit-keyframes UpDown4 {
-  0% { transform: translate3d(0, 10%, 0);}
-  50% { transform: translate3d(0, 14%, 0);}
-  100% { transform: translate3d(0, 10%, 0);}
-}
-.UpDown-5{
-	animation-name: UpDown4;
- 	-webkit-animation-name: UpDown4;
- 	animation-iteration-count: infinite;
-	-webkit-animation-iteration-count: infinite;
-	animation-duration: 4s;
-	-webkit-animation-duration: 4s;
-	animation-timing-function: linear;
-	-webkit-animation-timing-function: linear;
-}
-
-@keyframes fadeIndown {
-  0% { opacity: 0;transform: translateY(-8%);}
-  100% { opacity: 1;transform: translateY(0);}
-}
-@-webkit-keyframes fadeIndown {
-  0% { opacity: 0;transform: translateY(-8%);}
-  100% { opacity: 1;transform: translateY(0);}
-}
-.fadeIndown, .fadeIndown-2, .fadeIndown-3, .fadeIndown-4{
-	animation-name: fadeIndown;
-	-webkit-animation-name: fadeIndown;
 	visibility: visible !important;
-	animation-duration: 1.5s;
-	-webkit-animation-duration: 1.5s;
 }
-.fadeIndown-2 {
+.fadeIn_l{
+	animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;
+	visibility: visible !important;
 	animation-delay: .5s;
 	-webkit-animation-delay: .5s;
 }
-.fadeIndown-3 {
-	animation-delay: 1s;
-	-webkit-animation-delay: 1s;
-}
-.fadeIndown-4 {
-	animation-delay: 1.5s;
-	-webkit-animation-delay: 1.5s;
-}
-
-@keyframes fadeInDown {
-  0% { opacity: 0; transform: translate3d(0, -5%, 0);}
-  100% { opacity: 1; transform: none;}
-}
-@-webkit-keyframes fadeInDown {
-  0% { opacity: 0; transform: translate3d(0, -5%, 0);}
-  100% { opacity: 1; transform: none;}
-}
-.fadeInDown-1 {
-	animation-name: fadeInDown;
- 	-webkit-animation-name: fadeInDown;
- 	animation-delay: .8s;
-	-webkit-animation-delay: .8s;
-	visibility:visible !important;
-}
-
-@keyframes fadeIndown2 {
-  0% { opacity: 0;transform: translateY(-2%);}
-  100% { opacity: 1;transform: translateY(0);}
-}
-@-webkit-keyframes fadeIndown2{
-  0% { opacity: 0;transform: translateY(-2%);}
-  100% { opacity: 1;transform: translateY(0);}
-}
-.fadeIndown-5 {
-	animation-name: fadeIndown2;
-	-webkit-animation-name: fadeIndown2;
-	visibility: visible !important;
-	animation-duration: 3s;
-	-webkit-animation-duration: 3s;
-	animation-delay: .5s;
-	-webkit-animation-delay: .5s;
-}
-
-/*----- footer -----*/
-.footer{ padding: 30px 0; }
-#commonhealth_footer {}
-.commonhealth_footer-channel {
-  width: 100%;
-  font-size: 0.9375rem;
-  font-size: 15px;
-  line-height: 1;
-  text-align: center;
-  margin-bottom: 5px;
-}
-.commonhealth_footer-channel ul {
-  margin: 0;
-  padding: 0;
-}
-.commonhealth_footer-channel li {
-  display: inline-block;
-  border-right: 1px solid #ccc;
-  padding-right: 12px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-.commonhealth_footer-channel li a {
-  color: #333;
-  text-decoration: none;
-  position: relative;
-}
-.commonhealth_footer-channel li a:after {
-  content: "";
-  background-color: #094;
-  width: 0;
-  height: 1px;
-  position: absolute;
-  left: 50%;
-  bottom: -3px;
-  display: inline-block;
-  transition: .3s;
-}
-.commonhealth_footer-channel li a:hover:after {
-  width: 100%;
-  left: 0;
-}
-.commonhealth_footer-channel li:last-child {
-  border: none;
-  margin-right: 0;
-  padding-right: 0;
-}
-.commonhealth_footer-channel a:hover {
-  color: #000;
-}
-.commonhealth_footer-copyright {
-  color: #555;
-  font-size: 0.875rem;
-  font-size: 14px;
-  text-align: center;
-}
-.commonhealth_footer-channel br, .commonhealth_footer-copyright br {
-  display: none;
-}
-@media (max-width: 768px) {
-  .commonhealth_footer-channel {
-    font-size: 0.875rem;
-    font-size: 14px;
-  }
-  .commonhealth_footer-channel li {
-    padding-right: 5px;
-    margin-right: 3px;
-  }
-  .commonhealth_footer-copyright {
-    font-size: 0.8125rem;
-    font-size: 13px;
-    line-height: 1.5;
-  }
-  .commonhealth_footer-channel br, .commonhealth_footer-copyright br {
-    display: inline-block;
-  }
-  .commonhealth_footer-channel li:nth-child(4) {
-    border-right: 0;
-    padding-right: 0;
-    margin-right: 0;
-  }
-}
-@media (max-width: 320px) {
-  .commonhealth_footer-channel, .commonhealth_footer-copyright {
-    font-size: 0.75rem;
-    font-size: 12px;
-  }
-}
-
-
 
