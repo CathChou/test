@@ -165,6 +165,7 @@ image-rendering: crisp-edges;
 .info_title{ font-size: 1.5rem; color: #493824; position: relative; font-weight: bold; margin-bottom: 15px; }
 .info_title .q, .info_content .a{ position: absolute; width: 30px; left: -40px; top: 3px; }
 .info_content{ font-size: 1.125rem; color: #493824; font-weight: 500; position: relative;}
+.info_content span{ color: #b00c0c; font-weight: bold; }
 .info_v1{ position: absolute; width: 318px; right: -150px; top: 70px; }
 .info_v2{ position: absolute; width: 263px; bottom: 0; left: -170px; }
 .source{ text-align: right; display: block; margin-bottom: 30px; color: #493824;}
@@ -420,6 +421,7 @@ span.logo{ width: 230px; margin: 10px 0 5px 20px; }
 .school_box .title{ font-size: 1.125rem; }
 .risk_box{ padding: 60px 0 0; }
 .risk_box p{ padding: 0 20px; text-align: left; }
+.school_box p{ text-align: left; }
 .info_share, .source{ text-align: center; }
 .strong p, .link_c{ padding: 0; }
 .strong{ padding: 30px; }
