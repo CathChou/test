@@ -7,23 +7,27 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+	<div id="pageloader">
+		<div class="pageloader-icon"><img src="images/logo_animated.svg"></div>
+	</div>
 	<div class="wrap">
-		<div class="header header-fixed">
-			<div class="navbar">
-				<div class="logo">
-					<img src="images/logo.svg">
-					<p>CATH CHOU</p>
-				</div>
-				<input type="checkbox" id="navbar-toggle" >
-				<label for="navbar-toggle"><i></i></label>
-				<nav class="menu">
-					<ul>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Works</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</nav>        
+		<header id="header">
+			<div class="logo">
+				<img src="images/logo.svg">
+				<p>CATH CHOU</p>
 			</div>
+			<nav class="nav">
+			  <button class="toggle-menu"><span></span></button>
+			</nav>
+		</header>
+		<div id="menu" class="">
+			<nav class="main-nav">
+			  <ul>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Works</a></li>
+				<li><a id="bt_contact">Contact</a></li>
+			  </ul>
+			</nav>
 		</div>
 		<div id="back-top">
 			<a href="#top">
@@ -33,8 +37,8 @@
 		</div>
 		<div class="kv">
 			<div class="cath animated fadeIn"><img src="images/cath.png"></div>
-			<div class="kv_con">
-				<div class="cath_svg"><img src="images/cathchou.svg"></div>
+			<div class="kv_con animated fadeIn">
+				<div class="cath_svg animated pulse"><img src="images/cathchou.svg"></div>
 			</div>	
 		</div>
 		<div class="index_about">
@@ -43,9 +47,9 @@
 			<div class="about_round_3"><img src="images/about_round_3.png"></div>
 			<div class="container">
 				<div class="intro">
-					<div class="intro_round"><img src="images/intro_round.png"></div>
+					<div data-stellar-ratio="1.5" class="intro_round"><img src="images/intro_round.png"></div>
 					<div class="profile"><img src="images/profile.jpg"></div>
-					<dl class="intro_t">
+					<dl class="intro_t animated">
 						<dt>Who Am I ?</dt>
 						<dd>
 							<p>我叫周維潔，一名網頁設計師</p>
@@ -53,7 +57,7 @@
 						</dd>
 					</dl>
 				</div>
-				<div class="skill">
+				<div class="skill animated">
 					<h2 class="title">
 						<span class="sub"><img src="images/sub.png"></span>
 						What Can I Do? 
@@ -82,21 +86,21 @@
 						</div>
 						<div class="clear"></div>
 					</div>
-					<a href="#" class="btn_about"></a>
+					<a href="#" class="btn_about animated UpDown"></a>
 					<div class="clear"></div>
 				</div>
 			</div>
 		</div>
 
 		<div class="index_works">
-			<div class="works_round_1"><img src="images/works_round_1.png"></div>
-			<div class="works_round_2"><img src="images/works_round_2.png"></div>
+			<div data-stellar-ratio="2" class="works_round_1"><img src="images/works_round_1.png"></div>
+			<div data-stellar-ratio="1.5" class="works_round_2"><img src="images/works_round_2.png"></div>
 			<div class="container_big">
-				<h2 class="title">
+				<h2 class="title animated">
 					<span class="sub"><img src="images/sub.png"></span>
 					Works 
 				</h2>
-				<div class="indexw_content">
+				<div class="indexw_content animated">
 					<div class="indexw_box hover animated animation">
 						<div>
 							<a href="work01.html">
@@ -122,7 +126,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="indexw_content">
+				<div class="indexw_content animated">
 					<div class="indexw_box hover animated animation">
 						<div>
 							<a href="work01.html">
@@ -148,7 +152,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="indexw_content">
+				<div class="indexw_content animated">
 					<div class="indexw_box hover animated animation">
 						<div>
 							<a href="work01.html">
@@ -174,21 +178,21 @@
 						</div>
 					</div>
 				</div>
-				<a href="#" class="btn_works"></a>
+				<a href="#" class="btn_works animated UpDown"></a>
 				<div class="clear"></div>
 			</div>
 		</div>
 
-		<div class="contact">
+		<div id="sectionContact" class="contact">
 			<div class="contact_round_1"><img src="images/contact_round_1.png"></div>
 			<div class="contact_round_2"><img src="images/contact_round_2.png"></div>
 			<div class="contact_round_3"><img src="images/contact_round_3.png"></div>
 			<div class="container">
-				<h2 class="title">
+				<h2 class="title animated">
 					<span class="sub"><img src="images/sub.png"></span>
 					Contact 
 				</h2>
-				<div class="contact_content">
+				<div class="contact_content animated">
 					<figure><img src="images/contact.png"></figure>
 					<div class="contact_txt">
 						<div>
@@ -203,31 +207,30 @@
 				</div>
 			</div>
 		</div>
-
-		
-		
-		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
 	</div>
-	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery-2.0.2.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
 	<script src="js/action.js"></script>
 	<script>
 		$(window).scroll(function() {
-			$('.animation').each(function(){
+			$('.intro_t, .skill, .indexw_content, .title, .contact_content').each(function(){
 				var imagePos = $(this).offset().top;
 
-				var topOfWindow = $(window).scrollTop();
-				if (imagePos < topOfWindow+750) {
+				var topOfWindow = $(window).scrollTop() + $(window).height() * 0.8
+				if (imagePos < topOfWindow) {
 				$(this).addClass("fadeIndown");
 				}
-				var ww = $(window).width();
-				if (ww < 769) {
-				$(this).removeClass("fadeIndown");
-				}
+				
+			});
+		});
+		$(document).ready(function () {
+			$.stellar({
+			horizontalScrolling:false,
+			responsive: true,
+			hideDistantElements:false
 			});
 		});
 	</script>
-	
 </body>
 </html>
 
