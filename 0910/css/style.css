@@ -387,8 +387,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 }
 
 @media screen and (max-width: 550px){
-.header{ position: relative; }
-.kv{ min-height: 580px; }
+.kv{ min-height: 680px; padding-top: 80px; }
 .contain{ padding: 0 30px; }
 .title{ width: 90%; margin: 0 auto; }
 .p_contain{ width: 100%; }
@@ -408,7 +407,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 @media screen and (max-width: 414px){
 .link p span, .info_v2{ display: none; }
 span.logo{ width: 230px; margin: 10px 0 5px 20px; }
-.kv{ padding-top: 40px; min-height: 550px;  }
+.kv{ padding-top: 90px; min-height: 590px;  }
 .c-hamburger__line{ right: 20px; }
 .contain{ padding: 0 30px; }
 .stitle{margin: 0 auto 20px; width: 90%;}
