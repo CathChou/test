@@ -319,8 +319,8 @@ let qa = new Vue({
           facebook: 'click-share-fb-quiz-score8to10',
         },
         shareLink:{
-          line: 'https://social-plugins.line.me/lineit/share?url=https://event.commonhealth.com.tw/2021flu/qa-result-a.html',
-          facebook: 'https://www.facebook.com/sharer/sharer.php?u=https://event.commonhealth.com.tw/2021flu/qa-result-a.html'
+          line: 'https://social-plugins.line.me/lineit/share?url=https://event.commonhealth.com.tw/flu/qa-result-a.html',
+          facebook: 'https://www.facebook.com/sharer/sharer.php?u=https://event.commonhealth.com.tw/flu/qa-result-a.html'
         }
       },
       {
@@ -333,8 +333,8 @@ let qa = new Vue({
           facebook: 'click-share-fb-quiz-score5to7',
         },
         shareLink:{
-          line: 'https://social-plugins.line.me/lineit/share?url=https://event.commonhealth.com.tw/2021flu/qa-result-b.html',
-          facebook: 'https://www.facebook.com/sharer/sharer.php?u=https://event.commonhealth.com.tw/2021flu/qa-result-b.html'
+          line: 'https://social-plugins.line.me/lineit/share?url=https://event.commonhealth.com.tw/flu/qa-result-b.html',
+          facebook: 'https://www.facebook.com/sharer/sharer.php?u=https://event.commonhealth.com.tw/flu/qa-result-b.html'
         }
       },
       {
@@ -347,8 +347,8 @@ let qa = new Vue({
           facebook: 'click-share-fb-quiz-score0to4',
         },
         shareLink:{
-          line: 'https://social-plugins.line.me/lineit/share?url=https://event.commonhealth.com.tw/2021flu/qa-result-c.html',
-          facebook: 'https://www.facebook.com/sharer/sharer.php?u=https://event.commonhealth.com.tw/2021flu/qa-result-c.html'
+          line: 'https://social-plugins.line.me/lineit/share?url=https://event.commonhealth.com.tw/flu/qa-result-c.html',
+          facebook: 'https://www.facebook.com/sharer/sharer.php?u=https://event.commonhealth.com.tw/flu/qa-result-c.html'
         }
       },
     ],

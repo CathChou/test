@@ -198,6 +198,7 @@ image-rendering: crisp-edges;
 .link p span{ width: 25px; background: #493824; height: 1px; display: inline-block; vertical-align: middle;margin-bottom: 5px; }
 .link p span.left{ margin-right: 15px;}
 .link p span.right{ margin-left: 15px;}
+.link p span.code{ width: inherit; background: inherit; display: block; font-size: 0.875rem; height: inherit;}
 
 .page_result_c{ padding:100px 0 60px;background: url(../images/bg_quiz.jpg) repeat; }
 .page_result a{ width: 29%; }
