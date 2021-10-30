@@ -126,10 +126,10 @@ ul.tabs li a:hover, ul.tabs li a.active { background-color: #484848;color: #fff;
 .product_intro ul{ margin-top: 20px; }
 .product_intro li{ font-size: 1rem; list-style: disc; margin: 5px 0 0 25px; }
 .slide_P p{ font-size: 0.875rem; }
-.recruiting{ text-align: center; padding: 100px 80px; position: relative; background-color: #F2F2F2; background-image: url(../images/recruiting.jpg); background-repeat: no-repeat; background-position: left; }
+.recruiting{ text-align: center; padding: 50px 80px; position: relative; background-color: #F2F2F2; background-image: url(../images/recruiting.jpg); background-repeat: no-repeat; background-position: left; }
 .recruiting_content{ width: 700px; margin: 0 auto; text-align: left;}
-.recruiting .opening{ color: #2F85CB; font-weight: bold; margin: 35px 0 10px; }
-.recruiting_content ul{ padding-bottom: 30px; }
+.recruiting .opening{ color: #2F85CB; font-weight: bold; margin: 25px 0 10px; }
+.recruiting_content ul{ padding-bottom: 20px; }
 .recruiting_content li{ border-bottom: 1px solid #D5D5D5;padding-bottom: 20px; }
 
 /*----- page -----*/
