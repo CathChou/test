@@ -56,42 +56,42 @@ $(function () {
 //改字內容
 var quiz = [
 	{
-		"question": "1. 睡眠困難，譬如難以入睡、易睡或早醒。",
+		"question": "1. 睡眠困難，譬如難以入睡、易睡或早醒",
 		"img": "<div class='illustration illustration-1'><img src='images/q1.png' alt=''><img src='images/q1-move.png' class='img-move' alt=''></div>",
 		"choices": ["0", "1", "2", "3", "4"],
-		"comment": "<span>仔細回想，過去一週內，這些問題帶來的心理困擾程度，</span><span>然後依輕重給0~4分。</span>",
+		"comment": "<span>仔細回想最近一週（包含今天），對於這個問題的困擾程度：</span><span>完全沒有給0分、輕微給1分、中等程度給2分、厲害給3分、非常厲害給4分</span>",
 		"gtm": ""
 	},
 	{
-		"question": "2. 長板凳、聽診器，假字假自假字假字。",
+		"question": "2. 感覺緊張不安",
 		"img": "<div class='illustration illustration-2'><img src='images/q2.png' alt=''><img src='images/q2-move.png' class='img-move' alt=''></div>",
 		"choices": ["0", "1", "2", "3", "4"],
-		"comment": "<span>仔細回想，過去一週內，這些問題帶來的心理困擾程度，</span><span>然後依輕重給0~4分。</span>",
+		"comment": "",
 		"gtm": ""
 	},
 	{
-		"question": "3. 生氣的面孔、揉過的紙張。",
+		"question": "3. 覺得容易苦惱或動怒",
 		"img": "<div class='illustration illustration-3'><img src='images/q3.png' alt=''><img src='images/q3-move.png' class='img-move' alt=''></div>",
 		"choices": ["0", "1", "2", "3", "4"],
-		"comment": "<span>仔細回想，過去一週內，這些問題帶來的心理困擾程度，</span><span>然後依輕重給0~4分。</span>",
+		"comment": "",
 		"gtm": ""
 	},
 	{
-		"question": "4. 臉埋在雙手中、烏雲。",
+		"question": "4. 感覺憂鬱、心情低落",
 		"img": "<div class='illustration illustration-4'><img src='images/q4.png' alt=''><img src='images/q4-move.png' class='img-move' alt=''></div>",
 		"choices": ["0", "1", "2", "3", "4"],
-		"comment": "<span>仔細回想，過去一週內，這些問題帶來的心理困擾程度，</span><span>然後依輕重給0~4分。</span>",
+		"comment": "",
 		"gtm": ""
 	},
 	{
-		"question": "5. 摔破的鏡子。",
+		"question": "5. 覺得比不上別人",
 		"img": "<div class='illustration illustration-5'><img src='images/q5.png' alt=''><img src='images/q5-move.png' class='img-move' alt=''></div>",
 		"choices": ["0", "1", "2", "3", "4"],
-		"comment": "<span>仔細回想，過去一週內，這些問題帶來的心理困擾程度，</span><span>然後依輕重給0~4分。</span>",
+		"comment": "",
 		"gtm": ""
 	},
 	{
-		"question": "6. 最容易導致你情緒低落的因素是什麼呢？<br>請告訴我們。",
+		"question": "6. 最容易導致你情緒低落的因素是什麼呢？<br>請告訴我們<span>（單選題）</span>",
 		"img": "<div class='illustration illustration-6'><img src='images/q6.png' alt=''></div>",
 		"choices": ["工作或學業壓力", "經濟壓力", "健康因素", "情感問題", "家庭關係", "人際關係"],
 		"comment": "<span>您知道全球有超過4.5億人們曾經歷過心理健康的問題嗎？</span><span>您關心過自己與所愛的人的心理健康嗎？讓我們一起點亮心光</span><span class='logo'><img src='images/logo.png' alt=''></span>",
