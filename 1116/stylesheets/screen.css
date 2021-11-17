@@ -219,6 +219,10 @@ h3 span{
 .op-block .op-text p .logo, span.logo {
   width: 90px;
   display: inline-block;
+  margin: 0 5px;
+}
+span.logo-jo{
+  width: 120px !important;
 }
 
 .op-block .op-text p .logo img, span.logo img{
@@ -921,7 +925,6 @@ h3 span{
 }
 span.logo{ 
   width: 80px;
-  margin-top: 10px;
 }
 
 @media (max-width: 768px) {
@@ -1003,7 +1006,7 @@ span.logo{
   background: #F8F1DF;
   border: 4px #333333 solid;
   text-align: center;
-  width: 75%;
+  width: 100%;
 }
 @media (max-width: 768px) {
   .result-block .txt-block .brand{
@@ -1014,8 +1017,13 @@ span.logo{
 .result-block .txt-block .brand .b-inside{
   background: #F8F1DF;
   border: 1px #333333 solid;
-  padding: 15px 0 5px;
+  padding: 10px 0 5px;
   margin: 6px;
+}
+
+.result-block .txt-block .brand .b-inside p{
+  font-size: 17px;
+  margin-bottom: 5px;
 }
 
 .result-block .txt-block .brand .b-inside .hashtag{
