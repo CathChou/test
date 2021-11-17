@@ -139,6 +139,13 @@ h3 span{
   -webkit-clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0% 100%);
   clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0% 100%);
 }
+
+@media (max-width: 768px) {
+  .op-block .op-img .grid-item .grid-item3 {
+    bottom: 10px;
+  }
+}
+
 .op-block .op-img .grid-item .grid-item3 .inside{
   background-color: #a98d7a;
   position: absolute;
@@ -177,8 +184,8 @@ h3 span{
 
 @media (max-width: 768px) {
   .op-block .op-img .grid-item .item-img {
-    bottom: -20%;
-    left: -3%;
+    bottom: -5%;
+    left: 0;
     z-index: 1;
   }
 }
@@ -857,6 +864,16 @@ span.logo-jo{
 .txt-block label.six {
   width: inherit;
   display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .txt-block label.six{
+    width: 50%;
+    text-align: center;
+  }
+  .txt-block label span.six{
+    padding: 7px 17px !important;
+  }
 }
 
 .txt-block label.six::before {
