@@ -56,35 +56,35 @@ $(function () {
 //改字內容
 var quiz = [
 	{
-		"question": "1. 睡眠困難，譬如難以入睡、易睡或早醒",
+		"question": "1. 睡眠困難，譬如難以入睡、易睡或早醒。",
 		"img": "<div class='illustration illustration-1'><img src='images/q1.png' alt=''><img src='images/q1-move.png' class='img-move' alt=''></div>",
 		"choices": ["0", "1", "2", "3", "4"],
 		"comment": "<span>仔細回想，過去一週內，這些問題帶來的心理困擾程度，</span><span>然後依輕重給0~4分。</span>",
 		"gtm": ""
 	},
 	{
-		"question": "2. 感覺緊張不安",
+		"question": "2. 長板凳、聽診器，假字假自假字假字。",
 		"img": "<div class='illustration illustration-2'><img src='images/q2.png' alt=''><img src='images/q2-move.png' class='img-move' alt=''></div>",
 		"choices": ["0", "1", "2", "3", "4"],
 		"comment": "<span>仔細回想，過去一週內，這些問題帶來的心理困擾程度，</span><span>然後依輕重給0~4分。</span>",
 		"gtm": ""
 	},
 	{
-		"question": "3. 覺得容易苦惱或動怒",
+		"question": "3. 生氣的面孔、揉過的紙張。",
 		"img": "<div class='illustration illustration-3'><img src='images/q3.png' alt=''><img src='images/q3-move.png' class='img-move' alt=''></div>",
 		"choices": ["0", "1", "2", "3", "4"],
 		"comment": "<span>仔細回想，過去一週內，這些問題帶來的心理困擾程度，</span><span>然後依輕重給0~4分。</span>",
 		"gtm": ""
 	},
 	{
-		"question": "4. 感覺憂鬱、心情低落",
+		"question": "4. 臉埋在雙手中、烏雲。",
 		"img": "<div class='illustration illustration-4'><img src='images/q4.png' alt=''><img src='images/q4-move.png' class='img-move' alt=''></div>",
 		"choices": ["0", "1", "2", "3", "4"],
 		"comment": "<span>仔細回想，過去一週內，這些問題帶來的心理困擾程度，</span><span>然後依輕重給0~4分。</span>",
 		"gtm": ""
 	},
 	{
-		"question": "5. 覺得比不上別人",
+		"question": "5. 摔破的鏡子。",
 		"img": "<div class='illustration illustration-5'><img src='images/q5.png' alt=''><img src='images/q5-move.png' class='img-move' alt=''></div>",
 		"choices": ["0", "1", "2", "3", "4"],
 		"comment": "<span>仔細回想，過去一週內，這些問題帶來的心理困擾程度，</span><span>然後依輕重給0~4分。</span>",
@@ -92,10 +92,10 @@ var quiz = [
 	},
 	{
 		"question": "6. 最容易導致你情緒低落的因素是什麼呢？<br>請告訴我們。",
-		"img": "<div class='illustration illustration-6'><img src='images/q6.png' alt=''><img src='images/q6-move.png' class='img-move' alt=''></div>",
+		"img": "<div class='illustration illustration-6'><img src='images/q6.png' alt=''></div>",
 		"choices": ["工作或學業壓力", "經濟壓力", "健康因素", "情感問題", "家庭關係", "人際關係"],
-		"comment": "資料來源：全國自殺防治中心「心情溫度計」",
-		"gtm": "data-category='web_web' data-action='2021mental-health' data-label='section-test-2'"
+		"comment": "<span>您知道全球有超過4.5億人們曾經歷過心理健康的問題嗎？</span><span>您關心過自己與所愛的人的心理健康嗎？讓我們一起點亮心光</span><span class='logo'><img src='images/logo.png' alt=''></span>",
+		"gtm": ""
 	}
 ]
 var a1 = 0;
@@ -110,14 +110,15 @@ var gameHtml = "";
 
 $(document).ready(function () {
 	for (i = 0; i < quiz.length; i++) {
+	var qNumber = i + 1
 	if(i===quiz.length-1){
-		gameHtml += " <section class='question-block' id='osq" + i + "'> <div class='container'> <div class='row justify-content-md-center'> <div class='img-block col-9 col-md-5'>" + quiz[i]['img'] + "</div> <div class='txt-block col-12 col-md-6 offset-md-1'> <div class='schedule-range'> <div class='schedule-line schedule-line--" + (i + 1) + "'></div> </div> <h3 id='q" + i + "'>" + quiz[i]['question'] + "</h3> <div class='select-block'> <div class='answer forsix'> <div class='d-flex flex-row-reverse align'> <input type='radio' id='star-" + i + "--6' name='rate-" + i + "' /> <label " + quiz[i]['gtm'] + " for='star-" + i + "--6' class='six choice star-" + i + "--6' value='5'> <span class='six'>" + quiz[i]['choices'][5] + "</span> </label> <input type='radio' id='star-" + i + "--5' name='rate-" + i + "' /> <label " + quiz[i]['gtm'] + " for='star-" + i + "--5' class='six choice star-" + i + "--5' value='4'> <span class='six'>" + quiz[i]['choices'][4] + "</span> </label> <input type='radio' id='star-" + i + "--4' name='rate-" + i + "' /> <label " + quiz[i]['gtm'] + " for='star-" + i + "--4' class='six choice star-" + i + "--4' value='3'> <span class='six'>" + quiz[i]['choices'][3] + "</span> </label> <input type='radio' id='star-" + i + "--3' name='rate-" + i + "' /> <label " + quiz[i]['gtm'] + " for='star-" + i + "--3' class='six choice star-" + i + "--3' value='2'> <span class='six'>" + quiz[i]['choices'][2] + "</span> </label> <input type='radio' id='star-" + i + "--2' name='rate-" + i + "' /> <label " + quiz[i]['gtm'] + " for='star-" + i + "--2' class='six choice star-" + i + "--2' value='1'> <span class='six'>" + quiz[i]['choices'][1] + "</span> </label> <input type='radio' id='star-" + i + "--1' name='rate-" + i + "' /> <label " + quiz[i]['gtm'] + " for='star-" + i + "--1' class='six choice star-" + i + "--1' value='0'> <span class='six'>" + quiz[i]['choices'][0] + "</span> </label> </div> </div>";
+		gameHtml += " <section class='question-block' id='osq" + i + "'> <div class='container'> <div class='row justify-content-md-center'> <div class='img-block col-9 col-md-5'>" + quiz[i]['img'] + "</div> <div class='txt-block col-12 col-md-6 offset-md-1'> <div class='schedule-range'> <div class='schedule-line schedule-line--" + (i + 1) + "'></div> </div> <h3 id='q" + i + "'>" + quiz[i]['question'] + "</h3> <div class='select-block'> <div class='answer forsix'> <div class='d-flex flex-row-reverse align'> <input type='radio' id='star-" + i + "--6' name='rate-" + i + "' /> <label data-category='web_web' data-action='2021mental-health' data-label='event-2021kindnessday-click-test-Q"+ qNumber +"-social' for='star-" + i + "--6' class='six choice star-" + i + "--6' value='5'> <span class='six'>" + quiz[i]['choices'][5] + "</span> </label> <input type='radio' id='star-" + i + "--5' name='rate-" + i + "' /> <label data-category='web_web' data-action='2021mental-health' data-label='event-2021kindnessday-click-test-Q"+ qNumber +"-family' for='star-" + i + "--5' class='six choice star-" + i + "--5' value='4'> <span class='six'>" + quiz[i]['choices'][4] + "</span> </label> <input type='radio' id='star-" + i + "--4' name='rate-" + i + "' /> <label data-category='web_web' data-action='2021mental-health' data-label='event-2021kindnessday-click-test-Q"+ qNumber +"-relationship' for='star-" + i + "--4' class='six choice star-" + i + "--4' value='3'> <span class='six'>" + quiz[i]['choices'][3] + "</span> </label> <input type='radio' id='star-" + i + "--3' name='rate-" + i + "' /> <label data-category='web_web' data-action='2021mental-health' data-label='event-2021kindnessday-click-test-Q"+ qNumber +"-healthy' for='star-" + i + "--3' class='six choice star-" + i + "--3' value='2'> <span class='six'>" + quiz[i]['choices'][2] + "</span> </label> <input type='radio' id='star-" + i + "--2' name='rate-" + i + "' /> <label data-category='web_web' data-action='2021mental-health' data-label='event-2021kindnessday-click-test-Q"+ qNumber +"-economicpressure' for='star-" + i + "--2' class='six choice star-" + i + "--2' value='1'> <span class='six'>" + quiz[i]['choices'][1] + "</span> </label> <input type='radio' id='star-" + i + "--1' name='rate-" + i + "' /> <label data-category='web_web' data-action='2021mental-health' data-label='event-2021kindnessday-click-test-Q"+ qNumber +"-workorschool' for='star-" + i + "--1' class='six choice star-" + i + "--1' value='0'> <span class='six'>" + quiz[i]['choices'][0] + "</span> </label> </div> </div>";
 		if ( quiz[i]['comment'] !== "" ) {
 			gameHtml += "<h5 class='comment'>" + quiz[i]['comment'] + "</h5>";
 		}
 		gameHtml += "</div></div></div></div></section>"
 	} else{
-		gameHtml += "<section class='question-block' id='osq" + i + "'><div class='container'><div class='row justify-content-md-center'><div class='img-block col-9 col-md-5'>" + quiz[i]['img'] + "</div><div class='txt-block col-12 col-md-6 offset-md-1'><div class='schedule-range'><div class='schedule-line schedule-line--" + (i + 1) + "'></div></div><h3 id='q" + i + "'>" + quiz[i]['question'] + "</h3><div class='select-block'><div class='d-flex justify-content-between'><div class='h5 mx-1'>輕</div><div class='h5 mx-1'>重</div></div><div class='answer'><div class='d-flex flex-row-reverse justify-content-between rate'><input type='radio' id='star-" + i + "--5' name='rate-" + i + "' /><label " + quiz[i]['gtm'] + " for='star-" + i + "--5' class='choice star-" + i + "--5' value='4'><span>" + quiz[i]['choices'][4] + "</span></label><input type='radio' id='star-" + i + "--4' name='rate-" + i + "' /><label " + quiz[i]['gtm'] + " for='star-" + i + "--4' class='choice star-" + i + "--4' value='3'><span>" + quiz[i]['choices'][3] + "</span></label><input type='radio' id='star-" + i + "--3' name='rate-" + i + "' /><label " + quiz[i]['gtm'] + " for='star-" + i + "--3' class='choice star-" + i + "--3' value='2'><span>" + quiz[i]['choices'][2] + "</span></label><input type='radio' id='star-" + i + "--2' name='rate-" + i + "' /><label " + quiz[i]['gtm'] + " for='star-" + i + "--2' class='choice star-" + i + "--2' value='1'><span>" + quiz[i]['choices'][1] + "</span></label><input type='radio' id='star-" + i + "--1' name='rate-" + i + "' /><label " + quiz[i]['gtm'] + " for='star-" + i + "--1' class='choice star-" + i + "--1' value='0'><span>" + quiz[i]['choices'][0] + "</span></label></div></div>";
+		gameHtml += "<section class='question-block' id='osq" + i + "'><div class='container'><div class='row justify-content-md-center'><div class='img-block col-9 col-md-5'>" + quiz[i]['img'] + "</div><div class='txt-block col-12 col-md-6 offset-md-1'><div class='schedule-range'><div class='schedule-line schedule-line--" + (i + 1) + "'></div></div><h3 id='q" + i + "'>" + quiz[i]['question'] + "</h3><div class='select-block'><div class='d-flex justify-content-between'><div class='h5 mx-1'>輕</div><div class='h5 mx-1'>重</div></div><div class='answer'><div class='d-flex flex-row-reverse justify-content-between rate'><input type='radio' id='star-" + i + "--5' name='rate-" + i + "' /><label data-category='web_web' data-action='2021mental-health' data-label='event-2021kindnessday-click-test-Q"+ qNumber +"-score4' for='star-" + i + "--5' class='choice star-" + i + "--5' value='4'><span>" + quiz[i]['choices'][4] + "</span></label><input type='radio' id='star-" + i + "--4' name='rate-" + i + "' /><label data-category='web_web' data-action='2021mental-health' data-label='event-2021kindnessday-click-test-Q"+ qNumber +"-score3' for='star-" + i + "--4' class='choice star-" + i + "--4' value='3'><span>" + quiz[i]['choices'][3] + "</span></label><input type='radio' id='star-" + i + "--3' name='rate-" + i + "' /><label data-category='web_web' data-action='2021mental-health' data-label='event-2021kindnessday-click-test-Q"+ qNumber +"-score2' for='star-" + i + "--3' class='choice star-" + i + "--3' value='2'><span>" + quiz[i]['choices'][2] + "</span></label><input type='radio' id='star-" + i + "--2' name='rate-" + i + "' /><label data-category='web_web' data-action='2021mental-health' data-label='event-2021kindnessday-click-test-Q"+ qNumber +"-score1' for='star-" + i + "--2' class='choice star-" + i + "--2' value='1'><span>" + quiz[i]['choices'][1] + "</span></label><input type='radio' id='star-" + i + "--1' name='rate-" + i + "' /><label data-category='web_web' data-action='2021mental-health' data-label='event-2021kindnessday-click-test-Q"+ qNumber +"-score0' for='star-" + i + "--1' class='choice star-" + i + "--1' value='0'><span>" + quiz[i]['choices'][0] + "</span></label></div></div>";
 		if ( quiz[i]['comment'] !== "" ) {
 			gameHtml += "<h5 class='comment'>" + quiz[i]['comment'] + "</h5>";
 		}
@@ -144,6 +145,19 @@ $(document).ready(function () {
 				$(this).siblings('.selected').removeClass('selected');
 				checkanswer(answer);
 			});
+		$(".selectChoice").bind("change",
+		function (event) {
+			var answer = $(this).attr("value");
+			var nextQuestion = $(this).closest('.question-block').next();
+			// console.log(answer);
+
+			if (nextQuestion.length !== 0) {
+			$('html, body').animate({
+			scrollTop: nextQuestion.offset().top
+			}, 1000);
+			}
+			checkanswer(answer);
+		});
 	}
 	function checkanswer(answer) {
 		userSelect[question] = answer;
