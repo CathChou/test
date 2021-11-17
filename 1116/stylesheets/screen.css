@@ -132,20 +132,22 @@ h3 span{
 }
 
 .op-block .op-img .grid-item .grid-item3 {
+  position: relative;
+  bottom: 24px;
   background-color: #818181;
   height: 100%;
-  -webkit-clip-path: polygon(0 0, 100% 12%, 100% 100%, 0 100%);
-  clip-path: polygon(0 0, 100% 12%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0% 100%);
 }
 .op-block .op-img .grid-item .grid-item3 .inside{
-  background-color: #3B3531;
+  background-color: #a98d7a;
   position: absolute;
   top: 2px;
   left: 2px;
   right: 2px;
   bottom: 2px;
-  -webkit-clip-path: polygon(0 0, 100% 12%, 100% 100%, 0 100%);
-  clip-path: polygon(0 0, 100% 12%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0% 100%);
 }
 
 .op-block .op-img .grid-item-s .grid-item4 {
@@ -167,7 +169,7 @@ h3 span{
 
 .op-block .op-img .grid-item .item-img {
   position: absolute;
-  bottom: -18%;
+  bottom: -15%;
   right: -5%;
   width: 95%;
   z-index: 1;
@@ -1001,12 +1003,18 @@ span.logo{
   background: #F8F1DF;
   border: 4px #333333 solid;
   text-align: center;
+  width: 75%;
+}
+@media (max-width: 768px) {
+  .result-block .txt-block .brand{
+    width: 100%;
+  }
 }
 
 .result-block .txt-block .brand .b-inside{
   background: #F8F1DF;
   border: 1px #333333 solid;
-  padding: 20px 0;
+  padding: 15px 0 5px;
   margin: 6px;
 }
 

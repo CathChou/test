@@ -94,7 +94,7 @@ var quiz = [
 		"question": "6. 最容易導致你情緒低落的因素是什麼呢？<br>請告訴我們<span>（單選題）</span>",
 		"img": "<div class='illustration illustration-6'><img src='images/q6.png' alt=''></div>",
 		"choices": ["工作或學業壓力", "經濟壓力", "健康因素", "情感問題", "家庭關係", "人際關係"],
-		"comment": "<span>您知道全球有超過4.5億人們曾經歷過心理健康的問題嗎？</span><span>您關心過自己與所愛的人的心理健康嗎？讓我們一起點亮心光</span><span class='logo'><img src='images/logo.png' alt=''></span>",
+		"comment": "<span>您知道全球有超過4.5億人們曾經歷過心理健康的問題嗎？</span><span>您關心過自己與所愛的人的心理健康嗎？讓我們一起點亮心光</span>",
 		"gtm": ""
 	}
 ]
