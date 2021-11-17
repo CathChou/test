@@ -927,6 +927,12 @@ span.logo{
     margin-top: 25px;
     font-size: 15px;
   }
+  span.logo{
+    display: inline-block !important;
+  }
+  .txt-block .comment .logo{
+    display: block !important;
+  }
 }
 
 .txt-block .comment span {
