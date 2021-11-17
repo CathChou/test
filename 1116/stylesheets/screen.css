@@ -571,6 +571,10 @@ span.logo-jo{
     height: 34vh;
     width: 95%;
   }
+  .op-block .op-img .grid-item-s {
+    height: 23vh;
+    width: 95%;
+  }
   .op-block .illustration {
     top: 0%;
   }
@@ -1024,11 +1028,14 @@ span.logo{
 .result-block .txt-block .brand .b-inside p{
   font-size: 17px;
   margin-bottom: 5px;
+  line-height: 1.5;
 }
 
 .result-block .txt-block .brand .b-inside .hashtag{
   font-size: 16px;
   color: #91827E;
+  display: block;
+  padding-bottom: 5px;
 }
 .result-block .txt-block .brand .b-inside .pa{
   font-size: 14px;
