@@ -87,14 +87,14 @@ var quiz = [
 		"question": "5. 覺得比不上別人",
 		"img": "<div class='illustration illustration-5'><img src='images/q5.png' alt=''><img src='images/q5-move.png' class='img-move' alt=''></div>",
 		"choices": ["0", "1", "2", "3", "4"],
-		"comment": "",
+		"comment": "<span>資料來源：華人心理治療基金會「心情溫度計」</span>",
 		"gtm": ""
 	},
 	{
 		"question": "6. 最容易導致你情緒低落的因素是什麼呢？<br>請告訴我們<span>（單選題）</span>",
 		"img": "<div class='illustration illustration-6'><img src='images/q6.png' alt=''></div>",
 		"choices": ["工作或學業壓力", "經濟壓力", "健康因素", "情感問題", "家庭關係", "人際關係"],
-		"comment": "<span>您知道全球有超過4.5億人們曾經歷過心理健康的問題嗎？</span><span>您關心過自己與所愛的人的心理健康嗎？讓我們一起點亮心光</span><br /><span>資料來源：全國自殺防治中心「心情溫度計」</span>",
+		"comment": "<span>您知道全球有超過4.5億人們曾經歷過心理健康的問題嗎？</span><span>您關心過自己與所愛的人的心理健康嗎？讓我們一起點亮心光</span>",
 		"gtm": ""
 	}
 ]
