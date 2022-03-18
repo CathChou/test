@@ -90,6 +90,9 @@ image-rendering: crisp-edges;
 
 /*----- choose -----*/
 .choose{ position: relative; padding: 80px 75px;}
+.choose_c{ display: flex;}
+.card { cursor: pointer; width: calc(33% - 2rem); min-width: calc(33% - 2rem); height: 427px; -webkit-perspective: 1500px; perspective: 1500px; margin: 1rem; position: relative;}
+
 .front,
 .back {
   border-radius: 15px;
@@ -238,17 +241,7 @@ image-rendering: crisp-edges;
   width: 35%;
   display: inline-block;
 }
-.card {
-  color: inherit;
-  cursor: pointer;
-  width: calc(33% - 2rem);
-  min-width: calc(33% - 2rem);
-  height: 427px;
-  -webkit-perspective: 1500px;
-          perspective: 1500px;
-  margin: 1rem;
-  position: relative;
-}
+
 
 @media screen and (max-width: 800px) {
   .card {
