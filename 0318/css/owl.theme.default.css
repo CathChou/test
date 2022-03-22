@@ -43,10 +43,11 @@
       width: 18px;
       height: 18px;
       margin: 0 7px;
-      border: 2px solid #493824;
       display: block;
       -webkit-backface-visibility: visible;
       transition: opacity 200ms ease;
-      border-radius: 30px; }
+      border-radius: 30px;
+      background: #ffffff;
+    }
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-      background: #493824; }
+      background: #18a2ec; }

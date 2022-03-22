@@ -188,10 +188,10 @@
 
 button{transition: all .5s ease; -webkit-transition: all .5s ease; -o-transition: all .5s ease;
 -moz-transition: all .5s ease;}
-.owl-prev, .owl-next{ position: absolute; top: 35%; width: 20px; height: 44px;  opacity: 1 !important; font-size: 0 !important;outline: none;;}
-.owl-prev{  left: 0; background: url(../images/prev.png) no-repeat !important;background-size: 100% !important; }
+.owl-prev, .owl-next{ position: absolute; top: 40%; width: 20px; height: 30px;  opacity: 1 !important; font-size: 0 !important;outline: none;;}
+.owl-prev{  left: -10px; background: url(../images/prev.png) no-repeat !important;background-size: 100% !important; }
 .owl-prev:hover{}
-.owl-next{  right: 0; background: url(../images/next.png) no-repeat !important; background-size: 100% !important;}
+.owl-next{  right: -10px; background: url(../images/next.png) no-repeat !important; background-size: 100% !important;}
 .owl-next:hover{ }
 
 

@@ -126,3 +126,17 @@ $(document).on(
     elm.style.display = "none";
     document.getElementById(others).style.display = "block";
   }
+
+
+  
+ // fix
+$(window).scroll(function() {
+if ($(this).scrollTop()>0)
+    {
+        $('.header').addClass('bgcolor');
+    }
+else
+    {
+        $('.header ').removeClass('bgcolor');
+    }
+});
