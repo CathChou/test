@@ -12,7 +12,7 @@ h3 span{ color: #18a2ec;}
 p{ font-size: 1.125rem; color: #1d1615; font-weight: 500; text-align: center; line-height: 1.8; letter-spacing: 1px;}
 a{ text-decoration:none; transition: all .5s ease;-webkit-transition:all .5s ease;-o-transition:all .5s ease;
 -moz-transition:all .5s ease; cursor: pointer;}
-
+a:link, a:visited ,a:hover ,a:active {text-decoration: none;}
 body, html {height: 100%;width: 100%; -webkit-text-size-adjust: 100%; background: #fff;
 text-rendering: optimizeLegibility !important;
 -webkit-font-smoothing: antialiased !important;
@@ -47,7 +47,7 @@ image-rendering: crisp-edges;
 
 /*----- header -----*/
 .header{ background: rgba(255, 255, 255, 0); padding: 15px 60px 4px; width: 100%; margin: auto;position: fixed; z-index: 100; left: 0; right: 0; }
-.bgcolor{ background: rgba(255, 255, 255, 1);}
+.bgcolor{ background: rgba(255, 255, 255, 1); transition: 0.5s;}
 .logo{ float: left; width: 281px; margin-top: 5px; }
 #bt-kv{ display: block; }
 .navigation{ float: right; }
@@ -86,6 +86,7 @@ image-rendering: crisp-edges;
 .farsighted{ width: 232px;}
 .astigmatism{ width: 352px; margin:20px 30px 0 0; }
 .symptom_more{ position: absolute; display: block; background: #f9795c; bottom: 0; right: 0; font-size: 1.5rem; font-weight: bold; padding: 10px 45px; color: #fff; border-radius: 999px;}
+.symptom_more:hover{ background:#df5232;}
 .notice{ background: #fff; width: 900px; margin: 0 auto; padding: 30px 70px;}
 .notice img{ width: 212px; float:right;}
 .notice p{ float: left; width: 63%; text-align: left; margin: 30px 0; font-size: 1.25rem;}
@@ -216,8 +217,12 @@ justify-content: center;
 /*----- more -----*/
 .more{ padding: 80px 0; background: #d5eefa;}
 .more_c{ display: flex; padding: 0 50px;}
+.more_c a{ color: #1d1615;}
+.more_c a:hover{color: #18a2ec;}
 .more_box{ margin: 0 25px; font-size: 1.5rem;}
-.more_box img{ border: 5px solid #1d1615; border-radius: 18px; margin-bottom: 30px;}
+.more_img{border: 5px solid #1d1615; border-radius: 18px; margin-bottom: 30px; overflow: hidden; background: #1d1615;}
+.more_img img{ transition: 0.5s;}
+.more_img img:hover{transform: scale(1.1);}
 
 /*----- consult -----*/
 .consult{ background: #fff; padding: 80px 0; position: relative;  text-align: center;}
