@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="telephone=no" name="format-detection">
+<meta name="keywords" content="流感,流感疫苗,預防流感,流感高風險族群" />
+<meta name="description" content="">
+
+<style>
+	.front,
+.back {
+  border-radius: 15px;
+  background-position: center;
+  background-size: cover;
+  text-align: left;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: ease-in-out 600ms;
+  transition: ease-in-out 600ms;
+  -webkit-box-shadow: 3px 3px 6px #ccc;
+          box-shadow: 3px 3px 6px #ccc;
+}
+
+.front {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-size: cover;
+  padding: 20px 26px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  overflow: hidden;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  z-index: 1;
+  background-color: #000;
+}
+
+.card:hover .front {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card:nth-child(even):hover .front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.front p {
+  position: absolute;
+  bottom: 20px;
+}
+
+.back {
+  background: #fff;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  padding: 1.6em 1.6em 1em;
+  font-size: 17px;
+  line-height: 1.5;
+  background-size: cover;
+  display: table;
+  background-color: #7dabcd;
+}
+
+.back .button {
+  background: linear-gradient(135deg, #f72f45, #F75C2F);
+}
+
+.back .button:before {
+  -webkit-box-shadow: 3px 3px 6px #F75C2F;
+          box-shadow: 3px 3px 6px #F75C2F;
+  background-color: #F75C2F;
+}
+
+.card:hover .back {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.card:nth-child(even) .back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card:nth-child(even):hover .back {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.back .back-wrap {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.back .txt-wrap:nth-child(2) {
+  margin-top: 10px;
+}
+
+.back .txt-wrap .txt-img {
+  width: 34px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+.back .txt-wrap .txt {
+  width: calc(100% - 52px);
+  display: inline-block;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.back .read-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.back h4 {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #F75C2F;
+  margin: 12px auto;
+}
+
+.back .book-link {
+  margin-top: 14px;
+}
+
+.back .book-link a {
+  color: #000;
+}
+
+.back .book-link p {
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 16px;
+  color: #555;
+  width: 63%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.back .book-link img {
+  width: 35%;
+  display: inline-block;
+}
+.card {
+  color: inherit;
+  cursor: pointer;
+  width: calc(33% - 2rem);
+  min-width: calc(33% - 2rem);
+  height: 427px;
+  -webkit-perspective: 1500px;
+          perspective: 1500px;
+  margin: 1rem;
+  position: relative;
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    width: 100%;
+  }
+}
+	
+</style>
+</head>
+
+<body>
+	<div class="card" href="#!">
+              <div class="front" style="background-image: url(./images/solar-card/front-s4.jpg)">
+                <p>疏肝解鬱，宜解熱制養、消腫止痛</p>
+              </div>
+
+              <div class="back" style="background-image: url(./images/solar-card/back-s4.svg)">
+                <div class="back-wrap">
+	                <div class="txt-wrap">
+	                  <img src="./images/solar-card/txt-proper.svg" alt="" class="txt-img">
+	                  <div class="txt">飲食清淡、多吃當令鮮蔬，最能滋補養肝</div>
+	                </div>
+	                <div class="txt-wrap">
+	                  <img src="./images/solar-card/txt-avoid.svg" alt="" class="txt-img">
+	                  <div class="txt">忌辛辣、油炸燒烤等易上火刺激食物</div>
+	                </div>
+                	<h4>一年之中情緒最易高漲季節，<br>需留意生理失調。</h4>
+                	<a href="https://www.commonhealth.com.tw/article/79144?utm_source=web_web&amp;utm_medium=affiliate&amp;utm_campaign=extend-24-solar-term-dgt" target="_blank" class="read-more"><button class="button">養生解方</button></a>
+	                <div class="book-link">
+	                  <a href="https://bit.ly/3Ahqsds" target="_blank">
+	                    <p>《腸活必修課──早期大腸癌，九成可以根治！》</p>
+	                    <img src="./images/book/book-s4.png" alt="">
+	                  </a>
+	                </div> 
+              	</div>
+              </div>
+    </div>
+    
+
+<script src="js/jquery-3.5.1.js"></script>
+</body>
+</html>
