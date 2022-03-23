@@ -674,7 +674,6 @@ p + p {
   height: 427px;
   -webkit-perspective: 1500px;
           perspective: 1500px;
-  margin: 1rem;
   position: relative;
 }
 
