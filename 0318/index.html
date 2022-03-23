@@ -24,6 +24,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
 })(window,document,'script','dataLayer','GTM-MCMN77');</script> 
 <!-- End Google Tag Manager --> 
+
 </head>
 
 <body>
@@ -362,7 +363,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	    })
 	})
 
-	
+	$(document).bind('scroll',function(e){
+	    var AtTOP =$("#kvc").offset().top;
+
+	    $('div.maincheck').each(function(){
+	        if (
+	           $(this).offset().top < window.pageYOffset + 80
+				//begins before top
+	        && $(this).offset().top + $(this).height() > window.pageYOffset + 700
+				//but ends in visible area
+				//+ 10 allows you to change hash before it hits the top border
+	        ) {
+	        	var hashId = '#'+$(this).attr('id');
+      if( location.hash !== hashId){
+       if(history.pushState) {
+         history.pushState(null, null, hashId);
+       }
+       else {
+         location.hash = hashId;
+       }
+      }
+          return false;
+	        }
+	    });
+	});
 </script>
 <!--animation-->
 <script>
