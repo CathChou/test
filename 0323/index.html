@@ -9,263 +9,182 @@
 <meta name="keywords" content="流感,流感疫苗,預防流感,流感高風險族群" />
 <meta name="description" content="">
 
-<style>
-	.front,
-.back {
-  border-radius: 15px;
-  background-position: center;
-  background-size: cover;
-  text-align: left;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transition: ease-in-out 600ms;
-  transition: ease-in-out 600ms;
-  -webkit-box-shadow: 3px 3px 6px #ccc;
-          box-shadow: 3px 3px 6px #ccc;
-}
 
-.front {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-size: cover;
-  padding: 20px 26px;
-  font-size: 18px;
-  font-weight: 600;
-  color: #fff;
-  overflow: hidden;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-  z-index: 1;
-  background-color: #000;
-}
-
-.card:hover .front {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.card:nth-child(even):hover .front {
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
-}
-
-.front p {
-  position: absolute;
-  bottom: 20px;
-}
-
-.back {
-  background: #fff;
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
-  padding: 1.6em 1.6em 1em;
-  font-size: 17px;
-  line-height: 1.5;
-  background-size: cover;
-  display: table;
-  background-color: #7dabcd;
-}
-
-.back .button {
-  background: linear-gradient(135deg, #f72f45, #F75C2F);
-}
-
-.back .button:before {
-  -webkit-box-shadow: 3px 3px 6px #F75C2F;
-          box-shadow: 3px 3px 6px #F75C2F;
-  background-color: #F75C2F;
-}
-
-.card:hover .back {
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-}
-
-.card:nth-child(even) .back {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.card:nth-child(even):hover .back {
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-}
-
-.back .back-wrap {
-  vertical-align: middle;
-  display: table-cell;
-}
-
-.back .txt-wrap:nth-child(2) {
-  margin-top: 10px;
-}
-
-.back .txt-wrap .txt-img {
-  width: 34px;
-  display: inline-block;
-  margin-right: 10px;
-  vertical-align: top;
-}
-
-.back .txt-wrap .txt {
-  width: calc(100% - 52px);
-  display: inline-block;
-  font-weight: 300;
-  font-size: 17px;
-  line-height: 1.5;
-}
-
-.back .read-more {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.back h4 {
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 1.5;
-  color: #F75C2F;
-  margin: 12px auto;
-}
-
-.back .book-link {
-  margin-top: 14px;
-}
-
-.back .book-link a {
-  color: #000;
-}
-
-.back .book-link p {
-  font-weight: 300;
-  line-height: 1.5;
-  font-size: 16px;
-  color: #555;
-  width: 63%;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.back .book-link img {
-  width: 35%;
-  display: inline-block;
-}
-.card {
-  color: inherit;
-  cursor: pointer;
-  width: calc(33% - 2rem);
-  min-width: calc(33% - 2rem);
-  height: 427px;
-  -webkit-perspective: 1500px;
-          perspective: 1500px;
-  margin: 1rem;
-  position: relative;
-}
-
-@media screen and (max-width: 800px) {
-  .card {
-    width: calc(50% - 2rem);
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .card {
-    width: 100%;
-  }
-}
-	
-</style>
 </head>
 
 <body>
-	<div class="card" href="#!">
-              <div class="front" style="background-image: url(./images/solar-card/front-s4.jpg)">
-                <p>疏肝解鬱，宜解熱制養、消腫止痛</p>
+	<div class="solar-wrap">  
+    <h4>春天節氣</h4>
+    <div class="container">
+      <div class="row">
+        <!-- 立春 -->
+        <div class="card" href="#!">
+          <div class="front" style="background-image: url(./images/solar-card/front-s1.jpg)">
+            <p>陽氣初生，宜溫辛食物提升免疫力</p>
+          </div>   
+          <div class="back" style="background-image: url(./images/solar-card/back-s1.svg)">
+             <div class="back-wrap">
+              <div class="txt-wrap">
+                <img src="./images/solar-card/txt-proper.svg" alt="" class="txt-img">
+                <div class="txt">可多泡澡，或吃升發陽氣具辛甘發散的食材，如香菜、韭菜</div>
               </div>
-
-              <div class="back" style="background-image: url(./images/solar-card/back-s4.svg)">
-                <div class="back-wrap">
-	                <div class="txt-wrap">
-	                  <img src="./images/solar-card/txt-proper.svg" alt="" class="txt-img">
-	                  <div class="txt">飲食清淡、多吃當令鮮蔬，最能滋補養肝</div>
-	                </div>
-	                <div class="txt-wrap">
-	                  <img src="./images/solar-card/txt-avoid.svg" alt="" class="txt-img">
-	                  <div class="txt">忌辛辣、油炸燒烤等易上火刺激食物</div>
-	                </div>
-                	<h4>一年之中情緒最易高漲季節，<br>需留意生理失調。</h4>
-                	<a href="https://www.commonhealth.com.tw/article/79144?utm_source=web_web&amp;utm_medium=affiliate&amp;utm_campaign=extend-24-solar-term-dgt" target="_blank" class="read-more"><button class="button">養生解方</button></a>
-	                <div class="book-link">
-	                  <a href="https://bit.ly/3Ahqsds" target="_blank">
-	                    <p>《腸活必修課──早期大腸癌，九成可以根治！》</p>
-	                    <img src="./images/book/book-s4.png" alt="">
-	                  </a>
-	                </div> 
-              	</div>
+              <div class="txt-wrap">
+                <img src="./images/solar-card/txt-avoid.svg" alt="" class="txt-img">
+                <div class="txt">春季吃酸味食物，會抑制肝氣的升發，少吃酸、少吃辣</div>
               </div>
-    </div>
-
-    <div class="card" href="#!">
-      <div class="front" style="background-image: url(./images/solar-card/front-s4.jpg)">
-        <p>疏肝解鬱，宜解熱制養、消腫止痛</p>
-      </div>
-
-      <div class="back" style="background-image: url(./images/solar-card/back-s4.svg)">
-        <div class="back-wrap">
-          <div class="txt-wrap">
-            <img src="./images/solar-card/txt-proper.svg" alt="" class="txt-img">
-            <div class="txt">飲食清淡、多吃當令鮮蔬，最能滋補養肝</div>
+              <h4>寒冷冬天就要過去，<br/>準備迎接春天來臨。</h4>
+              <a href="https://www.commonhealth.com.tw/article/78963?utm_source=web_web&utm_medium=affiliate&utm_campaign=extend-24-solar-term-dgt" target="_blank" class="read-more"><button class="button">養生解方</button></a>
+              <div class="book-link">
+                <a href="https://bit.ly/3izimXC" target="_blank">
+                  <p>《幸福由心生》</p>
+                  <img src="./images/book/book-s1.png" alt="">
+                </a>
+              </div> 
+            </div>
           </div>
-          <div class="txt-wrap">
-            <img src="./images/solar-card/txt-avoid.svg" alt="" class="txt-img">
-            <div class="txt">忌辛辣、油炸燒烤等易上火刺激食物</div>
+
+        </div>
+        <!-- 雨水 -->
+        <div class="card" href="#!">
+          <div class="front" style="background-image: url(./images/solar-card/front-s2.jpg)">
+            <p>陰雨綿綿濕氣未除，養生宜強健脾胃</p>
           </div>
-          <h4>一年之中情緒最易高漲季節，<br>需留意生理失調。</h4>
-          <a href="https://www.commonhealth.com.tw/article/79144?utm_source=web_web&amp;utm_medium=affiliate&amp;utm_campaign=extend-24-solar-term-dgt" target="_blank" class="read-more"><button class="button">養生解方</button></a>
-          <div class="book-link">
-            <a href="https://bit.ly/3Ahqsds" target="_blank">
-              <p>《腸活必修課──早期大腸癌，九成可以根治！》</p>
-              <img src="./images/book/book-s4.png" alt="">
-            </a>
-          </div> 
+          <div class="back" style="background-image: url(./images/solar-card/back-s2.svg)">
+            <div class="back-wrap">
+              <div class="txt-wrap">
+                <img src="./images/solar-card/txt-proper.svg" alt="" class="txt-img">
+                <div class="txt">飽餐後吃具有甜味的桂圓、紅棗滋脾補胃、養血安神</div>
+              </div>
+              <div class="txt-wrap">
+                <img src="./images/solar-card/txt-avoid.svg" alt="" class="txt-img">
+                <div class="txt">少吃梅子、桑葚等酸澀之味</div>
+              </div>
+              <h4>健脾顧胃從飲食做起，<br/>心情調適也不可少。</h4>
+              <a href="https://www.commonhealth.com.tw/article/71171??utm_source=web_web&utm_medium=affiliate&utm_campaign=extend-24-solar-term-dgt" target="_blank" class="read-more"><button class="button">養生解方</button></a>
+              <div class="book-link">
+                <a href="https://bit.ly/3mxfc8h" target="_blank">
+                  <p>《親愛的，你不孤單：只管呼吸，所有的悲傷都將過去》</p>
+                  <img src="./images/book/book-s2.png" alt="">
+                </a>
+              </div> 
+            </div>
+          </div>
+        </div>
+        <!-- 驚蟄 -->
+        <div class="card" href="#!">
+          <div class="front" style="background-image: url(./images/solar-card/front-s3.jpg)">
+            <p>春季對應肝經，飲食宜養肝排毒</p>
+          </div>
+          <div class="back" style="background-image: url(./images/solar-card/back-s3.svg)">
+            <div class="back-wrap">
+              <div class="txt-wrap">
+                <img src="./images/solar-card/txt-proper.svg" alt="" class="txt-img">
+                <div class="txt">可多吃養肝的食物排毒，如綠色蔬菜、開心果等</div>
+              </div>
+              <div class="txt-wrap">
+                <img src="./images/solar-card/txt-avoid.svg" alt="" class="txt-img">
+                <div class="txt">留意外來熱邪之毒入侵，避免感染流行性感冒</div>
+              </div>
+              <h4>春天屬木，對應到肝臟，<br/>養生宜先養肝。</h4>
+              <a href="https://www.commonhealth.com.tw/article/79083?utm_source=web_web&utm_medium=affiliate&utm_campaign=extend-24-solar-term-dgt" target="_blank" class="read-more"><button class="button">養生解方</button></a>
+              <div class="book-link">
+                <a href="https://bit.ly/3iGXVs1" target="_blank">
+                  <p>《康健》身體百科－護肝100問完全解答</p>
+                  <img src="./images/book/book-s5.png" alt="">
+                </a>
+              </div> 
+            </div>
+          </div>
         </div>
       </div>
-</div>
+    </div>
 
-<div class="card" href="#!">
-  <div class="front" style="background-image: url(./images/solar-card/front-s4.jpg)">
-    <p>疏肝解鬱，宜解熱制養、消腫止痛</p>
-  </div>
+    <p class="mobile-show-btn" onclick="myFunction('spring',this)">＋ 更多節氣</p>
 
-  <div class="back" style="background-image: url(./images/solar-card/back-s4.svg)">
-    <div class="back-wrap">
-      <div class="txt-wrap">
-        <img src="./images/solar-card/txt-proper.svg" alt="" class="txt-img">
-        <div class="txt">飲食清淡、多吃當令鮮蔬，最能滋補養肝</div>
+    <div class="container" id="others-spring">
+      <div class="row">
+        <!-- 春分 -->
+        <div class="card" href="#!">
+          <div class="front" style="background-image: url(./images/solar-card/front-s4.jpg)">
+            <p>疏肝解鬱，宜解熱制養、消腫止痛</p>
+          </div>
+          <div class="back" style="background-image: url(./images/solar-card/back-s4.svg)">
+            <div class="back-wrap">
+            <div class="txt-wrap">
+              <img src="./images/solar-card/txt-proper.svg" alt="" class="txt-img">
+              <div class="txt">飲食清淡、多吃當令鮮蔬，最能滋補養肝</div>
+            </div>
+            <div class="txt-wrap">
+              <img src="./images/solar-card/txt-avoid.svg" alt="" class="txt-img">
+              <div class="txt">忌辛辣、油炸燒烤等易上火刺激食物</div>
+            </div>
+            <h4>一年之中情緒最易高漲季節，<br/>需留意生理失調。</h4>
+            <a href="https://www.commonhealth.com.tw/article/79144?utm_source=web_web&utm_medium=affiliate&utm_campaign=extend-24-solar-term-dgt" target="_blank" class="read-more"><button class="button">養生解方</button></a>
+            <div class="book-link">
+              <a href="https://bit.ly/3Ahqsds" target="_blank">
+                <p>《腸活必修課──早期大腸癌，九成可以根治！》</p>
+                <img src="./images/book/book-s4.png" alt="">
+              </a>
+            </div> 
+          </div>
+          </div>
+        </div>
+        <!-- 清明 -->
+        <div class="card" href="#!">
+          <div class="front" style="background-image: url(./images/solar-card/front-s5.jpg)">
+            <p>乍暖還寒，首重健脾祛濕、抗風邪</p>
+          </div>
+          <div class="back" style="background-image: url(./images/solar-card/back-s5.svg)">
+            <div class="back-wrap">
+            <div class="txt-wrap">
+              <img src="./images/solar-card/txt-proper.svg" alt="" class="txt-img">
+              <div class="txt">宜溫補、柔肝養肺，可多吃山藥、薺菜、薑、蔥等</div>
+            </div>
+            <div class="txt-wrap">
+              <img src="./images/solar-card/txt-avoid.svg" alt="" class="txt-img">
+              <div class="txt">避免身體忽冷忽熱感染風邪</div>
+            </div>
+            <h4>體內肝膽經脈旺盛，<br/>此時養肝有助增強免疫力。</h4>
+            <a href="https://campaign.commonhealth.com.tw/main/chingmin-222?utm_source=web_web&utm_medium=affiliate&utm_campaign=extend-24-solar-term-dgt" target="_blank" class="read-more"><button class="button">養生解方</button></a>
+            <div class="book-link">
+              <a href="https://bit.ly/3iGXVs1" target="_blank">
+                <p>《康健》身體百科－護肝100問完全解答</p>
+                <img src="./images/book/book-s5.png" alt="">
+              </a>
+            </div> 
+          </div>
+          </div>
+        </div>
+        <!-- 穀雨 -->
+        <div class="card" href="#!">
+          <div class="front" style="background-image: url(./images/solar-card/front-s6.jpg)">
+            <p>易受濕邪入侵，飲食應健脾祛溼</p>
+          </div>
+          <div class="back" style="background-image: url(./images/solar-card/back-s6.svg)">
+            <div class="back-wrap">
+            <div class="txt-wrap">
+              <img src="./images/solar-card/txt-proper.svg" alt="" class="txt-img">
+              <div class="txt">飲食應以健脾胃、祛濕為重點，可多吃山藥、香椿等</div>
+            </div>
+            <div class="txt-wrap">
+              <img src="./images/solar-card/txt-avoid.svg" alt="" class="txt-img">
+              <div class="txt">日出時間變早，忌晚起，最好在七點前起床</div>
+            </div>
+            <h4>濕氣漸重，易「春困」，<br/>飲食要袪濕健脾。</h4>
+            <a href="https://www.commonhealth.com.tw/article/79328?utm_source=web_web&utm_medium=affiliate&utm_campaign=extend-24-solar-term-dgt" target="_blank" class="read-more"><button class="button">養生解方</button></a>
+            <div class="book-link">
+              <a href="https://bit.ly/3FrtGPx" target="_blank">
+                <p>《中西醫聯手 體內除濕大作戰》</p>
+                <img src="./images/book/book-s6.png" alt="">
+              </a>
+            </div> 
+          </div>
+          </div>
+        </div>
       </div>
-      <div class="txt-wrap">
-        <img src="./images/solar-card/txt-avoid.svg" alt="" class="txt-img">
-        <div class="txt">忌辛辣、油炸燒烤等易上火刺激食物</div>
-      </div>
-      <h4>一年之中情緒最易高漲季節，<br>需留意生理失調。</h4>
-      <a href="https://www.commonhealth.com.tw/article/79144?utm_source=web_web&amp;utm_medium=affiliate&amp;utm_campaign=extend-24-solar-term-dgt" target="_blank" class="read-more"><button class="button">養生解方</button></a>
-      <div class="book-link">
-        <a href="https://bit.ly/3Ahqsds" target="_blank">
-          <p>《腸活必修課──早期大腸癌，九成可以根治！》</p>
-          <img src="./images/book/book-s4.png" alt="">
-        </a>
-      </div> 
     </div>
   </div>
-</div>
+  <!-- solar-wrap  end-->
     
 
 <script src="js/jquery-3.5.1.js"></script>
