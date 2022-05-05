@@ -45,9 +45,10 @@ image-rendering: crisp-edges;
 .logo{ float: left; width: 350px; margin-top: 5px; }
 #bt-kv{ display: block; }
 .navigation{ float: right; }
-.navigation li{ display: inline-block; padding: 12px 0; margin: 0 20px; }
+.navigation li{ display: inline-block; padding: 12px 0; margin: 0 20px; vertical-align: middle; }
 .navigation li a{ font-size: 1.125rem; font-weight: bold; color: #186d6e;}
 .navigation li a:hover{ color: #014546; }
+.social-line{ margin-left: -10px; margin-top: 2px;}
 
 /*----- kv -----*/
 .kv{ width: 100%; margin: 0 auto ;position: relative; padding: 70px 0 120px 0; background: #fff;}
