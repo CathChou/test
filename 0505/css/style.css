@@ -325,8 +325,8 @@ span.logo{ margin: 10px 0 10px -10px; }
 
 @media screen and (max-width: 413px){
 /* doctor */
-.tabs{ width: 100%;}
-.tab{ padding: 15px 14px; margin: 0 3px;}
+.tabs{ width: 100%; text-align: center;}
+.tab{ padding: 15px 10px; margin: 0 2px;}
 .d_title{ height: 280px;}
 }
 
