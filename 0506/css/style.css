@@ -203,6 +203,7 @@ span.logo{ width: 300px; display: block !important;}
 .navigation{ float: none; }
 .navigation li{ display: block; text-align: center; margin: 10px 7px; }
 .navigation li a{ font-size: 1.25rem; }
+.social-line{ margin:0;}
 .header {padding: 5px 0; background: #fff;}
 .toggle-nav { padding:45px 12px 7px 15px; text-align: left; font-size:1.2rem; transition:color linear 0.15s; color: #fff;display: block;}
 .c-hamburger{position: relative; overflow: hidden;}
