@@ -22,7 +22,7 @@ h1, .hide{ display: none;}
 /*----- custom -----*/
 .wrap{}
 #navigation-menu img, .header img, .kv img, .stitle img, .toggle-nav img, .doctor img, .video img
-, .podcast img, .icon img
+, .podcast img, .icon img, .share_fb img
 { max-width: 100%; height: auto; display: block;
 image-rendering: -moz-crisp-edges; /*Firefox*/
 image-rendering: -o-crisp-edges; /*Opera*/
@@ -49,6 +49,7 @@ image-rendering: crisp-edges;
 .navigation li a{ font-size: 1.125rem; font-weight: bold; color: #186d6e;}
 .navigation li a:hover{ color: #014546; }
 .social-line{ margin-left: -10px !important; margin-top: 2px !important;}
+.share_btn{ width: 30px; display: inline-block;}
 
 /*----- kv -----*/
 .kv{ width: 100%; margin: 0 auto ;position: relative; padding: 70px 0 120px 0; background: #fff;}
