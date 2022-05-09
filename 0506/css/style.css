@@ -42,7 +42,7 @@ image-rendering: crisp-edges;
 /*----- header -----*/
 .header{ background: #fff; padding: 7px 60px 4px; width: 100%; margin: auto;position: fixed; z-index: 100; left: 0; right: 0; }
 .bgcolor{ background: rgba(255, 255, 255, 1); transition: 0.5s;}
-.logo{ float: left; width: 350px; margin-top: 5px; }
+.logo{ float: left; width: 410px; margin-top: 5px; }
 #bt-kv{ display: block; }
 .navigation{ float: right; }
 .navigation li{ display: inline-block; padding: 12px 0; margin: 0 20px; vertical-align: middle; }
@@ -292,7 +292,7 @@ span.logo{ width: 250px; margin-top: 10px;}
 /* doctor */
 .d_title{ padding-top: 60px;}
 .wrapper{ margin-top: -80px;}
-.tab{ margin: 0 5px;}
+.tab{ margin: 0 4px;}
 .tab a{ padding: 15px 16px;}
 .tab span{ width: 40px;}
 .d_title{ height: 300px;}
