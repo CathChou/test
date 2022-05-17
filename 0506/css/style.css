@@ -122,7 +122,9 @@ image-rendering: crisp-edges;
 /*----- video -----*/
 .video{ position: relative; padding: 80px 75px; background: url(../images/bg_video.jpg) repeat;}
 .v_content{ padding: 0 60px;}
-.video_box{ position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;border: 20px #f2ece3 solid; border-radius: 20px; margin: 40px 30px 40px;}
+.v_block{ margin: 40px 30px 40px;;}
+.video_box_c{ border:20px #f2ece3 solid; border-radius: 20px; margin-bottom: 40px; display: block;}
+.video_box{ position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
 .video_box iframe{ position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
 .v_txt{ display: flex;}
 .v_doc1{ width: 118px; margin: -20px -10px 0 30px; position: relative; z-index: 1;}
@@ -188,7 +190,7 @@ h3{ text-align: center;}
 .d_box dd span{display: block; margin-right: 0;}
 .tab{ margin: 0 10px;}
 /* video */
-.video_box{ margin: 40px 20px;}
+.v_block{ margin: 40px 20px;}
 .v_doc1{ margin: -20px -10px 0 10px;}
 .v_doc2{ margin: -20px 10px 0 20px;}
 /* podcast */
@@ -269,7 +271,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .tab_2:hover .hover, #two:checked ~ .tabs #two-tab .hover,
 .tab_3:hover .hover, #three:checked ~ .tabs #three-tab .hover{ width: 20px; bottom: -13px;}
 /* video */
-.video_box{ margin: 30px 0;}
+.v_block{ margin: 30px 0;}
 .v_doc1{ margin: -20px -10px 0 10px}
 .v_doc2{ margin: -20px 10px 0 20px;}
 .txt{ font-size: 1.25rem;}
@@ -303,13 +305,13 @@ span.logo{ width: 250px; margin-top: 10px;}
 .cure .d_box dd, .confuse .d_box dd, .story .d_box dd{ margin-top: 10px; font-size: 1.125rem;}
 .d_box dl{ padding: 20px;}
 /* video */
-.video_box{ margin: 30px 0;}
+.v_block{ margin: 30px 0;}
+.video_box_c{ border:15px #f2ece3 solid ;}
 .v_doc1{ margin: -20px -10px 0 10px}
 .v_doc2{ margin: -20px 10px 0 20px;}
 .v_doc1{ width: 98px;}
 .v_doc2{ width: 70px;}
 .owl-theme .owl-dots{ margin-top: 25px !important; }
-.video_box{ border:15px #f2ece3 solid ;}
 }
 
 @media screen and (max-width: 414px){
