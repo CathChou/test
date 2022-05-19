@@ -44,7 +44,7 @@ image-rendering: crisp-edges;
 .bg_5{ background-image: url(../images/bg_5.png); background-position: center; background-repeat: no-repeat; height: 238px; position: relative; }
 .bg_6{ background-image: url(../images/bg_6.png); background-position: center; background-repeat: no-repeat; height: 131px; position: relative; }
 .block{ position: relative; }
-.titp_1, .stitle_1, .titp_2, .stitle_2, .titp_3, .stitle_3, .titp_4, .stitle_4, .titp_5, .stitle_5, .v_content, .forum_c, .intro_1, .intro_2, .intro_3, .wrapper, .highlight_c, .a_content{ visibility: hidden;}
+.titp_1, .stitle_1, .titp_2, .stitle_2, .titp_3, .stitle_3, .titp_4, .stitle_4, .titp_5, .stitle_5, .v_content, .forum_c, .intro_1, .intro_2, .intro_3, .intro_wrapper, .highlight_c, .a_content{ visibility: hidden;}
 
 /*----- header -----*/
 .header{ background: #fff; padding: 7px 60px 4px; width: 100%; margin: auto;position: fixed; z-index: 100; left: 0; right: 0; }
