@@ -605,19 +605,27 @@ span.logo{ margin: 10px 0 10px -10px; width: 70px; }
 	-webkit-animation-duration: 1s;
 }
 
-@keyframes LeftRight {
+@keyframes LeftRight_1 {
   0% { transform: translate3d(0, 0%, 0);}
   50% { transform: translate3d(50%,0, 0);}
   100% { transform: translate3d(0, 0%, 0);}
 }
-@-webkit-keyframes LeftRight {
+@-webkit-keyframes LeftRight_1 {
   0% { transform: translate3d(0, 0%, 0);}
   50% { transform: translate3d(50%, 0, 0);}
   100% { transform: translate3d(0, 0%, 0);}
 }
-.LeftRight{
-  animation-name: LeftRight;
-  -webkit-animation-name: LeftRight;
+@keyframes LeftRight_2 {
+  0% { transform: translate3d(0, 0%, 0);}
+  50% { transform: translate3d(10%,0, 0);}
+  100% { transform: translate3d(0, 0%, 0);}
+}
+@-webkit-keyframes LeftRight_2 {
+  0% { transform: translate3d(0, 0%, 0);}
+  50% { transform: translate3d(10%, 0, 0);}
+  100% { transform: translate3d(0, 0%, 0);}
+}
+.LeftRight_1, .LeftRight_2{
   animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -625,28 +633,55 @@ span.logo{ margin: 10px 0 10px -10px; width: 70px; }
   animation-duration: 3s;
 	-webkit-animation-duration: 3s;
 }
+.LeftRight_1{
+  animation-name: LeftRight_1;
+  -webkit-animation-name: LeftRight_1;
+}
+.LeftRight_2{
+  animation-name: LeftRight_2;
+  -webkit-animation-name: LeftRight_2;
+}
 
-@keyframes UpDown {
+@keyframes UpDown_1 {
   0% { transform: translate3d(0, 0%, 0);}
   50% { transform: translate3d(0, 5%, 0);}
   100% { transform: translate3d(0, 0%, 0);}
 }
-@-webkit-keyframes UpDown {
+@-webkit-keyframes UpDown_1 {
   0% { transform: translate3d(0, 0%, 0);}
   50% { transform: translate3d(0, 5%, 0);}
   100% { transform: translate3d(0, 0%, 0);}
 }
-.UpDown{
-	animation-name: UpDown;
- 	-webkit-animation-name: UpDown;
+@keyframes UpDown_2 {
+  0% { transform: translate3d(0, 0%, 0);}
+  50% { transform: translate3d(0, 10%, 0);}
+  100% { transform: translate3d(0, 0%, 0);}
+}
+@-webkit-keyframes UpDown_2 {
+  0% { transform: translate3d(0, 0%, 0);}
+  50% { transform: translate3d(0, 10%, 0);}
+  100% { transform: translate3d(0, 0%, 0);}
+}
+.UpDown_1, .UpDown_2 {
+
  	animation-iteration-count: infinite;
 	-webkit-animation-iteration-count: infinite;
 	animation-timing-function: linear;
 	-webkit-animation-timing-function: linear;
   animation-delay: 1s;
 	-webkit-animation-delay: 1s;
+}
+.UpDown_1{
+  animation-name: UpDown_1;
+  -webkit-animation-name: UpDown_1;
   animation-duration: 1s;
 	-webkit-animation-duration: 1s;
+}
+.UpDown_2{
+  animation-name: UpDown_2;
+  -webkit-animation-name: UpDown_2;
+  animation-duration: 2s;
+	-webkit-animation-duration: 2s;
 }
 
 
