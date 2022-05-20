@@ -136,14 +136,9 @@ class Accordion {
   }
   
   new Accordion({
-    onlyOneOpened: true, 
+    onlyOneOpened: false, 
   });
-  $(function () {
-    // 最初のコンテンツ以外は非表示
-    $(".accordion:first-child .accordion-content").css("display", "block");
-    
-    
-  });
+  
 
 
 
