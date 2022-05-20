@@ -60,7 +60,7 @@ image-rendering: crisp-edges;
 .title{ margin: 0 auto; width: 658px; text-align: center; padding-top: 50px; position: relative;}
 .shine{ width: 87px; position: absolute; top:17px; left: 230px;}
 .kv_main{ width: 494px; position: absolute; bottom: -20px; left: 0; right: 0; margin: auto;}
-.scroll{width: 54px; position: absolute; bottom: -40px; left: 0; right: 0; margin: auto;}
+.scroll{width: 79px; position: absolute; bottom: -40px; left: 0; right: 0; margin: auto;}
 .kv_talk{ width: 1400px; margin: 0 auto; position: absolute; min-height: 710px; top: 0;}
 .kv_talk1, .kv_talk2, .kv_talk3, .kv_talk4{ position: absolute;}
 .kv_talk1{ width: 54px; top: 250px; left: 280px;}
