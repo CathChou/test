@@ -314,6 +314,8 @@ span.logo{ width: 250px; margin-top: 10px;}
 .owl-theme .owl-dots{ margin-top: 25px !important; }
 /* podcast */
 .podcast_box{ width: 90%;}
+.p_content .owl-nav .owl-next{ top: 35%; right: -20px; width: 30px; height: 30px;}
+.p_content .owl-nav .owl-prev{ top: 35%; left: -20px; width: 30px; height: 30px;}
 }
 
 @media screen and (max-width: 414px){
