@@ -312,6 +312,8 @@ span.logo{ width: 250px; margin-top: 10px;}
 .v_doc1{ width: 98px;}
 .v_doc2{ width: 70px;}
 .owl-theme .owl-dots{ margin-top: 25px !important; }
+/* podcast */
+.podcast_box{ width: 90%;}
 }
 
 @media screen and (max-width: 414px){
