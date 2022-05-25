@@ -123,7 +123,7 @@ image-rendering: crisp-edges;
 .intro p{ font-size: 1.25rem; width: 650px; margin: 30px auto 40px;}
 .intro p.sub{font-size: 1.625rem; color: #629c84; font-weight: bold; margin: 50px auto 0;}
 .intro p.sub span{ color: #df5958;}
-.wrapper{ display:flex; flex-direction: column; align-items: center; background: #fff; margin: 0 100px; border-top: 6px #629c84 solid; padding-bottom: 70px;}
+.wrapper{ display:flex; flex-direction: column; align-items: center; background: #fff; margin: 0 100px; border-top: 6px #629c84 solid; padding-bottom: 20px;}
 .tab{ cursor: pointer; margin:0 22px; display:inline-block; color:#fff; border-radius:20px; font-size: 1.625rem; font-weight: bold; position: relative;}
 .tab a{ width: 100%; display: block; padding: 10px 40px; background:#a1d2a9; border-radius: 0 0 15px 15px; }
 .tab a:hover{ background:#629c84; }
@@ -154,7 +154,8 @@ image-rendering: crisp-edges;
 .intro_box dd p{ width: inherit; margin: 0; text-align: left;}
 .intro_box dd p span{ display: block; font-size:1.375rem; font-weight: bold;}
 .intro_box dd .tit{ background: #df5958; color: #fff; width: 195px; text-align: center; padding: 5px 0; border-radius: 5px; position: absolute; top: -18px; left: 0; right: 0; margin: auto; font-size: 1.375rem; font-weight: bold;}
-.more{ font-size: 1.25rem; color:#393c40; display: block; margin-bottom: 30px;}
+.more{ font-size: 1.25rem; color:#393c40; display: block; margin: 60px 0 30px 0; text-align: center;}
+.banner img{ margin: 0 auto;}
 .accordion { width: 33%; padding: 10px;}
 .accordion__title { position: relative; padding: 1.25rem; font-size: 1.375rem; color: #df5958; cursor: pointer; transition: color 0.3s ease-in-out; background: #fff8ef; font-weight: bold;}
 .accordion__title::after { content: url(../images/plus.png); position: absolute; right: 20px; display: inline-block; transition: all 0.3s ease-in-out; width: 32px; height: 32px;}
@@ -435,7 +436,8 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .intro_box, .accordion{ width: 90%; margin: 10px auto;}
 .intro_box_c{ display: block;}
 .banner, .more{ padding: 0 20px;}
-.wrapper{ padding-bottom: 40px;}
+.more{ margin: 40px 0 0 0;}
+.wrapper{ padding-bottom: 0;}
 .intro p.sub{ margin: 30px auto 0;}
 /* highlight */
 .titp_4{ width: 236px;}
