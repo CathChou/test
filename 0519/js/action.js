@@ -39,14 +39,14 @@ $(function(){
     $('#bt-news').click(function(){
         $('body,html').animate({scrollTop:$('#news').offset().top-50}, 800);
     });
-    $('#bt-forum').click(function(){
-        $('body,html').animate({scrollTop:$('#forum').offset().top-50}, 800);
+    $('#bt-workshop').click(function(){
+        $('body,html').animate({scrollTop:$('#workshop').offset().top-50}, 800);
     });
-    $('#bt-intro').click(function(){
-        $('body,html').animate({scrollTop:$('#intro').offset().top-50}, 800);
+    $('#bt-knowhow').click(function(){
+        $('body,html').animate({scrollTop:$('#knowhow').offset().top-50}, 800);
     });
-    $('#bt-highlight').click(function(){
-        $('body,html').animate({scrollTop:$('#highlight').offset().top-50}, 800);
+    $('#bt-photo').click(function(){
+        $('body,html').animate({scrollTop:$('#photo').offset().top-50}, 800);
     });
     $('#bt-article').click(function(){
         $('body,html').animate({scrollTop:$('#article').offset().top-50}, 800);
@@ -144,62 +144,64 @@ class Accordion {
 
 //曝光事件(非互動事件語法)
 let progEvent = [ 
-    {name: '#kv', label: 'section-vghtpe-kv', send: 0},
-    {name: '#article', label: 'section-vghtpe-article', send: 0},
-    {name: '#video', label: 'section-vghtpe-video', send: 0},
-    {name: '#podcast', label: 'section-vghtpe-podcast', send: 0}
-    ];
-    
-    
-    function checkAreaViewEvent() {
-        let scrollTop = $(window).scrollTop();
-        let windowHeight = $(window).height();
-        let viewArea = scrollTop + windowHeight;
-    
-        for (let i in progEvent){
-            if (progEvent[i].send !== 0) {
-                continue;
-            }
-    
-            let element = $(progEvent[i].name);
-            if (element.length == 0) {
-                progEvent[i].send = 1;
-                continue;
-            }
-            let areaTop = element.offset().top;
-            let areaHeight = element.height();
-            let area = areaTop + areaHeight;
-    
-            if (viewArea >= areaTop && scrollTop <= area) {
-                progEvent[i].send = 1;
-                dataLayer.push({
-                    'event': 'sendMyEvent',
-                    'eventCategory': 'web_event',
-                    'eventAction': '2022vghtpe',
-                    'eventLabel': progEvent[i].label,
-                });
-    
-            }
-    
-        }
-    
-    }
-    
-    function debounce(func, delay) {
-        let timer = null;
-        return function() {
-            const context = this;
-            const args = arguments;
-            clearTimeout(timer);
-            timer = setTimeout(() => {
-                func.apply(context, args);
-            }, delay);
-        };
-    }
-    
-    $(document).on(
-        "scroll",
-        debounce(() => {
-            checkAreaViewEvent();
-        },30)
-    );
+  {name: '#kv', label: 'section-muscle-kv', send: 0},
+  {name: '#news', label: 'section-muscle-news', send: 0},
+  {name: '#workshop', label: 'section-muscle-workshop', send: 0},
+  {name: '#knowhow', label: 'section-muscle-knowhow', send: 0},
+  {name: '#photo', label: 'section-muscle-photo', send: 0},
+  {name: '#article', label: 'section-muscle-article', send: 0}
+  ];
+  
+  
+  function checkAreaViewEvent() {
+      let scrollTop = $(window).scrollTop();
+      let windowHeight = $(window).height();
+      let viewArea = scrollTop + windowHeight;
+  
+      for (let i in progEvent){
+          if (progEvent[i].send !== 0) {
+              continue;
+          }
+  
+          let element = $(progEvent[i].name);
+          if (element.length == 0) {
+              progEvent[i].send = 1;
+              continue;
+          }
+          let areaTop = element.offset().top;
+          let areaHeight = element.height();
+          let area = areaTop + areaHeight;
+  
+          if (viewArea >= areaTop && scrollTop <= area) {
+              progEvent[i].send = 1;
+              dataLayer.push({
+                  'event': 'sendMyEvent',
+                  'eventCategory': 'web_event',
+                  'eventAction': 'muscle',
+                  'eventLabel': progEvent[i].label,
+              });
+  
+          }
+  
+      }
+  
+  }
+  
+  function debounce(func, delay) {
+      let timer = null;
+      return function() {
+          const context = this;
+          const args = arguments;
+          clearTimeout(timer);
+          timer = setTimeout(() => {
+              func.apply(context, args);
+          }, delay);
+      };
+  }
+  
+  $(document).on(
+      "scroll",
+      debounce(() => {
+          checkAreaViewEvent();
+      },30)
+  );

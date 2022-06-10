@@ -21,8 +21,8 @@ h1, .hide{ display: none;}
 
 /*----- common -----*/
 .wrap{}
-#navigation-menu img, .header img, .kv img, .stitle img, .toggle-nav img, .intro img, .news img
-, .forum img, .highlight img, .article img, .organizer img
+#navigation-menu img, .header img, .kv img, .stitle img, .toggle-nav img, .knowhow img, .news img
+, .workshop img, .photo img, .article img, .organizer img
 { max-width: 100%; height: auto; display: block;
 image-rendering: -moz-crisp-edges; /*Firefox*/
 image-rendering: -o-crisp-edges; /*Opera*/
@@ -44,7 +44,7 @@ image-rendering: crisp-edges;
 .bg_5{ background-image: url(../images/bg_5.png); background-position: center; background-repeat: no-repeat; height: 238px; position: relative; }
 .bg_6{ background-image: url(../images/bg_6.png); background-position: center; background-repeat: no-repeat; height: 131px; position: relative; }
 .block{ position: relative; }
-.titp_1, .stitle_1, .titp_2, .stitle_2, .titp_3, .stitle_3, .titp_4, .stitle_4, .titp_5, .stitle_5, .v_content, .forum_c, .intro_1, .intro_2, .intro_3, .intro_wrapper, .highlight_c, .a_content{ visibility: hidden;}
+.titp_1, .stitle_1, .titp_2, .stitle_2, .titp_3, .stitle_3, .titp_4, .stitle_4, .titp_5, .stitle_5, .v_content, .workshop_c, .intro_1, .intro_2, .intro_3, .intro_wrapper, .highlight_c, .a_content{ visibility: hidden;}
 
 /*----- header -----*/
 .header{ background: #fff; padding: 7px 60px 4px; width: 100%; margin: auto;position: fixed; z-index: 100; left: 0; right: 0; }
@@ -73,16 +73,18 @@ image-rendering: crisp-edges;
 /*----- news -----*/
 .news{ position: relative; padding: 0 75px 150px ;background:#fff8ef; background-image: url(../images/bg_news.jpg); background-repeat: repeat-y; margin-top: -150px;}
 .v_content{ width: 1000px; margin: 50px auto 0;}
-.video_box{ position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;border: 30px #fffefc solid; border-radius: 20px;}
-.video_box iframe{ position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+.video_c{border: 30px #fffefc solid; border-radius: 20px;}
+.video{ position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;}
+.video iframe{ position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+.v_txt{ margin: 30px auto 0; text-align: center;color: #393c40; font-size: 1.375rem; }
 .titp_1{ width: 234px; position: absolute; left: 183px; top: -120px;}
 .deco_1{ width: 155px; position: absolute; right: -23px; top: -60px;}
 .deco_2{ width: 74px; position: absolute; left: 20px; bottom: -20px; z-index: 2;}
 
-/*----- forum -----*/
-.forum{ padding: 40px 0 80px; background-color: #ffffff; position: relative; }
+/*----- workshop -----*/
+.workshop{ padding: 40px 0 80px; background-color: #ffffff; position: relative; }
 .titp_2{ width: 215px; position: absolute; right: 220px; top: -150px;}
-.forum_c{ display: flex; width: 100%; padding: 0 40px 80px;}
+.workshop_c{ display: flex; width: 100%; padding: 0 40px 80px;}
 .timeline{ width: 45%; padding-top: 40px; font-size: 1.25rem; color: #393C43;}
 .timeline p{ text-align: left; font-size: 1.375rem;}
 .timeline p span{ color: #df5958;}
@@ -113,16 +115,16 @@ image-rendering: crisp-edges;
 .grass_1{ width: 310px; position: absolute; left: -130px; top: -330px; z-index: 1;}
 .grass_2{ width: 170px; position: absolute; right: 0; top: -450px;}
 
-/*----- intro -----*/
-.intro{  background-image: url(../images/bg_intro.jpg); background-repeat: repeat-y; position: relative; padding: 80px 0 ;}
+/*----- knowhow -----*/
+.knowhow{  background-image: url(../images/bg_intro.jpg); background-repeat: repeat-y; position: relative; padding: 80px 0 120px;}
 .intro_1, .intro_2, .intro_3{ position: absolute; z-index: 1; }
 .intro_1{ width: 317px; top: 33px; left: 0;}
 .intro_2{ width: 271px; top: -100px; right: 60px;}
 .intro_3{ width: 193px; top: 220px; right: 0;}
 .titp_3{ width: 379px; position: absolute; left: 120px; top: -180px;}
-.intro p{ font-size: 1.25rem; width: 650px; margin: 30px auto 40px;}
-.intro p.sub{font-size: 1.625rem; color: #629c84; font-weight: bold; margin: 50px auto 0;}
-.intro p.sub span{ color: #df5958;}
+.knowhow p{ font-size: 1.25rem; width: 650px; margin: 30px auto 40px;}
+.knowhow p.sub{font-size: 1.625rem; color: #629c84; font-weight: bold; margin: 50px auto 0;}
+.knowhow p.sub span{ color: #df5958;}
 .wrapper{ display:flex; flex-direction: column; align-items: center; background: #fff; margin: 0 100px; border-top: 6px #629c84 solid; padding-bottom: 20px;}
 .tab{ cursor: pointer; margin:0 22px; display:inline-block; color:#fff; border-radius:20px; font-size: 1.625rem; font-weight: bold; position: relative;}
 .tab a{ width: 100%; display: block; padding: 10px 40px; background:#a1d2a9; border-radius: 0 0 15px 15px; }
@@ -157,7 +159,7 @@ image-rendering: crisp-edges;
 .more{ font-size: 1.25rem; color:#393c40; display: block; margin: 60px 0 30px 0; text-align: center;}
 .banner img{ margin: 0 auto;}
 .accordion { width: 33%; padding: 10px;}
-.accordion__title { position: relative; padding: 1.25rem; font-size: 1.375rem; color: #df5958; cursor: pointer; transition: color 0.3s ease-in-out; background: #fff8ef; font-weight: bold;}
+.accordion__title { position: relative; padding: 1.25rem; font-size: 1.375rem; color: #df5958; cursor: pointer; transition: color 0.3s ease-in-out; background: #fff8ef; font-weight: bold; display: block;}
 .accordion__title::after { content: url(../images/plus.png); position: absolute; right: 20px; display: inline-block; transition: all 0.3s ease-in-out; width: 32px; height: 32px;}
 .accordion__inner { max-height: 0; overflow: hidden; transition: all 0.3s ease-in-out;}
 .accordion__content { padding: 0 1.25rem 1.25rem; background: #fff8ef;}
@@ -168,8 +170,8 @@ image-rendering: crisp-edges;
 .deco_6{ width: 296px; position: absolute; left: -310px; top: 1100px;}
 .deco_7{ width: 138px; position: absolute; left: -94px; top: 1270px;}
 
-/*----- highlight -----*/
-.highlight{  background:#fff; position: relative; padding: 80px 0 ;}
+/*----- photo -----*/
+.photo{  background:#fff; position: relative; padding: 80px 0 ;}
 .titp_4{ width: 336px; position: absolute; right: 80px; top: -150px;}
 .h_content{ padding-top: 35px;}
 .h_content .owl-next{ right: -50px;}
@@ -188,7 +190,7 @@ image-rendering: crisp-edges;
 
 /*----- article -----*/
 .article{ background-image: url(../images/bg_intro.jpg); background-repeat: repeat-y; position: relative; padding: 0 0 80px; margin-top: -120px;}
-.titp_5{ width: 132px; position: absolute; left: 290px; top: -160px;}
+.titp_5{ width: 132px; position: absolute; left: 290px; top: -120px;}
 .a_content{ padding: 20px 60px 0;}
 .article_box{ margin: 0 20px;}
 .article_box dd{ background: #fff; font-size: 1.375rem; padding:30px 25px; color: #393c40;}
@@ -215,10 +217,10 @@ image-rendering: crisp-edges;
 
 /*----- Responsive -----*/
 @media screen and (max-width: 1700px){
-/* forum */
-.forum{ padding: 40px 100px 80px;}
+/* workshop */
+.workshop{ padding: 40px 100px 80px;}
 .grass_1{ left: -190px;}
-/* highlight */
+/* photo */
 .h_content{padding: 35px 50px 0;}
 .h_article{ padding: 0 55px;}
 /* article */
@@ -236,10 +238,10 @@ image-rendering: crisp-edges;
 .titp_1{ width: 194px; position: absolute; left: 113px; top: -120px;}
 .deco_1{ width: 125px; position: absolute; right: -23px; top: -110px;}
 .deco_2{ width: 54px; position: absolute; left: -20px; bottom: -20px;}
-/* forum */
-.forum{ padding: 40px 100px 80px; }
+/* workshop */
+.workshop{ padding: 40px 100px 80px; }
 .titp_2{ width: 195px; right: 180px;}
-.forum_c{ padding: 0 40px 70px;}
+.workshop_c{ padding: 0 40px 70px;}
 .timeline{ width: 80%;}
 .table li { padding: 10px 15px}
 .expert_box1{ right: -100px; top: 50px;}
@@ -250,7 +252,7 @@ image-rendering: crisp-edges;
 .expert_3{ width: 262px;}
 .deco_4{ width: 65px;}
 .deco_3{ width: 130px;}
-/* intro */
+/* knowhow */
 .grass_3{ width: 150px;}
 .deco_5{ width: 58px; right: 20px;}
 .deco_6{ width: 216px; left: -100px;}
@@ -259,7 +261,7 @@ image-rendering: crisp-edges;
 .intro_1{ width: 277px; left: 20px;}
 .intro_2{ width: 251px;}
 .intro_3{ width: 173px; right: 70px;}
-/* highlight */
+/* photo */
 .a_box:nth-child(odd){ margin-right: 40px;}
 .pic{ margin-right: 20px;}
 .h_content .owl-next{right: 0; }
@@ -288,9 +290,9 @@ image-rendering: crisp-edges;
 .titp_1{ left: -7px; top: -120px;}
 .owl-next{ right: -55px;}
 .owl-prev{ left: -55px;}
-.video_box{ border: 20px #fffefc solid;}
-/* forum */
-.forum_c{ padding: 0 0 30px;}
+.video_c{ border: 20px #fffefc solid;}
+/* workshop */
+.workshop_c{ padding: 0 0 30px;}
 .timeline{ width: 100%; font-size: 1.125rem;}
 .titp_2{ right: 30px;}
 .table{ line-height: 1.3;}
@@ -300,8 +302,8 @@ image-rendering: crisp-edges;
 .expert_box1{ right: -50px;}
 .expert_box3{ bottom: 20px; right: -90px;}
 .grass_2{ width: 130px;}
-/* intro */
-.intro{ padding: 50px 0 80px;}
+/* knowhow */
+.knowhow{ padding: 50px 0 80px;}
 .intro_1{ width: 217px; left: 20px; top: -10px;}
 .intro_2{ width: 211px; right: 30px;}
 .intro_3{ width: 163px; right: 20px;}
@@ -309,7 +311,7 @@ image-rendering: crisp-edges;
 .i_content p{ width: 100%;}
 .wrapper{ margin: 0 40px;}
 .banner{ padding: 0 60px;}
-/* highlight */
+/* photo */
 .titp_4{ width: 276px; right: 50px;}
 .txt, .article_box dd{ font-size: 1.125rem;}
 .txt p, .article_box dd p{ font-size: 1.375rem;}
@@ -358,18 +360,18 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .stitle{ width: 380px;}
 .v_content{ margin: 30px auto 0;}
 .bg_1{ background-size: 1660px; height: 220px;}
-/* forum */
+/* workshop */
 .expert_box1, .expert_box2, .expert_box3{right: inherit; bottom: inherit; top: inherit;position: inherit; width: 32%; margin: 30px 17px;}
-.forum{ padding: 40px 20px 80px;}
-.forum_c{ display: block;}
+.workshop{ padding: 40px 20px 80px;}
+.workshop_c{ display: block;}
 .timeline, .table{ width: 100%;}
-.timeline, .timeline p{ font-size: 1.25rem;}
+.timeline, .timeline p, .v_txt{ font-size: 1.25rem;}
 .expert{ font-size: 1.125rem;}
 .expert_1, .expert_2, .expert_3{ width: 100%;}
 .e_name{ font-size: 1.375rem;}
 .table{ margin-top: 20px;}
 .bg_3{ background-size: 1660px; height: 165px; margin-top: -130px;}
-/* intro */
+/* knowhow */
 .intro_1{ width: 167px; left: 20px; top: -10px;}
 .intro_2{ width: 151px; right: 30px; top: -20px;}
 .wrapper{ margin: 0;}
@@ -377,8 +379,8 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .tab a{ padding: 10px 30px;}
 .tab_1{ padding-top: 2px;}
 .tab_2{ padding-top: 6px;}
-.intro p{ text-align: left; margin: 20px auto;}
-.intro p.sub{ text-align: center;}
+.knowhow p{ text-align: left; margin: 20px auto;}
+.knowhow p.sub{ text-align: center;}
 .panels{ padding: 0;}
 .i_content{ padding: 0 20px;}
 .grass_3, .deco_5, .deco_6, .deco_7, .intro_3, .deco_8, .grass_4{ display: none;}
@@ -386,7 +388,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .intro_box dd .tit{ width: 155px;}
 .accordion__content p{ margin: 0 !important;}
 .bg_4{ background-size: 1660px; height: 140px;}
-/* highlight */
+/* photo */
 .titp_3{ width: 279px; top: -150px; left: 30px;}
 .h_content{ padding:10px 0 0 ;}
 .h_article{ padding: 0 20px;}
@@ -399,7 +401,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .a_content{ padding: 20px 0 0;}
 .titp_5{ left: 130px;}
 .bg_5{ background-size: 1660px; height: 200px;}
-.article{ margin-top: -90px;}
+.article{ margin-top: -90px; padding-top: 50px;}
 /* organizer */
 .deco_10{ width: 160px;}
 .deco_11{ width: 93px;}
@@ -420,19 +422,19 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .kv_p3{ width: 125px; left: inherit; right: 50px; bottom: 50px;}
 .kv_p4{ width: 94px; right: 175px; top: 143px;}
 /* news */
-.news{ padding: 0 0 150px;}
+.news{ padding: 0 0 90px;}
 .titp_1{ width: 144px;}
 .stitle{ width: 330px;}
-.bg_2{ margin-top: -110px;}
-/* forum */
+.bg_2{ margin-top: -60px;}
+/* workshop */
 .expert{ display: block; padding-top: 10px;}
 .expert_box1, .expert_box2, .expert_box3{ width: 70%; margin: 30px auto;}
 .titp_2{ width: 165px;}
 .table{ margin-top: 0;}
-/* intro */
+/* knowhow */
 .titp_3{ width: 279px; top: -140px; left: -30px;}
 .intro_1, .intro_2, .organizer_c ul li.line{ display: none;}
-.intro p{ width: 90%;}
+.knowhow p{ width: 90%;}
 .tab{ margin: 0 4px;}
 .tab a{ padding: 10px 20px;}
 .intro_box, .accordion{ width: 90%; margin: 10px auto;}
@@ -440,8 +442,8 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .banner, .more{ padding: 0 20px;}
 .more{ margin: 40px 0 0 0;}
 .wrapper{ padding-bottom: 0;}
-.intro p.sub{ margin: 30px auto 0;}
-/* highlight */
+.knowhow p.sub{ margin: 30px auto 0;}
+/* photo */
 .titp_4{ width: 236px;}
 /* article */
 .article_box{ margin: 0 10px;}
@@ -470,22 +472,22 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .kv_p4{ width: 94px; right: 85px; top: 127px;}
 /* news */
 .stitle{ width: 100%;}
-/* forum */
-.forum{ padding: 0 0 60px;}
-.forum_c{ padding: 0 0 10px;}
+/* workshop */
+.workshop{ padding: 0 0 60px;}
+.workshop_c{ padding: 0 0 10px;}
 .timeline{ padding-top: 0; font-size: 1.125rem;}
 .expert_box1, .expert_box2, .expert_box3{ width: 80%;}
 .table li{ margin-bottom: 5px;}
 .table .table-header{ margin-bottom: 10px;}
-/* intro */
-.intro p{ width: 100%;}
-.intro p.sub{ font-size: 1.375rem;}
+/* knowhow */
+.knowhow p{ width: 100%;}
+.knowhow p.sub{ font-size: 1.375rem;}
 .tab{ font-size: 1.125rem; }
 .tab a{ padding: 5px 25px;}
 .intro_box, .accordion{ width: 100%; margin: 20px auto;}
-/* highlight */
+/* photo */
 .bg_4{ height: 80px;}
-.highlight{ padding: 60px 0;}
+.photo{ padding: 60px 0;}
 .h_article{ display: block;}
 .a_box{ width: 100%;}
 .a_box:nth-child(odd){ margin-right: 0;}
@@ -493,13 +495,15 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .txt p{ padding-bottom: 5px;}
 /* article */
 .article{ margin-top: -80px;}
-.bg_5{ height: 160px;}
+.bg_5{ height: 110px;}
 /* organizer */
 .bg_6{ height: 100px;}
 .organizer{ padding: 0 0 98px;}
 .organizer_c{ padding-bottom: 10px;}
 .deco_10{ width: 130px;}
 .deco_11{ width: 73px;}
+
+.owl-theme .owl-dots .owl-dot span{ width: 10px; height: 10px; margin: 0 5px;}
 }
 
 @media screen and (max-width: 414px){
@@ -508,7 +512,7 @@ span.logo{ margin: 10px 0 10px -10px; width: 70px; }
 .contain{ padding: 0 30px; }
 .owl-carousel .owl-stage-outer{ padding-bottom: 10px;}
 .kv{ padding-top: 87px;}
-.video_box{ border:15px #fffefc solid ;}
+.video_c{ border:15px #fffefc solid ;}
 .kv_p4{ top: 147px;}
 .timeline{ font-size: 1rem;}
 .table .col-1 { width: 20%;margin-right: 10px;}
