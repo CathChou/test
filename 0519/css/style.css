@@ -75,8 +75,9 @@ image-rendering: crisp-edges;
 .v_content{ width: 1000px; margin: 50px auto 0;}
 .video_c{border: 30px #fffefc solid; border-radius: 20px;}
 .video{ position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;}
+.video_box{ position: relative;}
 .video iframe{ position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
-.v_txt{ margin: 30px auto 0; text-align: center;color: #393c40; font-size: 1.375rem; }
+.v_txt{ margin: 30px auto 0; color: #393c40; font-size: 1.375rem; background-color:#fffefc ; width: 60%; padding: 20px 30px; bottom: 0; position: absolute; text-align: left; left: 0; }
 .titp_1{ width: 234px; position: absolute; left: 183px; top: -120px;}
 .deco_1{ width: 155px; position: absolute; right: -23px; top: -60px;}
 .deco_2{ width: 74px; position: absolute; left: 20px; bottom: -20px; z-index: 2;}
@@ -439,7 +440,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .tab a{ padding: 10px 20px;}
 .intro_box, .accordion{ width: 90%; margin: 10px auto;}
 .intro_box_c{ display: block;}
-.banner, .more{ padding: 0 20px;}
+.banner, .more{ padding: 0 20px 20px;}
 .more{ margin: 40px 0 0 0;}
 .wrapper{ padding-bottom: 0;}
 .knowhow p.sub{ margin: 30px auto 0;}
@@ -472,6 +473,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .kv_p4{ width: 94px; right: 85px; top: 127px;}
 /* news */
 .stitle{ width: 100%;}
+.v_txt{ position: inherit; background-color: inherit; width: 100%; margin: 0; padding: 20px 20px 0;}
 /* workshop */
 .workshop{ padding: 0 0 60px;}
 .workshop_c{ padding: 0 0 10px;}
