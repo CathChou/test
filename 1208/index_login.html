@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>律卡</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="telephone=no" name="format-detection">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<link rel="image_src" href="">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/fontawesome.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="https://kit.fontawesome.com/630845ec96.js" crossorigin="anonymous"></script>
+</head>	
+<body>
+<!-- Google tag (gtag.js) -->
+<script async="" src="js/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1TZ0WGB4CE');
+</script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery-2.2.0.min.js"></script>
+
+
+<!-- header -->
+<div id="header">
+	<div class="container">
+		<div class="row a-center">
+			<div class="col-2">
+				<a href="https://lusucard.com/" title="回律卡首頁"><img src="images/logo_white_big.png" style="max-height:50px;"></a>
+			</div>
+			<div class="col-8">
+				<div class="container">
+					<div class="row a-center">
+						<div class="col-6">
+							<form name="xform" id="xform" action="https://lusucard.com/search.php" method="post">		
+								<div class="input-group input-group-sm">
+									<div class="form-group has-search input-group">
+										<i class="fa-solid fa-magnifying-glass form-control-feedback"></i>
+										<input type="text" class="form-control" size="25" maxlength="50" placeholder="" name="search" id="search" value="">
+									</div>
+								</div>
+							</form> 
+						</div>
+						<div id="navigation" class="col-6">
+							<ul>
+								<li><a href="https://lusucard.com/" title="回首頁" class="menu">首頁</a></li>
+								<li><a>通知</a></li>
+								<li><a>篩選律師</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-2">
+				<button type="button" class="btn btn-dark btn_menu" data-bs-toggle="modal" data-bs-target="#nav_menu">
+					<i class="fa-solid fa-bars fa-2x"></i>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row justify-content-center">
+		<!-- 左欄 -->
+		<div class="col-2 box_padding">
+			<div class="member">
+				<div class="member_photo">
+					<img src="images/pic_member.png">
+				</div>
+				<div class="member_name">
+					<a href="lawyer_me.php" class="link_a">
+						沈柏志<span>EN name</span>
+					</a>
+				</div>
+				<hr class="hr_news">
+				<i class="fa-solid fa-heart fa-1g"></i> 關注 
+				<span class="num">568</span>
+				<hr class="hr_news">
+				<center><a href="lawyer_me.php" class="link_a">個人資料</a></center>
+			</div>
+			<div class="item_list">
+				<div class="item_title">好友名單</div>
+				<ul class="item_block">
+					<li>
+						<div class="item_block_pic"><img src="images/p1.png"></div>
+						<div class="item_block_txt">中文名<span class="en">EN name</span></div>
+					</li>
+					<li>
+						<div class="item_block_pic"><img src="images/p1.png"></div>
+						<div class="item_block_txt">中文名<span class="en">EN name</span></div>
+					</li>
+					<li>
+						<div class="item_block_pic"><img src="images/p1.png"></div>
+						<div class="item_block_txt">中文名<span class="en">EN name</span></div>
+					</li>
+				</ul>
+			</div>
+			<div class="item_list share">
+				<div class="item_title">追蹤推薦</div>
+				<ul class="item_block">
+					<li>
+						<a href="https://lusucard.com/viewpost.php?psn=5">
+							<div class="item_block_pic"><img src="images/p1.png"></div>
+							<div class="item_block_txt">中文名<span class="en">EN name</span></div>
+						</a>
+						<div class="share_icon">
+							<a href="https://www.google.com.tw/" target="_blank"><span><i class="icon_s fa-solid fa-heart" title="關注"></i></span></a>
+							<a href="https://www.google.com.tw/" target="_blank"><span><i class="icon_s fa-solid fa-user-plus" title="加好友"></i></span></a>
+						</div>
+					</li>
+					<li>
+						<a href="https://lusucard.com/viewpost.php?psn=5">
+							<div class="item_block_pic"><img src="images/p1.png"></div>
+							<div class="item_block_txt">中文名<span class="en">EN name</span></div>
+						</a>
+						<div class="share_icon">
+							<a href="https://www.google.com.tw/" target="_blank"><span><i class="icon_s fa-solid fa-heart" title="關注"></i></span></a>
+							<a href="https://www.google.com.tw/" target="_blank"><span><i class="icon_s fa-solid fa-user-plus" title="加好友"></i></span></a>
+						</div>
+					</li>
+					<li>
+						<a href="https://lusucard.com/viewpost.php?psn=5">
+							<div class="item_block_pic"><img src="images/p1.png"></div>
+							<div class="item_block_txt">中文名<span class="en">EN name</span></div>
+						</a>
+						<div class="share_icon">
+							<a href="https://www.google.com.tw/" target="_blank"><span><i class="icon_s fa-solid fa-heart" title="關注"></i></span></a>
+							<a href="https://www.google.com.tw/" target="_blank"><span><i class="icon_s fa-solid fa-user-plus" title="加好友"></i></span></a>
+						</div>
+					</li>
+				</ul>
+			</div>	
+		</div>
+
+		<!-- 中欄 -->
+		<div class="col-8 box_padding">
+			<div id="indexBanner"><img src="images/indexbanner.png"></div>
+			<div id="focus">
+				<div class="focus_box"><img src="images/1.png" width="100%"></div>
+				<div class="focus_box"><img src="images/1.png" width="100%"></div>
+				<div class="focus_box"><img src="images/1.png" width="100%"></div>
+				<div class="focus_box"><img src="images/1.png" width="100%"></div>
+				<div class="focus_box"><img src="images/1.png" width="100%"></div>
+			</div>
+			
+			<div id="mainStory">
+				<ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
+					<li class="tab_item nav-item" role="presentation">
+						<button class="main_tab nav-link tab_a active" id="new-news-tab" data-bs-toggle="pill" data-bs-target="#new-news" type="button" role="tab" aria-controls="pills-home" aria-selected="true">最新動態</button>
+					</li>
+					<li class="tab_item nav-item" role="presentation">
+						<button class="main_tab nav-link tab_a" id="hot-news-tab" data-bs-toggle="pill" data-bs-target="#hot-news" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">熱門動態</button>
+					</li>
+				</ul>
+					
+				<div class="tab-content" id="news-tab">
+					<div class="tab-pane fade show active" id="new-news" role="tabpanel" aria-labelledby="new-news-tab">
+						<!-- 最新動態文 -->
+						<div class="hot_news">
+							<div class="row">
+								<dl class="col-8 memberInfo">
+									<dt class="memberPic item_block_pic"><img src="images/p1.png"></dt>
+									<dd class="item_block_txt">中文名<span class="en">EN name</span></dd>
+								</dl> 
+								<div class="col-4 function_icon">
+									<ul>
+										<li><a><i class="fa-solid fa-user-plus"></i> 加好友</a></li>
+										<li><a><i class="fa-solid fa-heart"></i> 關注</a></li>
+										<li><a><i class="fa-solid fa-bookmark"></i> 收藏</a></li>
+									</ul>
+									<p class="post_time">2022-12-25 11:20</p>
+								</div>								
+							</div>
+						
+							<div class="line"></div>
+							<div class="content">
+								<p>據高正量建於別，層問空計通裡自，增辰花須見。水省列斯深口乾驗階前，當信決白應酸階進，張所入兒土與林導詢，所照此究性秀形。原力命圖會裝，長日鬥那式住不，身共相斷處V，松三G布計。工劃受引需京格克老觀，領正問用肅權裝霸。</p>
+							</div>
+							<div class="social_icon">
+								<ul>
+									<li>
+										<a><i class="fa-solid fa-thumbs-up link_hand"></i><span class="num">0</span></a>
+									</li>
+									<li>
+										<a><i class="far fa-comment-alt link_hand"></i><span class="num">0</span></a>
+									</li>
+									<li>
+										<a><i class="fas fa-share-alt fa-lg link_hand" title="分享" onclick="copy_url(&#39;https://lusucard.com/viewpost.php?psn=5&#39;)"></i><span class="num">0</span></a>
+									</li>
+								</ul>
+							</div>							
+						</div>
+						<div class="hot_news">
+							<div class="row">
+								<dl class="col-8 memberInfo">
+									<dt class="memberPic item_block_pic"><img src="images/p1.png"></dt>
+									<dd class="item_block_txt">中文名<span class="en">EN name</span></dd>
+								</dl> 
+								<div class="col-4 function_icon">
+									<ul>
+										<li><a><i class="fa-solid fa-bookmark"></i> 收藏</a></li>
+									</ul>
+									<p class="post_time">2022-12-25 11:20</p>
+								</div>								
+							</div>
+						
+							<div class="line"></div>
+							<div class="content">
+								<dl class="img">
+									<dt><img src="images/hotnews_1.jpg"></dt>
+									<dd>
+										<img src="images/hotnews_2.jpg">
+										<img src="images/hotnews_3.jpg">
+									</dd>
+								</dl>
+								<p>據高正量建於別，層問空計通裡自，增辰花須見。水省列斯深口乾驗階前，當信決白應酸階進，張所入兒土與林導詢，所照此究性秀形。原力命圖會裝，長日鬥那式住不，身共相斷處V，松三G布計。工劃受引需京格克老觀，領正問用肅權裝霸。</p>
+							</div>
+							<div class="social_icon">
+								<ul>
+									<li>
+										<a><i class="fa-solid fa-thumbs-up link_hand"></i><span class="num">0</span></a>
+									</li>
+									<li>
+										<a class="comment"><i class="far fa-comment-alt link_hand"></i><span class="num">2</span></a>
+									</li>
+									<li>
+										<a><i class="fas fa-share-alt fa-lg link_hand" title="分享" onclick="copy_url(&#39;https://lusucard.com/viewpost.php?psn=5&#39;)"></i><span class="num">0</span></a>
+									</li>
+								</ul>
+							</div>
+							<div class="reply">
+								<div class="container reply_item">
+									<div class="row">
+										<div class="col-3 memberInfo">
+											<div class="memberPic item_block_pic"><img src="images/p1.png"></div>
+											<div class="item_block_txt">中文名<span class="en">EN name</span></div>
+										</div>
+										<div class="col-9">
+											<p>水省列斯深口乾驗階前，當信決白應酸階進，張所入兒土與林導詢，所照此究性秀形。原力命圖會裝，長日鬥那式住不，身共相斷處V，松三G布計。工劃受引需京格克老觀，領正問用肅權裝霸。</p>
+										</div>
+									</div>
+									<div class="social_icon">
+										<ul>
+											<li>
+												<a><i class="fa-solid fa-thumbs-up link_hand"></i><span class="num">0</span></a>
+											</li>
+											<li>
+												<a><i class="far fa-comment-alt link_hand"></i><span class="num">0</span></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="container reply_item">
+									<div class="row">
+										<div class="col-3 memberInfo">
+											<div class="memberPic item_block_pic"><img src="images/p1.png"></div>
+											<div class="item_block_txt">中文名<span class="en">EN name</span></div>
+										</div>
+										<div class="col-9">
+											<p>水省列斯深口乾驗階前，當信決白應酸階進，張所入兒土與林導詢，所照此究性秀形。原力命圖會裝，長日鬥那式住不，身共相斷處V，松三G布計。工劃受引需京格克老觀，領正問用肅權裝霸。</p>
+										</div>
+									</div>
+									<div class="social_icon">
+										<ul>
+											<li>
+												<a><i class="fa-solid fa-thumbs-up link_hand"></i><span class="num">0</span></a>
+											</li>
+											<li>
+												<a><i class="far fa-comment-alt link_hand"></i><span class="num">1</span></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="container reply_item reply_second">
+									<div class="row">
+										<div class="col-3">
+										</div>
+										<div class="col">
+											<div class="container">
+												<div class="row">
+													<div class="col-4 memberInfo">
+														<div class="memberPic item_block_pic"><img src="images/p1.png"></div>
+														<div class="item_block_txt">中文名<span class="en">EN name</span></div>
+													</div>
+													<div class="col">
+														<p>水省列斯深口乾驗階前，當信決白應酸階進，張所入兒土與林導詢，所照此究性秀形。</p>
+														<div class="social_icon">
+															<ul>
+																<li>
+																	<a><i class="fa-solid fa-thumbs-up link_hand"></i><span class="num">0</span></a>
+																</li>
+																<li>
+																	<a><i class="far fa-comment-alt link_hand"></i><span class="num">0</span></a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>					
+						</div>
+					</div>
+					<div class="tab-pane fade" id="hot-news" role="tabpanel" aria-labelledby="hot-news-tab">
+						<!-- 熱門動態文 -->
+						<div class="hot_news">
+							<div class="table">
+								<table border="0" align="center" class="table align-middle">
+									<tbody><tr>
+										<td>
+											<div class="row">
+												<div class="col-1" style="float:left;"><img src="images/2390_pic_avatar_20220816114453.gif" class="mask_circle"></div> 
+												<div class="col me-auto"><span><a href="https://lusucard.com/lawyer_me.php?sn=2390" class="link_a">施泓成<br></a></span></div>
+												<div class="col-auto">
+													<span class="link_hand friend_2390" style="color:#103284">
+														<i class="fa-solid fa-user-plus"></i> 加好友
+													</span>&nbsp;  &nbsp; 
+													<span style="color:#103284">
+														<i class="fa-solid fa-heart"></i> 關注
+													</span>&nbsp;  &nbsp;
+													<span style="color:#103284">
+														<i class="fa-solid fa-bookmark"></i> 收藏
+													</span><br>
+													<img src="images/open_1.png" style="padding:0px 10px;" class="view_everyone_min" align="center">
+													<span class="post_time">2022-08-18 11:44</span>
+												</div>								
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<hr color="#68C7EB">
+											<div class="col-md-auto"><img src="images/hqdefault.jpg" width="100%"><br></div>
+											<div style="word-break: break-all;"><span class="link_hand more-multiline8" onclick="ShowHideTextOnSpan8(this)"><a href="https://www.youtube.com/watch?v=ud-Cab5oVO4" target="_blank">https://www.youtube.com/watch?v=ud-Cab5oVO4</a></span></div>
+											<hr color="#e4e4e4">
+											<div style="float:right">
+											<i class="fa-solid fa-thumbs-up link_hand" style="color:#103284"></i><span class="num heart_4">0</span>&nbsp;  &nbsp; 
+											<i class="far fa-comment-alt link_hand" style="color:#103284"></i> 
+											<span class="num">0</span>&nbsp; &nbsp;
+											<i class="fas fa-share-alt fa-lg link_hand" title="分享" style="color:#103284" onclick="copy_url(&#39;https://lusucard.com/viewpost.php?psn=4&#39;)"></i> 
+											<span class="num">0</span>
+										</div>							
+										</td>
+									</tr>
+								</tbody></table>
+							</div>
+						</div>
+						<!-- 熱門動態 END -->
+						
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- 右欄 -->
+		<div class="col-2 box_padding">
+			<div class="item_list story">
+				<div class="item_title">動態推送</div>
+				<ul>
+					<a class="item_block" href="https://lusucard.com/viewpost.php?psn=5" class="link_a">
+						<li>
+							<div class="item_block_pic"><img src="images/p1.png"></div>
+							<div class="item_block_txt">中文名<span class="en">EN name</span></div>
+						</li>
+						<p>原力命圖會裝，長日鬥那式住不，身共相斷處V，松三G布計。工劃...<span class="more">more</span></p>
+					</a>
+					<hr class="hr_news">
+					<a class="item_block" href="https://lusucard.com/viewpost.php?psn=5" class="link_a">
+						<li>
+							<div class="item_block_pic"><img src="images/p1.png"></div>
+							<div class="item_block_txt">中文名<span class="en">EN name</span></div>
+						</li>
+						<p>原力命圖會裝，長日鬥那式住不，身共相斷處V，松三G布計。工劃...<span class="more">more</span></p>
+					</a>
+					<hr class="hr_news">
+					<a class="item_block" href="https://lusucard.com/viewpost.php?psn=5" class="link_a">
+						<li>
+							<div class="item_block_pic"><img src="images/p1.png"></div>
+							<div class="item_block_txt">中文名<span class="en">EN name</span></div>
+						</li>
+						<p>原力命圖會裝，長日鬥那式住不，身共相斷處V，松三G布計。工劃...<span class="more">more</span></p>
+					</a>
+				</ul>
+			</div>
+			<div class="item_list share">
+				<div class="item_title">最佳分享</div>
+				<ul class="item_block">
+					<li>
+						<a href="https://lusucard.com/viewpost.php?psn=5">
+							<div class="item_block_pic"><img src="images/p1.png"></div>
+							<div class="item_block_txt">中文名<span class="en">EN name</span></div>
+						</a>
+						<div class="share_icon">
+							<a href="https://www.google.com.tw/" target="_blank"><span><i class="icon_s fa-solid fa-heart" title="關注"></i></span></a>
+							<a href="https://www.google.com.tw/" target="_blank"><span><i class="icon_s fa-solid fa-user-plus" title="加好友"></i></span></a>
+						</div>
+					</li>
+					<li>
+						<a href="https://lusucard.com/viewpost.php?psn=5">
+							<div class="item_block_pic"><img src="images/p1.png"></div>
+							<div class="item_block_txt">中文名<span class="en">EN name</span></div>
+						</a>
+						<div class="share_icon">
+							<a href="https://www.google.com.tw/" target="_blank"><span><i class="icon_s fa-solid fa-heart" title="關注"></i></span></a>
+							<a href="https://www.google.com.tw/" target="_blank"><span><i class="icon_s fa-solid fa-user-plus" title="加好友"></i></span></a>
+						</div>
+					</li>
+					<li>
+						<a href="https://lusucard.com/viewpost.php?psn=5">
+							<div class="item_block_pic"><img src="images/p1.png"></div>
+							<div class="item_block_txt">中文名<span class="en">EN name</span></div>
+						</a>
+						<div class="share_icon">
+							<a href="https://www.google.com.tw/" target="_blank"><span><i class="icon_s fa-solid fa-heart" title="關注"></i></span></a>
+							<a href="https://www.google.com.tw/" target="_blank"><span><i class="icon_s fa-solid fa-user-plus" title="加好友"></i></span></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade bs-example-modal-lg" id="edit_reply" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="staticBackdropLabel">留言</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form method="post" id="form_reply" name="form_reply" action="https://lusucard.com/">
+					<div class="mb-3">
+						<table class="tableA" width="100%" border="0" cellspacing="0" cellpadding="10" align="center">
+							<tbody>
+								<tr class="td_hr">
+									<td><textarea class="form-control" name="content" rows="4"></textarea></td>
+								</tr>
+							</tbody>
+						</table>						
+					</div>
+					<input type="hidden" name="psn" value="">
+					<input type="hidden" name="forurl" value="%2F">
+				</form>
+			</div>
+			<div class="text-canter" align="canter">
+				<center>									
+					<button type="submit" class="btn btn-dark m-3" onclick="edit_reply();">送出</button>
+				</center>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

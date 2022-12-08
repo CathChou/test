@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>律卡</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="telephone=no" name="format-detection">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<link rel="image_src" href="">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/fontawesome.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="https://kit.fontawesome.com/630845ec96.js" crossorigin="anonymous"></script>
+</head>	
+<body>
+<!-- Google tag (gtag.js) -->
+<script async="" src="js/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1TZ0WGB4CE');
+</script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery-2.2.0.min.js"></script>
+
+
+<!-- header -->
+<div id="header">
+	<div class="container">
+		<div class="row a-center">
+			<div class="col-2">
+				<a href="https://lusucard.com/" title="回律卡首頁"><img src="images/logo_white_big.png" style="max-height:50px;"></a>
+			</div>
+			<div class="col-8">
+				<div class="container">
+					<div class="row a-center">
+						<div class="col-6">
+							<form name="xform" id="xform" action="https://lusucard.com/search.php" method="post">		
+								<div class="input-group input-group-sm">
+									<div class="form-group has-search input-group">
+										<i class="fa-solid fa-magnifying-glass form-control-feedback"></i>
+										<input type="text" class="form-control" size="25" maxlength="50" placeholder="" name="search" id="search" value="">
+									</div>
+								</div>
+							</form> 
+						</div>
+						<div id="navigation" class="col-6">
+							<ul>
+								<li><a href="https://lusucard.com/" title="回首頁" class="menu">首頁</a></li>
+								<li><a>通知</a></li>
+								<li><a>篩選律師</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-2">
+				<button type="button" class="btn btn-dark btn_menu" data-bs-toggle="modal" data-bs-target="#nav_menu">
+					<i class="fa-solid fa-bars fa-2x"></i>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col">
+			<div class="lawyerBanner">
+				<img src="images/lawyerbanner_1.png">
+				<div class="lawyerMember"><img src="images/member_lawyer_1.png"></div>
+			</div>
+		</div>
+	</div>
+	<div class="row lawyerInfo">
+		<div class="col-10">
+			<div class="personal_name">
+				<div class="n">連睿鈞<span>EN name</span></div>
+				<div><img src="images/badge.png"></div>
+			</div>
+			<p class="personal_detail">
+				<span>律師證號 100臺檢證字第9341號</span>
+				<span><i class="fa-solid fa-location-dot"></i>10438台北市中山區建國北路二段85號6號樓之1</span>
+			</p>
+		</div>
+		<div class="col-2">
+			<button type="button" class="btn btn-dark" onclick="self.location.href=&#39;setting.php?sn=11112&#39;">編輯個人資料</button>
+		</div>
+	
+	</div>
+	<div class="row">
+		<!-- 左欄 -->
+		<div class="col">
+			<div class="row">
+				<div class="col">
+					<ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
+						<li class="page_tab tab_item nav-item" role="presentation">
+							<button class="main_tab nav-link tab_a active" data-bs-toggle="pill" data-bs-target="#pills-personal" type="button" role="tab" aria-controls="pills-personal" aria-selected="true">個人資料</button>
+						</li>
+						<li class="page_tab tab_item nav-item" role="presentation">
+							<button class="main_tab nav-link tab_a" data-bs-toggle="pill" data-bs-target="#pills-social" type="button" role="tab" aria-controls="pills-social" aria-selected="false">律卡社群</button>
+						</li>
+						<li class="page_tab tab_item nav-item" role="presentation">
+							<button class="main_tab nav-link tab_a" data-bs-toggle="pill" data-bs-target="#pills-profession" type="button" role="tab" aria-controls="pills-profession" aria-selected="false">律師專業</button>
+						</li>
+						<li class="page_tab tab_item nav-item" role="presentation">
+							<button class="main_tab nav-link tab_a" data-bs-toggle="pill" data-bs-target="#pills-qa" type="button" role="tab" aria-controls="pills-qa" aria-selected="false">律卡問答</button>
+						</li>
+						<li class="page_tab tab_item nav-item" role="presentation">
+							<button class="main_tab nav-link tab_a" data-bs-toggle="pill" data-bs-target="#pills-board" type="button" role="tab" aria-controls="pills-board" aria-selected="false">委託佈告欄</button>
+						</li>
+					</ul>
+					<div class="page_tabcontent" id="pills-tabContent">
+						<!-- 個人資料 -->
+						<div class="tab-pane fade active show" id="pills-personal" role="tabpanel" aria-labelledby="pills-home-tab">
+							<div class="col peronalInfo">
+								<div class="smalltab_block">
+									<a class="smalltab" href="#profile-content">律師資料</a>
+									<a class="smalltab" href="#office-content">事務所資訊</a>
+									<a class="smalltab" href="#recommend-content">自我推薦</a>
+									<a class="smalltab" href="#education-content">學歷經歷</a>
+									<a class="smalltab" href="#introduce-content">自我介紹</a>
+									<a class="smalltab" href="#interest-content">技能證照</a>
+								</div>
+								<!-- 第一種圖片排列 -->
+								<div class="container">
+									<div class="row">
+										<div class="col tab_pic tab_pic_style1"><img src="images/personalinfo_1.jpg"></div>
+										<div class="col tab_pic tab_pic_style1"><img src="images/personalinfo_1.jpg"></div>
+										<div class="col tab_pic tab_pic_style1"><img src="images/personalinfo_1.jpg"></div>
+									</div>
+								</div>
+								<div class="container">
+									<div id="profile-content" class="tab_subtitle" data-bs-toggle="collapse" data-bs-target="#profile">律師資料</div>
+									<!-- 律師資料 -->
+									<div class="collapse collapse_content show" id="profile">
+										<div class="lawyer_table">
+											<div>
+												<p class="item">所屬公會</p>
+												<p class="detail">台北律師公會</p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">入會年</p>
+												<p class="detail">103年</p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">執業區域</p>
+												<p class="detail">基隆、台北、新北、桃園</p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">專業領域</p>
+												<p class="detail"></p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">其他專業認證</p>
+												<p class="detail"></p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">諮詢受理設定</p>
+												<p class="detail"></p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">聯絡電話</p>
+												<p class="detail">02-25161882分機567</p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">手機</p>
+												<p class="detail">0937024397</p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">電話查詢</p>
+												<p class="detail">接受</p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">傳真號碼</p>
+												<p class="detail">02-25045862</p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">e-mail</p>
+												<p class="detail">ecnv2816@gmail.com</p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">電郵查詢</p>
+												<p class="detail">接受</p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">營業時間</p>
+												<p class="detail">上班日09:00-18:00</p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">休息日</p>
+												<p class="detail">六日</p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">假日諮詢</p>
+												<p class="detail"></p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">夜間諮詢</p>
+												<p class="detail"></p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">女性接待</p>
+												<p class="detail"></p>
+												<div class="clear"></div>
+											</div>
+										</div>
+									</div>
+		
+									<div id="office-content" class="tab_subtitle" data-bs-toggle="collapse" data-bs-target="#office">事務所資訊</div>
+									<!-- 事務所資訊 -->
+									<div class="collapse collapse_content" id="office">
+										<div class="lawyer_table">
+											<div>
+												<p class="item">事務所名稱</p>
+												<p class="detail">三禾法律事務所</p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">地址</p>
+												<p class="detail"><i class="fa-solid fa-location-dot"></i>	104 台北市中山區建國北路二段85號6樓之1</p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">交通資訊</p>
+												<p class="detail">捷運線行天宮站步行10分鐘；公車建國南路站步行4分鐘；附近有汽機車停車場</p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">空間</p>
+												<p class="detail">完全私人且舒適的空間</p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">支援的語言</p>
+												<p class="detail">中文、台語、英文、日文</p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">營業時間</p>
+												<p class="detail">上班日09:00-18:00</p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">休息日</p>
+												<p class="detail">六日</p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">律師人數</p>
+												<p class="detail">5人</p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">員工人數</p>
+												<p class="detail">3人</p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">辦公室網址</p>
+												<p class="detail"></p>
+												<div class="clear"></div>
+											</div>
+										</div>
+										<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.2832472806094!2d121.53517365077751!3d25.058387143388284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abe1e388af7d%3A0xb84cf4aadb06a327!2zMTA0Mzjlj7DljJfluILkuK3lsbHljYDlu7rlnIvljJfot6_kuozmrrU4NeiZnzbomZ_mqJPkuYsx!5e0!3m2!1szh-TW!2stw!4v1670466613522!5m2!1szh-TW!2stw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+									</div>
+		
+									<div id="recommend-content" class="tab_subtitle" data-bs-toggle="collapse" data-bs-target="#recommend">自我推薦</div>
+									<!-- 自我推薦 -->
+									<div class="collapse collapse_content" id="recommend">
+										<p class="tab_emtxt">法律不是萬能，但不懂法律萬萬不能</p>
+										<p>執業以前一直有個疑問，為什麼人民對於司法信任度這麼低？到底是司法哪裏出了問題？
+											執業這十年歷程來，漸漸有了一點心得，主要在於司法專業所築起的高牆，以及執業人員的冷漠態度所致，其中執業人員的態度，不是一朝一夕能解決，但對於司法專業所築起的高牆，一直以來我以及我的夥伴們都在努力搭起攻城梯，讓兩邊能順暢溝通，為此我與夥伴們一起做了萬狀通，嘗試用聊天軟體的方式，降低大家使用司法的門檻以及心理的障礙，而且本於對公益的付出，是完全免費；再來，為了要讓所有人都能夠找到適合自己的律師，也弄了律卡，整合了大家想知道的律師資訊，供有需要的人查詢，讓你選到對的人來維護自己的權益，或許我們所做的只是微乎其微的一小步，但每次作出來的成果所累積起來，每個使用者溫暖的回饋，會讓我們知道不是白忙一場，期許這次也能好好達成想要達到的目的，讓台灣的司法更進步，更能貼近所有人。</p>
+									</div>
+		
+		
+									<div id="education-content" class="tab_subtitle" data-bs-toggle="collapse" data-bs-target="#education">學歷經歷</div>
+									<!-- 學歷經歷 -->
+									<div class="collapse collapse_content" id="education">
+										<div class="lawyer_table">
+											<div>
+												<p class="item">學歷</p>
+												<p class="detail">國立政治大學法律研究所財經法組</p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">經歷</p>
+												<p class="detail">萬狀通網站創辦團隊、三禾法律事務所律師</p>
+												<div class="clear"></div>
+											</div>
+										</div>
+									</div>
+
+									<div id="introduce-content" class="tab_subtitle" data-bs-toggle="collapse" data-bs-target="#introduce">自我介紹</div>
+									<!-- 自我介紹 -->
+									<div class="collapse collapse_content" id="introduce">
+										<div class="lawyer_table">
+											<div>
+												<p class="item">個人嗜好</p>
+												<p class="detail">電玩模型動漫</p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">最愛電影</p>
+												<p class="detail">星際終結者</p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">最愛遊戲</p>
+												<p class="detail">艾爾登法環</p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">最開心的事情</p>
+												<p class="detail">買到PS5的當下</p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">最興奮的事情</p>
+												<p class="detail">打完BOSS戰</p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="item">最幸運的事情</p>
+												<p class="detail">點 Uber Eat 沒有採到雷</p>
+												<div class="clear"></div>
+											</div>
+										</div>
+									</div>
+		
+									<div id="interest-content" class="tab_subtitle" data-bs-toggle="collapse" data-bs-target="#interest">技能證照</div>
+									<!-- 技能證照 -->
+									<div class="collapse collapse_content" id="interest">
+										<div class="lawyer_table">
+											<div>
+												<p class="detail detailone">會計師證照</p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="detail detailone">財稅證照</p>
+												<div class="clear"></div>
+											</div>
+											<div>
+												<p class="detail detailone">工程師</p>
+												<div class="clear"></div>
+											</div>
+										</div>
+									</div>	
+								</div>
+							</div>
+						</div>
+						<!-- 律卡社群 -->
+						<div class="tab-pane fade active" id="pills-social" role="tabpanel" aria-labelledby="pills-home-tab">
+							<div class="col say">
+								<div class="say container-fluid" style=";margin:0;">
+									<span class="title_a link_hand" data-bs-toggle="collapse" data-bs-target="#profile">律師資料</span>
+									<hr class="hr_a">
+									<div class="collapse" id="profile">
+										12345
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 右欄 -->
+		<div class="col-2 box_padding">
+			<div class="lawyer">
+				<div class="item_list">
+					<div class="item_title"><span class="status"></span>線上駐點中<p>AＭ 06:00 - PＭ 22:00</p></div>
+					<div class="item_block">
+						<div class="contact">
+							<p>聯繫連睿鈞律師</p>
+							<p><span><i class="fa-solid fa-mobile-screen-button color_1 i_margin"></i></span>0937-024-397</p>
+							<hr>
+							<p><span><i class="fa-sharp fa-solid fa-phone color_1 i_margin"></i></span>02-25161882</p>
+							<hr>
+							<p><span><i class="fa-brands fa-line color_1 i_margin"></i></span>legal885995</p>
+						</div>
+						<button type="button" class="btn btn_contact" onclick="self.location.href=&#39;mailto:gmnextpc@gmail.com&#39;"><i class="fa-solid fa-envelope color_1 i_margin"></i>寄信聯繫我</button>	
+					</div>
+				</div>	
+				<div class="item_list">
+					<div class="item_title">線上駐點時間</div>
+					<div class="item_block">
+						<p><span class="tit">上線時間</span>AＭ 06:00 - PＭ 22:00</p>
+						<p><span class="tit">定期放假</span>例假日、國定假日</p>
+					</div>
+				</div>	
+				<div class="item_list">
+					<div class="item_title">交通資訊</div>
+					<div class="item_block">
+						<p>汽機車停車場、捷運站、公車站</p>
+					</div>
+				</div>
+				<div class="item_list">
+					<div class="item_title">面談空間</div>
+					<div class="item_block">
+						<p>完全私人且舒適的空間</p>
+					</div>
+				</div>
+				<div class="item_list">
+					<div class="item_title">支援語言</div>
+					<div class="item_block">
+						<p>中文、台語、英文、日語</p>
+					</div>
+				</div>
+			</div>
+			<div class="item_list share">
+				<div class="item_title">追蹤推薦</div>
+				<ul class="item_block">
+					<li>
+						<a href="https://lusucard.com/viewpost.php?psn=5">
+							<div class="item_block_pic"><img src="images/p1.png"></div>
+							<div class="item_block_txt">中文名<span class="en">EN name</span></div>
+						</a>
+						<div class="share_icon">
+							<a href="https://www.google.com.tw/" target="_blank"><span><i class="icon_s fa-solid fa-heart" title="關注"></i></span></a>
+							<a href="https://www.google.com.tw/" target="_blank"><span><i class="icon_s fa-solid fa-user-plus" title="加好友"></i></span></a>
+						</div>
+					</li>
+					<li>
+						<a href="https://lusucard.com/viewpost.php?psn=5">
+							<div class="item_block_pic"><img src="images/p1.png"></div>
+							<div class="item_block_txt">中文名<span class="en">EN name</span></div>
+						</a>
+						<div class="share_icon">
+							<a href="https://www.google.com.tw/" target="_blank"><span><i class="icon_s fa-solid fa-heart" title="關注"></i></span></a>
+							<a href="https://www.google.com.tw/" target="_blank"><span><i class="icon_s fa-solid fa-user-plus" title="加好友"></i></span></a>
+						</div>
+					</li>
+					<li>
+						<a href="https://lusucard.com/viewpost.php?psn=5">
+							<div class="item_block_pic"><img src="images/p1.png"></div>
+							<div class="item_block_txt">中文名<span class="en">EN name</span></div>
+						</a>
+						<div class="share_icon">
+							<a href="https://www.google.com.tw/" target="_blank"><span><i class="icon_s fa-solid fa-heart" title="關注"></i></span></a>
+							<a href="https://www.google.com.tw/" target="_blank"><span><i class="icon_s fa-solid fa-user-plus" title="加好友"></i></span></a>
+						</div>
+					</li>
+				</ul>
+			</div>	
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>
