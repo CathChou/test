@@ -33,11 +33,14 @@ h1{ display: none;}
 .a-center{ align-items: center;}
 .text-break{ word-break:break-all;}
 .box_padding{ padding-left: 10px; padding-right: 10px;}
-.btn_menu{background: url(../images/bg_menu.png) no-repeat; border-radius: 0; width: 96px; height: 63px; margin-top: -10px;}
+.btn_menu{background: url(../images/bg_menu.png) no-repeat center; border-radius: 0; width: 96px; height: 63px; margin-top: -10px;}
 .btn_contact{ background: #103284; color: #fff; border-radius: 8px; width: 100%; padding: 10px 0; font-weight: bold;}
 .color_1{ color: #73CDEA;}
 .color_2{ color: #103284;}
 .i_margin{ margin-right: 5px;}
+.pc{ display: block;}
+.m{ display: none;}
+.pa_0{ padding: 0;}
 .link_hand{
   cursor: pointer;
   }
@@ -103,9 +106,10 @@ h1{ display: none;}
 .item_block_txt span.en{ font-size: 0.75rem; display: block;color: #103284;}
 /* member */
 .member{color:#103284;padding: 20px; background-color:#ffffff; border-radius: 8px 8px 8px 8px;}
-.member a{text-align: ;}
+.member a{ display:block ; text-align: center;}
 .member_photo{ margin-bottom: 20px;}
 .member_name{ font-size:1.31rem; font-weight: bold;}
+.member_name a{ text-align: left !important;}
 .member_name span{ display: block; font-size: 0.75rem; font-weight: normal; margin: 3px 0 0 1px;}
 /* story */
 .story{ margin-top: 0;}
@@ -313,8 +317,27 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 }
 
 @media screen and (max-width: 767px){
-.history{ letter-spacing: 0; padding: 0; font-size: 0.875rem; }
-.history li{ padding: 15px 0; }
+/*----- common -----*/
+.btn_menu{ background-size: cover; width: initial; height: auto; margin-top: -18px;}
+.pc{ display: none;}
+.m{ display: block;}
+/*----- header -----*/
+#header{ margin-bottom: 20px;}
+#navigation li{ margin: 0 5px;}
+/*----- index -----*/
+.member{ padding: 15px; margin-bottom: 10px;}
+.member hr{ margin: 5px 0;}
+.member_photo{ margin-bottom: 0;}
+.carousel-control-prev{ left: 0;}
+.carousel-control-next{ right: 0;}
+.hot_news .memberInfo{ margin-bottom: 10px;}
+.hot_news .reply{margin-top: 0;}
+.item_block_pic{ margin-right: 10px;}
+.item_block_txt{ font-size: 1rem;}
+/* mainStory */
+.hot_news .function_icon li{ margin-right: 5px;}
+.hot_news .function_icon li a{ font-size: 0.875rem;}
+.tab_item .main_tab{ font-size: 1.5rem; padding: 10px 15px;}
 }
 @media screen and (max-width: 550px){
 }
