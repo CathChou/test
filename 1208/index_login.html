@@ -63,7 +63,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-2">
+			<div id="toggle-nav" class="col-2">
 				<button type="button" class="btn btn-dark btn_menu" data-bs-toggle="modal" data-bs-target="#nav_menu">
 					<i class="fa-solid fa-bars fa-2x"></i>
 				</button>
@@ -81,7 +81,7 @@
 					<img src="images/pic_member.png">
 				</div>
 				<div class="member_name">
-					<a href="lawyer_me.php" class="link_a">
+					<a href="lawyer_me.html" class="link_a">
 						沈柏志<span>EN name</span>
 					</a>
 				</div>
@@ -147,7 +147,29 @@
 
 		<!-- 中欄 -->
 		<div class="col-8 box_padding">
-			<div id="indexBanner"><img src="images/indexbanner.png"></div>
+
+			<div id="carouselExampleFade" class="indexBanner carousel slide carousel-fade" data-bs-ride="carousel">
+				<div class="carousel-inner">
+				  <div class="carousel-item active">
+					<img src="images/indexbanner.png" class="d-block w-100" alt="">
+				  </div>
+				  <div class="carousel-item">
+					<img src="images/indexbanner_2.png" class="d-block w-100" alt="">
+				  </div>
+				  <div class="carousel-item">
+					<img src="images/indexbanner_3.png" class="d-block w-100" alt="">
+				  </div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
 			<div id="focus">
 				<div class="focus_box"><img src="images/1.png" width="100%"></div>
 				<div class="focus_box"><img src="images/1.png" width="100%"></div>
