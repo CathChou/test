@@ -168,17 +168,19 @@ h1{ display: none;}
 .personal_detail{ padding-top: 10px;}
 .personal_detail span{ margin-right: 20px;}
 .tab_pic{ padding: 0; margin-bottom: 30px;}
-.tab_pic_style1{ margin-right: 15px;}
+.tab_pic_style1{ padding-right: 15px;}
 .tab_pic_style1:last-child{ margin-right: 0;}
 .tab_subtitle{ font-size: 1.75rem; cursor: pointer; font-weight: bold; border-bottom: 2px solid #68C7EB; padding-bottom:20px; margin: 30px 0 0;}
 .tab_emtxt{ font-size: 1.5rem; margin-bottom: 20px; font-weight: bold;color: #103284; }
 .collapse_content{ padding: 20px; color: #1e1e1e;}
 .collapse_content p{ line-height: 2rem;}
 .lawyer_table{ font-size: 1rem; width: 100%; margin: 0 auto; }
-.lawyer_table p{ padding: 10px 0; border-bottom: 1px solid #D5D5D5; }
-.lawyer_table p.item{ width: 20%; padding-left: 0; float: left; color: #1e1e1e; font-weight: 600; height: 45px;}
-.lawyer_table p.detail{ float: left; width: 80%; height: 45px; color: #103284;}
+.lawyer_table div{ border-bottom: 1px solid #D5D5D5;}
+.lawyer_table p{ padding: 10px 0;}
+.lawyer_table p.item{ width: 20%; padding-left: 0; float: left; color: #1e1e1e; font-weight: 600;}
+.lawyer_table p.detail{ float: left; width: 80%; color: #103284;}
 .lawyer_table p.detailone{ width: 100% !important; }
+
 .peronalInfo .map{ padding: 20px;}
 .lawyer{ border: 5px solid #68c7eb; border-radius: 8px;}
 .lawyer .item_list{ margin: 0; border-radius: 0; background: none;}
@@ -288,6 +290,7 @@ h1{ display: none;}
 
 
 /*----- Responsive -----*/
+
 @media screen and (max-width: 1700px){
 }
 @media screen and (max-width: 1500px){
@@ -321,6 +324,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .btn_menu{ background-size: cover; width: initial; height: auto; margin-top: -18px;}
 .pc{ display: none;}
 .m{ display: block;}
+.box_padding{ padding-left: 15px ; padding-right: 10px;}
 /*----- header -----*/
 #header{ margin-bottom: 20px;}
 #navigation li{ margin: 0 5px;}
@@ -338,6 +342,22 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .hot_news .function_icon li{ margin-right: 5px;}
 .hot_news .function_icon li a{ font-size: 0.875rem;}
 .tab_item .main_tab{ font-size: 1.5rem; padding: 10px 15px;}
+.page_tabcontent{ padding: 20px 10px;}
+/*----- lawyer -----*/
+.lawyer{ margin-top: 20px;}
+.lawyerMember{ width: 22%; left: 20px;}
+.lawyerInfo{ padding: 20px 10px; margin: 0 0 20px 0;}
+.page_tab button { font-size: 0.875rem !important; padding: 10px 2px!important; }
+.page_tab, .page_tab:first-child{ margin-right: 5px;}
+.page_tabcontent .smalltab_block{ padding: 0 15px 10px 15px;}
+.page_tabcontent .smalltab{ margin-bottom: 10px; font-size: 0.875rem; margin-right: 10px;}
+.collapse_content{ padding: 0;}
+.lawyer_table p.item{ width: 35%;}
+.lawyer_table p.detail{ width: 65%;}
+.item_block_pic{ width: 30%;}
+.share_icon{ top: 10px; right: 0; bottom: initial;}
+.personal_detail{ margin-bottom: 10px;}
+.personal_detail span{ display: inline-block;}
 }
 @media screen and (max-width: 550px){
 }

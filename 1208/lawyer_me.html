@@ -37,14 +37,14 @@
 <div id="header">
 	<div class="container">
 		<div class="row a-center">
-			<div class="col-2">
+			<div class="col-xxl-2 col-3">
 				<a href="https://lusucard.com/" title="回律卡首頁"><img src="images/logo_white_big.png" style="max-height:50px;"></a>
 			</div>
-			<div class="col-8">
-				<div class="container">
+			<div class="col-xxl-8 col-6 pa_0">
+				<div class="container pa_0">
 					<div class="row a-center">
 						<div class="col-6">
-							<form name="xform" id="xform" action="https://lusucard.com/search.php" method="post">		
+							<form class="pc" name="xform" id="xform" action="https://lusucard.com/search.php" method="post">		
 								<div class="input-group input-group-sm">
 									<div class="form-group has-search input-group">
 										<i class="fa-solid fa-magnifying-glass form-control-feedback"></i>
@@ -53,9 +53,9 @@
 								</div>
 							</form> 
 						</div>
-						<div id="navigation" class="col-6">
+						<div id="navigation" class="col-xxl-6 col-12">
 							<ul>
-								<li><a href="https://lusucard.com/" title="回首頁" class="menu">首頁</a></li>
+								<!--<li><a href="https://lusucard.com/" title="回首頁" class="menu">首頁</a></li>-->
 								<li><a>通知</a></li>
 								<li><a>篩選律師</a></li>
 							</ul>
@@ -63,7 +63,7 @@
 					</div>
 				</div>
 			</div>
-			<div id="toggle-nav" class="col-2">
+			<div id="toggle-nav" class="col-xxl-2 col-3">
 				<button type="button" class="btn btn-dark btn_menu" data-bs-toggle="modal" data-bs-target="#nav_menu">
 					<i class="fa-solid fa-bars fa-2x"></i>
 				</button>
@@ -81,7 +81,7 @@
 		</div>
 	</div>
 	<div class="row lawyerInfo">
-		<div class="col-10">
+		<div class="col-xxl-10 col-12">
 			<div class="personal_name">
 				<div class="n">連睿鈞<span>EN name</span></div>
 				<div><img src="images/badge.png"></div>
@@ -91,14 +91,14 @@
 				<span><i class="fa-solid fa-location-dot"></i>10438台北市中山區建國北路二段85號6號樓之1</span>
 			</p>
 		</div>
-		<div class="col-2">
+		<div class="col-xxl-2 col-12">
 			<button type="button" class="btn btn-dark" onclick="self.location.href=&#39;setting.php?sn=11112&#39;">編輯個人資料</button>
 		</div>
 	
 	</div>
 	<div class="row">
 		<!-- 左欄 -->
-		<div class="col">
+		<div class="col-xxl-10 col-12">
 			<div class="row">
 				<div class="col">
 					<ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
@@ -133,9 +133,9 @@
 								<!-- 第一種圖片排列 -->
 								<div class="container">
 									<div class="row">
-										<div class="col tab_pic tab_pic_style1"><img src="images/personalinfo_1.jpg"></div>
-										<div class="col tab_pic tab_pic_style1"><img src="images/personalinfo_1.jpg"></div>
-										<div class="col tab_pic tab_pic_style1"><img src="images/personalinfo_1.jpg"></div>
+										<div class="col-xxl-4 col-12 tab_pic tab_pic_style1"><img src="images/personalinfo_1.jpg"></div>
+										<div class="col-xxl-4 col-12 tab_pic tab_pic_style1"><img src="images/personalinfo_1.jpg"></div>
+										<div class="col-xxl-4 col-12 tab_pic tab_pic_style1"><img src="images/personalinfo_1.jpg"></div>
 									</div>
 								</div>
 								<div class="container">
@@ -143,16 +143,6 @@
 									<!-- 律師資料 -->
 									<div class="collapse collapse_content show" id="profile">
 										<div class="lawyer_table">
-											<div>
-												<p class="item">所屬公會</p>
-												<p class="detail">台北律師公會</p>
-												<div class="clear"></div>
-											</div>
-											<div>
-												<p class="item">入會年</p>
-												<p class="detail">103年</p>
-												<div class="clear"></div>
-											</div>
 											<div>
 												<p class="item">執業區域</p>
 												<p class="detail">基隆、台北、新北、桃園</p>
@@ -390,7 +380,7 @@
 			</div>
 		</div>
 		<!-- 右欄 -->
-		<div class="col-2 box_padding">
+		<div class="col-xxl-2 col-12 box_padding">
 			<div class="lawyer">
 				<div class="item_list">
 					<div class="item_title"><span class="status"></span>線上駐點中<p>AＭ 06:00 - PＭ 22:00</p></div>
