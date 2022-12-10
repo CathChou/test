@@ -13,7 +13,7 @@ blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
 a{text-decoration:none;transition: all .5s ease;-webkit-transition:all .5s ease;-o-transition:all .5s ease;
   -moz-transition:all .5s ease; cursor: pointer;}
 a:link, a:visited ,a:hover ,a:active {text-decoration: none;}
-img{max-width:100%; display: block;}
+img{width:100%; height:auto;display: block;}
 body, html {height: 100%;width: 100%; -webkit-text-size-adjust: 100%;  color: #103284; background: #f0f0f0;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
@@ -319,7 +319,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .is-open .c-hamburger__line:nth-child(3){top: 23px;transform: rotate(225deg);}
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
 /*----- common -----*/
 .btn_menu{ background-size: cover; width: initial; height: auto; margin-top: -18px;}
 .pc{ display: none;}
@@ -354,7 +354,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .collapse_content{ padding: 0;}
 .lawyer_table p.item{ width: 35%;}
 .lawyer_table p.detail{ width: 65%;}
-.item_block_pic{ width: 30%;}
+.item_block_pic{ width: 20%;}
 .share_icon{ top: 10px; right: 0; bottom: initial;}
 .personal_detail{ margin-bottom: 10px;}
 .personal_detail span{ display: inline-block;}
@@ -363,6 +363,8 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 }
 
 @media screen and (max-width: 414px){
+/*----- lawyer -----*/
+  .item_block_pic{ width: 30%;}
 }
 
 
