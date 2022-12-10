@@ -13,7 +13,7 @@ blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
 a{text-decoration:none;transition: all .5s ease;-webkit-transition:all .5s ease;-o-transition:all .5s ease;
   -moz-transition:all .5s ease; cursor: pointer;}
 a:link, a:visited ,a:hover ,a:active {text-decoration: none;}
-img{width:100%; height:auto;display: block;}
+img{max-width:100%; height:auto;display: block;}
 body, html {height: 100%;width: 100%; -webkit-text-size-adjust: 100%;  color: #103284; background: #f0f0f0;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
@@ -168,6 +168,7 @@ h1{ display: none;}
 .personal_detail{ padding-top: 10px;}
 .personal_detail span{ margin-right: 20px;}
 .tab_pic{ padding: 0; margin-bottom: 30px;}
+.tab_pic img{ width: 100%;}
 .tab_pic_style1{ padding-right: 15px;}
 .tab_pic_style1:last-child{ margin-right: 0;}
 .tab_subtitle{ font-size: 1.75rem; cursor: pointer; font-weight: bold; border-bottom: 2px solid #68C7EB; padding-bottom:20px; margin: 30px 0 0;}
@@ -319,7 +320,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .is-open .c-hamburger__line:nth-child(3){top: 23px;transform: rotate(225deg);}
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 820px){
 /*----- common -----*/
 .btn_menu{ background-size: cover; width: initial; height: auto; margin-top: -18px;}
 .pc{ display: none;}
