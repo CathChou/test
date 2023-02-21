@@ -358,7 +358,7 @@ vertical-align: bottom;
 .prevent{ margin-right: 42px; }
 .page_result a{ width: 28%; }
 
-.owl-carousel .owl-item img{ }
+.photo_box .owl-item img{ height: 300px;}
 
 
 }
