@@ -225,7 +225,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									<button type="button" class="answer-btn answer-btn--yes answer-btn-third">有，我曾經(或定期)檢查、關心我的肺部功能</button>
 									<button type="button" class="answer-btn answer-btn--no answer-btn-third">沒有，但我想瞭解肺功能檢查</button>
 								</div>
-								<button type="button" class="next-btn">看結果</button>
+								<button type="button" class="result-btn">看結果</button>
 							</div>
 						</li>
 						<li class="questions-item">
@@ -556,9 +556,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<div class="item"><img src="images/photo_1.jpg" alt=""></div>
 				<div class="item"><img src="images/photo_2.jpg" alt=""></div>
 				<div class="item"><img src="images/photo_3.jpg" alt=""></div>
-				<div class="item"><img src="images/photo_1.jpg" alt=""></div>
-				<div class="item"><img src="images/photo_2.jpg" alt=""></div>
-				<div class="item"><img src="images/photo_3.jpg" alt=""></div>
 			</div>
 		</div>
 	</div>
@@ -863,12 +860,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="js/jquery-2.0.2.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.stellar.min.js"></script>
-<script src="js/action.js"></script>
 <script src="js/jquery.easing.min.js"></script>
 <script src="js/jquery.parallax-1.1.3.js"></script>
 <script src="js/jquery.localscroll-1.2.7-min.js"></script>
 <script src="js/jquery.scrollTo-1.4.2-min.js"></script>
 <script src="js/jquery.fancybox.js"></script>
+<script src="js/action.js"></script>
 <script type="text/javascript">
 	$(function(){
 		//.parallax(xPosition, speedFactor, outerHeight) 設定選項:
@@ -901,15 +898,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		dots: false,
 		responsiveClass: true,
 		responsive: {
-			//767以下
+			//550以下
 			0: {
 			items: 1,
 			nav: true,
+			dots: true,
 			autoWidth: false,
-			autoHeight: true,
+			autoHeight: true
 			},
 			//1000以下
-			767: {
+			550: {
 			dots: true
 			},
 			1000: {

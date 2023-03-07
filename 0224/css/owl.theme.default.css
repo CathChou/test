@@ -40,12 +40,13 @@
     outline: none;
     *display: inline; }
     .owl-theme .owl-dots .owl-dot span {
-      width: 15px;
-      height: 15px;
+      width: 12px;
+      height: 12px;
       margin: 0 5px;
       display: block;
+      background: #ffd2ad;
       -webkit-backface-visibility: visible;
       transition: opacity 200ms ease;
       border-radius: 30px; }
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-      background: #493824; }
+      background: #ed6c00; }

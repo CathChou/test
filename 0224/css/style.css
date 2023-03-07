@@ -21,7 +21,7 @@ button, a{ border-width:0; cursor: pointer; all .5s ease; -webkit-transition: al
 
 /*----- custom -----*/
 .wrap{}
-#navigation-menu img, .header img, .kv img, .about img, .video img, .map img, .expand img, .expert img, .group img, .quiz img, .article img, .photo img, .toggle-nav img
+#navigation-menu img, .header img, .kv img, .about img, .video img, .map img, .expand img, .expert img, .group img, .quiz img, .view img, .article img, .photo img, .action img, .toggle-nav img
 , .more img, .icon img, .btn_float a img
 { max-width: 100%; height: auto; display: block;
 image-rendering: -moz-crisp-edges; /*Firefox*/
@@ -117,11 +117,11 @@ vertical-align: bottom;
 .answer span{ display: inline-block; vertical-align: bottom; margin-right: 5px;}
 .answer .line{ height: 1px; background: #159255; width: 88%; float: right; margin-top: 15px;}
 .answer p{ padding:0 0 10px; border-bottom: 1px solid #159255;}
-.answer-btn, .next-btn{ font-size: 1.375rem; font-weight: bold; color: #fff; display: inline-block; background: #ed6c00; padding: 15px 0; border-radius: 999px; width: 220px; margin: 30px 30px 0;}
-.answer-btn:hover, .next-btn:hover{ background: #006835; }
+.answer-btn, .next-btn, .result-btn{ font-size: 1.375rem; font-weight: bold; color: #fff; display: inline-block; background: #ed6c00; padding: 15px 0; border-radius: 999px; width: 220px; margin: 30px 30px 0;}
+.answer-btn:hover, .next-btn:hover, .result-btn:hover{ background: #006835; }
 .answer-btn-third{ display: block; width: 80%; margin: 30px auto 0;}
-.next-btn{ display: none;}
-.next-btn.show{ display: block; margin: 30px auto 0; font-weight: bold;}
+.next-btn, .result-btn{ display: none;}
+.next-btn.show, .result-btn.show{ display: block; margin: 30px auto 0; font-weight: bold;}
 .questions-card__answer-btns.hidden{display: none;}
 .introArea.hidden, .process-bar__bar.hidden, .process-bar.hidden{display: none;}
 .result-card{ padding-top: 60px;}
@@ -221,8 +221,8 @@ vertical-align: bottom;
 .action{ background-image: url(../images/bg_action.jpg); background-repeat: no-repeat; background-position: center; height: 640px; text-align: center; padding: 140px 0; letter-spacing: 1px;}
 .action dt{ font-size: 3.75rem; line-height: 1.2; font-weight: bold;}
 .action dt span{ color: #ed6c00;}
-.action dd{ background: #ed6c00; font-size: 2.25rem; width: 35%; margin: 30px auto 50px; padding: 5px 0; color: #fff;}
-.action dd span{ margin: 0 8px;}
+.action dd{ background: #ed6c00; font-size: 2.25rem; width: 38%; margin: 30px auto 50px; padding: 5px 0; color: #fff;}
+.action dd span{ margin: 0 8px; display: inline-block;}
 .action p{ width: 30%; margin: 0 auto;}
 
 /*----- view -----*/
@@ -235,7 +235,8 @@ vertical-align: bottom;
 .topic dt{ background: #ed6c00; border-radius: 999px; color: #fff; display: inline-block; padding: 3px 20px; margin-bottom: 15px;}
 .topic dd{ color: #ed6c00;}
 .emore{ font-size: 1.25rem; display: inline-block; border: 2px solid #ed6c00; color:#ed6c00 ; border-radius: 999px;padding: 3px 20px; margin-top: 40px; float: right;}
-.emore span{ margin-left: 5px;}
+.emore:hover{ background: #ffe3cc; }
+.emore span{ margin-left: 5px; display: inline-block;}
 .expert{ position: relative;}
 .expert_1{ width: 351px;margin: -100px 0 0 80px;}
 .expert_2{ width: 301px; margin: -100px 0 0 30px;}
@@ -362,9 +363,13 @@ vertical-align: bottom;
 .aboutTxt{ width: 70%; padding: 40px 40px 0 0;}
 .title_about{ width: 100%; top: -60px; left: 0;}
 .title_video{ width: 42%; top: -35px; right: 120px;}
+.title_quiz{ width: 36%;}
+.title_view{ width: 42%; top:-42px;}
+.title_photo{ width: 48%; top: -65px;}
 .host_name{ font-size: 1rem;}
 .videoTxt{ padding: 50px 0 38px 60px;}
 .videoTxt ul{ margin-top: 10px;}
+.action dd{ width: 45%;}
 }
 
 @media screen and (max-width: 1280px){
@@ -397,9 +402,19 @@ vertical-align: bottom;
 .accordion{ padding: 40px;}
 .accordion .content, .accordion > input[type="checkbox"]:checked ~ .content  { padding: 0 80px 0;  }
 .accordion .handle label:before{ margin-top: 10px;}
-
+.action{ background-image: url(../images/bg_action_s.jpg); background-size: cover; }
+.action dd{ width: 55%;}
+.view{ padding: 80px 20px 30px;}
+.view_box{ width: 100%; padding: 50px 50px 0;}
+.vbox_1{ margin-left: 0;}
+.vbox_2{ margin-right: 0;}
+.expert_1{ margin: -100px 0 0 30px;}
+.topic, .ename{ font-size: 1.25rem;}
+.photo{ padding: 80px 0;}
 .photo_box{ height: 370px;}/*比圖片多70px*/
 .photo_box .owl-item img{ height: 300px;}
+.p_content .owl-nav .owl-next, .photo_box .owl-nav .owl-next, .p_content .owl-nav .owl-prev, .photo_box .owl-nav .owl-prev{ width: 40px; height: 40px; background-size: 100% !important;}
+.photo_box .owl-nav .owl-next{ left: 50px;}
 }
 
 @media screen and (max-width: 1023px){
@@ -446,18 +461,26 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .mapTxt{ width: 100%; margin: 0 auto;}
 .accordion{ padding: 40px 20px;}
 .accordion .handle{ font-size: 2rem;}
-.accordion .content .flex{ display: flex;}
+.accordion .content .flex, .result-card_box .flex{ display: flex;}
 .accordion .content, .accordion > input[type="checkbox"]:checked ~ .content  { padding: 0;  }
-
-
-.group dl{ width: 100%;}
-
+.action dd{ font-size: 1.875rem; width: 64%;}
+.action p{ width: 100%;}
+.view{padding:80px 60px 30px;}
+.view_box{ padding: 30px 50px; margin: 0 auto 50px;}
+.ename, .expert_2, .expert_3, .expert_4{ width: 60%;}
+.expert_5{ width: 70%;}
+.expert_2, .expert_3, .expert_4, .expert_5, .ename{ margin: 0 auto 10px;}
+.group dl{ width: 100%; margin: 0 auto 30px;}
+.topic{ width: 100%; margin-top: -30px; position: relative; text-align: center;}
+.emore{ float: inherit; margin-top: 30px;}
+.title_photo{ top: -35px;}
+.photo_box{ padding-top: 40px;}
 .UpDown-1, .UpDown-2, .UpDown-3{ animation-name: none !important;}
 
 }
 
 @media screen and (max-width: 767px){
-.owl-theme .owl-nav, .pc, .smoke, .smoke2, .smoke3, .video_leaf1, .quiz_leafshadow1, .quiz_leaf1{ display: none !important;}
+.pc, .smoke, .smoke2, .smoke3, .video_leaf1, .quiz_leafshadow1, .quiz_leaf1{ display: none !important;}
 .link_c, .m{ display: block; }
 .kv{ min-height: 790px; padding-top: 80px; }
 .slogan{ width: 200px; top: 80px;}
@@ -472,7 +495,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .v_box{ width: 100%; float: none; margin: 20px 0;}
 .videoTxt{ min-height: inherit;}
 .title_video{ width: 100%; right: 0;}
-.answer-btn, .next-btn{ width: 44%; margin: 30px 10px 0;}
+.answer-btn, .next-btn, .result-btn{ width: 44%; margin: 30px 10px 0;}
 .answer-btn-third{ width: 100% !important; margin: 20px auto 0 !important;}
 .map, .quiz{ padding: 60px 0;}
 .mapTitle p, .introArea{ text-align: left;}
@@ -484,11 +507,16 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .accordion .content .flex{ display: block;}
 .accordion .content .padding{ padding: 20px 0 0;}
 .accordion .content .padding .expandTxt{ width: 100%; margin: 20px 0 0;}
-.group{ padding: 60px 40px;}
-
+.group, .photo{ padding: 60px 40px;}
+.action{ padding: 100px 40px; height: inherit; background-position: right; text-align: left;}
+.action dt{ font-size: 3rem;}
+.action dd{ margin: 30px 0 30px; font-size: 1.5rem; width: inherit; display: inline-block;padding: 5px 10px;}
+.action dd span{ width: 20px; margin: 0 3px; }
+.action p{ text-align: left;}
 .photo_content{ width: 100%;}
-
-
+.photoTitle{ margin-left: 0;}
+.title_photo{ width: 100%; left: 0;}
+.owl-theme .owl-dots{ margin-top: -10px;}
 }
 
 @media screen and (max-width: 550px){
@@ -533,17 +561,24 @@ span.logo{ margin: 5px 0 5px 20px; }
 .title{ width: 95%; }
 .about{ padding: 40px 0 0;}
 .blockTitle{ letter-spacing: 0;}
-.answer-btn, .next-btn{ width: 40%;}
+.answer-btn, .next-btn, .result-btn{ width: 40%;}
 .answer .line{ width: 70%;}
-.answer-btn, .next-btn{ padding: 10px 20px; font-size: 1.25rem;}
+.answer-btn, .next-btn, .result-btn{ padding: 10px 20px; font-size: 1.25rem;}
+.questions-card__pic, .result-card{ padding: 0;}
+.result-card_box{ margin-bottom: 40px;}
+.result-card_box .tt{ margin-bottom: 20px;}
+.result-card_box .flex{ display: block;}
+.result-card_box dl{ margin: 0 auto 30px; width: 80%;}
+.action{ padding: 100px 30px;}
+.action dt{ font-size: 2.25rem;}
+.action dd{ font-size: 1.125rem;}
+.action dd span{ width: 15px;}
 
 
 .btn_float{ width: 100px; height: 167px; right: 10px; }
 .btn_float a.fb{  left: 12px; top: 52px; width: 35px;}
 .btn_float a.line{  right: 12px; top:52px; width: 35px;}
 
-.owl-carousel .owl-stage-outer{ padding-bottom: 0; }
-.owl-theme .owl-dots{ margin: 10px 0 20px 0; }
 }
 
 @media screen and (max-width: 360px){

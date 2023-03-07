@@ -36,7 +36,7 @@ $(function(){
     $('#bt-kv, #bts-kv').click(function(){
         $('body,html').animate({scrollTop:$('#kvc').offset().top}, 800);
     });
-    $('#bt-quiz, .btn_float').click(function(){
+    $('#bt-quiz, .btn_float, .result-btn').click(function(){
         $('body,html').animate({scrollTop:$('#quiz').offset().top-50}, 800);
     });
     $('#bt-school').click(function(){
@@ -72,7 +72,7 @@ $(function(){
       let noBtn = card.find(".answer-btn--no"); // No 按鈕
       let rightAnswer = card.find(".answer-right"); // 按Yes的內容
       let wrongAnswer = card.find(".answer-wrong"); // 按No的內容
-      let nextBtn = card.find(".next-btn"); // 下一步按鈕
+      let nextBtn = card.find(".next-btn, .result-btn"); // 下一步按鈕
       
   
       yesBtn.on("click",function(){ // Yes 按鈕按下後
