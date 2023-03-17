@@ -45,7 +45,7 @@ $(function(){
     $('#bt-view').click(function(){
         $('body,html').animate({scrollTop:$('#view').offset().top-50}, 800);
     });
-    $('.btn_float').click(function(){
+    $('.result-btn, .btn_float').click(function(){
         $('body,html').animate({scrollTop:$('#quiz').offset().top-50}, 800);
     });
     $('#bt-petition').click(function(){
