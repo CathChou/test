@@ -179,14 +179,16 @@ var x;
 
 //曝光事件(非互動事件語法)
 let progEvent = [ 
-{name: '#kvc', label: 'section-index-kv', send: 0},
-{name: '#quiz', label: 'section-subject-quiz', send: 0},
-{name: '#school', label: 'section-subject-aboutflu', send: 0},
-{name: '#info', label: 'section-subject-qa', send: 0},
-{name: '#more', label: 'section-subject-more', send: 0},
-{name: '#qaresult_A', label: 'section-subject-quizresult-scroe8to10', send: 0},
-{name: '#qaresult_B', label: 'section-subject-quizresult-scroe5to7', send: 0},
-{name: '#qaresult_C', label: 'section-subject-quizresult-scroe0to4', send: 0}
+{name: '#kv', label: 'section-2023breathe-kv', send: 0},
+{name: '#video', label: 'section-2023breathe-video', send: 0},
+{name: '#quiz', label: 'section-2023breathe-quiz', send: 0},
+{name: '#cause', label: 'section-2023breathe-cause', send: 0},
+{name: '#view', label: 'section-2023breathe-view', send: 0},
+{name: '#photo', label: 'section-2023breathe-photo', send: 0},
+{name: '#join', label: 'section-2023breathe-join', send: 0},
+{name: '#article', label: 'section-2023breathe-article', send: 0}
+{name: '#book', label: 'section-2023breathe-book', send: 0}
+{name: '#podcast', label: 'section-2023breathe-podcast', send: 0}
 ];
 
 
@@ -214,7 +216,7 @@ function checkAreaViewEvent() {
             dataLayer.push({
                 'event': 'sendMyEvent',
                 'eventCategory': 'web_event',
-                'eventAction': '2021fluvaccine',
+                'eventAction': '2023breathe',
                 'eventLabel': progEvent[i].label,
             });
 
