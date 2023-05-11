@@ -960,7 +960,7 @@
 			</dl>
 			<dl>
 				<dt>實踐夥伴</dt>
-				<dd class="group_l4"><img src="images/group_4.png" alt=""></dd>
+				<dd class="group_l6"><img src="images/group_6.png" alt=""></dd>
 			</dl>
 		</div>
 	</div>
@@ -1023,8 +1023,34 @@
 	});
 
 	
+	// 精彩花絮輪播
 	$(document).ready(function() {
-		setTimeout(function(){
+		var photoBoxImgs = $('.photo_box img')
+		var photoBoxImgsLoads = 0
+
+		// 每張圖片讀取完之後，檢查是否完全讀取完畢
+		photoBoxImgs.each(function(index,item){
+			var  _img = new Image()
+			_img.onload = function(){
+				checkPhotoBoxImgLoads()
+			}
+			_img.onerror = function(){
+				checkPhotoBoxImgLoads()
+			}
+			_img.src = $(item).attr("src")
+		})
+
+		// 檢查圖片是否全部讀取完畢
+		function checkPhotoBoxImgLoads(){
+			photoBoxImgsLoads++
+			if(photoBoxImgs.length === photoBoxImgsLoads){
+				photoBoxCarouselInit()
+			}
+		}
+
+		// 相簿輪播初始化
+		function photoBoxCarouselInit(){
+			setTimeout(function(){
 			$('.photo_box').owlCarousel({
 				margin:10,
 				loop:true,
@@ -1052,6 +1078,8 @@
 				}
 			})
 		},30)
+		}
+		
 	})
 
 
