@@ -120,7 +120,7 @@ vertical-align: bottom;
 .answer-btn:hover, .next-btn:hover, .result-btn:hover, .join:hover{ background: #006835; }
 .answer-btn-third{ display: block; width: 80%; margin: 30px auto 0;}
 .next-btn, .result-btn{ display: none;}
-.next-btn.show, .result-btn.show{ display: block; margin: 30px auto 0; font-weight: bold;}
+.next-btn.show, .result-btn.show{ display: block; margin: 30px auto 0; font-weight: bold; text-align: center;}
 .questions-card__answer-btns.hidden{display: none;}
 .introArea.hidden, .process-bar__bar.hidden, .process-bar.hidden{display: none;}
 .result-card{ padding-top: 60px;}

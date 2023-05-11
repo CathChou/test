@@ -34,12 +34,9 @@ var adjustMenu = function() {
 //選單下滑動態
 $(function(){
     $('#bt-kv, #bts-kv').click(function(){
-        $('body,html').animate({scrollTop:$('#kvc').offset().top}, 800);
+        $('body,html').animate({scrollTop:$('#kv').offset().top}, 800);
     });
-    $('#bt-about').click(function(){
-        $('body,html').animate({scrollTop:$('#about').offset().top-50}, 800);
-    });
-    $('#bt-video').click(function(){
+   $('#bt-video').click(function(){
         $('body,html').animate({scrollTop:$('#video').offset().top-50}, 800);
     });
     $('#bt-view').click(function(){
@@ -49,15 +46,13 @@ $(function(){
         $('body,html').animate({scrollTop:$('#quiz').offset().top-50}, 800);
     });
     $('#bt-petition').click(function(){
-        $('body,html').animate({scrollTop:$('#petition').offset().top-50}, 800);
+        $('body,html').animate({scrollTop:$('#join').offset().top-50}, 800);
     });
     $('#bt-article').click(function(){
         $('body,html').animate({scrollTop:$('#article').offset().top-50}, 800);
     });
 });
-$(document).on("click","#bt-scroll",function(e){
-    $('body,html').animate({scrollTop:$('#school').offset().top-50}, 800);
-});
+
 
 // 點擊查看更多影片 - Click to show
 $('#video .btn_more').click(function(){
@@ -186,8 +181,8 @@ let progEvent = [
 {name: '#view', label: 'section-2023breathe-view', send: 0},
 {name: '#photo', label: 'section-2023breathe-photo', send: 0},
 {name: '#join', label: 'section-2023breathe-join', send: 0},
-{name: '#article', label: 'section-2023breathe-article', send: 0}
-{name: '#book', label: 'section-2023breathe-book', send: 0}
+{name: '#article', label: 'section-2023breathe-article', send: 0},
+{name: '#book', label: 'section-2023breathe-book', send: 0},
 {name: '#podcast', label: 'section-2023breathe-podcast', send: 0}
 ];
 
