@@ -1,11 +1,11 @@
 //reload
-var windowWidth = $(window).width();
-    $(window).resize(function() {
-    if(windowWidth != $(window).width()){
-    location.reload();
-    return;
-    }
-});
+//var windowWidth = $(window).width();
+    //$(window).resize(function() {
+    //if(windowWidth != $(window).width()){
+    //location.reload();
+    //return;
+    //}
+//});
 
 
 //手機板選單收合
@@ -57,6 +57,14 @@ $(function(){
 });
 $(document).on("click","#bt-scroll",function(e){
     $('body,html').animate({scrollTop:$('#school').offset().top-50}, 800);
+});
+
+// 點擊查看更多影片 - Click to show
+$('#video .btn_more').click(function(){
+    var _this = $('#video .btn_more'),
+        _thisOpen = _this.prevAll('.hide');
+    _this.hide();
+    _thisOpen.fadeIn().removeClass("hide");
 });
 
 //QA
@@ -131,6 +139,8 @@ $('#two-panel .btn_more').click(function(){
     _this.hide();
     _thisOpen.fadeIn();
 });
+
+
 var x;
 	x=$(window).width();
 	if (x>576) {

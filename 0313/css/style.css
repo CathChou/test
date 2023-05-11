@@ -16,7 +16,7 @@ text-rendering: optimizeLegibility !important;
 -webkit-font-smoothing: antialiased !important;
 font-family: Helvetica,Arial,Hiragino Sans GB,WenQuanYi Zen Hei,儷黑 Pro,LiHei Pro,微軟正黑體,sans-serif;}
 h1{ display: none;}
-button, a{ border-width:0; cursor: pointer; all .5s ease; -webkit-transition: all .5s ease; -o-transition: all .5s ease;
+button, a{ border-width:0; cursor: pointer; transition: all .5s ease; -webkit-transition: all .5s ease; -o-transition: all .5s ease;
 -moz-transition: all .5s ease;}
 
 /*----- custom -----*/
@@ -41,6 +41,7 @@ vertical-align: bottom;
 .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {width: 100% !important;}
 .btn_float{ display:flex; background: url(../images/btn_float.png) no-repeat; width: 100px; height:118px; position: fixed; background-size: 100%; bottom: 40px; right: 40px; z-index: 99; }
 .btn_float a{ cursor: pointer; display: block; width: 100%;}
+.btn_float:hover{ animation-play-state: paused;}
 .pc{ display: block; }
 .m, .hide{ display: none; }
 .mb_10{ margin-bottom: 10px !important;}
@@ -64,7 +65,7 @@ vertical-align: bottom;
 .k2{ width: 358px; position: absolute; top: 55px; right: 0;}
 .title_content{width: 1000px; margin: 0 auto; position: relative; color: #fff; text-align: center;}
 .title{ width: 850px; margin: -70px auto 0;}
-.slogan{ width: 320px; position: absolute; top:130px; left:-30px;}
+.slogan{ width: 187px; position: absolute; top:130px; left:0;}
 .sub{ font-size: 2.75rem; font-weight: bold;text-shadow: black 0.1em 0.1em 0.2em; letter-spacing: 3px; }
 .sub_line{ display: inline-block; height: 1px; background: #fff; width: 50px; margin: 0 5px;}
 .butterfly_1{ width: 35px; position: absolute; right: 40px; top: 170px;}
@@ -79,6 +80,7 @@ vertical-align: bottom;
 
 /*----- video -----*/
 .video{ background: url(../images/bg.jpg) repeat; padding-top: 120px; position: relative;}
+.video .btn_more{margin-top: -20px;}
 .v_box{ width: 100%; background:linear-gradient(90deg, #ebeded 0%,transparent 0%, #ebeded 30%, #ffffff 50%, #ffffff 100%); margin-bottom: 40px; }
 .v_box_last{ margin-bottom: 0;}
 .videoPic{ width: 45%; position: relative;}
@@ -122,13 +124,13 @@ vertical-align: bottom;
 .questions-card__answer-btns.hidden{display: none;}
 .introArea.hidden, .process-bar__bar.hidden, .process-bar.hidden{display: none;}
 .result-card{ padding-top: 60px;}
-.result-card_box{ margin-bottom: 60px; text-align: center;}
+.result-card_box{ text-align: center; width: 90%; margin: 0 auto 60px;}
 .result-card_box:last-child{ margin-bottom: 0;}
 .result-card_b3 p{ text-align: left; margin-top: 30px;}
 .result-card_box .tt{ font-weight: bold; color: #006835; font-size: 1.5rem; margin-bottom: 30px;}
 .result-card_box dl{ margin: 0 10px; width: 32%;}
-.result-card_box dl dd{ font-size: 1.125rem; font-weight: bold; margin-top: 20px;}
-.result-card_box dl dd p{ font-weight: normal; margin-top: 10px; font-size: 1rem; text-align: left; line-height: 1.5;}
+.result-card_box dl dd{ font-size: 1.25rem; font-weight: bold; margin-top: 20px;}
+.result-card_box dl dd p{ font-weight: normal; margin-top: 10px; font-size: 1.125rem; text-align: left; line-height: 1.5;}
 .result-card_box ul li { margin-bottom: 10px;}
 .result-card_box ul li p { text-align: left;}
 .result-card_box ul li p span{ color: #006835; font-weight: bold;}
@@ -225,22 +227,23 @@ vertical-align: bottom;
 /*----- view -----*/
 .view{ position: relative; background: url(../images/bg_view.jpg)50% 0 repeat fixed; padding: 120px 0 70px;}
 .title_view{ width: 592px; position: absolute; top: -65px; right: 180px;}
-.view_box{ background: #fff; width: 1115px; margin: 0 auto 70px;padding: 50px 80px 0; }
+.view_box{ background: #fff; width: 1115px; margin: 0 auto 70px;padding: 50px 80px 0; cursor: pointer !important;}
 .vbox_1{ margin-left: 70px;}
 .vbox_2{ margin-right: 70px;}
 .topic{ width: 41%;font-size: 1.5rem; font-weight: bold; margin-left: auto;}
 .topic dt{ background: #ed6c00; border-radius: 999px; color: #fff; display: inline-block; padding: 3px 20px; margin-bottom: 15px;}
 .topic dd{ color: #ed6c00;}
 .emore{ font-size: 1.125rem; display: inline-block; border: 2px solid #ed6c00; color:#ed6c00 ; border-radius: 999px;padding: 3px 20px; margin-top: 40px; float: right;}
-.emore:hover{ background: #ffe3cc; }
+.view_box:hover .emore{ background: #ffe3cc; }
 .emore span{ margin-left: 5px; display: inline-block;}
 .expert{ position: relative;}
 .expert_1{ width: 351px;margin: -100px 0 0 80px;}
-.expert_2, .expert_3, .expert_4, .expert_5{ width: 348px;}
+.expert_2, .expert_3, .expert_4, .expert_5, .expert_6{ width: 348px;}
 .expert_2{ margin: -100px 0 0 30px;}
 .expert_3{ margin: -100px 30px 0 0;}
 .expert_4{ margin: -100px 30px 0 0;}
 .expert_5{ margin: -140px 0 0 0;}
+.expert_6{ margin: -100px 0 0 0;}
 .ename{ font-size: 1.5rem; color: #006835; font-weight: bold; }
 .ename_yu{ position: absolute; top: 0; left: 0; width: 140px;}
 .ename_chen{ position: absolute; top: 120px; right: -120px; width: 140px;}
@@ -345,11 +348,12 @@ vertical-align: bottom;
 .group dl{ text-align: center; width: 775px; margin: 0 auto 40px; border-bottom: 1px solid #a7a7a7;}
 .group dl:last-child{ border-bottom: none;}
 .group dt{ font-size: 1.5rem; color: #006835;}
-.group_l1, .group_l2, .group_l3, .group_l4{margin: 20px auto 40px;}
-.group_l1{ width: 333px;}
-.group_l2{ width: 206px;}
-.group_l3{ width: 315px;}
-.group_l4{ width: 227px;}
+.group_l1, .group_l2, .group_l3, .group_l4, .group_l5{margin: 20px 30px 40px; display: inline-block;}
+.group_l1{ width: 99px;}
+.group_l2{ width: 182px;}
+.group_l3{ width: 206px;}
+.group_l4{ width: 315px;}
+.group_l5{ width: 211px; margin-bottom: 50px;}
 
 
 /*----- Responsive -----*/
@@ -390,7 +394,8 @@ vertical-align: bottom;
 .aboutBG{ height: 57%;}
 .blockTitle{ margin-bottom: 30px;}
 .video{ padding: 120px 20px 0;}
-.v_box{ width: 46%; float: left; background: #fff; margin: 0 2%;}
+.v_box{ width: 46%; float: left; background: #fff; margin: 0 2% 20px; }
+.v_box:nth-child(2n+1){ clear: both; }
 .v_box .flex{ display: block; padding: 0;}
 .videoTxt{ width: 100%; padding: 40px; min-height: 490px;}
 .host_name{ width: 100%;}
@@ -484,9 +489,9 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .action p{ width: 100%;}
 .view{padding:110px 60px 30px;}
 .view_box{ padding: 30px 50px 40px; margin: 0 auto 50px;}
-.ename, .expert_2, .expert_3, .expert_4, .expert_5{ width: 60%;}
+.ename, .expert_2, .expert_3, .expert_4, .expert_5, .expert_6{ width: 60%;}
 .expert_5{ width: 70%;}
-.expert_1, .expert_2, .expert_3, .expert_4, .expert_5, .ename{ margin: 0 auto 10px;}
+.expert_1, .expert_2, .expert_3, .expert_4, .expert_5, .expert_6, .ename{ margin: 0 auto 10px;}
 .group dl{ width: 100%; margin: 0 auto 30px;}
 .topic{ width: 100%; margin-top: -30px; position: relative; text-align: center;}
 .emore{ float: inherit; margin-top: 30px;}
@@ -564,7 +569,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .books_box{ padding: 0 20px; margin-bottom: 40px;}
 .books_box dl dt{ font-size: 1.25rem; letter-spacing: 0;}
 .view{ padding: 60px 0px 20px;}
-.ename, .expert_2, .expert_3, .expert_4, .expert_5{ width: 80%;}
+.ename, .expert_2, .expert_3, .expert_4, .expert_5, .expert_6{ width: 80%;}
 .expert_1{ width: 90%;}
 .view_box{ margin: 0 auto 30px; position: relative;}
 .ename_yu, .ename_chen{ width: 36%;}
@@ -585,7 +590,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .p_contain{ width: 100%; }
 .sub{ font-size: 1.25rem; letter-spacing: 0;}
 .sub_line{ width: 20px;}
-.slogan{ width: 170px; top: 70px; left: 20px;}
+.slogan{ width: 100px; top: 70px; left: 20px;}
 .photo_box{ height: inherit;}/*比圖片多70px*/
 .photo_box .owl-item img{ height: inherit;}
 span.logo{ width: 60px;}
@@ -659,7 +664,7 @@ span.logo{ margin: 5px 0 5px 20px; }
 .btn_float{ width: 100px; height: 167px; right: 10px; }
 .btn_float a.fb{  left: 12px; top: 52px; width: 35px;}
 .btn_float a.line{  right: 12px; top:52px; width: 35px;}
-
+.result-card_box dl dd{ text-align: left;}
 }
 
 @media screen and (max-width: 360px){
@@ -741,6 +746,25 @@ span.logo{ margin: 5px 0 5px 20px; }
 	-webkit-animation-timing-function: linear;
   animation-duration: 3s;
 	-webkit-animation-duration: 3s;
+}
+
+@keyframes UpDown-3 {
+  0% { transform: translate3d(0, 10%, 0);}
+  50% { transform: translate3d(0, 0, 0);}
+  100% { transform: translate3d(0, 10%, 0);}
+}
+@-webkit-keyframes UpDown-3 {
+  0% { transform: translate3d(0, 10%, 0);}
+  50% { transform: translate3d(0, 0, 0);}
+  100% { transform: translate3d(0, 10%, 0);}
+}
+.UpDown-3{
+	animation-name: UpDown-3;
+ 	-webkit-animation-name: UpDown-3;
+ 	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
 }
 
 @keyframes UpDown-shadow {
