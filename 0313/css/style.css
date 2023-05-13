@@ -265,7 +265,7 @@ vertical-align: bottom;
 .photo_box .owl-nav .owl-prev{ top: -20px;}
 
 /*----- petition -----*/
-.petition{ background: url(../images/bg_petition.jpg)50% 0 no-repeat fixed; text-align: center; padding: 140px 0; color: #fff; letter-spacing: 1px;}
+.petition{ background: url(../images/bg_petition.jpg)50% 0 no-repeat; text-align: center; padding: 140px 0; color: #fff; letter-spacing: 1px; background-attachment: fixed;}
 .petition dt{ font-size: 2.75rem; font-weight: bold; text-shadow: 0 0px 15px #16290f;}
 .petition dt span{ display: inline-block; vertical-align: middle; margin: 0 10px;}
 .petition dd, .join{ font-size: 1.5rem; display: inline-block; background:#ed6c00 ; margin-top: 30px; padding: 3px 15px;}
@@ -454,7 +454,8 @@ border-radius: 4px;}
 .is-open .c-hamburger__line:nth-child(1) ,.is-open .c-hamburger__line:nth-child(2){top: 23px;transform: rotate(135deg);
 transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .is-open .c-hamburger__line:nth-child(3){top: 23px;transform: rotate(225deg);}
-.kv{ padding-top: 60px;}
+.kv{ padding-top: 60px; background-attachment: inherit; background-position: center!important;}
+.petition{ background-attachment: inherit; background-position: center !important;}
 .title_content{ width: 100%; padding: 0 20px;}
 .sub{ font-size: 2.25rem;}
 .title{ width: 90%; margin: 0 auto; }
@@ -514,7 +515,7 @@ transition: top 0.3s ease, transform 0.4s ease 0.4s;}
 .chr_content{ width: 61%; padding: 50px 70px 160px 20px;}
 .videoTxt{ min-height: 600px;}
 .UpDown-1, .UpDown-2, .UpDown-3{ animation-name: none !important;}
-
+.videoPic .play{ width: 72px; height: 72px;}
 }
 
 @media screen and (max-width: 767px){
@@ -611,7 +612,7 @@ span.logo{ width: 60px;}
 .tab{ font-size: 1.125rem; margin: 0 3px;}
 .tab a{ padding: 5px 7px;}
 .btn_more{ padding-top: 0;}
-.group{padding: 60px 20px 40px;}
+.group{padding: 60px 0 40px;}
 .view_box{ padding: 30px}
 .topic{ font-size: 1.25rem;}
 .topic dd{ text-align: left;}
@@ -623,6 +624,9 @@ span.logo{ width: 60px;}
 .chr_content p{ line-height: 1.5;}
 .chr ul li p{ font-size: 1.25rem;}
 .join{ display: block; text-align: center; width: 80%; margin: 10px auto 0; padding: 10px 60px;}
+.group_l3, .group_l4, .group_l5, .group_l6{ margin: 20px 0 40px;}
+.group_l1, .group_l2{ margin: 20px 20px 40px;}
+.videoPic .play{ width: 52px; height: 52px;}
 }
 
 @media screen and (max-width: 414px){
@@ -660,15 +664,21 @@ span.logo{ margin: 5px 0 5px 20px; }
 .books_box dl dt{ margin: 10px 0;}
 .podcast{ padding: 60px 0;}
 .p_content .owl-nav .owl-next{ display: none;}
-.btn_float{ width: 100px; height: 167px; right: 10px; }
+.btn_float{ width: 100px; right: 10px; bottom: 20px;}
 .btn_float a.fb{  left: 12px; top: 52px; width: 35px;}
 .btn_float a.line{  right: 12px; top:52px; width: 35px;}
 .result-card_box dl dd{ text-align: left;}
+.group_l1{ width: 80px;}
+.group_l2{ width: 145px;}
+.group_l3{ width: 164px;}
+.group_l4{ width: 252px;}
+.group_l5{ width: 168px;margin: -20px 0 40px;}
+.group_l6{ width: 181px;}
 }
 
 @media screen and (max-width: 390px){
 .group_l4{ width: 275px;}
-.group_l1, .group_l2, .group_l3, .group_l4, .group_l5, .group_l6{ margin: 20px 0 40px;}
+.group_l2, .group_l3, .group_l4, .group_l6{ margin: 20px 0 40px;}
 }
 
 @media screen and (max-width: 360px){
